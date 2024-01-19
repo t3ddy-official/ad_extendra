@@ -1,5 +1,5 @@
 <h1>Ad Extendra</h1>
-Ad Extendra is an add-on mod, that adds more content to <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra">Ad Astra</a> like it didn't already have enough content. It is in beta right now and there isn't much new content available, but I'm constantly trying to improve it and add new things
+Ad Extendra is an add-on mod, that adds more content to <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra">Ad Astra</a> like it didn't already have enough content. It isn't out yet but the beta will be out in a few days.
 
 <h2>(Planned) Features</h3>
 <h3>4 new planets</h1>
