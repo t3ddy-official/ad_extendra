@@ -1,0 +1,28 @@
+{
+  "item.ad_extendra.raw_juperium": "Raw Juperium",
+  "item.ad_extendra.juperium_ingot": "Juperium Ingot",
+  "item.ad_extendra.tier5_rocket": "Rocket [Tier 5]",
+
+  "block.ad_extendra.juperium_block": "Juperium Block",
+  "block.ad_extendra.raw_juperium_block": "Raw Juperium Block",
+  "block.ad_extendra.jupiter_juperium_ore": "Jupiter Juperium Ore",
+  "block.ad_extendra.jupiter_sand": "Jupiter Sand",
+  "block.ad_extendra.jupiter_stone": "Jupiter Stone",
+
+  "creativetab.ad_extendra": "Ad Extendra",
+
+  "planet.ad_extendra.b": "b",
+  "planet.ad_extendra.ceres": "Ceres",
+  "planet.ad_extendra.eris": "Eris",
+  "planet.ad_extendra.gonggong": "Gonggong",
+  "planet.ad_extendra.haumea": "Haumea",
+  "planet.ad_extendra.jupiter": "Jupiter",
+  "planet.ad_extendra.makemake": "Makemake",
+  "planet.ad_extendra.neptune": "Neptune",
+  "planet.ad_extendra.orcus": "Orcus",
+  "planet.ad_extendra.pluto": "Pluto",
+  "planet.ad_extendra.quaoar": "Quaoar",
+  "planet.ad_extendra.saturn": "Saturn",
+  "planet.ad_extendra.sedna": "Sedna",
+  "planet.ad_extendra.uranus": "Uranus"
+}
