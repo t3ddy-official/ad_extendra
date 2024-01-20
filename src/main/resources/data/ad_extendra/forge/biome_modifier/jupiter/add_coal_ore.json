@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:cosmic_gaslands",
+  "features": "ad_extendra:jupiter/coal_ore",
+  "step": "underground_ores"
+}

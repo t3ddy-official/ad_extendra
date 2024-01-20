@@ -23,6 +23,9 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.JUPITER_STONE.get());
                 output.accept(ModBlocks.JUPITER_COBBLESTONE.get());
                 output.accept(ModBlocks.JUPITER_JUPERIUM_ORE.get());
+                output.accept(ModBlocks.JUPITER_COAL_ORE.get());
+                output.accept(ModBlocks.JUPITER_GOLD_ORE.get());
+                output.accept(ModBlocks.JUPITER_DIAMOND_ORE.get());
                 output.accept(ModItems.RAW_JUPERIUM.get());
                 output.accept(ModBlocks.RAW_JUPERIUM_BLOCK.get());
                 output.accept(ModItems.JUPERIUM_INGOT.get());

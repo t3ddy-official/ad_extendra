@@ -27,7 +27,9 @@
     ]
   },
   "features": [
-    "ad_extendra:jupiter_juperium_ore_spawn",
-    "ad_extendra:jupiter_juperium_ore"
+    "ad_extendra:jupiter/juperium_ore",
+    "ad_extendra:jupiter/coal_ore",
+    "ad_extendra:jupiter/gold_ore",
+    "ad_extendra:jupiter/diamond_ore"
   ]
 }

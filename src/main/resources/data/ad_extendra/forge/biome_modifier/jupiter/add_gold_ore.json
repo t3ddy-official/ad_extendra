@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "ad_extendra:cosmic_gaslands",
-  "features": "ad_extendra:jupiter_juperium_ore_spawn",
+  "features": "ad_extendra:jupiter/gold_ore",
   "step": "underground_ores"
 }
