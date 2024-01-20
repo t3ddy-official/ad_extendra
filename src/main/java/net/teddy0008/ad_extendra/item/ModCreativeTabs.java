@@ -19,6 +19,12 @@ public class ModCreativeTabs {
             .icon(() -> new ItemStack(ModItems.JUPERIUM_INGOT.get()))
             .title(Component.translatable("creativetab.ad_extendra"))
             .displayItems((itemDisplayParameters, output) -> {
+                output.accept(ModBlocks.CERES_SAND.get());
+                output.accept(ModBlocks.CERES_STONE.get());
+                output.accept(ModBlocks.CERES_COBBLESTONE.get());
+                output.accept(ModBlocks.CERES_COPPER_ORE.get());
+                output.accept(ModBlocks.CERES_IRON_ORE.get());
+                
                 output.accept(ModBlocks.JUPITER_SAND.get());
                 output.accept(ModBlocks.JUPITER_STONE.get());
                 output.accept(ModBlocks.JUPITER_COBBLESTONE.get());

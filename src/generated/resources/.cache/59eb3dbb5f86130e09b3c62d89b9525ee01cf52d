@@ -1,4 +1,9 @@
-// 1.20.1	2024-01-20T21:27:17.6691133	Loot Tables
+// 1.20.1	2024-01-20T22:36:00.1501641	Loot Tables
+ebd9dfe6eb04d4cdb259195c5469493075803b43 data/ad_extendra/loot_tables/blocks/ceres_cobblestone.json
+6cd10876554349eaa60c4335bb17a93bbec036cf data/ad_extendra/loot_tables/blocks/ceres_copper_ore.json
+a7ce7bd04d70f5c231a797df491d1769715bc4b4 data/ad_extendra/loot_tables/blocks/ceres_iron_ore.json
+427004eaa75b0f149fd64e874f94a92c7863fadd data/ad_extendra/loot_tables/blocks/ceres_sand.json
+77e71ffb6c0b1213f70e2f98b0bc955be1c4d7dc data/ad_extendra/loot_tables/blocks/ceres_stone.json
 ff2a4909820412cc4d250cec87183ed98f237413 data/ad_extendra/loot_tables/blocks/juperium_block.json
 0794ad67aec7a244c62129f0b7f4ee005e54bb36 data/ad_extendra/loot_tables/blocks/jupiter_coal_ore.json
 7ed4ebe8749e1fdc759cb7765cff02f60f22261a data/ad_extendra/loot_tables/blocks/jupiter_cobblestone.json

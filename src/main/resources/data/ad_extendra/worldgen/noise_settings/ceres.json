@@ -326,10 +326,10 @@
           "type": "minecraft:vertical_gradient",
           "random_name": "ad_extendra:bedrock",
           "true_at_and_below": {
-            "absolute": -10
+            "absolute": 0
           },
           "false_at_and_above": {
-            "absolute": 0
+            "absolute": 10
           }
         },
         "then_run": {
