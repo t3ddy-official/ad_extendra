@@ -26,8 +26,10 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         oreSmelting(consumer, JUPERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_JUPERIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.JUPERIUM_BLOCK.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.JUPITER_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), 0f, 200, "item");
 
         oreBlasting(consumer, JUPERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_JUPERIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.JUPERIUM_BLOCK.get(), 0.25f, 100, "item");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_BLOCK.get())
                 .pattern("JJJ")

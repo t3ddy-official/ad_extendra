@@ -21,6 +21,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.JUPITER_JUPERIUM_ORE);
         fallingBlockWithItem(ModBlocks.JUPITER_SAND);
         blockWithItem(ModBlocks.JUPITER_STONE);
+        blockWithItem(ModBlocks.JUPITER_COBBLESTONE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

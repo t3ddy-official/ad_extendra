@@ -1,0 +1,682 @@
+[20Jan2024 19:54:06.082] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\tadya\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.19, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, ad_extendra, --all, --output, C:\Users\tadya\Documents\Java\Ad Extendra\src\generated\resources, --existing, C:\Users\tadya\Documents\Java\Ad Extendra\src\main\resources]
+[20Jan2024 19:54:06.094] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[20Jan2024 19:54:06.172] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
+[20Jan2024 19:54:06.213] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[20Jan2024 19:54:06.245] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[20Jan2024 19:54:06.274] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[20Jan2024 19:54:06.289] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is C:\Users\tadya\Documents\Java\Ad Extendra\run-data
+[20Jan2024 19:54:06.290] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is C:\Users\tadya\Documents\Java\Ad Extendra\run-data\mods
+[20Jan2024 19:54:06.291] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is C:\Users\tadya\Documents\Java\Ad Extendra\run-data\config
+[20Jan2024 19:54:06.292] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is C:\Users\tadya\Documents\Java\Ad Extendra\run-data\config\fml.toml
+[20Jan2024 19:54:06.447] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: 
+[20Jan2024 19:54:06.467] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[20Jan2024 19:54:06.483] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
+[20Jan2024 19:54:06.484] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[20Jan2024 19:54:06.485] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[20Jan2024 19:54:06.487] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[20Jan2024 19:54:06.488] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[20Jan2024 19:54:06.489] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 1.0
+[20Jan2024 19:54:06.490] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 1.0 loading
+[20Jan2024 19:54:06.491] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[20Jan2024 19:54:06.492] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
+[20Jan2024 19:54:06.492] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found EventBus version : 6.0.5+6.0.5+master.eb8e549b
+[20Jan2024 19:54:06.494] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[20Jan2024 19:54:06.497] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 5.0.1+15+master.dc5a2922
+[20Jan2024 19:54:06.498] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package implementation version 7.0.1+7.0.1+master.d2b38bf6
+[20Jan2024 19:54:06.498] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package specification 5
+[20Jan2024 19:54:06.499] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[20Jan2024 19:54:06.502] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[20Jan2024 19:54:06.515] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[20Jan2024 19:54:06.517] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[20Jan2024 19:54:06.548] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@e056f20
+[20Jan2024 19:54:06.586] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/tadya/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[20Jan2024 19:54:06.591] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[20Jan2024 19:54:06.592] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[20Jan2024 19:54:06.594] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[20Jan2024 19:54:06.594] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[20Jan2024 19:54:06.595] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[20Jan2024 19:54:06.597] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[20Jan2024 19:54:06.602] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[20Jan2024 19:54:06.603] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[20Jan2024 19:54:06.604] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[20Jan2024 19:54:06.604] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is C:\Users\tadya\Documents\Java\Ad Extendra\run-data
+[20Jan2024 19:54:06.605] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is C:\Users\tadya\Documents\Java\Ad Extendra\run-data\mods
+[20Jan2024 19:54:06.605] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is C:\Users\tadya\Documents\Java\Ad Extendra\run-data\config
+[20Jan2024 19:54:06.607] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is C:\Users\tadya\Documents\Java\Ad Extendra\run-data\config\fml.toml
+[20Jan2024 19:54:06.607] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading configuration
+[20Jan2024 19:54:06.652] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
+[20Jan2024 19:54:06.658] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
+[20Jan2024 19:54:06.658] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Using forgedatauserdev as launch service
+[20Jan2024 19:54:06.683] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Received command line version data  : VersionInfo[forgeVersion=47.2.19, mcVersion=1.20.1, mcpVersion=20230612.114412, forgeGroup=net.minecraftforge]
+[20Jan2024 19:54:06.688] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[20Jan2024 19:54:06.688] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[20Jan2024 19:54:06.690] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=srgtomcp:1234}
+[20Jan2024 19:54:06.691] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[20Jan2024 19:54:06.693] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[20Jan2024 19:54:06.695] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[20Jan2024 19:54:06.695] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[20Jan2024 19:54:06.695] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
+[20Jan2024 19:54:06.724] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModListHandler/CORE]: Found mod coordinates from lists: []
+[20Jan2024 19:54:06.734] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
+[20Jan2024 19:54:06.735] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
+[20Jan2024 19:54:06.751] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates ad_extendra%%C:\Users\tadya\Documents\Java\Ad Extendra\build\resources\main;ad_extendra%%C:\Users\tadya\Documents\Java\Ad Extendra\build\classes\java\main from env
+[20Jan2024 19:54:06.758] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{ad_extendra=[C:\Users\tadya\Documents\Java\Ad Extendra\build\resources\main, C:\Users\tadya\Documents\Java\Ad Extendra\build\classes\java\main]}]
+[20Jan2024 19:54:07.491] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar with {minecraft} mods - versions {1.20.1}
+[20Jan2024 19:54:07.505] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.19\99f54fe7798c97a9a6e7c962ef94f7d30610122d\javafmllanguage-1.20.1-47.2.19.jar
+[20Jan2024 19:54:07.506] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.19\99f54fe7798c97a9a6e7c962ef94f7d30610122d\javafmllanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[20Jan2024 19:54:07.517] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.19\1b32b3f27357ab558a098c1c20e1494558a71b31\lowcodelanguage-1.20.1-47.2.19.jar
+[20Jan2024 19:54:07.517] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.19\1b32b3f27357ab558a098c1c20e1494558a71b31\lowcodelanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[20Jan2024 19:54:07.528] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.19\2eb26ae9afdd5709b9ee9bdf90b9486212a676af\mclanguage-1.20.1-47.2.19.jar
+[20Jan2024 19:54:07.530] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.19\2eb26ae9afdd5709b9ee9bdf90b9486212a676af\mclanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[20Jan2024 19:54:07.541] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.19\7cd28cc091d07bbe6a4f51bf9728ccbc27bfc4fc\fmlcore-1.20.1-47.2.19.jar
+[20Jan2024 19:54:07.542] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\tadya\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.19\7cd28cc091d07bbe6a4f51bf9728ccbc27bfc4fc\fmlcore-1.20.1-47.2.19.jar is missing mods.toml file
+[20Jan2024 19:54:07.554] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\Documents\Java\Ad Extendra\build\resources\main
+[20Jan2024 19:54:07.570] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {ad_extendra} mods - versions {0.0.1}
+[20Jan2024 19:54:07.575] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[20Jan2024 19:54:07.581] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.2.19}
+[20Jan2024 19:54:07.652] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\ad-astra-635042\4894852_mapped_parchment_2023.09.03-1.20.1\ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.655] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar with {ad_astra} mods - versions {1.15.5}
+[20Jan2024 19:54:07.667] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-lib-570073\4973823_mapped_parchment_2023.09.03-1.20.1\resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.670] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar with {resourcefullib} mods - versions {2.1.20}
+[20Jan2024 19:54:07.684] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-config-714059\5020441_mapped_parchment_2023.09.03-1.20.1\resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.685] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar with {resourcefulconfig} mods - versions {2.1.2}
+[20Jan2024 19:54:07.698] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\botarium-704113\5024181_mapped_parchment_2023.09.03-1.20.1\botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.705] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar with {botarium} mods - versions {2.3.1}
+[20Jan2024 19:54:07.725] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\ad-astra-635042\4894852_mapped_parchment_2023.09.03-1.20.1\ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.728] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar with {ad_astra} mods - versions {1.15.5}
+[20Jan2024 19:54:07.742] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-lib-570073\4973823_mapped_parchment_2023.09.03-1.20.1\resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.747] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar with {resourcefullib} mods - versions {2.1.20}
+[20Jan2024 19:54:07.762] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-config-714059\5020441_mapped_parchment_2023.09.03-1.20.1\resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.765] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar with {resourcefulconfig} mods - versions {2.1.2}
+[20Jan2024 19:54:07.798] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\botarium-704113\5024181_mapped_parchment_2023.09.03-1.20.1\botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:07.805] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar with {botarium} mods - versions {2.3.1}
+[20Jan2024 19:54:07.836] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid resourcefulconfig, selecting most recent based on version data
+[20Jan2024 19:54:07.838] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar for modid resourcefulconfig with version 2.1.2
+[20Jan2024 19:54:07.838] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid resourcefullib, selecting most recent based on version data
+[20Jan2024 19:54:07.841] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar for modid resourcefullib with version 2.1.20
+[20Jan2024 19:54:07.841] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid botarium, selecting most recent based on version data
+[20Jan2024 19:54:07.842] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar for modid botarium with version 2.3.1
+[20Jan2024 19:54:07.843] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid ad_astra, selecting most recent based on version data
+[20Jan2024 19:54:07.843] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar for modid ad_astra with version 1.15.5
+[20Jan2024 19:54:07.863] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.865] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from main, it does not contain dependency information.
+[20Jan2024 19:54:07.866] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.868] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
+[20Jan2024 19:54:07.868] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.868] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.868] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclanguage-1.20.1-47.2.19.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.870] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from javafmllanguage-1.20.1-47.2.19.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.870] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from fmlcore-1.20.1-47.2.19.jar, it does not contain dependency information.
+[20Jan2024 19:54:07.871] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from lowcodelanguage-1.20.1-47.2.19.jar, it does not contain dependency information.
+[20Jan2024 19:54:08.034] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from yabn-1.0.3.jar, it does not contain dependency information.
+[20Jan2024 19:54:08.035] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from bytecodecs-1.0.2.jar, it does not contain dependency information.
+[20Jan2024 19:54:08.120] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[20Jan2024 19:54:08.126] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar with {minecraft} mods - versions {1.20.1}
+[20Jan2024 19:54:08.131] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\tadya\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1\forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
+[20Jan2024 19:54:08.134] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\Documents\Java\Ad Extendra\build\resources\main
+[20Jan2024 19:54:08.140] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {ad_extendra} mods - versions {0.0.1}
+[20Jan2024 19:54:08.140] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\tadya\Documents\Java\Ad Extendra\build\resources\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[20Jan2024 19:54:08.142] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-config-714059\5020441_mapped_parchment_2023.09.03-1.20.1\resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:08.144] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar with {resourcefulconfig} mods - versions {2.1.2}
+[20Jan2024 19:54:08.145] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-config-714059\5020441_mapped_parchment_2023.09.03-1.20.1\resourceful-config-714059-5020441_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[46,)]]
+[20Jan2024 19:54:08.146] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[20Jan2024 19:54:08.148] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.2.19}
+[20Jan2024 19:54:08.148] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
+[20Jan2024 19:54:08.154] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_method with Javascript path coremods/field_to_method.js
+[20Jan2024 19:54:08.155] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_instanceof with Javascript path coremods/field_to_instanceof.js
+[20Jan2024 19:54:08.155] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod add_bouncer_method with Javascript path coremods/add_bouncer_method.js
+[20Jan2024 19:54:08.155] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod method_redirector with Javascript path coremods/method_redirector.js
+[20Jan2024 19:54:08.156] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_method.js
+[20Jan2024 19:54:08.156] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_instanceof.js
+[20Jan2024 19:54:08.157] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/add_bouncer_method.js
+[20Jan2024 19:54:08.157] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/method_redirector.js
+[20Jan2024 19:54:08.158] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-lib-570073\4973823_mapped_parchment_2023.09.03-1.20.1\resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:08.160] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar with {resourcefullib} mods - versions {2.1.20}
+[20Jan2024 19:54:08.161] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\resourceful-lib-570073\4973823_mapped_parchment_2023.09.03-1.20.1\resourceful-lib-570073-4973823_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[46,)]]
+[20Jan2024 19:54:08.161] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\botarium-704113\5024181_mapped_parchment_2023.09.03-1.20.1\botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:08.162] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar with {botarium} mods - versions {2.3.1}
+[20Jan2024 19:54:08.163] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\botarium-704113\5024181_mapped_parchment_2023.09.03-1.20.1\botarium-704113-5024181_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[20Jan2024 19:54:08.164] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\ad-astra-635042\4894852_mapped_parchment_2023.09.03-1.20.1\ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar
+[20Jan2024 19:54:08.165] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar with {ad_astra} mods - versions {1.15.5}
+[20Jan2024 19:54:08.166] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\tadya\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\ad-astra-635042\4894852_mapped_parchment_2023.09.03-1.20.1\ad-astra-635042-4894852_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[20Jan2024 19:54:08.167] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file  with languages []
+[20Jan2024 19:54:08.167] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file  with languages []
+[20Jan2024 19:54:08.170] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[20Jan2024 19:54:08.195] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found 3 language providers
+[20Jan2024 19:54:08.197] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
+[20Jan2024 19:54:08.199] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 47
+[20Jan2024 19:54:08.199] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider javafml, version 47
+[20Jan2024 19:54:08.211] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Configured system mods: [minecraft, forge]
+[20Jan2024 19:54:08.212] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: minecraft
+[20Jan2024 19:54:08.212] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: forge
+[20Jan2024 19:54:08.218] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 13 mod requirements (13 mandatory, 0 optional)
+[20Jan2024 19:54:08.220] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
+[20Jan2024 19:54:09.174] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 34318 method mappings from methods.csv
+[20Jan2024 19:54:09.236] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 31014 field mappings from fields.csv
+[20Jan2024 19:54:09.363] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
+[20Jan2024 19:54:09.363] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
+[20Jan2024 19:54:09.365] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
+[20Jan2024 19:54:09.366] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
+[20Jan2024 19:54:09.366] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading coremod transformers
+[20Jan2024 19:54:09.367] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_method.js
+[20Jan2024 19:54:09.833] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[20Jan2024 19:54:09.834] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_instanceof.js
+[20Jan2024 19:54:10.001] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[20Jan2024 19:54:10.001] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/add_bouncer_method.js
+[20Jan2024 19:54:10.085] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[20Jan2024 19:54:10.087] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/method_redirector.js
+[20Jan2024 19:54:10.227] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[20Jan2024 19:54:10.253] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@35c9a231 to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
+[20Jan2024 19:54:10.255] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@119b0892 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/Structure;} {} {V}
+[20Jan2024 19:54:10.255] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@1a3e8e24 to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
+[20Jan2024 19:54:10.257] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@4ed4a7e4 to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
+[20Jan2024 19:54:10.257] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@1c7350b0 to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
+[20Jan2024 19:54:10.258] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@55651434 to Target : CLASS {Lnet/minecraft/world/level/block/StairBlock;} {} {V}
+[20Jan2024 19:54:10.258] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3bc4ef12 to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
+[20Jan2024 19:54:10.259] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@50448409 to Target : CLASS {Lnet/minecraft/world/item/ItemStack;} {} {V}
+[20Jan2024 19:54:10.259] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5634a861 to Target : CLASS {Lnet/minecraft/network/play/client/CClientSettingsPacket;} {} {V}
+[20Jan2024 19:54:10.260] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/monster/Strider;} {} {V}
+[20Jan2024 19:54:10.260] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PatrolSpawner;} {} {V}
+[20Jan2024 19:54:10.261] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/NaturalSpawner;} {} {V}
+[20Jan2024 19:54:10.261] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece;} {} {V}
+[20Jan2024 19:54:10.262] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/monster/ZombieVillager;} {} {V}
+[20Jan2024 19:54:10.262] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/server/commands/SummonCommand;} {} {V}
+[20Jan2024 19:54:10.262] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PhantomSpawner;} {} {V}
+[20Jan2024 19:54:10.262] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/raid/Raid;} {} {V}
+[20Jan2024 19:54:10.263] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal;} {} {V}
+[20Jan2024 19:54:10.263] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/animal/frog/Tadpole;} {} {V}
+[20Jan2024 19:54:10.264] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/ai/village/VillageSiege;} {} {V}
+[20Jan2024 19:54:10.264] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece;} {} {V}
+[20Jan2024 19:54:10.265] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/SwampHutPiece;} {} {V}
+[20Jan2024 19:54:10.265] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/npc/Villager;} {} {V}
+[20Jan2024 19:54:10.265] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/monster/Zombie;} {} {V}
+[20Jan2024 19:54:10.265] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/EntityType;} {} {V}
+[20Jan2024 19:54:10.265] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;} {} {V}
+[20Jan2024 19:54:10.266] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/server/commands/RaidCommand;} {} {V}
+[20Jan2024 19:54:10.266] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;} {} {V}
+[20Jan2024 19:54:10.267] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/animal/horse/SkeletonTrapGoal;} {} {V}
+[20Jan2024 19:54:10.267] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/monster/Spider;} {} {V}
+[20Jan2024 19:54:10.267] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2b0dc227 to Target : CLASS {Lnet/minecraft/world/entity/npc/CatSpawner;} {} {V}
+[20Jan2024 19:54:10.268] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
+[20Jan2024 19:54:12.241] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[20Jan2024 19:54:12.242] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[20Jan2024 19:54:12.242] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
+[20Jan2024 19:54:12.243] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
+[20Jan2024 19:54:12.243] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
+[20Jan2024 19:54:12.243] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
+[20Jan2024 19:54:12.243] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
+[20Jan2024 19:54:12.244] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[20Jan2024 19:54:12.244] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(ad_extendra)
+[20Jan2024 19:54:12.245] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(ad_extendra)
+[20Jan2024 19:54:12.245] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(ad_extendra)
+[20Jan2024 19:54:12.246] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(ad_extendra)
+[20Jan2024 19:54:12.246] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(ad_extendra)
+[20Jan2024 19:54:12.247] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(ad_extendra)]
+[20Jan2024 19:54:12.247] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(resourcefulconfig)
+[20Jan2024 19:54:12.247] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(resourcefulconfig)
+[20Jan2024 19:54:12.249] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(resourcefulconfig)
+[20Jan2024 19:54:12.249] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(resourcefulconfig)
+[20Jan2024 19:54:12.249] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(resourcefulconfig)
+[20Jan2024 19:54:12.250] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(resourcefulconfig)]
+[20Jan2024 19:54:12.250] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
+[20Jan2024 19:54:12.251] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
+[20Jan2024 19:54:12.251] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
+[20Jan2024 19:54:12.251] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(forge)
+[20Jan2024 19:54:12.251] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(forge)
+[20Jan2024 19:54:12.251] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[20Jan2024 19:54:12.252] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(resourcefullib)
+[20Jan2024 19:54:12.252] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(resourcefullib)
+[20Jan2024 19:54:12.253] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(resourcefullib)
+[20Jan2024 19:54:12.254] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(resourcefullib)
+[20Jan2024 19:54:12.254] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(resourcefullib)
+[20Jan2024 19:54:12.254] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(resourcefullib)]
+[20Jan2024 19:54:12.254] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(botarium)
+[20Jan2024 19:54:12.255] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(botarium)
+[20Jan2024 19:54:12.255] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(botarium)
+[20Jan2024 19:54:12.257] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(botarium)
+[20Jan2024 19:54:12.257] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(botarium)
+[20Jan2024 19:54:12.257] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(botarium)]
+[20Jan2024 19:54:12.258] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(ad_astra)
+[20Jan2024 19:54:12.258] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(ad_astra)
+[20Jan2024 19:54:12.258] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(ad_astra)
+[20Jan2024 19:54:12.258] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(ad_astra)
+[20Jan2024 19:54:12.258] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(ad_astra)
+[20Jan2024 19:54:12.260] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(ad_astra)]
+[20Jan2024 19:54:12.261] [main/DEBUG] [mixin/]: Registering mixin config: ad_astra-common.mixins.json
+[20Jan2024 19:54:12.300] [main/DEBUG] [mixin/]: Compatibility level JAVA_17 specified by ad_astra-common.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[20Jan2024 19:54:12.309] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[20Jan2024 19:54:12.310] [main/DEBUG] [mixin/]: Registering mixin config: ad_astra.mixins.json
+[20Jan2024 19:54:12.314] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(bytecodecs)
+[20Jan2024 19:54:12.315] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(bytecodecs)
+[20Jan2024 19:54:12.315] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(bytecodecs)
+[20Jan2024 19:54:12.315] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(bytecodecs)
+[20Jan2024 19:54:12.315] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(bytecodecs)
+[20Jan2024 19:54:12.317] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(bytecodecs)]
+[20Jan2024 19:54:12.317] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(yabn)
+[20Jan2024 19:54:12.317] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(yabn)
+[20Jan2024 19:54:12.318] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(yabn)
+[20Jan2024 19:54:12.318] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(yabn)
+[20Jan2024 19:54:12.318] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(yabn)
+[20Jan2024 19:54:12.320] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(yabn)]
+[20Jan2024 19:54:12.321] [main/DEBUG] [mixin/]: inject() running with 10 agents
+[20Jan2024 19:54:12.321] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[20Jan2024 19:54:12.321] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[20Jan2024 19:54:12.321] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(ad_extendra)]
+[20Jan2024 19:54:12.322] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(resourcefulconfig)]
+[20Jan2024 19:54:12.322] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[20Jan2024 19:54:12.323] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(resourcefullib)]
+[20Jan2024 19:54:12.323] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(botarium)]
+[20Jan2024 19:54:12.323] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(ad_astra)]
+[20Jan2024 19:54:12.324] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(bytecodecs)]
+[20Jan2024 19:54:12.324] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(yabn)]
+[20Jan2024 19:54:12.326] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\tadya\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, ad_extendra, --all, --output, C:\Users\tadya\Documents\Java\Ad Extendra\src\generated\resources, --existing, C:\Users\tadya\Documents\Java\Ad Extendra\src\main\resources]
+[20Jan2024 19:54:12.578] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
+[20Jan2024 19:54:12.582] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[20Jan2024 19:54:12.584] [main/DEBUG] [mixin/]: Selecting config ad_astra-common.mixins.json
+[20Jan2024 19:54:13.182] [main/INFO] [mixin/]: Remapping refMap ad_astra-common-1.20.1-common-refmap.json using C:\Users\tadya\Documents\Java\Ad Extendra/build/createSrgToMcp/output.srg
+[20Jan2024 19:54:13.182] [main/DEBUG] [mixin/]: Selecting config ad_astra.mixins.json
+[20Jan2024 19:54:13.185] [main/INFO] [mixin/]: Remapping refMap ad_astra-forge-1.20.1-forge-refmap.json using C:\Users\tadya\Documents\Java\Ad Extendra/build/createSrgToMcp/output.srg
+[20Jan2024 19:54:13.185] [main/DEBUG] [mixin/]: Preparing ad_astra-common.mixins.json (40)
+[20Jan2024 19:54:13.351] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
+[20Jan2024 19:54:13.447] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
+[20Jan2024 19:54:13.827] [main/DEBUG] [mixin/]: Preparing ad_astra.mixins.json (6)
+[20Jan2024 19:54:13.875] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[20Jan2024 19:54:13.881] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[20Jan2024 19:54:13.884] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[20Jan2024 19:54:13.886] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[20Jan2024 19:54:13.888] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[20Jan2024 19:54:13.892] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[20Jan2024 19:54:13.945] [main/DEBUG] [mixin/]: Inner class earth/terrarium/ad_astra/mixin/client/SoundManagerMixin$1 in earth/terrarium/ad_astra/mixin/client/SoundManagerMixin on net/minecraft/client/sounds/SoundManager gets unique name net/minecraft/client/sounds/SoundManager$Anonymous$4e07a8be68324ec8a0e3a0b25aee9045
+[20Jan2024 19:54:13.953] [main/DEBUG] [mixin/]: Inner class earth/terrarium/ad_astra/mixin/forge/ModRenderedItemMixin$1 in earth/terrarium/ad_astra/mixin/forge/ModRenderedItemMixin on earth/terrarium/ad_astra/common/item/ModRenderedItem gets unique name earth/terrarium/ad_astra/common/item/ModRenderedItem$Anonymous$5b29d850f1944d179a803df304efdeb4
+[20Jan2024 19:54:13.954] [main/DEBUG] [mixin/]: Inner class earth/terrarium/ad_astra/mixin/forge/ModRenderedItemMixin$1 in earth/terrarium/ad_astra/mixin/forge/ModRenderedItemMixin on earth/terrarium/ad_astra/common/item/ModRenderedBlockItem gets unique name earth/terrarium/ad_astra/common/item/ModRenderedBlockItem$Anonymous$2c8c977f26f34fceaf418ccd15d77231
+[20Jan2024 19:54:13.961] [main/DEBUG] [mixin/]: Prepared 46 mixins in 1.371 sec (29.8ms avg) (0ms load, 0ms transform, 0ms plugin)
+[20Jan2024 19:54:14.344] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[20Jan2024 19:54:14.350] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[20Jan2024 19:54:14.351] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[20Jan2024 19:54:14.730] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ad_extendra]
+[20Jan2024 19:54:15.033] [main/DEBUG] [mixin/]: Mixing BlockMixin from ad_astra-common.mixins.json into net.minecraft.world.level.block.Block
+[20Jan2024 19:54:15.184] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[20Jan2024 19:54:15.488] [main/DEBUG] [mixin/]: Mixing EntityInvoker from ad_astra-common.mixins.json into net.minecraft.world.entity.Entity
+[20Jan2024 19:54:15.514] [main/DEBUG] [mixin/]: Mixing EntityMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.Entity
+[20Jan2024 19:54:15.670] [main/DEBUG] [mixin/]: Mixing LivingEntityMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.LivingEntity
+[20Jan2024 19:54:15.703] [main/DEBUG] [mixin/]: Mixing gravity.LivingEntityGravityMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.LivingEntity
+[20Jan2024 19:54:15.934] [main/DEBUG] [mixin/]: Mixing ServerLevelMixin from ad_astra-common.mixins.json into net.minecraft.server.level.ServerLevel
+[20Jan2024 19:54:16.037] [main/DEBUG] [mixin/]: Mixing gravity.CommonGravityEntityMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.item.ItemEntity
+[20Jan2024 19:54:16.070] [main/DEBUG] [mixin/]: Mixing PlayerMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.player.Player
+[20Jan2024 19:54:16.260] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
+[20Jan2024 19:54:16.753] [main/DEBUG] [mixin/]: Mixing oxygen.FireBlockMixin from ad_astra-common.mixins.json into net.minecraft.world.level.block.FireBlock
+[20Jan2024 19:54:17.133] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
+[20Jan2024 19:54:17.134] [main/DEBUG] [mixin/]: Mixing LiquidBlockMixin from ad_astra-common.mixins.json into net.minecraft.world.level.block.LiquidBlock
+[20Jan2024 19:54:17.214] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/StairBlock
+[20Jan2024 19:54:17.274] [main/DEBUG] [mixin/]: Mixing IceBlockMixin from ad_astra-common.mixins.json into net.minecraft.world.level.block.IceBlock
+[20Jan2024 19:54:17.383] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/FlowerPotBlock
+[20Jan2024 19:54:18.244] [main/DEBUG] [mixin/]: Mixing gravity.CommonGravityEntityMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.item.PrimedTnt
+[20Jan2024 19:54:18.586] [main/DEBUG] [mixin/]: Mixing WoodTypeInvoker from ad_astra-common.mixins.json into net.minecraft.world.level.block.state.properties.WoodType
+[20Jan2024 19:54:18.588] [main/DEBUG] [mixin/]: Renaming @Invoker method ad_astra$init(Ljava/lang/String;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)Lnet/minecraft/world/level/block/state/properties/WoodType; to ad_astra$init_$md$8b333b$0 in ad_astra-common.mixins.json:WoodTypeInvoker
+[20Jan2024 19:54:18.595] [main/DEBUG] [mixin/]: Renaming @Invoker method ad_astra$invokeRegister(Lnet/minecraft/world/level/block/state/properties/WoodType;)Lnet/minecraft/world/level/block/state/properties/WoodType; to ad_astra$invokeRegister_$md$8b333b$1 in ad_astra-common.mixins.json:WoodTypeInvoker
+[20Jan2024 19:54:18.698] [main/DEBUG] [mixin/]: Mixing gravity.AbstractArrowMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.projectile.AbstractArrow
+[20Jan2024 19:54:18.755] [main/DEBUG] [mixin/]: Mixing MobMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.Mob
+[20Jan2024 19:54:18.762] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
+[20Jan2024 19:54:19.085] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[20Jan2024 19:54:20.108] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/frog/Tadpole
+[20Jan2024 19:54:20.166] [main/DEBUG] [mixin/]: Mixing oxygen.BlockItemMixin from ad_astra-common.mixins.json into net.minecraft.world.item.BlockItem
+[20Jan2024 19:54:20.216] [main/DEBUG] [mixin/]: Mixing oxygen.FlintAndSteelItemMixin from ad_astra-common.mixins.json into net.minecraft.world.item.FlintAndSteelItem
+[20Jan2024 19:54:20.216] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$ad_astra$useOnBlock$0(Lnet/minecraft/world/item/context/UseOnContext;Lnet/minecraft/world/entity/player/Player;)V to md8b333b$lambda$ad_astra$useOnBlock$0$0 in ad_astra-common.mixins.json:oxygen.FlintAndSteelItemMixin
+[20Jan2024 19:54:20.253] [main/DEBUG] [mixin/]: Mixing AxeItemAccessor from ad_astra.mixins.json into net.minecraft.world.item.AxeItem
+[20Jan2024 19:54:20.257] [main/DEBUG] [mixin/]: Renaming @Accessor method ad_astra$getStrippables()Ljava/util/Map; to ad_astra$getStrippables_$md$8b333b$0 in ad_astra.mixins.json:AxeItemAccessor
+[20Jan2024 19:54:20.263] [main/DEBUG] [mixin/]: Renaming @Accessor method ad_astra$setStrippables(Ljava/util/Map;)V to ad_astra$setStrippables_$md$8b333b$1 in ad_astra.mixins.json:AxeItemAccessor
+[20Jan2024 19:54:20.275] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
+[20Jan2024 19:54:20.276] [main/DEBUG] [mixin/]: Mixing BucketItemMixin from ad_astra-common.mixins.json into net.minecraft.world.item.BucketItem
+[20Jan2024 19:54:20.286] [main/DEBUG] [mixin/]: Mixing BucketItemMixin from ad_astra.mixins.json into net.minecraft.world.item.BucketItem
+[20Jan2024 19:54:20.360] [main/DEBUG] [mixin/]: Mixing FireworkRocketItemMixin from ad_astra-common.mixins.json into net.minecraft.world.item.FireworkRocketItem
+[20Jan2024 19:54:20.494] [main/DEBUG] [mixin/]: Mixing gravity.CommonGravityEntityMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.vehicle.AbstractMinecart
+[20Jan2024 19:54:21.807] [main/DEBUG] [mixin/]: Mixing gravity.BoatMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.vehicle.Boat
+[20Jan2024 19:54:21.875] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Spider
+[20Jan2024 19:54:21.972] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Zombie
+[20Jan2024 19:54:22.052] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/ZombieVillager
+[20Jan2024 19:54:22.114] [main/DEBUG] [mixin/]: Mixing gravity.ThrowableProjectileMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.projectile.ThrowableProjectile
+[20Jan2024 19:54:22.177] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal
+[20Jan2024 19:54:22.193] [main/DEBUG] [mixin/]: Mixing gravity.ThrownExperienceBottleMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.projectile.ThrownExperienceBottle
+[20Jan2024 19:54:22.326] [main/DEBUG] [mixin/]: Mixing PaintingInvoker from ad_astra-common.mixins.json into net.minecraft.world.entity.decoration.Painting
+[20Jan2024 19:54:22.383] [main/DEBUG] [mixin/]: Mixing gravity.ThrownPotionMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.projectile.ThrownPotion
+[20Jan2024 19:54:22.446] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/horse/SkeletonTrapGoal
+[20Jan2024 19:54:22.479] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Strider
+[20Jan2024 19:54:22.650] [main/DEBUG] [mixin/]: Mixing PiglinSpecificSensorMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.ai.sensing.PiglinSpecificSensor
+[20Jan2024 19:54:22.651] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$ad_astra$findPiglinRepellent$0(Lnet/minecraft/core/BlockPos;)Z to md8b333b$lambda$ad_astra$findPiglinRepellent$0$0 in ad_astra-common.mixins.json:PiglinSpecificSensorMixin
+[20Jan2024 19:54:22.755] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/npc/Villager
+[20Jan2024 19:54:22.967] [main/DEBUG] [mixin/]: Mixing gravity.FishingHookMixin from ad_astra-common.mixins.json into net.minecraft.world.entity.projectile.FishingHook
+[20Jan2024 19:54:23.041] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
+[20Jan2024 19:54:23.138] [main/DEBUG] [mixin/]: Mixing ServerGamePacketListenerImplMixin from ad_astra-common.mixins.json into net.minecraft.server.network.ServerGamePacketListenerImpl
+[20Jan2024 19:54:23.572] [main/DEBUG] [mixin/]: Mixing ArmorDyeRecipeMixin from ad_astra-common.mixins.json into net.minecraft.world.item.crafting.ArmorDyeRecipe
+[20Jan2024 19:54:24.420] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
+[20Jan2024 19:54:24.528] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece
+[20Jan2024 19:54:24.547] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece
+[20Jan2024 19:54:24.564] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece
+[20Jan2024 19:54:24.600] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece
+[20Jan2024 19:54:24.843] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[20Jan2024 19:54:25.172] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Creating vanilla freeze snapshot
+[20Jan2024 19:54:25.176] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.206] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:fluid Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.207] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.231] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.232] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.257] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.258] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.258] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.260] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block_entity_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.262] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:particle_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.264] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:menu Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.265] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:painting_variant Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.266] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.267] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_serializer Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.268] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:attribute Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.269] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:stat_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.270] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:command_argument_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.272] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:villager_profession Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.272] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:point_of_interest_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.280] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:memory_module_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.282] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sensor_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.283] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:schedule Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.283] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:activity Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.285] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/carver Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.285] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/feature Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.286] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:chunk_status Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.287] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/block_state_provider_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.288] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/foliage_placer_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.288] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/tree_decorator_type Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.288] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome Sync: VANILLA -> ACTIVE
+[20Jan2024 19:54:25.301] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
+[20Jan2024 19:54:25.350] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 8 threads for parallel mod-loading
+[20Jan2024 19:54:25.367] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@ae73c80 - got cpw.mods.cl.ModuleClassLoader@368d5c00
+[20Jan2024 19:54:25.367] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.teddy0008.ad_extendra.Main
+[20Jan2024 19:54:25.379] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@ae73c80 - got cpw.mods.cl.ModuleClassLoader@368d5c00
+[20Jan2024 19:54:25.380] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamresourceful.resourcefulconfig.forge.ResourcefulconfigForge
+[20Jan2024 19:54:25.381] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@ae73c80 - got cpw.mods.cl.ModuleClassLoader@368d5c00
+[20Jan2024 19:54:25.381] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
+[20Jan2024 19:54:25.385] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@ae73c80 - got cpw.mods.cl.ModuleClassLoader@368d5c00
+[20Jan2024 19:54:25.385] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamresourceful.resourcefullib.forge.ResourcefulLibForge
+[20Jan2024 19:54:25.387] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@ae73c80 - got cpw.mods.cl.ModuleClassLoader@368d5c00
+[20Jan2024 19:54:25.387] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for earth.terrarium.botarium.forge.BotariumForge
+[20Jan2024 19:54:25.389] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@ae73c80 - got cpw.mods.cl.ModuleClassLoader@368d5c00
+[20Jan2024 19:54:25.389] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for earth.terrarium.ad_astra.forge.AdAstraForge
+[20Jan2024 19:54:25.485] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 47.2 from cpw.mods.modlauncher.TransformingClassLoader@ae73c80
+[20Jan2024 19:54:25.487] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge version 47.2.19
+[20Jan2024 19:54:25.487] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge spec 47.2
+[20Jan2024 19:54:25.487] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for botarium
+[20Jan2024 19:54:25.490] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge group net.minecraftforge
+[20Jan2024 19:54:25.491] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.LevelRendererAccessor from ad_astra-common.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[20Jan2024 19:54:25.529] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for resourcefulconfig
+[20Jan2024 19:54:25.676] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.LevelRendererMixin from ad_astra-common.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[20Jan2024 19:54:25.881] [modloading-worker-0/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[20Jan2024 19:54:26.000] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: MCP Version package package net.minecraftforge.versions.mcp, Minecraft, version 1.20.1 from cpw.mods.modlauncher.TransformingClassLoader@ae73c80
+[20Jan2024 19:54:26.000] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MC version information 1.20.1
+[20Jan2024 19:54:26.000] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MCP version information 20230612.114412
+[20Jan2024 19:54:26.000] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.19, for MC 1.20.1 with MCP 20230612.114412
+[20Jan2024 19:54:26.002] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.19 Initialized
+[20Jan2024 19:54:26.054] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.CameraMixin from ad_astra-common.mixins.json into net.minecraft.client.Camera
+[20Jan2024 19:54:26.094] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file ad_extendra-common.toml for ad_extendra tracking
+[20Jan2024 19:54:26.095] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for ad_extendra
+[20Jan2024 19:54:26.096] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for resourcefullib
+[20Jan2024 19:54:26.105] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.teddy0008.ad_extendra.Config to MOD
+[20Jan2024 19:54:26.118] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.teddy0008.ad_extendra.datagen.DataGenerators to MOD
+[20Jan2024 19:54:26.130] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.teddy0008.ad_extendra.Main$ClientModEvents to MOD
+[20Jan2024 19:54:26.154] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.LocalPlayerMixin from ad_astra-common.mixins.json into net.minecraft.client.player.LocalPlayer
+[20Jan2024 19:54:26.295] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
+[20Jan2024 19:54:26.296] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17
+[20Jan2024 19:54:26.299] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
+[20Jan2024 19:54:26.300] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
+[20Jan2024 19:54:26.300] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
+[20Jan2024 19:54:26.301] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
+[20Jan2024 19:54:26.303] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:282) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at net.minecraftforge.network.NetworkConstants.<clinit>(NetworkConstants.java:34) ~[forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23190%23197!/:?]
+	at net.minecraftforge.common.ForgeMod.<init>(ForgeMod.java:429) ~[forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23190%23197!/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:70) ~[javafmllanguage-1.20.1-47.2.19.jar%23192!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:124) ~[fmlcore-1.20.1-47.2.19.jar%23195!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[20Jan2024 19:54:26.320] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
+[20Jan2024 19:54:26.322] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 (in module io.netty.common) cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to module io.netty.common
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar%23151!/:4.1.82.Final]
+	at net.minecraftforge.network.NetworkConstants.<clinit>(NetworkConstants.java:34) ~[forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23190%23197!/:?]
+	at net.minecraftforge.common.ForgeMod.<init>(ForgeMod.java:429) ~[forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23190%23197!/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:70) ~[javafmllanguage-1.20.1-47.2.19.jar%23192!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:124) ~[fmlcore-1.20.1-47.2.19.jar%23195!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[20Jan2024 19:54:26.327] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[20Jan2024 19:54:26.328] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
+[20Jan2024 19:54:26.328] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: maxDirectMemory: 4257218560 bytes (maybe)
+[20Jan2024 19:54:26.330] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: C:\Users\tadya\AppData\Local\Temp (java.io.tmpdir)
+[20Jan2024 19:54:26.330] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20Jan2024 19:54:26.331] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: Windows
+[20Jan2024 19:54:26.332] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
+[20Jan2024 19:54:26.333] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[20Jan2024 19:54:26.336] [modloading-worker-0/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
+[20Jan2024 19:54:26.336] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
+[20Jan2024 19:54:26.401] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Loading Network data for FML net version: FML3
+[20Jan2024 19:54:26.430] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
+[20Jan2024 19:54:26.430] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
+[20Jan2024 19:54:26.430] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.ModLoadingContext/]: Attempted to register an empty config for type COMMON on mod forge
+[20Jan2024 19:54:26.440] [modloading-worker-0/DEBUG] [mixin/]: Mixing ModRenderedItemMixin from ad_astra.mixins.json into earth.terrarium.ad_astra.common.item.ModRenderedBlockItem
+[20Jan2024 19:54:26.453] [modloading-worker-0/DEBUG] [mixin/]: Mixing SpaceSuitMixin from ad_astra.mixins.json into earth.terrarium.ad_astra.common.item.armor.SpaceSuit
+[20Jan2024 19:54:26.462] [modloading-worker-0/DEBUG] [mixin/]: Mixing ModRenderedItemMixin from ad_astra.mixins.json into earth.terrarium.ad_astra.common.item.ModRenderedItem
+[20Jan2024 19:54:26.487] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
+[20Jan2024 19:54:26.488] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$CommonHandler to MOD
+[20Jan2024 19:54:26.493] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$ColorRegisterHandler to MOD
+[20Jan2024 19:54:26.504] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.model.data.ModelDataManager to FORGE
+[20Jan2024 19:54:26.507] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ForgeHooksClient$ClientEvents to MOD
+[20Jan2024 19:54:26.533] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ClientForgeMod to MOD
+[20Jan2024 19:54:26.858] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for ad_astra
+[20Jan2024 19:54:26.908] [main/DEBUG] [net.minecraftforge.registries.ObjectHolderRegistry/REGISTRIES]: Processing ObjectHolder annotations
+[20Jan2024 19:54:26.956] [main/DEBUG] [net.minecraftforge.registries.ObjectHolderRegistry/REGISTRIES]: Found 4595 ObjectHolder annotations
+[20Jan2024 19:54:26.964] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/energy/IEnergyStorage;
+[20Jan2024 19:54:26.965] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandler;
+[20Jan2024 19:54:26.965] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandlerItem;
+[20Jan2024 19:54:26.967] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/items/IItemHandler;
+[20Jan2024 19:54:26.967] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Unfreezing vanilla registries
+[20Jan2024 19:54:26.974] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:sound_event
+[20Jan2024 19:54:26.980] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:sound_event
+[20Jan2024 19:54:26.987] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:fluid
+[20Jan2024 19:54:26.989] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:fluid
+[20Jan2024 19:54:29.928] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block
+[20Jan2024 19:54:29.932] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block
+[20Jan2024 19:54:29.932] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:attribute
+[20Jan2024 19:54:29.934] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:attribute
+[20Jan2024 19:54:29.934] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:mob_effect
+[20Jan2024 19:54:29.935] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:mob_effect
+[20Jan2024 19:54:29.935] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:particle_type
+[20Jan2024 19:54:29.937] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:particle_type
+[20Jan2024 19:54:29.978] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:item
+[20Jan2024 19:54:29.981] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:item
+[20Jan2024 19:54:30.012] [main/DEBUG] [mixin/]: Mixing GlacianRamMixin from ad_astra.mixins.json into earth.terrarium.ad_astra.common.entity.mob.GlacianRam
+[20Jan2024 19:54:30.040] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:entity_type
+[20Jan2024 19:54:30.042] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:entity_type
+[20Jan2024 19:54:30.042] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:sensor_type
+[20Jan2024 19:54:30.043] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:sensor_type
+[20Jan2024 19:54:30.043] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:memory_module_type
+[20Jan2024 19:54:30.044] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:memory_module_type
+[20Jan2024 19:54:30.045] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:potion
+[20Jan2024 19:54:30.046] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:potion
+[20Jan2024 19:54:30.047] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:game_event
+[20Jan2024 19:54:30.047] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:game_event
+[20Jan2024 19:54:30.047] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:enchantment
+[20Jan2024 19:54:30.048] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:enchantment
+[20Jan2024 19:54:30.105] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block_entity_type
+[20Jan2024 19:54:30.108] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block_entity_type
+[20Jan2024 19:54:30.108] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:painting_variant
+[20Jan2024 19:54:30.109] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:painting_variant
+[20Jan2024 19:54:30.110] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:stat_type
+[20Jan2024 19:54:30.111] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:stat_type
+[20Jan2024 19:54:30.112] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:custom_stat
+[20Jan2024 19:54:30.112] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:custom_stat
+[20Jan2024 19:54:30.113] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:chunk_status
+[20Jan2024 19:54:30.114] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:chunk_status
+[20Jan2024 19:54:30.115] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:rule_test
+[20Jan2024 19:54:30.115] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:rule_test
+[20Jan2024 19:54:30.116] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:rule_block_entity_modifier
+[20Jan2024 19:54:30.117] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:rule_block_entity_modifier
+[20Jan2024 19:54:30.118] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:pos_rule_test
+[20Jan2024 19:54:30.118] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:pos_rule_test
+[20Jan2024 19:54:30.132] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:menu
+[20Jan2024 19:54:30.133] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:menu
+[20Jan2024 19:54:30.134] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:recipe_type
+[20Jan2024 19:54:30.136] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:recipe_type
+[20Jan2024 19:54:30.185] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:recipe_serializer
+[20Jan2024 19:54:30.187] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:recipe_serializer
+[20Jan2024 19:54:30.188] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:position_source_type
+[20Jan2024 19:54:30.189] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:position_source_type
+[20Jan2024 19:54:30.192] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:command_argument_type
+[20Jan2024 19:54:30.193] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:command_argument_type
+[20Jan2024 19:54:30.194] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:villager_type
+[20Jan2024 19:54:30.195] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:villager_type
+[20Jan2024 19:54:30.195] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:villager_profession
+[20Jan2024 19:54:30.195] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:villager_profession
+[20Jan2024 19:54:30.196] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:point_of_interest_type
+[20Jan2024 19:54:30.198] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:point_of_interest_type
+[20Jan2024 19:54:30.198] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:schedule
+[20Jan2024 19:54:30.200] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:schedule
+[20Jan2024 19:54:30.200] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:activity
+[20Jan2024 19:54:30.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:activity
+[20Jan2024 19:54:30.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_pool_entry_type
+[20Jan2024 19:54:30.203] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_pool_entry_type
+[20Jan2024 19:54:30.203] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_function_type
+[20Jan2024 19:54:30.204] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_function_type
+[20Jan2024 19:54:30.210] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_condition_type
+[20Jan2024 19:54:30.211] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_condition_type
+[20Jan2024 19:54:30.211] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_number_provider_type
+[20Jan2024 19:54:30.212] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_number_provider_type
+[20Jan2024 19:54:30.213] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_nbt_provider_type
+[20Jan2024 19:54:30.213] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_nbt_provider_type
+[20Jan2024 19:54:30.214] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_score_provider_type
+[20Jan2024 19:54:30.214] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_score_provider_type
+[20Jan2024 19:54:30.215] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:float_provider_type
+[20Jan2024 19:54:30.217] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:float_provider_type
+[20Jan2024 19:54:30.217] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:int_provider_type
+[20Jan2024 19:54:30.218] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:int_provider_type
+[20Jan2024 19:54:30.218] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:height_provider_type
+[20Jan2024 19:54:30.219] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:height_provider_type
+[20Jan2024 19:54:30.220] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block_predicate_type
+[20Jan2024 19:54:30.221] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block_predicate_type
+[20Jan2024 19:54:30.222] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/carver
+[20Jan2024 19:54:30.222] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/carver
+[20Jan2024 19:54:30.223] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/feature
+[20Jan2024 19:54:30.224] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/feature
+[20Jan2024 19:54:30.225] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_processor
+[20Jan2024 19:54:30.225] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_processor
+[20Jan2024 19:54:30.226] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_placement
+[20Jan2024 19:54:30.227] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_placement
+[20Jan2024 19:54:30.228] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_piece
+[20Jan2024 19:54:30.229] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_piece
+[20Jan2024 19:54:30.230] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_type
+[20Jan2024 19:54:30.230] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_type
+[20Jan2024 19:54:30.231] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/placement_modifier_type
+[20Jan2024 19:54:30.233] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/placement_modifier_type
+[20Jan2024 19:54:30.233] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/block_state_provider_type
+[20Jan2024 19:54:30.234] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/block_state_provider_type
+[20Jan2024 19:54:30.235] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/foliage_placer_type
+[20Jan2024 19:54:30.236] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/foliage_placer_type
+[20Jan2024 19:54:30.236] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/trunk_placer_type
+[20Jan2024 19:54:30.237] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/trunk_placer_type
+[20Jan2024 19:54:30.237] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/root_placer_type
+[20Jan2024 19:54:30.238] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/root_placer_type
+[20Jan2024 19:54:30.239] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/tree_decorator_type
+[20Jan2024 19:54:30.240] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/tree_decorator_type
+[20Jan2024 19:54:30.241] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/feature_size_type
+[20Jan2024 19:54:30.241] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/feature_size_type
+[20Jan2024 19:54:30.242] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/biome_source
+[20Jan2024 19:54:30.243] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/biome_source
+[20Jan2024 19:54:30.243] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/chunk_generator
+[20Jan2024 19:54:30.244] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/chunk_generator
+[20Jan2024 19:54:30.244] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/material_condition
+[20Jan2024 19:54:30.245] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/material_condition
+[20Jan2024 19:54:30.245] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/material_rule
+[20Jan2024 19:54:30.247] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/material_rule
+[20Jan2024 19:54:30.247] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/density_function_type
+[20Jan2024 19:54:30.248] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/density_function_type
+[20Jan2024 19:54:30.248] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_pool_element
+[20Jan2024 19:54:30.249] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_pool_element
+[20Jan2024 19:54:30.249] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:cat_variant
+[20Jan2024 19:54:30.250] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:cat_variant
+[20Jan2024 19:54:30.251] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:frog_variant
+[20Jan2024 19:54:30.251] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:frog_variant
+[20Jan2024 19:54:30.252] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:banner_pattern
+[20Jan2024 19:54:30.253] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:banner_pattern
+[20Jan2024 19:54:30.253] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:instrument
+[20Jan2024 19:54:30.253] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:instrument
+[20Jan2024 19:54:30.253] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:decorated_pot_patterns
+[20Jan2024 19:54:30.254] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:decorated_pot_patterns
+[20Jan2024 19:54:30.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:creative_mode_tab
+[20Jan2024 19:54:30.257] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:creative_mode_tab
+[20Jan2024 19:54:30.270] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:biome_modifier_serializers
+[20Jan2024 19:54:30.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:biome_modifier_serializers
+[20Jan2024 19:54:30.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:display_contexts
+[20Jan2024 19:54:30.273] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:display_contexts
+[20Jan2024 19:54:30.273] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:entity_data_serializers
+[20Jan2024 19:54:30.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:entity_data_serializers
+[20Jan2024 19:54:30.284] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:fluid_type
+[20Jan2024 19:54:30.285] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:fluid_type
+[20Jan2024 19:54:30.285] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:global_loot_modifier_serializers
+[20Jan2024 19:54:30.287] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:global_loot_modifier_serializers
+[20Jan2024 19:54:30.300] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:holder_set_type
+[20Jan2024 19:54:30.300] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:holder_set_type
+[20Jan2024 19:54:30.301] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:structure_modifier_serializers
+[20Jan2024 19:54:30.302] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:structure_modifier_serializers
+[20Jan2024 19:54:30.303] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/biome
+[20Jan2024 19:54:30.303] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/biome
+[20Jan2024 19:54:30.721] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/tadya/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[20Jan2024 19:54:30.723] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/tadya/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[20Jan2024 19:54:31.233] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[20Jan2024 19:54:31.343] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 108 ms
+[20Jan2024 19:54:31.345] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[20Jan2024 19:54:31.450] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 104 ms
+[20Jan2024 19:54:31.451] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ad_extendra
+[20Jan2024 19:54:31.845] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ad_extendra finished after 393 ms
+[20Jan2024 19:54:31.845] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: ad_extendra
+[20Jan2024 19:54:31.851] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: ad_extendra finished after 4 ms
+[20Jan2024 19:54:31.851] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ad_extendra
+[20Jan2024 19:54:31.882] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ad_extendra finished after 31 ms
+[20Jan2024 19:54:31.883] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id ad_extendra
+[20Jan2024 19:54:31.887] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id ad_extendra finished after 3 ms
+[20Jan2024 19:54:31.887] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 654 ms
+[20Jan2024 19:54:31.935] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 52, old count: 47, new count: 53, removed stale: 0, written: 5

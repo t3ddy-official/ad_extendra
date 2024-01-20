@@ -20,7 +20,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.RAW_JUPERIUM);
         simpleItem(ModItems.JUPERIUM_INGOT);
-        rocketItem(ModItems.TIER_5_ROCKET);
+        // rocketItem(ModItems.TIER_5_ROCKET);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

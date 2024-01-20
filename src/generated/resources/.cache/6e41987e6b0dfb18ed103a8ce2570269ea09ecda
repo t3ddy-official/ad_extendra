@@ -1,1 +1,4 @@
-// 1.20.1	2024-01-16T18:52:19.582803	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-01-20T19:24:00.6100905	Tags for minecraft:block mod id ad_extendra
+c9bdf80772d873ff98a832dbd540fd6d892d659c data/minecraft/tags/blocks/mineable/pickaxe.json
+954ec323b0e7dfaef18fb30d5c146a2440910c76 data/minecraft/tags/blocks/mineable/shovel.json
+a22cb8fac54ced99b70ae3ba210a6b8bc752b47f data/minecraft/tags/blocks/needs_diamond_tool.json

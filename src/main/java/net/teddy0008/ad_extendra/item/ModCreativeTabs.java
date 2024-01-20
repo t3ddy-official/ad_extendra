@@ -21,12 +21,13 @@ public class ModCreativeTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.JUPITER_SAND.get());
                 output.accept(ModBlocks.JUPITER_STONE.get());
+                output.accept(ModBlocks.JUPITER_COBBLESTONE.get());
                 output.accept(ModBlocks.JUPITER_JUPERIUM_ORE.get());
                 output.accept(ModItems.RAW_JUPERIUM.get());
                 output.accept(ModBlocks.RAW_JUPERIUM_BLOCK.get());
                 output.accept(ModItems.JUPERIUM_INGOT.get());
                 output.accept(ModBlocks.JUPERIUM_BLOCK.get());
-                output.accept(ModItems.TIER_5_ROCKET.get());
+                // output.accept(ModItems.TIER_5_ROCKET.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

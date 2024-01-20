@@ -13,7 +13,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_JUPERIUM = ITEMS.register("raw_juperium", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> JUPERIUM_INGOT = ITEMS.register("juperium_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<RocketItem> TIER_5_ROCKET = ITEMS.register("tier5_rocket", () -> new RocketItem(5, new Item.Properties()));
+    // public static final RegistryObject<RocketItem> TIER_5_ROCKET = ITEMS.register("tier5_rocket", () -> new RocketItem(5, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
