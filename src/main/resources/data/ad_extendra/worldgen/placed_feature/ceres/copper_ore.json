@@ -1,9 +1,9 @@
 {
-  "feature": "ad_extendra:jupiter/gold_ore",
+  "feature": "ad_extendra:ceres/copper_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 4
+      "count": 16
     },
     {
       "type": "minecraft:in_square"
@@ -16,7 +16,7 @@
           "absolute": 80
         },
         "min_inclusive": {
-          "absolute": -64
+          "absolute": -16
         }
       }
     },

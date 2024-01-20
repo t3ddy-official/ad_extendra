@@ -1,5 +1,5 @@
 {
-  "feature": "ad_extendra:jupiter/coal_ore",
+  "feature": "ad_extendra:jupiter/diamond_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -16,7 +16,7 @@
           "absolute": 80
         },
         "min_inclusive": {
-          "absolute": 0
+          "absolute": -64
         }
       }
     },

@@ -1,5 +1,6 @@
 package net.teddy0008.ad_extendra.datagen;
 
+import earth.terrarium.ad_astra.common.data.ButtonColor;
 import earth.terrarium.ad_astra.common.registry.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

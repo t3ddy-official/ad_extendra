@@ -6,8 +6,12 @@
   "block.ad_extendra.juperium_block": "Juperium Block",
   "block.ad_extendra.raw_juperium_block": "Raw Juperium Block",
   "block.ad_extendra.jupiter_juperium_ore": "Jupiter Juperium Ore",
+  "block.ad_extendra.jupiter_coal_ore": "Jupiter Coal Ore",
+  "block.ad_extendra.jupiter_diamond_ore": "Jupiter Diamond Ore",
+  "block.ad_extendra.jupiter_gold_ore": "Jupiter Gold Ore",
   "block.ad_extendra.jupiter_sand": "Jupiter Sand",
   "block.ad_extendra.jupiter_stone": "Jupiter Stone",
+  "block.ad_extendra.jupiter_cobblestone": "Jupiter Cobblestone",
 
   "creativetab.ad_extendra": "Ad Extendra",
 

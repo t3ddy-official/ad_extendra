@@ -24,6 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // Jupiter
         this.dropSelf(ModBlocks.JUPERIUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_JUPERIUM_BLOCK.get());
         this.dropSelf(ModBlocks.JUPITER_SAND.get());
@@ -35,6 +36,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.JUPITER_GOLD_ORE.get(), createOreDrop(ModBlocks.JUPITER_GOLD_ORE.get(), Items.RAW_GOLD));
         this.add(ModBlocks.JUPITER_STONE.get(), createStoneLikeDrop(ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_COBBLESTONE.get()));
 
+        // Ceres
+        this.dropSelf(ModBlocks.CERES_SAND.get());
+        this.dropSelf(ModBlocks.CERES_STONE.get());
+        this.dropSelf(ModBlocks.CERES_COBBLESTONE.get());
+        this.add(ModBlocks.CERES_COPPER_ORE.get(), createCopperOreDrops(ModBlocks.CERES_COPPER_ORE.get()));
+        this.add(ModBlocks.CERES_IRON_ORE.get(), createOreDrop(ModBlocks.CERES_IRON_ORE.get(), Items.RAW_IRON));
+        this.add(ModBlocks.CERES_STONE.get(), createStoneLikeDrop(ModBlocks.CERES_STONE.get(), ModBlocks.CERES_COBBLESTONE.get()));
         // this.add(ModBlocks.BLOCK.get(), block -> createOreDrop(ModBlocks.BLOCK.get(), ModItems.ITEM.get()));
     }
 

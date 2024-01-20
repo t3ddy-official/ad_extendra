@@ -16,6 +16,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Jupiter
         blockWithItem(ModBlocks.JUPERIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_JUPERIUM_BLOCK);
         blockWithItem(ModBlocks.JUPITER_JUPERIUM_ORE);
@@ -25,6 +26,13 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         fallingBlockWithItem(ModBlocks.JUPITER_SAND);
         blockWithItem(ModBlocks.JUPITER_STONE);
         blockWithItem(ModBlocks.JUPITER_COBBLESTONE);
+
+        // Ceres
+        blockWithItem(ModBlocks.CERES_COPPER_ORE);
+        blockWithItem(ModBlocks.CERES_IRON_ORE);
+        fallingBlockWithItem(ModBlocks.CERES_SAND);
+        blockWithItem(ModBlocks.CERES_STONE);
+        blockWithItem(ModBlocks.CERES_COBBLESTONE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -1,6 +1,9 @@
-// 1.20.1	2024-01-20T19:24:00.6000054	Loot Tables
+// 1.20.1	2024-01-20T21:27:17.6691133	Loot Tables
 ff2a4909820412cc4d250cec87183ed98f237413 data/ad_extendra/loot_tables/blocks/juperium_block.json
+0794ad67aec7a244c62129f0b7f4ee005e54bb36 data/ad_extendra/loot_tables/blocks/jupiter_coal_ore.json
 7ed4ebe8749e1fdc759cb7765cff02f60f22261a data/ad_extendra/loot_tables/blocks/jupiter_cobblestone.json
+d64252348f17a75326845b152e4a66c2de4e8496 data/ad_extendra/loot_tables/blocks/jupiter_diamond_ore.json
+2c215ece6d85e1a618a15c90a18387df95535249 data/ad_extendra/loot_tables/blocks/jupiter_gold_ore.json
 692fcbcc48da34f622785090a0e7e196bd9a8320 data/ad_extendra/loot_tables/blocks/jupiter_juperium_ore.json
 a12dda37981ae9831438de374f16fcf22aad8b0b data/ad_extendra/loot_tables/blocks/jupiter_sand.json
 077cd68f4c726e2e0e04caac5dd1396950f47729 data/ad_extendra/loot_tables/blocks/jupiter_stone.json

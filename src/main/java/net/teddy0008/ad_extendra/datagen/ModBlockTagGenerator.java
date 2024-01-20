@@ -26,11 +26,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get())
                 .add(ModBlocks.RAW_JUPERIUM_BLOCK.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.JUPITER_COAL_ORE.get());
+                .add(ModBlocks.JUPITER_COAL_ORE.get())
+                .add(ModBlocks.CERES_IRON_ORE.get())
+                .add(ModBlocks.CERES_COPPER_ORE.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
                 .add(ModBlocks.JUPITER_GOLD_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                // Jupiter
                 .add(ModBlocks.JUPERIUM_BLOCK.get())
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get())
                 .add(ModBlocks.RAW_JUPERIUM_BLOCK.get())
@@ -38,16 +41,28 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPITER_COBBLESTONE.get())
                 .add(ModBlocks.JUPITER_COAL_ORE.get())
                 .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
-                .add(ModBlocks.JUPITER_GOLD_ORE.get());
+                .add(ModBlocks.JUPITER_GOLD_ORE.get())
+                
+                // Ceres
+                .add(ModBlocks.CERES_STONE.get())
+                .add(ModBlocks.CERES_COBBLESTONE.get())
+                .add(ModBlocks.CERES_COPPER_ORE.get())
+                .add(ModBlocks.CERES_IRON_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(ModBlocks.JUPITER_SAND.get());
+                .add(ModBlocks.JUPITER_SAND.get())
+                .add(ModBlocks.CERES_SAND.get());
         this.tag(BlockTags.DIAMOND_ORES)
                 .add(ModBlocks.JUPITER_DIAMOND_ORE.get());
         this.tag(BlockTags.COAL_ORES)
                 .add(ModBlocks.JUPITER_COAL_ORE.get());
         this.tag(BlockTags.GOLD_ORES)
                 .add(ModBlocks.JUPITER_GOLD_ORE.get());
+        this.tag(BlockTags.COPPER_ORES)
+                .add(ModBlocks.CERES_COPPER_ORE.get());
+        this.tag(BlockTags.IRON_ORES)
+                .add(ModBlocks.CERES_IRON_ORE.get());
         this.tag(BlockTags.SAND)
-                .add(ModBlocks.JUPITER_SAND.get());
+                .add(ModBlocks.JUPITER_SAND.get())
+                .add(ModBlocks.CERES_SAND.get());
     }
 }

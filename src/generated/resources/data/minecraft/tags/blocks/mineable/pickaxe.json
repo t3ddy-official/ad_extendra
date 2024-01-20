@@ -3,6 +3,10 @@
     "ad_extendra:juperium_block",
     "ad_extendra:jupiter_juperium_ore",
     "ad_extendra:raw_juperium_block",
-    "ad_extendra:jupiter_stone"
+    "ad_extendra:jupiter_stone",
+    "ad_extendra:jupiter_cobblestone",
+    "ad_extendra:jupiter_coal_ore",
+    "ad_extendra:jupiter_diamond_ore",
+    "ad_extendra:jupiter_gold_ore"
   ]
 }

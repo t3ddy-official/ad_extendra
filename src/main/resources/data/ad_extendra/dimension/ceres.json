@@ -2,47 +2,23 @@
   "type": "ad_extendra:ceres_type",
   "generator": {
     "type": "minecraft:noise",
-    "settings": "ad_astra:mars",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "ad_astra:martian_wastelands",
+          "biome": "ad_extendra:intriguing_wastelands",
           "parameters": {
-            "temperature": -0.5,
-            "humidity": 0,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": 0,
-            "depth": 0,
-            "offset": 0.175
-          }
-        },
-        {
-          "biome": "ad_astra:martian_canyon_creek",
-          "parameters": {
-            "temperature": -0.5,
-            "humidity": 0,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": -0.25,
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "ad_astra:martian_polar_caps",
-          "parameters": {
-            "temperature": -0.5,
-            "humidity": 0,
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": -0.5,
-            "depth": 0,
-            "offset": 0
+            "continentalness": 0.0,
+            "depth": 0.0,
+            "erosion": 0.0,
+            "humidity": 0.0,
+            "offset": 0.0,
+            "temperature": 0.0,
+            "weirdness": 0.0
           }
         }
       ]
-    }
+    },
+    "settings": "ad_extendra:ceres"
   }
 }
