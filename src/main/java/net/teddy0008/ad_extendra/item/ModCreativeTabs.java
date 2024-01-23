@@ -35,6 +35,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.RAW_JUPERIUM.get());
                 output.accept(ModBlocks.RAW_JUPERIUM_BLOCK.get());
                 output.accept(ModItems.JUPERIUM_INGOT.get());
+                output.accept(ModItems.JUPERIUM_PLATE.get());
                 output.accept(ModBlocks.JUPERIUM_BLOCK.get());
                 // output.accept(ModItems.TIER_5_ROCKET.get());
             }).build());

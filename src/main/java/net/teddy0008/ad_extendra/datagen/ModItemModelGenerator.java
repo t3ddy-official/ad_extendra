@@ -20,6 +20,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.RAW_JUPERIUM);
         simpleItem(ModItems.JUPERIUM_INGOT);
+        simpleItem(ModItems.JUPERIUM_PLATE);
         // rocketItem(ModItems.TIER_5_ROCKET);
     }
 

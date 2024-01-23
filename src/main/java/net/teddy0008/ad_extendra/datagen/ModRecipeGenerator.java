@@ -1,5 +1,6 @@
 package net.teddy0008.ad_extendra.datagen;
 
+import earth.terrarium.ad_astra.common.recipe.HammerShapelessRecipe;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.BlockItem;
@@ -17,7 +18,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
+
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder {
+
+    private earth.terrarium.ad_astra.common.registry.ModItems AstraItems;
     private static final List<ItemLike> JUPERIUM_SMELTABLES = List.of(ModItems.RAW_JUPERIUM.get(), ModBlocks.JUPITER_JUPERIUM_ORE.get());
     public ModRecipeGenerator(PackOutput pOutput) {
         super(pOutput);
