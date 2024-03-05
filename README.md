@@ -31,4 +31,4 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
 The mod currently only supports <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html">Forge 1.20.1</a> and depends on <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra/files/4894852">Ad Astra v1.15.5</a> exactly (any older or newer version of Ad Astra <b>will not work!</b>). It also depends on all the mods that Ad Astra depends on, which are: <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">Resourceful Lib</a>, <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">Resourceful Config</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/botarium">Botarium</a>
 
 <h2>Add this mod to your project</h3>
-This mod isn't published yet and it isn't done yet, so there's no way to add it right now. Will update this page when the mod is released and available for use.
+Guide will be here soon!
