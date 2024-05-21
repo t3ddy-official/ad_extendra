@@ -1,5 +1,5 @@
 # This project has been discontinued.
-If you want to continue this project, you have full rights to do so by creating a fork of the GitHub repository for this mod.
+If you want to continue this project, you have full rights to do so by creating a fork of this repository.
 
 <h1>Ad Extendra</h1>
 Ad Extendra is an add-on mod, that adds more content to <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra">Ad Astra</a> like it didn't already have enough content.
