@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.painting.ModPaintings;
 import org.slf4j.Logger;
 
 @Mod(Main.MOD_ID)
@@ -29,6 +30,8 @@ public class Main {
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModPaintings.PAINTING_VARIANTS.init();
 
         modEventBus.addListener(this::commonSetup);
 
