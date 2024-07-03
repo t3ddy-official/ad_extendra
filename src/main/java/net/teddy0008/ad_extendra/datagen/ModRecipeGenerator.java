@@ -64,6 +64,222 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .requires(ModBlocks.JUPERIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.JUPERIUM_BLOCK.get()), has(ModBlocks.JUPERIUM_BLOCK.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_JUPERIUM.get(), 9)
                 .requires(ModBlocks.RAW_JUPERIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_JUPERIUM_BLOCK.get()), has(ModBlocks.RAW_JUPERIUM_BLOCK.get())).save(consumer);
+
+        // Jupiter Stone Recipes
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPITER_STONE.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE.get()), has(ModBlocks.JUPITER_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPITER_STONE.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE.get()), has(ModBlocks.JUPITER_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_COBBLESTONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPITER_COBBLESTONE.get()).unlockedBy(getHasName(ModBlocks.JUPITER_COBBLESTONE.get()), has(ModBlocks.JUPITER_COBBLESTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_COBBLESTONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPITER_COBBLESTONE.get()).unlockedBy(getHasName(ModBlocks.JUPITER_COBBLESTONE.get()), has(ModBlocks.JUPITER_COBBLESTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_BRICKS.get(), 4)
+                .pattern("JJ")
+                .pattern("JJ")
+                .define('J', ModBlocks.JUPITER_STONE.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE.get()), has(ModBlocks.JUPITER_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_BRICK_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPITER_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE_BRICKS.get()), has(ModBlocks.JUPITER_STONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_BRICK_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPITER_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE_BRICKS.get()), has(ModBlocks.JUPITER_STONE_BRICKS.get()))
+                .save(consumer);
+
+        oreSmelting(consumer, List.of(ModBlocks.JUPITER_STONE_BRICKS.get()), RecipeCategory.MISC, ModBlocks.CRACKED_JUPITER_STONE_BRICKS.get(), 0.2f, 200, "item");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get())
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.JUPITER_STONE_BRICK_SLAB.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE_BRICK_SLAB.get()), has(ModBlocks.JUPITER_STONE_BRICK_SLAB.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_JUPITER_STONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get()), has(ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_JUPITER_STONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get()), has(ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE.get(), 4)
+                .pattern("JJ")
+                .pattern("JJ")
+                .define('J', ModBlocks.JUPITER_STONE.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE.get()), has(ModBlocks.JUPITER_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.POLISHED_JUPITER_STONE.get()).unlockedBy(getHasName(ModBlocks.POLISHED_JUPITER_STONE.get()), has(ModBlocks.POLISHED_JUPITER_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.POLISHED_JUPITER_STONE.get()).unlockedBy(getHasName(ModBlocks.POLISHED_JUPITER_STONE.get()), has(ModBlocks.POLISHED_JUPITER_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.JUPITER_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.JUPITER_STONE_BRICKS.get()), has(ModBlocks.JUPITER_STONE_BRICKS.get()))
+                .save(consumer);
+
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_STONE_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_STONE_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.CHISELED_JUPITER_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.CHISELED_JUPITER_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_COBBLESTONE.get(), ModBlocks.JUPITER_COBBLESTONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_COBBLESTONE.get(), ModBlocks.JUPITER_COBBLESTONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE_BRICKS.get(), ModBlocks.JUPITER_STONE_BRICK_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE_BRICKS.get(), ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPITER_STONE_BRICKS.get(), ModBlocks.JUPITER_PILLAR.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get(), ModBlocks.CHISELED_JUPITER_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get(), ModBlocks.CHISELED_JUPITER_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE_SLAB.get(), 2);
+
+        // Ceres Stone Recipes
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_STONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.CERES_STONE.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE.get()), has(ModBlocks.CERES_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_STONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.CERES_STONE.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE.get()), has(ModBlocks.CERES_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_COBBLESTONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.CERES_COBBLESTONE.get()).unlockedBy(getHasName(ModBlocks.CERES_COBBLESTONE.get()), has(ModBlocks.CERES_COBBLESTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_COBBLESTONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.CERES_COBBLESTONE.get()).unlockedBy(getHasName(ModBlocks.CERES_COBBLESTONE.get()), has(ModBlocks.CERES_COBBLESTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_STONE_BRICKS.get(), 4)
+                .pattern("JJ")
+                .pattern("JJ")
+                .define('J', ModBlocks.CERES_STONE.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE.get()), has(ModBlocks.CERES_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_STONE_BRICK_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.CERES_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE_BRICKS.get()), has(ModBlocks.CERES_STONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_STONE_BRICK_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.CERES_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE_BRICKS.get()), has(ModBlocks.CERES_STONE_BRICKS.get()))
+                .save(consumer);
+
+        oreSmelting(consumer, List.of(ModBlocks.CERES_STONE_BRICKS.get()), RecipeCategory.MISC, ModBlocks.CRACKED_CERES_STONE_BRICKS.get(), 0.2f, 200, "item");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_CERES_STONE_BRICKS.get())
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.CERES_STONE_BRICK_SLAB.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE_BRICK_SLAB.get()), has(ModBlocks.CERES_STONE_BRICK_SLAB.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_CERES_STONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.CHISELED_CERES_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CHISELED_CERES_STONE_BRICKS.get()), has(ModBlocks.CHISELED_CERES_STONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_CERES_STONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.CHISELED_CERES_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CHISELED_CERES_STONE_BRICKS.get()), has(ModBlocks.CHISELED_CERES_STONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE.get(), 4)
+                .pattern("JJ")
+                .pattern("JJ")
+                .define('J', ModBlocks.CERES_STONE.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE.get()), has(ModBlocks.CERES_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.POLISHED_CERES_STONE.get()).unlockedBy(getHasName(ModBlocks.POLISHED_CERES_STONE.get()), has(ModBlocks.POLISHED_CERES_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.POLISHED_CERES_STONE.get()).unlockedBy(getHasName(ModBlocks.POLISHED_CERES_STONE.get()), has(ModBlocks.POLISHED_CERES_STONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CERES_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.CERES_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.CERES_STONE_BRICKS.get()), has(ModBlocks.CERES_STONE_BRICKS.get()))
+                .save(consumer);
+
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CERES_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CERES_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CERES_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CERES_STONE_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CERES_STONE_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CHISELED_CERES_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CHISELED_CERES_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.CHISELED_CERES_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_COBBLESTONE.get(), ModBlocks.CERES_COBBLESTONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_COBBLESTONE.get(), ModBlocks.CERES_COBBLESTONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE_BRICKS.get(), ModBlocks.CERES_STONE_BRICK_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE_BRICKS.get(), ModBlocks.CHISELED_CERES_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CERES_STONE_BRICKS.get(), ModBlocks.CERES_PILLAR.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_CERES_STONE_BRICKS.get(), ModBlocks.CHISELED_CERES_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_CERES_STONE_BRICKS.get(), ModBlocks.CHISELED_CERES_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE_SLAB.get(), 2);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
@@ -81,6 +297,11 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
             ItemLike itemlike = (ItemLike)var9.next();
             SimpleCookingRecipeBuilder.generic(Ingredient.of(new ItemLike[]{itemlike}), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike)).save(pFinishedRecipeConsumer, Main.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
+    }
 
+    protected static void stonecutting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory category, ItemLike ingredient, ItemLike result, int count) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ingredient), category, result, count)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(pFinishedRecipeConsumer, Main.MOD_ID + ":" + getItemName(result) + "_from_" + getItemName(ingredient) + "_stonecutting");
     }
 }

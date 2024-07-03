@@ -1,12 +1,15 @@
-// 1.20.1	2024-01-20T22:36:00.1697382	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-07-03T14:16:32.9732526	Tags for minecraft:block mod id ad_extendra
 cb9264917cfc750b831fe930ee4f9ec07713ba90 data/minecraft/tags/blocks/coal_ores.json
 7aefc58f95e203f648f45955b356180704ad489f data/minecraft/tags/blocks/copper_ores.json
 d553e2f5c6e95729e2b458a0c4978d6abbd57d6b data/minecraft/tags/blocks/diamond_ores.json
 176db73929b7b9e321c388a2cd07d95365a526bb data/minecraft/tags/blocks/gold_ores.json
 8ca7cfc33d8d36689fe3bab311d60b07c75cf358 data/minecraft/tags/blocks/iron_ores.json
-d3e6ac749be011b00124c25a85732bfebbe8fdab data/minecraft/tags/blocks/mineable/pickaxe.json
+a270c5b0b2e20088e78309b2651d148998d046c1 data/minecraft/tags/blocks/mineable/pickaxe.json
 4a7dd6f63159eb9d940f31ecf894c480593e8a80 data/minecraft/tags/blocks/mineable/shovel.json
 a22cb8fac54ced99b70ae3ba210a6b8bc752b47f data/minecraft/tags/blocks/needs_diamond_tool.json
 c2288de1bccba35c35070083f1dd92258427b577 data/minecraft/tags/blocks/needs_iron_tool.json
 6c457b7047d3dcf24e6860116d92f064406f2b13 data/minecraft/tags/blocks/needs_stone_tool.json
 4a7dd6f63159eb9d940f31ecf894c480593e8a80 data/minecraft/tags/blocks/sand.json
+7fc5fe81f865b7d95b9cd8b55f5ed5b02bc0056a data/minecraft/tags/blocks/slabs.json
+1551939efcad2bf8668c030b5aa8059a21ba462f data/minecraft/tags/blocks/stairs.json
+0f6c3f377cf1ebf53ff4d14dd29627d1b5c9c73c data/minecraft/tags/blocks/walls.json

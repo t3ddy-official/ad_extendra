@@ -1,2 +1,5 @@
-// 1.20.1	2024-01-16T18:52:19.5651269	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-07-03T14:16:32.9732526	Tags for minecraft:item mod id ad_extendra
 1e3465b2ca32986779731d4cee7cc9f0c9a23b67 data/forge/tags/items/raw_materials.json
+7fc5fe81f865b7d95b9cd8b55f5ed5b02bc0056a data/minecraft/tags/items/slabs.json
+1551939efcad2bf8668c030b5aa8059a21ba462f data/minecraft/tags/items/stairs.json
+0f6c3f377cf1ebf53ff4d14dd29627d1b5c9c73c data/minecraft/tags/items/walls.json
