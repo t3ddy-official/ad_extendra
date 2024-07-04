@@ -11,6 +11,30 @@ public class ModPaintings {
     public static final RegistryEntry<PaintingVariant> CERES = PAINTING_VARIANTS.register("ceres", () -> {
         return new PaintingVariant(16, 16);
     });
+    public static final RegistryEntry<PaintingVariant> ORCUS = PAINTING_VARIANTS.register("orcus", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> HAUMEA = PAINTING_VARIANTS.register("haumea", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> QUAOAR = PAINTING_VARIANTS.register("quaoar", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> MAKEMAKE = PAINTING_VARIANTS.register("makemake", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> GONGGONG = PAINTING_VARIANTS.register("gonggong", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> ERIS = PAINTING_VARIANTS.register("eris", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> SEDNA = PAINTING_VARIANTS.register("sedna", () -> {
+        return new PaintingVariant(16, 16);
+    });
+    public static final RegistryEntry<PaintingVariant> B = PAINTING_VARIANTS.register("b", () -> {
+        return new PaintingVariant(32, 32);
+    });
 
     public ModPaintings() {
     }
