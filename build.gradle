@@ -130,6 +130,11 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
 }
 
 dependencies {
@@ -149,6 +154,10 @@ dependencies {
     implementation fg.deobf("curse.maven:resourceful-lib-570073:4973823")
     implementation fg.deobf("curse.maven:resourceful-config-714059:5020441")
     implementation fg.deobf("curse.maven:botarium-704113:5024181")
+
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
 
 
 
