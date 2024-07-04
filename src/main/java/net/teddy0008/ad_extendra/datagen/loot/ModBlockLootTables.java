@@ -75,6 +75,261 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CERES_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.CERES_STONE_BRICKS.get()));
         this.add(ModBlocks.CHISELED_CERES_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_CERES_STONE_BRICKS.get()));
         this.add(ModBlocks.POLISHED_CERES_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_CERES_STONE.get()));
+
+        // Saturn
+        this.dropSelf(ModBlocks.SATURN_SAND.get());
+        this.dropSelf(ModBlocks.SATURN_STONE.get());
+        this.dropSelf(ModBlocks.SATURN_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SATURN_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.SATURN_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SATURN_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.SATURN_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.SATURN_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_SATURN_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_SATURN_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_SATURN_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_SATURN_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SATURN_PILLAR.get());
+        this.add(ModBlocks.SATURN_STONE.get(), createStoneLikeDrop(ModBlocks.SATURN_STONE.get(), ModBlocks.SATURN_COBBLESTONE.get()));
+        this.add(ModBlocks.SATURN_STONE_SLAB.get(), createSlabItemTable(ModBlocks.SATURN_STONE.get()));
+        this.add(ModBlocks.SATURN_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.SATURN_COBBLESTONE.get()));
+        this.add(ModBlocks.SATURN_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.SATURN_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_SATURN_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_SATURN_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_SATURN_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_SATURN_STONE.get()));
+
+        // Uranus
+        this.dropSelf(ModBlocks.URANUS_STONE.get());
+        this.dropSelf(ModBlocks.URANUS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.URANUS_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.URANUS_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.URANUS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.URANUS_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.URANUS_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_URANUS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_URANUS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_URANUS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_URANUS_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.URANUS_PILLAR.get());
+        this.add(ModBlocks.URANUS_STONE.get(), createStoneLikeDrop(ModBlocks.URANUS_STONE.get(), ModBlocks.URANUS_COBBLESTONE.get()));
+        this.add(ModBlocks.URANUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.URANUS_STONE.get()));
+        this.add(ModBlocks.URANUS_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.URANUS_COBBLESTONE.get()));
+        this.add(ModBlocks.URANUS_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.URANUS_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_URANUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_URANUS_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_URANUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_URANUS_STONE.get()));
+
+        // Neptune
+        this.dropSelf(ModBlocks.NEPTUNE_STONE.get());
+        this.dropSelf(ModBlocks.NEPTUNE_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.NEPTUNE_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.NEPTUNE_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.NEPTUNE_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.NEPTUNE_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.NEPTUNE_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_NEPTUNE_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_NEPTUNE_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_NEPTUNE_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.NEPTUNE_PILLAR.get());
+        this.add(ModBlocks.NEPTUNE_STONE.get(), createStoneLikeDrop(ModBlocks.NEPTUNE_STONE.get(), ModBlocks.NEPTUNE_COBBLESTONE.get()));
+        this.add(ModBlocks.NEPTUNE_STONE_SLAB.get(), createSlabItemTable(ModBlocks.NEPTUNE_STONE.get()));
+        this.add(ModBlocks.NEPTUNE_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.NEPTUNE_COBBLESTONE.get()));
+        this.add(ModBlocks.NEPTUNE_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.NEPTUNE_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_NEPTUNE_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_NEPTUNE_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_NEPTUNE_STONE.get()));
+
+        // Orcus
+        this.dropSelf(ModBlocks.ORCUS_STONE.get());
+        this.dropSelf(ModBlocks.ORCUS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ORCUS_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.ORCUS_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ORCUS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.ORCUS_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ORCUS_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_ORCUS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_ORCUS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_ORCUS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_ORCUS_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ORCUS_PILLAR.get());
+        this.add(ModBlocks.ORCUS_STONE.get(), createStoneLikeDrop(ModBlocks.ORCUS_STONE.get(), ModBlocks.ORCUS_COBBLESTONE.get()));
+        this.add(ModBlocks.ORCUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.ORCUS_STONE.get()));
+        this.add(ModBlocks.ORCUS_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.ORCUS_COBBLESTONE.get()));
+        this.add(ModBlocks.ORCUS_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.ORCUS_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_ORCUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_ORCUS_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_ORCUS_STONE.get()));
+
+        // Pluto
+        this.dropSelf(ModBlocks.PLUTO_SAND.get());
+        this.dropSelf(ModBlocks.PLUTO_STONE.get());
+        this.dropSelf(ModBlocks.PLUTO_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.PLUTO_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.PLUTO_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.PLUTO_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.PLUTO_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.PLUTO_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_PLUTO_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_PLUTO_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_PLUTO_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_PLUTO_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_PLUTO_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.PLUTO_PILLAR.get());
+        this.add(ModBlocks.PLUTO_STONE.get(), createStoneLikeDrop(ModBlocks.PLUTO_STONE.get(), ModBlocks.PLUTO_COBBLESTONE.get()));
+        this.add(ModBlocks.PLUTO_STONE_SLAB.get(), createSlabItemTable(ModBlocks.PLUTO_STONE.get()));
+        this.add(ModBlocks.PLUTO_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.PLUTO_COBBLESTONE.get()));
+        this.add(ModBlocks.PLUTO_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.PLUTO_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_PLUTO_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_PLUTO_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_PLUTO_STONE.get()));
+
+        // Haumea
+        this.dropSelf(ModBlocks.HAUMEA_STONE.get());
+        this.dropSelf(ModBlocks.HAUMEA_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.HAUMEA_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.HAUMEA_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.HAUMEA_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.HAUMEA_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.HAUMEA_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_HAUMEA_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_HAUMEA_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_HAUMEA_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_HAUMEA_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_HAUMEA_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.HAUMEA_PILLAR.get());
+        this.add(ModBlocks.HAUMEA_STONE.get(), createStoneLikeDrop(ModBlocks.HAUMEA_STONE.get(), ModBlocks.HAUMEA_COBBLESTONE.get()));
+        this.add(ModBlocks.HAUMEA_STONE_SLAB.get(), createSlabItemTable(ModBlocks.HAUMEA_STONE.get()));
+        this.add(ModBlocks.HAUMEA_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.HAUMEA_COBBLESTONE.get()));
+        this.add(ModBlocks.HAUMEA_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.HAUMEA_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_HAUMEA_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_HAUMEA_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_HAUMEA_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_HAUMEA_STONE.get()));
+
+        // Quaoar
+        this.dropSelf(ModBlocks.QUAOAR_STONE.get());
+        this.dropSelf(ModBlocks.QUAOAR_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.QUAOAR_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.QUAOAR_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.QUAOAR_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.QUAOAR_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.QUAOAR_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_QUAOAR_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_QUAOAR_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_QUAOAR_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_QUAOAR_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_QUAOAR_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.QUAOAR_PILLAR.get());
+        this.add(ModBlocks.QUAOAR_STONE.get(), createStoneLikeDrop(ModBlocks.QUAOAR_STONE.get(), ModBlocks.QUAOAR_COBBLESTONE.get()));
+        this.add(ModBlocks.QUAOAR_STONE_SLAB.get(), createSlabItemTable(ModBlocks.QUAOAR_STONE.get()));
+        this.add(ModBlocks.QUAOAR_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.QUAOAR_COBBLESTONE.get()));
+        this.add(ModBlocks.QUAOAR_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.QUAOAR_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_QUAOAR_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_QUAOAR_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_QUAOAR_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_QUAOAR_STONE.get()));
+
+        // Makemake
+        this.dropSelf(ModBlocks.MAKEMAKE_STONE.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_MAKEMAKE_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_MAKEMAKE_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_MAKEMAKE_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_MAKEMAKE_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_PILLAR.get());
+        this.add(ModBlocks.MAKEMAKE_STONE.get(), createStoneLikeDrop(ModBlocks.MAKEMAKE_STONE.get(), ModBlocks.MAKEMAKE_COBBLESTONE.get()));
+        this.add(ModBlocks.MAKEMAKE_STONE_SLAB.get(), createSlabItemTable(ModBlocks.MAKEMAKE_STONE.get()));
+        this.add(ModBlocks.MAKEMAKE_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.MAKEMAKE_COBBLESTONE.get()));
+        this.add(ModBlocks.MAKEMAKE_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.MAKEMAKE_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_MAKEMAKE_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_MAKEMAKE_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_MAKEMAKE_STONE.get()));
+
+        // Gonggong
+        this.dropSelf(ModBlocks.GONGGONG_STONE.get());
+        this.dropSelf(ModBlocks.GONGGONG_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.GONGGONG_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.GONGGONG_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.GONGGONG_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.GONGGONG_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.GONGGONG_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_GONGGONG_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_GONGGONG_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_GONGGONG_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_GONGGONG_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_GONGGONG_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.GONGGONG_PILLAR.get());
+        this.add(ModBlocks.GONGGONG_STONE.get(), createStoneLikeDrop(ModBlocks.GONGGONG_STONE.get(), ModBlocks.GONGGONG_COBBLESTONE.get()));
+        this.add(ModBlocks.GONGGONG_STONE_SLAB.get(), createSlabItemTable(ModBlocks.GONGGONG_STONE.get()));
+        this.add(ModBlocks.GONGGONG_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.GONGGONG_COBBLESTONE.get()));
+        this.add(ModBlocks.GONGGONG_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.GONGGONG_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_GONGGONG_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_GONGGONG_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_GONGGONG_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_GONGGONG_STONE.get()));
+
+        // Eris
+        this.dropSelf(ModBlocks.ERIS_STONE.get());
+        this.dropSelf(ModBlocks.ERIS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ERIS_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.ERIS_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ERIS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.ERIS_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ERIS_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_ERIS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_ERIS_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_ERIS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_ERIS_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_ERIS_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ERIS_PILLAR.get());
+        this.add(ModBlocks.ERIS_STONE.get(), createStoneLikeDrop(ModBlocks.ERIS_STONE.get(), ModBlocks.ERIS_COBBLESTONE.get()));
+        this.add(ModBlocks.ERIS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.ERIS_STONE.get()));
+        this.add(ModBlocks.ERIS_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.ERIS_COBBLESTONE.get()));
+        this.add(ModBlocks.ERIS_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.ERIS_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_ERIS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_ERIS_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_ERIS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_ERIS_STONE.get()));
+
+        // Sedna
+        this.dropSelf(ModBlocks.SEDNA_STONE.get());
+        this.dropSelf(ModBlocks.SEDNA_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SEDNA_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.SEDNA_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SEDNA_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.SEDNA_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.SEDNA_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_SEDNA_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_SEDNA_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_SEDNA_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_SEDNA_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.SEDNA_PILLAR.get());
+        this.add(ModBlocks.SEDNA_STONE.get(), createStoneLikeDrop(ModBlocks.SEDNA_STONE.get(), ModBlocks.SEDNA_COBBLESTONE.get()));
+        this.add(ModBlocks.SEDNA_STONE_SLAB.get(), createSlabItemTable(ModBlocks.SEDNA_STONE.get()));
+        this.add(ModBlocks.SEDNA_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.SEDNA_COBBLESTONE.get()));
+        this.add(ModBlocks.SEDNA_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.SEDNA_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_SEDNA_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_SEDNA_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_SEDNA_STONE.get()));
+
+        // Proxima Centauri b
+        this.dropSelf(ModBlocks.B_SAND.get());
+        this.dropSelf(ModBlocks.B_STONE.get());
+        this.dropSelf(ModBlocks.B_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.B_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.B_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.B_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.B_STONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.B_STONE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CRACKED_B_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_B_STONE_BRICKS.get());
+        this.dropSelf(ModBlocks.CHISELED_B_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_B_STONE.get());
+        this.dropSelf(ModBlocks.POLISHED_B_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.B_PILLAR.get());
+        this.add(ModBlocks.B_STONE.get(), createStoneLikeDrop(ModBlocks.B_STONE.get(), ModBlocks.B_COBBLESTONE.get()));
+        this.add(ModBlocks.B_STONE_SLAB.get(), createSlabItemTable(ModBlocks.B_STONE.get()));
+        this.add(ModBlocks.B_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.B_COBBLESTONE.get()));
+        this.add(ModBlocks.B_STONE_BRICK_SLAB.get(), createSlabItemTable(ModBlocks.B_STONE_BRICKS.get()));
+        this.add(ModBlocks.CHISELED_B_STONE_SLAB.get(), createSlabItemTable(ModBlocks.CHISELED_B_STONE_BRICKS.get()));
+        this.add(ModBlocks.POLISHED_B_STONE_SLAB.get(), createSlabItemTable(ModBlocks.POLISHED_B_STONE.get()));
         // this.add(ModBlocks.BLOCK.get(), block -> createOreDrop(ModBlocks.BLOCK.get(), ModItems.ITEM.get()));
     }
 

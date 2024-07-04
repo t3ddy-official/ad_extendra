@@ -24,30 +24,201 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.RAW_JUPERIUM);
         simpleItem(ModItems.JUPERIUM_INGOT);
 
-        stairsItem(ModBlocks.JUPITER_STONE_STAIRS, "jupiter_stone");
-        slabItem(ModBlocks.JUPITER_STONE_SLAB, "jupiter_stone");
-        stairsItem(ModBlocks.JUPITER_COBBLESTONE_STAIRS, "jupiter_cobblestone");
-        slabItem(ModBlocks.JUPITER_COBBLESTONE_SLAB, "jupiter_cobblestone");
-        stairsItem(ModBlocks.JUPITER_STONE_BRICK_STAIRS, "jupiter_stone_brick");
-        slabItem(ModBlocks.JUPITER_STONE_BRICK_SLAB, "jupiter_stone_brick");
+        // Jupiter
+        stairsItem(ModBlocks.JUPITER_STONE_STAIRS);
+        slabItem(ModBlocks.JUPITER_STONE_SLAB);
+        stairsItem(ModBlocks.JUPITER_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.JUPITER_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.JUPITER_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.JUPITER_STONE_BRICK_SLAB);
         wallItem(ModBlocks.JUPITER_STONE_BRICK_WALL, ModBlocks.JUPITER_STONE_BRICKS);
-        stairsItem(ModBlocks.CHISELED_JUPITER_STONE_STAIRS, "chiseled_jupiter_stone");
-        slabItem(ModBlocks.CHISELED_JUPITER_STONE_SLAB, "chiseled_jupiter_stone");
-        stairsItem(ModBlocks.POLISHED_JUPITER_STONE_STAIRS, "polished_jupiter_stone");
-        slabItem(ModBlocks.POLISHED_JUPITER_STONE_SLAB, "polished_jupiter_stone");
-        pillarItem(ModBlocks.JUPITER_PILLAR, "jupiter");
-        stairsItem(ModBlocks.CERES_STONE_STAIRS, "ceres_stone");
-        slabItem(ModBlocks.CERES_STONE_SLAB, "ceres_stone");
-        stairsItem(ModBlocks.CERES_COBBLESTONE_STAIRS, "ceres_cobblestone");
-        slabItem(ModBlocks.CERES_COBBLESTONE_SLAB, "ceres_cobblestone");
-        stairsItem(ModBlocks.CERES_STONE_BRICK_STAIRS, "ceres_stone_brick");
-        slabItem(ModBlocks.CERES_STONE_BRICK_SLAB, "ceres_stone_brick");
+        stairsItem(ModBlocks.CHISELED_JUPITER_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_JUPITER_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_JUPITER_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_JUPITER_STONE_SLAB);
+        pillarItem(ModBlocks.JUPITER_PILLAR);
+
+        // Ceres
+        stairsItem(ModBlocks.CERES_STONE_STAIRS);
+        slabItem(ModBlocks.CERES_STONE_SLAB);
+        stairsItem(ModBlocks.CERES_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.CERES_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.CERES_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.CERES_STONE_BRICK_SLAB);
         wallItem(ModBlocks.CERES_STONE_BRICK_WALL, ModBlocks.CERES_STONE_BRICKS);
-        stairsItem(ModBlocks.CHISELED_CERES_STONE_STAIRS, "chiseled_ceres_stone");
-        slabItem(ModBlocks.CHISELED_CERES_STONE_SLAB, "chiseled_ceres_stone");
-        stairsItem(ModBlocks.POLISHED_CERES_STONE_STAIRS, "polished_ceres_stone");
-        slabItem(ModBlocks.POLISHED_CERES_STONE_SLAB, "polished_ceres_stone");
-        pillarItem(ModBlocks.CERES_PILLAR, "ceres");
+        stairsItem(ModBlocks.CHISELED_CERES_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_CERES_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_CERES_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_CERES_STONE_SLAB);
+        pillarItem(ModBlocks.CERES_PILLAR);
+
+        // Saturn
+        stairsItem(ModBlocks.SATURN_STONE_STAIRS);
+        slabItem(ModBlocks.SATURN_STONE_SLAB);
+        stairsItem(ModBlocks.SATURN_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.SATURN_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.SATURN_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.SATURN_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.SATURN_STONE_BRICK_WALL, ModBlocks.SATURN_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_SATURN_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_SATURN_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_SATURN_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_SATURN_STONE_SLAB);
+        pillarItem(ModBlocks.SATURN_PILLAR);
+
+        // Uranus
+        stairsItem(ModBlocks.URANUS_STONE_STAIRS);
+        slabItem(ModBlocks.URANUS_STONE_SLAB);
+        stairsItem(ModBlocks.URANUS_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.URANUS_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.URANUS_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.URANUS_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.URANUS_STONE_BRICK_WALL, ModBlocks.URANUS_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_URANUS_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_URANUS_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_URANUS_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_URANUS_STONE_SLAB);
+        pillarItem(ModBlocks.URANUS_PILLAR);
+
+        // Neptune
+        stairsItem(ModBlocks.NEPTUNE_STONE_STAIRS);
+        slabItem(ModBlocks.NEPTUNE_STONE_SLAB);
+        stairsItem(ModBlocks.NEPTUNE_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.NEPTUNE_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.NEPTUNE_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.NEPTUNE_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.NEPTUNE_STONE_BRICK_WALL, ModBlocks.NEPTUNE_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_NEPTUNE_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_NEPTUNE_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB);
+        pillarItem(ModBlocks.NEPTUNE_PILLAR);
+
+        // Orcus
+        stairsItem(ModBlocks.ORCUS_STONE_STAIRS);
+        slabItem(ModBlocks.ORCUS_STONE_SLAB);
+        stairsItem(ModBlocks.ORCUS_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.ORCUS_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.ORCUS_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.ORCUS_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.ORCUS_STONE_BRICK_WALL, ModBlocks.ORCUS_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_ORCUS_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_ORCUS_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_ORCUS_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_ORCUS_STONE_SLAB);
+        pillarItem(ModBlocks.ORCUS_PILLAR);
+
+        // Pluto
+        stairsItem(ModBlocks.PLUTO_STONE_STAIRS);
+        slabItem(ModBlocks.PLUTO_STONE_SLAB);
+        stairsItem(ModBlocks.PLUTO_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.PLUTO_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.PLUTO_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.PLUTO_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.PLUTO_STONE_BRICK_WALL, ModBlocks.PLUTO_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_PLUTO_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_PLUTO_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_PLUTO_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_PLUTO_STONE_SLAB);
+        pillarItem(ModBlocks.PLUTO_PILLAR);
+
+        // Haumea
+        stairsItem(ModBlocks.HAUMEA_STONE_STAIRS);
+        slabItem(ModBlocks.HAUMEA_STONE_SLAB);
+        stairsItem(ModBlocks.HAUMEA_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.HAUMEA_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.HAUMEA_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.HAUMEA_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.HAUMEA_STONE_BRICK_WALL, ModBlocks.HAUMEA_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_HAUMEA_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_HAUMEA_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_HAUMEA_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_HAUMEA_STONE_SLAB);
+        pillarItem(ModBlocks.HAUMEA_PILLAR);
+
+        // Quaoar
+        stairsItem(ModBlocks.QUAOAR_STONE_STAIRS);
+        slabItem(ModBlocks.QUAOAR_STONE_SLAB);
+        stairsItem(ModBlocks.QUAOAR_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.QUAOAR_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.QUAOAR_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.QUAOAR_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.QUAOAR_STONE_BRICK_WALL, ModBlocks.QUAOAR_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_QUAOAR_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_QUAOAR_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_QUAOAR_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_QUAOAR_STONE_SLAB);
+        pillarItem(ModBlocks.QUAOAR_PILLAR);
+
+        // Makemake
+        stairsItem(ModBlocks.MAKEMAKE_STONE_STAIRS);
+        slabItem(ModBlocks.MAKEMAKE_STONE_SLAB);
+        stairsItem(ModBlocks.MAKEMAKE_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.MAKEMAKE_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.MAKEMAKE_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.MAKEMAKE_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.MAKEMAKE_STONE_BRICK_WALL, ModBlocks.MAKEMAKE_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_MAKEMAKE_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_MAKEMAKE_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB);
+        pillarItem(ModBlocks.MAKEMAKE_PILLAR);
+
+        // Gonggong
+        stairsItem(ModBlocks.GONGGONG_STONE_STAIRS);
+        slabItem(ModBlocks.GONGGONG_STONE_SLAB);
+        stairsItem(ModBlocks.GONGGONG_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.GONGGONG_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.GONGGONG_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.GONGGONG_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.GONGGONG_STONE_BRICK_WALL, ModBlocks.GONGGONG_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_GONGGONG_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_GONGGONG_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_GONGGONG_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_GONGGONG_STONE_SLAB);
+        pillarItem(ModBlocks.GONGGONG_PILLAR);
+
+        // Eris
+        stairsItem(ModBlocks.ERIS_STONE_STAIRS);
+        slabItem(ModBlocks.ERIS_STONE_SLAB);
+        stairsItem(ModBlocks.ERIS_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.ERIS_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.ERIS_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.ERIS_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.ERIS_STONE_BRICK_WALL, ModBlocks.ERIS_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_ERIS_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_ERIS_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_ERIS_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_ERIS_STONE_SLAB);
+        pillarItem(ModBlocks.ERIS_PILLAR);
+
+        // Sedna
+        stairsItem(ModBlocks.SEDNA_STONE_STAIRS);
+        slabItem(ModBlocks.SEDNA_STONE_SLAB);
+        stairsItem(ModBlocks.SEDNA_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.SEDNA_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.SEDNA_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.SEDNA_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.SEDNA_STONE_BRICK_WALL, ModBlocks.SEDNA_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_SEDNA_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_SEDNA_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_SEDNA_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_SEDNA_STONE_SLAB);
+        pillarItem(ModBlocks.SEDNA_PILLAR);
+
+        // Proxima Centauri b
+        stairsItem(ModBlocks.B_STONE_STAIRS);
+        slabItem(ModBlocks.B_STONE_SLAB);
+        stairsItem(ModBlocks.B_COBBLESTONE_STAIRS);
+        slabItem(ModBlocks.B_COBBLESTONE_SLAB);
+        stairsItem(ModBlocks.B_STONE_BRICK_STAIRS);
+        slabItem(ModBlocks.B_STONE_BRICK_SLAB);
+        wallItem(ModBlocks.B_STONE_BRICK_WALL, ModBlocks.B_STONE_BRICKS);
+        stairsItem(ModBlocks.CHISELED_B_STONE_STAIRS);
+        slabItem(ModBlocks.CHISELED_B_STONE_SLAB);
+        stairsItem(ModBlocks.POLISHED_B_STONE_STAIRS);
+        slabItem(ModBlocks.POLISHED_B_STONE_SLAB);
+        pillarItem(ModBlocks.B_PILLAR);
         // rocketItem(ModItems.TIER_5_ROCKET);
     }
 
@@ -61,16 +232,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
                 .texture("wall", new ResourceLocation(Main.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
-    public void stairsItem(RegistryObject<StairBlock> block, String stairsType) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + stairsType + "_stairs"));
+    public void stairsItem(RegistryObject<StairBlock> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
-    public void slabItem(RegistryObject<SlabBlock> block, String slabType) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + slabType + "_slab"));
+    public void slabItem(RegistryObject<SlabBlock> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
-    public void pillarItem(RegistryObject<RotatedPillarBlock> block, String pillarType) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + pillarType + "_pillar"));
+    public void pillarItem(RegistryObject<RotatedPillarBlock> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
     private ItemModelBuilder rocketItem(RegistryObject<RocketItem> item) {
