@@ -27,6 +27,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         // Jupiter
         this.dropSelf(ModBlocks.JUPERIUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_JUPERIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.JUPERIUM_PLATING.get());
+        this.dropSelf(ModBlocks.JUPERIUM_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.JUPERIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_JUPERIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.JUPERIUM_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.JUPITER_SAND.get());
         this.dropSelf(ModBlocks.JUPITER_STONE.get());
         this.dropSelf(ModBlocks.JUPITER_STONE_STAIRS.get());
@@ -41,6 +47,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_JUPITER_STONE.get());
         this.dropSelf(ModBlocks.POLISHED_JUPITER_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.JUPITER_PILLAR.get());
+        this.add(ModBlocks.JUPERIUM_PLATING_SLAB.get(), createSlabItemTable(ModBlocks.JUPERIUM_PLATING.get()));
         this.add(ModBlocks.JUPITER_JUPERIUM_ORE.get(), createOreDrop(ModBlocks.JUPITER_JUPERIUM_ORE.get(), ModItems.RAW_JUPERIUM.get()));
         this.add(ModBlocks.JUPITER_COAL_ORE.get(), createOreDrop(ModBlocks.JUPITER_COAL_ORE.get(), Items.COAL));
         this.add(ModBlocks.JUPITER_DIAMOND_ORE.get(), createOreDrop(ModBlocks.JUPITER_DIAMOND_ORE.get(), Items.DIAMOND));

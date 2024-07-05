@@ -7,6 +7,13 @@
 
   "block.ad_extendra.juperium_block": "Block of Juperium",
   "block.ad_extendra.raw_juperium_block": "Block of Raw Juperium",
+  "block.ad_extendra.juperium_plating": "Juperium Plating",
+  "block.ad_extendra.juperium_plating_stairs": "Juperium Plating Stairs",
+  "block.ad_extendra.juperium_plating_slab": "Juperium Plating Slab",
+  "block.ad_extendra.juperium_plating_button": "Juperium Plating Button",
+  "block.ad_extendra.juperium_plating_pressure_plate": "Juperium Plating Pressure Plate",
+  "block.ad_extendra.juperium_pillar": "Juperium Pillar",
+  "block.ad_extendra.glowing_juperium_pillar": "Glowing Juperium Pillar",
   "block.ad_extendra.jupiter_juperium_ore": "Jupiter Juperium Ore",
   "block.ad_extendra.jupiter_coal_ore": "Jupiter Coal Ore",
   "block.ad_extendra.jupiter_diamond_ore": "Jupiter Diamond Ore",

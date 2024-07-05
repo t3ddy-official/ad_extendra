@@ -346,6 +346,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.B_SAND.get());
         this.tag(BlockTags.STAIRS)
                 // Jupiter
+                .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get())
                 .add(ModBlocks.JUPITER_STONE_STAIRS.get())
                 .add(ModBlocks.JUPITER_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get())
@@ -444,6 +445,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_B_STONE_STAIRS.get());
         this.tag(BlockTags.SLABS)
                 // Jupiter
+                .add(ModBlocks.JUPERIUM_PLATING_SLAB.get())
                 .add(ModBlocks.JUPITER_STONE_SLAB.get())
                 .add(ModBlocks.JUPITER_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get())
@@ -555,5 +557,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ERIS_STONE_BRICK_WALL.get())
                 .add(ModBlocks.SEDNA_STONE_BRICK_WALL.get())
                 .add(ModBlocks.B_STONE_BRICK_WALL.get());
+        this.tag(BlockTags.BUTTONS)
+                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get());
+        this.tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
+        this.tag(ModBlockTags.JUPERIUM_BLOCKS)
+                .add(ModBlocks.JUPERIUM_BLOCK.get());
     }
 }

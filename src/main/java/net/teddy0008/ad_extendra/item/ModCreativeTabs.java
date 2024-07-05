@@ -72,6 +72,13 @@ public class ModCreativeTabs {
                 output.accept(ModItems.JUPERIUM_PLATE.get());
                 output.accept(ModItems.JUPERIUM_NUGGET.get());
                 output.accept(ModBlocks.JUPERIUM_BLOCK.get());
+                output.accept(ModBlocks.JUPERIUM_PLATING.get());
+                output.accept(ModBlocks.JUPERIUM_PLATING_STAIRS.get());
+                output.accept(ModBlocks.JUPERIUM_PLATING_SLAB.get());
+                output.accept(ModBlocks.JUPERIUM_PLATING_BUTTON.get());
+                output.accept(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.JUPERIUM_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_JUPERIUM_PILLAR.get());
 
                 // Saturn
                 output.accept(ModBlocks.SATURN_SAND.get());

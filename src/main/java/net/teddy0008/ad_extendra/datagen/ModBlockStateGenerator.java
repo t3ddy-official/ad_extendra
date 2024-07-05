@@ -19,6 +19,15 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         // Jupiter
         blockWithItem(ModBlocks.JUPERIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_JUPERIUM_BLOCK);
+        blockWithItem(ModBlocks.JUPERIUM_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.JUPERIUM_PLATING_STAIRS.get()), blockTexture(ModBlocks.JUPERIUM_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.JUPERIUM_PLATING_SLAB.get()), blockTexture(ModBlocks.JUPERIUM_PLATING.get()), blockTexture(ModBlocks.JUPERIUM_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.JUPERIUM_PILLAR.get()), blockTexture(ModBlocks.JUPERIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/juperium_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_JUPERIUM_PILLAR.get()), blockTexture(ModBlocks.GLOWING_JUPERIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_juperium_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.JUPERIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.JUPERIUM_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.JUPERIUM_PLATING.get()));
         blockWithItem(ModBlocks.JUPITER_JUPERIUM_ORE);
         blockWithItem(ModBlocks.JUPITER_COAL_ORE);
         blockWithItem(ModBlocks.JUPITER_DIAMOND_ORE);

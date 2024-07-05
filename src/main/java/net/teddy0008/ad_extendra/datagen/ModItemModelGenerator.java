@@ -27,6 +27,12 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.JUPERIUM_PLATE);
 
         // Jupiter
+        stairsItem(ModBlocks.JUPERIUM_PLATING_STAIRS);
+        slabItem(ModBlocks.JUPERIUM_PLATING_SLAB);
+        pillarItem(ModBlocks.JUPERIUM_PILLAR);
+        pillarItem(ModBlocks.GLOWING_JUPERIUM_PILLAR);
+        buttonItem(ModBlocks.JUPERIUM_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.JUPITER_STONE_STAIRS);
         slabItem(ModBlocks.JUPITER_STONE_SLAB);
         stairsItem(ModBlocks.JUPITER_COBBLESTONE_STAIRS);
@@ -243,6 +249,14 @@ public class ModItemModelGenerator extends ItemModelProvider {
     }
 
     public void pillarItem(RegistryObject<RotatedPillarBlock> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<ButtonBlock> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_inventory"));
+    }
+
+    public void pressurePlateItem(RegistryObject<PressurePlateBlock> block) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 

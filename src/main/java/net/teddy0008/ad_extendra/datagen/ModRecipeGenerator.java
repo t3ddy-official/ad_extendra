@@ -60,6 +60,7 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreSmelting(consumer, List.of(ModBlocks.SEDNA_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SEDNA_STONE.get(), 0f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.B_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.B_STONE.get(), 0f, 200, "item");
 
+        // Juperium
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_BLOCK.get())
                 .pattern("JJJ")
                 .pattern("JJJ")
@@ -78,6 +79,52 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .pattern("JJJ")
                 .define('J', ModItems.JUPERIUM_NUGGET.get()).unlockedBy(getHasName(ModItems.JUPERIUM_NUGGET.get()), has(ModItems.JUPERIUM_NUGGET.get()))
                 .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.JUPERIUM_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.JUPERIUM_PLATES)
+                .unlockedBy(getHasName(ModItems.JUPERIUM_PLATE.get()), has(ModItemTags.JUPERIUM_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPERIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.JUPERIUM_PLATING.get()), has(ModBlocks.JUPERIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.JUPERIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.JUPERIUM_PLATING.get()), has(ModBlocks.JUPERIUM_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.JUPERIUM_PLATING_BUTTON.get())
+                        .requires(ModBlocks.JUPERIUM_PLATING.get()).unlockedBy(getHasName(ModBlocks.JUPERIUM_PLATING.get()), has(ModBlocks.JUPERIUM_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.JUPERIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.JUPERIUM_PLATING.get()), has(ModBlocks.JUPERIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.JUPERIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.JUPERIUM_PLATING.get()), has(ModBlocks.JUPERIUM_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.JUPERIUM_PLATING.get(), ModBlocks.JUPERIUM_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_JUPERIUM_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.JUPERIUM_PLATES)
+                .define('D', Items.YELLOW_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.JUPERIUM_PLATE.get()), has(ModItemTags.JUPERIUM_PLATES))
+                .unlockedBy(getHasName(Items.YELLOW_DYE), has(Items.YELLOW_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 9)
                 .requires(ModBlocks.JUPERIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.JUPERIUM_BLOCK.get()), has(ModBlocks.JUPERIUM_BLOCK.get())).save(consumer);

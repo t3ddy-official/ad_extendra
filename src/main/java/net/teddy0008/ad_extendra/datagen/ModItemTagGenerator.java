@@ -41,6 +41,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.JUPERIUM_NUGGET.get());
         this.tag(ItemTags.STAIRS)
                 // Jupiter
+                .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get().asItem())
                 .add(ModBlocks.JUPITER_STONE_STAIRS.get().asItem())
                 .add(ModBlocks.JUPITER_COBBLESTONE_STAIRS.get().asItem())
                 .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get().asItem())
@@ -139,6 +140,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_B_STONE_STAIRS.get().asItem());
         this.tag(ItemTags.SLABS)
                 // Jupiter
+                .add(ModBlocks.JUPERIUM_PLATING_SLAB.get().asItem())
                 .add(ModBlocks.JUPITER_STONE_SLAB.get().asItem())
                 .add(ModBlocks.JUPITER_COBBLESTONE_SLAB.get().asItem())
                 .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get().asItem())
@@ -250,6 +252,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ERIS_STONE_BRICK_WALL.get().asItem())
                 .add(ModBlocks.SEDNA_STONE_BRICK_WALL.get().asItem())
                 .add(ModBlocks.B_STONE_BRICK_WALL.get().asItem());
+        this.tag(ItemTags.BUTTONS)
+                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get().asItem());
         this.tag(ItemTags.STONE_TOOL_MATERIALS)
                 .add(ModBlocks.JUPITER_COBBLESTONE.get().asItem())
                 .add(ModBlocks.CERES_COBBLESTONE.get().asItem())

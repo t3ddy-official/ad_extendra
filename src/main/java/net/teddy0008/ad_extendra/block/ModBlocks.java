@@ -4,6 +4,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +22,15 @@ public class ModBlocks {
     // Jupiter
     public static final RegistryObject<Block> JUPERIUM_BLOCK = registerBlock("juperium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> RAW_JUPERIUM_BLOCK = registerBlock("raw_juperium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> JUPERIUM_PLATING = registerBlock("juperium_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.DIAMOND)));
+    public static final RegistryObject<StairBlock> JUPERIUM_PLATING_STAIRS = registerBlock("juperium_plating_stairs", () -> new StairBlock(((Block)JUPERIUM_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.DIAMOND)));
+    public static final RegistryObject<SlabBlock> JUPERIUM_PLATING_SLAB = registerBlock("juperium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.DIAMOND)));
+    public static final RegistryObject<RotatedPillarBlock> JUPERIUM_PILLAR = registerBlock("juperium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.DIAMOND)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_JUPERIUM_PILLAR = registerBlock("glowing_juperium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.DIAMOND)));
+    public static final RegistryObject<ButtonBlock> JUPERIUM_PLATING_BUTTON = registerBlock("juperium_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.DIAMOND), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> JUPERIUM_PLATING_PRESSURE_PLATE = registerBlock("juperium_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.DIAMOND), BlockSetType.IRON));
     public static final RegistryObject<Block> JUPITER_JUPERIUM_ORE = registerBlock("jupiter_juperium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> JUPITER_COAL_ORE = registerBlock("jupiter_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
     public static final RegistryObject<Block> JUPITER_DIAMOND_ORE = registerBlock("jupiter_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
