@@ -23,6 +23,22 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(Tags.Items.RAW_MATERIALS)
                 .add(ModItems.RAW_JUPERIUM.get());
+        this.tag(Tags.Items.INGOTS)
+                .addTag(ModItemTags.FORGE_JUPERIUM_INGOTS);
+        this.tag(ModItemTags.FORGE_JUPERIUM_INGOTS)
+                .add(ModItems.JUPERIUM_INGOT.get());
+        this.tag(ModItemTags.JUPERIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_JUPERIUM_INGOTS);
+        this.tag(ModItemTags.FORGE_JUPERIUM_BLOCKS)
+                .add(ModBlocks.JUPERIUM_BLOCK.get().asItem());
+        this.tag(ModItemTags.JUPERIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_JUPERIUM_BLOCKS);
+        this.tag(ModItemTags.FORGE_JUPERIUM_PLATES)
+                .add(ModItems.JUPERIUM_PLATE.get());
+        this.tag(ModItemTags.JUPERIUM_PLATES)
+                .addTag(ModItemTags.FORGE_JUPERIUM_PLATES);
+        this.tag(ModItemTags.JUPERIUM_NUGGETS)
+                .add(ModItems.JUPERIUM_NUGGET.get());
         this.tag(ItemTags.STAIRS)
                 // Jupiter
                 .add(ModBlocks.JUPITER_STONE_STAIRS.get().asItem())

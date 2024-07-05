@@ -1,5 +1,13 @@
-// 1.20.1	2024-07-03T19:13:57.9231191	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-07-04T17:28:51.1270614	Tags for minecraft:item mod id ad_extendra
+32b474d7ca298a22287eb6996036208c0e787024 data/ad_astra_platform/tags/items/juperium_blocks.json
+dcfbbaaf10455d5dd3325f98f10c9b59daacaf57 data/ad_astra_platform/tags/items/juperium_ingots.json
+336d5e6c01f7a81d84e42d9cbc9c61cf60b47d80 data/ad_astra_platform/tags/items/juperium_plates.json
+dcfbbaaf10455d5dd3325f98f10c9b59daacaf57 data/forge/tags/items/ingots.json
+b6a72507169f4af7292045433fe638c140936eef data/forge/tags/items/ingots/juperium.json
+6139d020656b84a3cdc2c6e263f886b33bee2653 data/forge/tags/items/nuggets/juperium.json
+ad8b2d43e46baa0f17aba4baf1679c4af06aecf5 data/forge/tags/items/plates/juperium.json
 1e3465b2ca32986779731d4cee7cc9f0c9a23b67 data/forge/tags/items/raw_materials.json
+b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/items/storage_blocks/juperium.json
 670240c3e08fa037e74dd2b661a83bfde1998848 data/minecraft/tags/items/slabs.json
 8e21796bf6dab057f36999ae0a9c0f1a79b8658b data/minecraft/tags/items/stairs.json
 03fa7a62607b5b0cb3ec7b94c38507054885bf09 data/minecraft/tags/items/stone_crafting_materials.json

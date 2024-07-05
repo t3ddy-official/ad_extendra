@@ -1,10 +1,12 @@
 {
   "item.ad_extendra.raw_juperium": "Raw Juperium",
   "item.ad_extendra.juperium_ingot": "Juperium Ingot",
+  "item.ad_extendra.juperium_nugget": "Juperium Nugget",
+  "item.ad_extendra.juperium_plate": "Juperium Plate",
   "item.ad_extendra.tier5_rocket": "Tier 5 Rocket",
 
-  "block.ad_extendra.juperium_block": "Juperium Block",
-  "block.ad_extendra.raw_juperium_block": "Raw Juperium Block",
+  "block.ad_extendra.juperium_block": "Block of Juperium",
+  "block.ad_extendra.raw_juperium_block": "Block of Raw Juperium",
   "block.ad_extendra.jupiter_juperium_ore": "Jupiter Juperium Ore",
   "block.ad_extendra.jupiter_coal_ore": "Jupiter Coal Ore",
   "block.ad_extendra.jupiter_diamond_ore": "Jupiter Diamond Ore",

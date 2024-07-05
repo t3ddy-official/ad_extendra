@@ -46,6 +46,20 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.CERES_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.CERES_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
+        // More Cobblestone Smelting
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SATURN_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.URANUS_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.NEPTUNE_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ORCUS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.ORCUS_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.PLUTO_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.HAUMEA_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.HAUMEA_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.QUAOAR_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.QUAOAR_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.MAKEMAKE_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.MAKEMAKE_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.GONGGONG_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.GONGGONG_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ERIS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.ERIS_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SEDNA_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SEDNA_STONE.get(), 0f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.B_STONE.get(), 0f, 200, "item");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPERIUM_BLOCK.get())
                 .pattern("JJJ")
                 .pattern("JJJ")
@@ -58,11 +72,19 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .pattern("JJJ")
                 .define('J', ModItems.RAW_JUPERIUM.get()).unlockedBy(getHasName(ModItems.RAW_JUPERIUM.get()), has(ModItems.RAW_JUPERIUM.get()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.JUPERIUM_NUGGET.get()).unlockedBy(getHasName(ModItems.JUPERIUM_NUGGET.get()), has(ModItems.JUPERIUM_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.JUPERIUM_INGOT.get()) + "_from_nuggets");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 9)
                 .requires(ModBlocks.JUPERIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.JUPERIUM_BLOCK.get()), has(ModBlocks.JUPERIUM_BLOCK.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_JUPERIUM.get(), 9)
                 .requires(ModBlocks.RAW_JUPERIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_JUPERIUM_BLOCK.get()), has(ModBlocks.RAW_JUPERIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JUPERIUM_NUGGET.get(), 9)
+                .requires(ModItems.JUPERIUM_INGOT.get()).unlockedBy(getHasName(ModItems.JUPERIUM_INGOT.get()), has(ModItems.JUPERIUM_INGOT.get())).save(consumer);
 
         // Jupiter Stone Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_STAIRS.get(), 4)

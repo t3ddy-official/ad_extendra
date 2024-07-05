@@ -23,6 +23,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.RAW_JUPERIUM);
         simpleItem(ModItems.JUPERIUM_INGOT);
+        simpleItem(ModItems.JUPERIUM_NUGGET);
+        simpleItem(ModItems.JUPERIUM_PLATE);
 
         // Jupiter
         stairsItem(ModBlocks.JUPITER_STONE_STAIRS);
