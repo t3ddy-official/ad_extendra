@@ -22,6 +22,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(Tags.Items.RAW_MATERIALS)
+                .addTag(ModItemTags.JUPERIUM_RAW_MATERIALS);
+        this.tag(ModItemTags.JUPERIUM_RAW_MATERIALS)
                 .add(ModItems.RAW_JUPERIUM.get());
         this.tag(Tags.Items.INGOTS)
                 .addTag(ModItemTags.FORGE_JUPERIUM_INGOTS);
@@ -39,6 +41,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModItemTags.FORGE_JUPERIUM_PLATES);
         this.tag(ModItemTags.JUPERIUM_NUGGETS)
                 .add(ModItems.JUPERIUM_NUGGET.get());
+        this.tag(ItemTags.SAND)
+                .add(ModBlocks.JUPITER_SAND.get().asItem())
+                .add(ModBlocks.CERES_SAND.get().asItem())
+                .add(ModBlocks.SATURN_SAND.get().asItem())
+                .add(ModBlocks.PLUTO_SAND.get().asItem())
+                .add(ModBlocks.B_SAND.get().asItem());
         this.tag(ItemTags.STAIRS)
                 // Jupiter
                 .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get().asItem())
@@ -284,5 +292,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ERIS_COBBLESTONE.get().asItem())
                 .add(ModBlocks.SEDNA_COBBLESTONE.get().asItem())
                 .add(ModBlocks.B_COBBLESTONE.get().asItem());
+        this.tag(Tags.Items.ORES_COAL)
+                .add(ModBlocks.JUPITER_COAL_ORE.get().asItem());
+        this.tag(Tags.Items.ORES_DIAMOND)
+                .add(ModBlocks.JUPITER_DIAMOND_ORE.get().asItem());
+        this.tag(Tags.Items.ORES_GOLD)
+                .add(ModBlocks.JUPITER_GOLD_ORE.get().asItem());
+        this.tag(Tags.Items.ORES_COPPER)
+                .add(ModBlocks.CERES_COPPER_ORE.get().asItem());
+        this.tag(Tags.Items.ORES_IRON)
+                .add(ModBlocks.CERES_IRON_ORE.get().asItem());
+        this.tag(ModItemTags.JUPERIUM_ORES)
+                .add(ModBlocks.JUPITER_JUPERIUM_ORE.get().asItem());
+        this.tag(ModItemTags.ICE_SHARD_ORES)
+                .add(ModBlocks.URANUS_ICE_SHARD_ORE.get().asItem());
     }
 }

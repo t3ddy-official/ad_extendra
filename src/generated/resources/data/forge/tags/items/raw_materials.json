@@ -1,6 +1,5 @@
 {
   "values": [
-    "ad_extendra:raw_juperium",
-    "#forge:raw_materials"
+    "#forge:raw_materials/juperium"
   ]
 }

@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.teddy0008.ad_extendra.Main;
@@ -37,6 +38,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPERIUM_BLOCK.get())
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get())
                 .add(ModBlocks.RAW_JUPERIUM_BLOCK.get())
+                .add(ModBlocks.JUPERIUM_PLATING.get())
+                .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.JUPERIUM_PLATING_SLAB.get())
+                .add(ModBlocks.JUPERIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_JUPERIUM_PILLAR.get())
+                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.JUPITER_STONE.get())
                 .add(ModBlocks.JUPITER_STONE_STAIRS.get())
                 .add(ModBlocks.JUPITER_STONE_SLAB.get())
@@ -102,6 +110,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SATURN_PILLAR.get())
 
                 // Uranus
+                .add(ModBlocks.URANUS_ICE_SHARD_ORE.get())
                 .add(ModBlocks.URANUS_STONE.get())
                 .add(ModBlocks.URANUS_STONE_STAIRS.get())
                 .add(ModBlocks.URANUS_STONE_SLAB.get())
@@ -344,6 +353,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SATURN_SAND.get())
                 .add(ModBlocks.PLUTO_SAND.get())
                 .add(ModBlocks.B_SAND.get());
+        this.tag(BlockTags.ICE)
+                .add(ModBlocks.SATURN_ICE.get());
         this.tag(BlockTags.STAIRS)
                 // Jupiter
                 .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get())
@@ -563,5 +574,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
         this.tag(ModBlockTags.JUPERIUM_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get());
+        this.tag(ModBlockTags.JUPERIUM_ORES)
+                .add(ModBlocks.JUPITER_JUPERIUM_ORE.get());
+        this.tag(ModBlockTags.ICE_SHARD_ORES)
+                .add(ModBlocks.URANUS_ICE_SHARD_ORE.get());
     }
 }

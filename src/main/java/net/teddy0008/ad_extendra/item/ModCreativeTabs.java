@@ -82,6 +82,7 @@ public class ModCreativeTabs {
 
                 // Saturn
                 output.accept(ModBlocks.SATURN_SAND.get());
+                output.accept(ModBlocks.SATURN_ICE.get());
                 output.accept(ModBlocks.SATURN_STONE.get());
                 output.accept(ModBlocks.SATURN_STONE_STAIRS.get());
                 output.accept(ModBlocks.SATURN_STONE_SLAB.get());
@@ -120,6 +121,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
                 output.accept(ModBlocks.URANUS_PILLAR.get());
+                output.accept(ModBlocks.URANUS_ICE_SHARD_ORE.get());
 
                 // Neptune
                 output.accept(ModBlocks.NEPTUNE_STONE.get());

@@ -85,6 +85,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         // Saturn
         this.dropSelf(ModBlocks.SATURN_SAND.get());
+        this.dropSelf(ModBlocks.SATURN_ICE.get());
         this.dropSelf(ModBlocks.SATURN_STONE.get());
         this.dropSelf(ModBlocks.SATURN_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.SATURN_COBBLESTONE.get());
@@ -119,6 +120,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE.get());
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.URANUS_PILLAR.get());
+        this.add(ModBlocks.URANUS_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.URANUS_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));
         this.add(ModBlocks.URANUS_STONE.get(), createStoneLikeDrop(ModBlocks.URANUS_STONE.get(), ModBlocks.URANUS_COBBLESTONE.get()));
         this.add(ModBlocks.URANUS_STONE_SLAB.get(), createSlabItemTable(ModBlocks.URANUS_STONE.get()));
         this.add(ModBlocks.URANUS_COBBLESTONE_SLAB.get(), createSlabItemTable(ModBlocks.URANUS_COBBLESTONE.get()));

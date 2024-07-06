@@ -13,6 +13,9 @@ public class ModItemTags {
     public static final TagKey<Item> FORGE_JUPERIUM_PLATES = tag("forge", "plates/juperium");
     public static final TagKey<Item> JUPERIUM_PLATES = tag("ad_astra_platform", "juperium_plates");
     public static final TagKey<Item> JUPERIUM_NUGGETS = tag("forge", "nuggets/juperium");
+    public static final TagKey<Item> JUPERIUM_ORES = tag("forge", "ores/juperium");
+    public static final TagKey<Item> ICE_SHARD_ORES = tag("forge", "ores/ice_shard");
+    public static final TagKey<Item> JUPERIUM_RAW_MATERIALS = tag("forge", "raw_materials/juperium");
 
     private static TagKey<Item> tag(String modid, String name) {
         return ItemTags.create(new ResourceLocation(modid, name));

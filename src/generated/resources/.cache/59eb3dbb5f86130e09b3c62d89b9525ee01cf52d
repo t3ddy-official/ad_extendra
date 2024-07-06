@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-04T18:36:39.2014948	Loot Tables
+// 1.20.1	2024-07-05T18:03:04.580436	Loot Tables
 39cedf66136a8d051c4e23bae7bd709cbee3d7ad data/ad_extendra/loot_tables/blocks/b_cobblestone.json
 a28320cfd0d48af10c70c68f9119d45db38ef1bb data/ad_extendra/loot_tables/blocks/b_cobblestone_slab.json
 95dfae180a23588c5a6a3292cd56c19255cb9af3 data/ad_extendra/loot_tables/blocks/b_cobblestone_stairs.json
@@ -240,6 +240,7 @@ f03e62c281aa7484c20e8eb8499a581936bbd71b data/ad_extendra/loot_tables/blocks/qua
 d1757a454dcf5697c19a50ec7454d8e3487395b3 data/ad_extendra/loot_tables/blocks/saturn_cobblestone.json
 f4918ab25953b2f7bb4bf3ad88456c73f944ab35 data/ad_extendra/loot_tables/blocks/saturn_cobblestone_slab.json
 a80938d3aa883719ec54f04f631eb36d23a2ebda data/ad_extendra/loot_tables/blocks/saturn_cobblestone_stairs.json
+7fc51ffcff67057defc5a41c5175a2c8cbb9a363 data/ad_extendra/loot_tables/blocks/saturn_ice.json
 fda7840488a862c2f5109e0db957a5d465b70bdf data/ad_extendra/loot_tables/blocks/saturn_pillar.json
 fbe2fde7c1a18d8ae4bc12463042fab68147032e data/ad_extendra/loot_tables/blocks/saturn_sand.json
 313ac3781348b09cd5b89d5cd0488013b36cf884 data/ad_extendra/loot_tables/blocks/saturn_stone.json
@@ -263,6 +264,7 @@ bd934ff79b4c6ff08594a62d5544901734d0c52b data/ad_extendra/loot_tables/blocks/sed
 ad0e1100406168f87609a4032d2e361a1686743c data/ad_extendra/loot_tables/blocks/uranus_cobblestone.json
 c21c0a29c290ee7a663a3350a7750a336d3402fa data/ad_extendra/loot_tables/blocks/uranus_cobblestone_slab.json
 0b9e07acbe649edba647678a20acf8afbd0301a2 data/ad_extendra/loot_tables/blocks/uranus_cobblestone_stairs.json
+be0484919f6aa6d5edb0894a79aa4988c361d50f data/ad_extendra/loot_tables/blocks/uranus_ice_shard_ore.json
 41772fa45b2224a7a01847052ddf1adf56229b3d data/ad_extendra/loot_tables/blocks/uranus_pillar.json
 ffb74f7924f22a6aa552c6da181036dd29bb4130 data/ad_extendra/loot_tables/blocks/uranus_stone.json
 a710aaae004489cb8a1feb7c064acc5cdd3ae325 data/ad_extendra/loot_tables/blocks/uranus_stone_bricks.json

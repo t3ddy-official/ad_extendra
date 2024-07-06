@@ -46,6 +46,10 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.CERES_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.CERES_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
+        // Uranus
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
+
         // More Cobblestone Smelting
         oreSmelting(consumer, List.of(ModBlocks.SATURN_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SATURN_STONE.get(), 0f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.URANUS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.URANUS_STONE.get(), 0f, 200, "item");

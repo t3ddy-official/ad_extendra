@@ -1,34 +1,34 @@
-[04Jul2024 19:18:56.161] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\dandi\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.19, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, ad_extendra, --all, --output, D:\minecraft_mod_repository_contributions\ad_extendra\src\generated\resources, --existing, D:\minecraft_mod_repository_contributions\ad_extendra\src\main\resources]
-[04Jul2024 19:18:56.161] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
-[04Jul2024 19:18:56.264] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[04Jul2024 19:18:56.300] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/dandi/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[04Jul2024 19:18:56.506] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.19\99f54fe7798c97a9a6e7c962ef94f7d30610122d\javafmllanguage-1.20.1-47.2.19.jar is missing mods.toml file
-[04Jul2024 19:18:56.506] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.19\1b32b3f27357ab558a098c1c20e1494558a71b31\lowcodelanguage-1.20.1-47.2.19.jar is missing mods.toml file
-[04Jul2024 19:18:56.521] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.19\2eb26ae9afdd5709b9ee9bdf90b9486212a676af\mclanguage-1.20.1-47.2.19.jar is missing mods.toml file
-[04Jul2024 19:18:56.521] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.19\7cd28cc091d07bbe6a4f51bf9728ccbc27bfc4fc\fmlcore-1.20.1-47.2.19.jar is missing mods.toml file
-[04Jul2024 19:18:56.646] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[04Jul2024 19:18:57.908] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[04Jul2024 19:18:57.908] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\dandi\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, ad_extendra, --all, --output, D:\minecraft_mod_repository_contributions\ad_extendra\src\generated\resources, --existing, D:\minecraft_mod_repository_contributions\ad_extendra\src\main\resources]
-[04Jul2024 19:18:58.095] [main/INFO] [mixin/]: Remapping refMap ad_astra-common-1.20.1-common-refmap.json using D:\minecraft_mod_repository_contributions\ad_extendra/build/createSrgToMcp/output.srg
-[04Jul2024 19:18:58.095] [main/INFO] [mixin/]: Remapping refMap ad_astra-forge-1.20.1-forge-refmap.json using D:\minecraft_mod_repository_contributions\ad_extendra/build/createSrgToMcp/output.srg
-[04Jul2024 19:18:58.521] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ad_extendra]
-[04Jul2024 19:19:01.382] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.19, for MC 1.20.1 with MCP 20230612.114412
-[04Jul2024 19:19:01.382] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.19 Initialized
-[04Jul2024 19:19:01.594] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[04Jul2024 19:19:01.610] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.359 ms
-[04Jul2024 19:19:02.689] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/dandi/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[04Jul2024 19:19:02.689] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/dandi/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[04Jul2024 19:19:02.799] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[04Jul2024 19:19:02.877] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 79 ms
-[04Jul2024 19:19:02.877] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[04Jul2024 19:19:02.928] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 52 ms
-[04Jul2024 19:19:02.928] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ad_extendra
-[04Jul2024 19:19:03.271] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ad_extendra finished after 344 ms
-[04Jul2024 19:19:03.271] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: ad_extendra
-[04Jul2024 19:19:03.287] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: ad_extendra finished after 9 ms
-[04Jul2024 19:19:03.287] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ad_extendra
-[04Jul2024 19:19:03.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ad_extendra finished after 13 ms
-[04Jul2024 19:19:03.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id ad_extendra
-[04Jul2024 19:19:03.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id ad_extendra finished after 2 ms
-[04Jul2024 19:19:03.303] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 504 ms
-[04Jul2024 19:19:03.318] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 2451, old count: 2451, new count: 2452, removed stale: 0, written: 0
+[05Jul2024 18:10:05.727] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\dandi\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.19, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, ad_extendra, --all, --output, D:\minecraft_mod_repository_contributions\ad_extendra\src\generated\resources, --existing, D:\minecraft_mod_repository_contributions\ad_extendra\src\main\resources]
+[05Jul2024 18:10:05.727] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
+[05Jul2024 18:10:05.836] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[05Jul2024 18:10:05.883] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/dandi/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[05Jul2024 18:10:06.116] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.19\99f54fe7798c97a9a6e7c962ef94f7d30610122d\javafmllanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[05Jul2024 18:10:06.116] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.19\1b32b3f27357ab558a098c1c20e1494558a71b31\lowcodelanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[05Jul2024 18:10:06.131] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.19\2eb26ae9afdd5709b9ee9bdf90b9486212a676af\mclanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[05Jul2024 18:10:06.131] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\dandi\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.19\7cd28cc091d07bbe6a4f51bf9728ccbc27bfc4fc\fmlcore-1.20.1-47.2.19.jar is missing mods.toml file
+[05Jul2024 18:10:06.258] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[05Jul2024 18:10:07.585] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[05Jul2024 18:10:07.585] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\dandi\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, ad_extendra, --all, --output, D:\minecraft_mod_repository_contributions\ad_extendra\src\generated\resources, --existing, D:\minecraft_mod_repository_contributions\ad_extendra\src\main\resources]
+[05Jul2024 18:10:07.809] [main/INFO] [mixin/]: Remapping refMap ad_astra-common-1.20.1-common-refmap.json using D:\minecraft_mod_repository_contributions\ad_extendra/build/createSrgToMcp/output.srg
+[05Jul2024 18:10:07.809] [main/INFO] [mixin/]: Remapping refMap ad_astra-forge-1.20.1-forge-refmap.json using D:\minecraft_mod_repository_contributions\ad_extendra/build/createSrgToMcp/output.srg
+[05Jul2024 18:10:08.289] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ad_extendra]
+[05Jul2024 18:10:11.397] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.19, for MC 1.20.1 with MCP 20230612.114412
+[05Jul2024 18:10:11.397] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.19 Initialized
+[05Jul2024 18:10:11.628] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[05Jul2024 18:10:11.631] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 4.191 ms
+[05Jul2024 18:10:12.763] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/dandi/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[05Jul2024 18:10:12.763] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/dandi/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[05Jul2024 18:10:12.890] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[05Jul2024 18:10:12.984] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 100 ms
+[05Jul2024 18:10:12.984] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[05Jul2024 18:10:13.055] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 63 ms
+[05Jul2024 18:10:13.055] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ad_extendra
+[05Jul2024 18:10:13.399] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ad_extendra finished after 341 ms
+[05Jul2024 18:10:13.399] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: ad_extendra
+[05Jul2024 18:10:13.413] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: ad_extendra finished after 10 ms
+[05Jul2024 18:10:13.413] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ad_extendra
+[05Jul2024 18:10:13.413] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ad_extendra finished after 13 ms
+[05Jul2024 18:10:13.413] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id ad_extendra
+[05Jul2024 18:10:13.429] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id ad_extendra finished after 2 ms
+[05Jul2024 18:10:13.429] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 533 ms
+[05Jul2024 18:10:13.445] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 2475, old count: 2475, new count: 2476, removed stale: 0, written: 1

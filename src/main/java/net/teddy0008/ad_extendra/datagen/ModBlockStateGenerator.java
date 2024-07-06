@@ -79,6 +79,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
 
         // Saturn
         fallingBlockWithItem(ModBlocks.SATURN_SAND);
+        iceBlockWithItem(ModBlocks.SATURN_ICE);
         blockWithItem(ModBlocks.SATURN_STONE);
         stairsBlock(((StairBlock) ModBlocks.SATURN_STONE_STAIRS.get()), blockTexture(ModBlocks.SATURN_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.SATURN_STONE_SLAB.get()), blockTexture(ModBlocks.SATURN_STONE.get()), blockTexture(ModBlocks.SATURN_STONE.get()));
@@ -100,6 +101,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/saturn_pillar_top"));
 
         // Uranus
+        oreBlockWithItem(ModBlocks.URANUS_ICE_SHARD_ORE);
         blockWithItem(ModBlocks.URANUS_STONE);
         stairsBlock(((StairBlock) ModBlocks.URANUS_STONE_STAIRS.get()), blockTexture(ModBlocks.URANUS_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.URANUS_STONE_SLAB.get()), blockTexture(ModBlocks.URANUS_STONE.get()), blockTexture(ModBlocks.URANUS_STONE.get()));
@@ -337,7 +339,15 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
+    private void oreBlockWithItem(RegistryObject<DropExperienceBlock> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
     private void fallingBlockWithItem(RegistryObject<FallingBlock> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void iceBlockWithItem(RegistryObject<IceBlock> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }

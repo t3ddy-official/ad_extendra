@@ -1,14 +1,23 @@
-// 1.20.1	2024-07-04T18:36:39.2014948	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-07-05T18:03:04.580436	Tags for minecraft:item mod id ad_extendra
 32b474d7ca298a22287eb6996036208c0e787024 data/ad_astra_platform/tags/items/juperium_blocks.json
 dcfbbaaf10455d5dd3325f98f10c9b59daacaf57 data/ad_astra_platform/tags/items/juperium_ingots.json
 336d5e6c01f7a81d84e42d9cbc9c61cf60b47d80 data/ad_astra_platform/tags/items/juperium_plates.json
 dcfbbaaf10455d5dd3325f98f10c9b59daacaf57 data/forge/tags/items/ingots.json
 b6a72507169f4af7292045433fe638c140936eef data/forge/tags/items/ingots/juperium.json
 6139d020656b84a3cdc2c6e263f886b33bee2653 data/forge/tags/items/nuggets/juperium.json
+cb9264917cfc750b831fe930ee4f9ec07713ba90 data/forge/tags/items/ores/coal.json
+7aefc58f95e203f648f45955b356180704ad489f data/forge/tags/items/ores/copper.json
+d553e2f5c6e95729e2b458a0c4978d6abbd57d6b data/forge/tags/items/ores/diamond.json
+176db73929b7b9e321c388a2cd07d95365a526bb data/forge/tags/items/ores/gold.json
+db12318251a3bad06b759455f40c1dbdf26eb9a0 data/forge/tags/items/ores/ice_shard.json
+8ca7cfc33d8d36689fe3bab311d60b07c75cf358 data/forge/tags/items/ores/iron.json
+e448c069b0326bd9514f936719f20c5756a90d91 data/forge/tags/items/ores/juperium.json
 ad8b2d43e46baa0f17aba4baf1679c4af06aecf5 data/forge/tags/items/plates/juperium.json
-1e3465b2ca32986779731d4cee7cc9f0c9a23b67 data/forge/tags/items/raw_materials.json
+4114ca869463521aeb6ef00362e251af7ff4e351 data/forge/tags/items/raw_materials.json
+1e3465b2ca32986779731d4cee7cc9f0c9a23b67 data/forge/tags/items/raw_materials/juperium.json
 b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/items/storage_blocks/juperium.json
 becd6fa925d7d5c61f1a2e7428e0c1ab06fa2a08 data/minecraft/tags/items/buttons.json
+3732bd35105288a6ed9b5edde6f63b3f7b9e578c data/minecraft/tags/items/sand.json
 54940fcacca9575be171520f93e8a67f0c5008cd data/minecraft/tags/items/slabs.json
 fe0d5e8bc04668c59c5f1875f31a0a0f9093b178 data/minecraft/tags/items/stairs.json
 03fa7a62607b5b0cb3ec7b94c38507054885bf09 data/minecraft/tags/items/stone_crafting_materials.json
