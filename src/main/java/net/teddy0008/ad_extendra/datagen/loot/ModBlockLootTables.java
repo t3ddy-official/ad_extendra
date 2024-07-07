@@ -84,6 +84,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CERES_STONE.get(), createStoneLikeDrop(ModBlocks.CERES_STONE.get(), ModBlocks.CERES_COBBLESTONE.get()));
 
         // Saturn
+        this.dropSelf(ModBlocks.SATURLYTE_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_SATURLYTE_BLOCK.get());
+        this.dropSelf(ModBlocks.SATURLYTE_PLATING.get());
+        this.dropSelf(ModBlocks.SATURLYTE_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.SATURLYTE_PLATING_SLAB.get());
+        this.dropSelf(ModBlocks.SATURLYTE_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_SATURLYTE_PILLAR.get());
+        this.dropSelf(ModBlocks.SATURLYTE_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.SATURN_SAND.get());
         this.dropSelf(ModBlocks.SATURN_ICE.get());
         this.dropSelf(ModBlocks.SATURN_STONE.get());
@@ -104,9 +113,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_SATURN_STONE_SLAB.get());
         this.dropSelf(ModBlocks.SATURN_PILLAR.get());
+        this.add(ModBlocks.SATURN_SATURLYTE_ORE.get(), createOreDrop(ModBlocks.SATURN_SATURLYTE_ORE.get(), ModItems.RAW_SATURLYTE.get()));
         this.add(ModBlocks.SATURN_STONE.get(), createStoneLikeDrop(ModBlocks.SATURN_STONE.get(), ModBlocks.SATURN_COBBLESTONE.get()));
 
         // Uranus
+        this.dropSelf(ModBlocks.URANIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.URANIUM_PLATING.get());
+        this.dropSelf(ModBlocks.URANIUM_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.URANIUM_PLATING_SLAB.get());
+        this.dropSelf(ModBlocks.URANIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_URANIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.URANIUM_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.URANUS_STONE.get());
         this.dropSelf(ModBlocks.URANUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.URANUS_STONE_SLAB.get());
@@ -125,10 +144,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.URANUS_PILLAR.get());
+        this.add(ModBlocks.URANUS_URANIUM_ORE.get(), createOreDrop(ModBlocks.URANUS_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
         this.add(ModBlocks.URANUS_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.URANUS_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));
         this.add(ModBlocks.URANUS_STONE.get(), createStoneLikeDrop(ModBlocks.URANUS_STONE.get(), ModBlocks.URANUS_COBBLESTONE.get()));
 
         // Neptune
+        this.dropSelf(ModBlocks.NEPTUNIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_NEPTUNIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.NEPTUNIUM_PLATING.get());
+        this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_SLAB.get());
+        this.dropSelf(ModBlocks.NEPTUNIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.NEPTUNE_STONE.get());
         this.dropSelf(ModBlocks.NEPTUNE_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.NEPTUNE_STONE_SLAB.get());
@@ -147,6 +176,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get());
         this.dropSelf(ModBlocks.NEPTUNE_PILLAR.get());
+        this.add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get(), ModItems.RAW_NEPTUNIUM.get()));
         this.add(ModBlocks.NEPTUNE_STONE.get(), createStoneLikeDrop(ModBlocks.NEPTUNE_STONE.get(), ModBlocks.NEPTUNE_COBBLESTONE.get()));
 
         // Orcus
@@ -171,6 +201,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ORCUS_STONE.get(), createStoneLikeDrop(ModBlocks.ORCUS_STONE.get(), ModBlocks.ORCUS_COBBLESTONE.get()));
 
         // Pluto
+        this.dropSelf(ModBlocks.PLUTONIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.PLUTONIUM_PLATING.get());
+        this.dropSelf(ModBlocks.PLUTONIUM_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.PLUTONIUM_PLATING_SLAB.get());
+        this.dropSelf(ModBlocks.PLUTONIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.PLUTONIUM_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.PLUTO_SAND.get());
         this.dropSelf(ModBlocks.PLUTO_STONE.get());
         this.dropSelf(ModBlocks.PLUTO_STONE_STAIRS.get());
@@ -190,6 +229,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_PLUTO_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get());
         this.dropSelf(ModBlocks.PLUTO_PILLAR.get());
+        this.add(ModBlocks.PLUTO_PLUTONIUM_ORE.get(), createOreDrop(ModBlocks.PLUTO_PLUTONIUM_ORE.get(), ModItems.RAW_PLUTONIUM.get()));
         this.add(ModBlocks.PLUTO_STONE.get(), createStoneLikeDrop(ModBlocks.PLUTO_STONE.get(), ModBlocks.PLUTO_COBBLESTONE.get()));
 
         // Haumea

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#forge:storage_blocks/juperium",
+    "#forge:storage_blocks/saturlyte",
+    "#forge:storage_blocks/uranium",
+    "#forge:storage_blocks/neptunium",
+    "#forge:storage_blocks/plutonium"
+  ]
+}

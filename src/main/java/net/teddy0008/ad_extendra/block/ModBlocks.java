@@ -80,6 +80,18 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> CERES_PILLAR = registerBlock("ceres_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Saturn
+    public static final RegistryObject<Block> SATURLYTE_BLOCK = registerBlock("saturlyte_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> RAW_SATURLYTE_BLOCK = registerBlock("raw_saturlyte_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> SATURLYTE_PLATING = registerBlock("saturlyte_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<StairBlock> SATURLYTE_PLATING_STAIRS = registerBlock("saturlyte_plating_stairs", () -> new StairBlock(((Block)SATURLYTE_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<SlabBlock> SATURLYTE_PLATING_SLAB = registerBlock("saturlyte_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> SATURLYTE_PILLAR = registerBlock("saturlyte_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_SATURLYTE_PILLAR = registerBlock("glowing_saturlyte_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.COLOR_PURPLE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<ButtonBlock> SATURLYTE_PLATING_BUTTON = registerBlock("saturlyte_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.COLOR_PURPLE), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> SATURLYTE_PLATING_PRESSURE_PLATE = registerBlock("saturlyte_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.COLOR_PURPLE), BlockSetType.IRON));
+    public static final RegistryObject<Block> SATURN_SATURLYTE_ORE = registerBlock("saturn_saturlyte_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<FallingBlock> SATURN_SAND = registerBlock("saturn_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<IceBlock> SATURN_ICE = registerBlock("saturn_ice", () -> new IceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SATURN_STONE = registerBlock("saturn_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -102,6 +114,18 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> SATURN_PILLAR = registerBlock("saturn_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Uranus
+    public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> RAW_URANIUM_BLOCK = registerBlock("raw_uranium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> URANIUM_PLATING = registerBlock("uranium_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<StairBlock> URANIUM_PLATING_STAIRS = registerBlock("uranium_plating_stairs", () -> new StairBlock(((Block)URANIUM_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<SlabBlock> URANIUM_PLATING_SLAB = registerBlock("uranium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> URANIUM_PILLAR = registerBlock("uranium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_URANIUM_PILLAR = registerBlock("glowing_uranium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<ButtonBlock> URANIUM_PLATING_BUTTON = registerBlock("uranium_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.COLOR_GREEN), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> URANIUM_PLATING_PRESSURE_PLATE = registerBlock("uranium_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.COLOR_GREEN), BlockSetType.IRON));
+    public static final RegistryObject<Block> URANUS_URANIUM_ORE = registerBlock("uranus_uranium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<DropExperienceBlock> URANUS_ICE_SHARD_ORE = registerBlock("uranus_ice_shard_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(2, 5)));
     public static final RegistryObject<Block> URANUS_STONE = registerBlock("uranus_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> URANUS_STONE_STAIRS = registerBlock("uranus_stone_stairs", () -> new StairBlock(((Block)URANUS_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -123,6 +147,18 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> URANUS_PILLAR = registerBlock("uranus_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Neptune
+    public static final RegistryObject<Block> NEPTUNIUM_BLOCK = registerBlock("neptunium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> RAW_NEPTUNIUM_BLOCK = registerBlock("raw_neptunium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> NEPTUNIUM_PLATING = registerBlock("neptunium_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<StairBlock> NEPTUNIUM_PLATING_STAIRS = registerBlock("neptunium_plating_stairs", () -> new StairBlock(((Block)NEPTUNIUM_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<SlabBlock> NEPTUNIUM_PLATING_SLAB = registerBlock("neptunium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> NEPTUNIUM_PILLAR = registerBlock("neptunium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_NEPTUNIUM_PILLAR = registerBlock("glowing_neptunium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<ButtonBlock> NEPTUNIUM_PLATING_BUTTON = registerBlock("neptunium_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.COLOR_LIGHT_GREEN), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> NEPTUNIUM_PLATING_PRESSURE_PLATE = registerBlock("neptunium_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_GREEN), BlockSetType.IRON));
+    public static final RegistryObject<Block> NEPTUNE_NEPTUNIUM_ORE = registerBlock("neptune_neptunium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> NEPTUNE_STONE = registerBlock("neptune_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> NEPTUNE_STONE_STAIRS = registerBlock("neptune_stone_stairs", () -> new StairBlock(((Block)NEPTUNE_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> NEPTUNE_STONE_SLAB = registerBlock("neptune_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -163,6 +199,18 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> ORCUS_PILLAR = registerBlock("orcus_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Pluto
+    public static final RegistryObject<Block> PLUTONIUM_BLOCK = registerBlock("plutonium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> RAW_PLUTONIUM_BLOCK = registerBlock("raw_plutonium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> PLUTONIUM_PLATING = registerBlock("plutonium_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<StairBlock> PLUTONIUM_PLATING_STAIRS = registerBlock("plutonium_plating_stairs", () -> new StairBlock(((Block)PLUTONIUM_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<SlabBlock> PLUTONIUM_PLATING_SLAB = registerBlock("plutonium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> PLUTONIUM_PILLAR = registerBlock("plutonium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_PLUTONIUM_PILLAR = registerBlock("glowing_plutonium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<ButtonBlock> PLUTONIUM_PLATING_BUTTON = registerBlock("plutonium_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.COLOR_YELLOW), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> PLUTONIUM_PLATING_PRESSURE_PLATE = registerBlock("plutonium_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.COLOR_YELLOW), BlockSetType.IRON));
+    public static final RegistryObject<Block> PLUTO_PLUTONIUM_ORE = registerBlock("pluto_plutonium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<FallingBlock> PLUTO_SAND = registerBlock("pluto_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> PLUTO_STONE = registerBlock("pluto_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> PLUTO_STONE_STAIRS = registerBlock("pluto_stone_stairs", () -> new StairBlock(((Block)PLUTO_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));

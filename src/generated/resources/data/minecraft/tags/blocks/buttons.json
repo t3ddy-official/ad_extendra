@@ -1,5 +1,9 @@
 {
   "values": [
-    "ad_extendra:juperium_plating_button"
+    "ad_extendra:juperium_plating_button",
+    "ad_extendra:saturlyte_plating_button",
+    "ad_extendra:uranium_plating_button",
+    "ad_extendra:neptunium_plating_button",
+    "ad_extendra:plutonium_plating_button"
   ]
 }

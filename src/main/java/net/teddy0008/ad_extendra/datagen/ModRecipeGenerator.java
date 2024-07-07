@@ -18,6 +18,11 @@ import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> JUPERIUM_SMELTABLES = List.of(ModItems.RAW_JUPERIUM.get(), ModBlocks.JUPITER_JUPERIUM_ORE.get());
+    private static final List<ItemLike> SATURLYTE_SMELTABLES = List.of(ModItems.RAW_SATURLYTE.get(), ModBlocks.SATURN_SATURLYTE_ORE.get());
+    private static final List<ItemLike> URANIUM_SMELTABLES = List.of(ModItems.RAW_URANIUM.get(), ModBlocks.URANUS_URANIUM_ORE.get());
+    private static final List<ItemLike> NEPTUNIUM_SMELTABLES = List.of(ModItems.RAW_NEPTUNIUM.get(), ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+    private static final List<ItemLike> PLUTONIUM_SMELTABLES = List.of(ModItems.RAW_PLUTONIUM.get(), ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+
     public ModRecipeGenerator(PackOutput pOutput) {
         super(pOutput);
     }
@@ -46,9 +51,31 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.CERES_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.CERES_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
+        // Saturn
+        oreSmelting(consumer, SATURLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.RAW_SATURLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.SATURLYTE_BLOCK.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, SATURLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_SATURLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.SATURLYTE_BLOCK.get(), 0.25f, 100, "item");
+
         // Uranus
+        oreSmelting(consumer, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.RAW_URANIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
+        oreBlasting(consumer, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_URANIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
+
+        // Neptune
+        oreSmelting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get(), 0.25f, 100, "item");
+
+        // Pluto
+        oreSmelting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 100, "item");
 
         // More Cobblestone Smelting
         oreSmelting(consumer, List.of(ModBlocks.SATURN_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SATURN_STONE.get(), 0f, 200, "item");
@@ -136,6 +163,298 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .requires(ModBlocks.RAW_JUPERIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_JUPERIUM_BLOCK.get()), has(ModBlocks.RAW_JUPERIUM_BLOCK.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JUPERIUM_NUGGET.get(), 9)
                 .requires(ModItems.JUPERIUM_INGOT.get()).unlockedBy(getHasName(ModItems.JUPERIUM_INGOT.get()), has(ModItems.JUPERIUM_INGOT.get())).save(consumer);
+
+        // Saturlyte
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SATURLYTE_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.SATURLYTE_INGOT.get()).unlockedBy(getHasName(ModItems.SATURLYTE_INGOT.get()), has(ModItems.SATURLYTE_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_SATURLYTE_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RAW_SATURLYTE.get()).unlockedBy(getHasName(ModItems.RAW_SATURLYTE.get()), has(ModItems.RAW_SATURLYTE.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.SATURLYTE_NUGGET.get()).unlockedBy(getHasName(ModItems.SATURLYTE_NUGGET.get()), has(ModItems.SATURLYTE_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.SATURLYTE_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SATURLYTE_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.SATURLYTE_PLATES)
+                .unlockedBy(getHasName(ModItems.SATURLYTE_PLATE.get()), has(ModItemTags.SATURLYTE_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SATURLYTE_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.SATURLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.SATURLYTE_PLATING.get()), has(ModBlocks.SATURLYTE_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SATURLYTE_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.SATURLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.SATURLYTE_PLATING.get()), has(ModBlocks.SATURLYTE_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SATURLYTE_PLATING_BUTTON.get())
+                .requires(ModBlocks.SATURLYTE_PLATING.get()).unlockedBy(getHasName(ModBlocks.SATURLYTE_PLATING.get()), has(ModBlocks.SATURLYTE_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.SATURLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.SATURLYTE_PLATING.get()), has(ModBlocks.SATURLYTE_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SATURLYTE_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.SATURLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.SATURLYTE_PLATING.get()), has(ModBlocks.SATURLYTE_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.SATURLYTE_PLATING.get(), ModBlocks.SATURLYTE_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_SATURLYTE_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.SATURLYTE_PLATES)
+                .define('D', Items.MAGENTA_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.SATURLYTE_PLATE.get()), has(ModItemTags.SATURLYTE_PLATES))
+                .unlockedBy(getHasName(Items.MAGENTA_DYE), has(Items.MAGENTA_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 9)
+                .requires(ModBlocks.SATURLYTE_BLOCK.get()).unlockedBy(getHasName(ModBlocks.SATURLYTE_BLOCK.get()), has(ModBlocks.SATURLYTE_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_SATURLYTE.get(), 9)
+                .requires(ModBlocks.RAW_SATURLYTE_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_SATURLYTE_BLOCK.get()), has(ModBlocks.RAW_SATURLYTE_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SATURLYTE_NUGGET.get(), 9)
+                .requires(ModItems.SATURLYTE_INGOT.get()).unlockedBy(getHasName(ModItems.SATURLYTE_INGOT.get()), has(ModItems.SATURLYTE_INGOT.get())).save(consumer);
+
+        // Uranium
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.URANIUM_INGOT.get()).unlockedBy(getHasName(ModItems.URANIUM_INGOT.get()), has(ModItems.URANIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_URANIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RAW_URANIUM.get()).unlockedBy(getHasName(ModItems.RAW_URANIUM.get()), has(ModItems.RAW_URANIUM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.URANIUM_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.URANIUM_NUGGET.get()).unlockedBy(getHasName(ModItems.URANIUM_NUGGET.get()), has(ModItems.URANIUM_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.URANIUM_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.URANIUM_PLATES)
+                .unlockedBy(getHasName(ModItems.URANIUM_PLATE.get()), has(ModItemTags.URANIUM_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.URANIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.URANIUM_PLATING.get()), has(ModBlocks.URANIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.URANIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.URANIUM_PLATING.get()), has(ModBlocks.URANIUM_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.URANIUM_PLATING_BUTTON.get())
+                .requires(ModBlocks.URANIUM_PLATING.get()).unlockedBy(getHasName(ModBlocks.URANIUM_PLATING.get()), has(ModBlocks.URANIUM_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.URANIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.URANIUM_PLATING.get()), has(ModBlocks.URANIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.URANIUM_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.URANIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.URANIUM_PLATING.get()), has(ModBlocks.URANIUM_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.URANIUM_PLATING.get(), ModBlocks.URANIUM_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_URANIUM_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.URANIUM_PLATES)
+                .define('D', Items.BLUE_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.URANIUM_PLATE.get()), has(ModItemTags.URANIUM_PLATES))
+                .unlockedBy(getHasName(Items.BLUE_DYE), has(Items.BLUE_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 9)
+                .requires(ModBlocks.URANIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.URANIUM_BLOCK.get()), has(ModBlocks.URANIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_URANIUM.get(), 9)
+                .requires(ModBlocks.RAW_URANIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_URANIUM_BLOCK.get()), has(ModBlocks.RAW_URANIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.URANIUM_NUGGET.get(), 9)
+                .requires(ModItems.URANIUM_INGOT.get()).unlockedBy(getHasName(ModItems.URANIUM_INGOT.get()), has(ModItems.URANIUM_INGOT.get())).save(consumer);
+
+        // Neptunium
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.NEPTUNIUM_INGOT.get()).unlockedBy(getHasName(ModItems.NEPTUNIUM_INGOT.get()), has(ModItems.NEPTUNIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_NEPTUNIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RAW_NEPTUNIUM.get()).unlockedBy(getHasName(ModItems.RAW_NEPTUNIUM.get()), has(ModItems.RAW_NEPTUNIUM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.NEPTUNIUM_NUGGET.get()).unlockedBy(getHasName(ModItems.NEPTUNIUM_NUGGET.get()), has(ModItems.NEPTUNIUM_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.NEPTUNIUM_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.NEPTUNIUM_PLATES)
+                .unlockedBy(getHasName(ModItems.NEPTUNIUM_PLATE.get()), has(ModItemTags.NEPTUNIUM_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.NEPTUNIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.NEPTUNIUM_PLATING.get()), has(ModBlocks.NEPTUNIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.NEPTUNIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.NEPTUNIUM_PLATING.get()), has(ModBlocks.NEPTUNIUM_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PLATING_BUTTON.get())
+                .requires(ModBlocks.NEPTUNIUM_PLATING.get()).unlockedBy(getHasName(ModBlocks.NEPTUNIUM_PLATING.get()), has(ModBlocks.NEPTUNIUM_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.NEPTUNIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.NEPTUNIUM_PLATING.get()), has(ModBlocks.NEPTUNIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.NEPTUNIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.NEPTUNIUM_PLATING.get()), has(ModBlocks.NEPTUNIUM_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.NEPTUNIUM_PLATING.get(), ModBlocks.NEPTUNIUM_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.NEPTUNIUM_PLATES)
+                .define('D', Items.BROWN_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.NEPTUNIUM_PLATE.get()), has(ModItemTags.NEPTUNIUM_PLATES))
+                .unlockedBy(getHasName(Items.BROWN_DYE), has(Items.BROWN_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 9)
+                .requires(ModBlocks.NEPTUNIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.NEPTUNIUM_BLOCK.get()), has(ModBlocks.NEPTUNIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_NEPTUNIUM.get(), 9)
+                .requires(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), has(ModBlocks.RAW_NEPTUNIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NEPTUNIUM_NUGGET.get(), 9)
+                .requires(ModItems.NEPTUNIUM_INGOT.get()).unlockedBy(getHasName(ModItems.NEPTUNIUM_INGOT.get()), has(ModItems.NEPTUNIUM_INGOT.get())).save(consumer);
+
+        // Plutonium
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.PLUTONIUM_INGOT.get()).unlockedBy(getHasName(ModItems.PLUTONIUM_INGOT.get()), has(ModItems.PLUTONIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_PLUTONIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RAW_PLUTONIUM.get()).unlockedBy(getHasName(ModItems.RAW_PLUTONIUM.get()), has(ModItems.RAW_PLUTONIUM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.PLUTONIUM_NUGGET.get()).unlockedBy(getHasName(ModItems.PLUTONIUM_NUGGET.get()), has(ModItems.PLUTONIUM_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.PLUTONIUM_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.PLUTONIUM_PLATES)
+                .unlockedBy(getHasName(ModItems.PLUTONIUM_PLATE.get()), has(ModItemTags.PLUTONIUM_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.PLUTONIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.PLUTONIUM_PLATING.get()), has(ModBlocks.PLUTONIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.PLUTONIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.PLUTONIUM_PLATING.get()), has(ModBlocks.PLUTONIUM_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PLUTONIUM_PLATING_BUTTON.get())
+                .requires(ModBlocks.PLUTONIUM_PLATING.get()).unlockedBy(getHasName(ModBlocks.PLUTONIUM_PLATING.get()), has(ModBlocks.PLUTONIUM_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.PLUTONIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.PLUTONIUM_PLATING.get()), has(ModBlocks.PLUTONIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUTONIUM_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.PLUTONIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.PLUTONIUM_PLATING.get()), has(ModBlocks.PLUTONIUM_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.PLUTONIUM_PLATING.get(), ModBlocks.PLUTONIUM_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_PLUTONIUM_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.PLUTONIUM_PLATES)
+                .define('D', Items.WHITE_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.PLUTONIUM_PLATE.get()), has(ModItemTags.PLUTONIUM_PLATES))
+                .unlockedBy(getHasName(Items.WHITE_DYE), has(Items.WHITE_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 9)
+                .requires(ModBlocks.PLUTONIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.PLUTONIUM_BLOCK.get()), has(ModBlocks.PLUTONIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_PLUTONIUM.get(), 9)
+                .requires(ModBlocks.RAW_PLUTONIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), has(ModBlocks.RAW_PLUTONIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLUTONIUM_NUGGET.get(), 9)
+                .requires(ModItems.PLUTONIUM_INGOT.get()).unlockedBy(getHasName(ModItems.PLUTONIUM_INGOT.get()), has(ModItems.PLUTONIUM_INGOT.get())).save(consumer);
 
         // Jupiter Stone Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_STAIRS.get(), 4)

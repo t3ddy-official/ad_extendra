@@ -21,12 +21,11 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // Jupiter
         simpleItem(ModItems.RAW_JUPERIUM);
         simpleItem(ModItems.JUPERIUM_INGOT);
         simpleItem(ModItems.JUPERIUM_NUGGET);
         simpleItem(ModItems.JUPERIUM_PLATE);
-
-        // Jupiter
         stairsItem(ModBlocks.JUPERIUM_PLATING_STAIRS);
         slabItem(ModBlocks.JUPERIUM_PLATING_SLAB);
         pillarItem(ModBlocks.JUPERIUM_PILLAR);
@@ -61,6 +60,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.CERES_PILLAR);
 
         // Saturn
+        simpleItem(ModItems.RAW_SATURLYTE);
+        simpleItem(ModItems.SATURLYTE_INGOT);
+        simpleItem(ModItems.SATURLYTE_NUGGET);
+        simpleItem(ModItems.SATURLYTE_PLATE);
+        stairsItem(ModBlocks.SATURLYTE_PLATING_STAIRS);
+        slabItem(ModBlocks.SATURLYTE_PLATING_SLAB);
+        pillarItem(ModBlocks.SATURLYTE_PILLAR);
+        pillarItem(ModBlocks.GLOWING_SATURLYTE_PILLAR);
+        buttonItem(ModBlocks.SATURLYTE_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.SATURN_STONE_STAIRS);
         slabItem(ModBlocks.SATURN_STONE_SLAB);
         stairsItem(ModBlocks.SATURN_COBBLESTONE_STAIRS);
@@ -75,6 +84,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.SATURN_PILLAR);
 
         // Uranus
+        simpleItem(ModItems.RAW_URANIUM);
+        simpleItem(ModItems.URANIUM_INGOT);
+        simpleItem(ModItems.URANIUM_NUGGET);
+        simpleItem(ModItems.URANIUM_PLATE);
+        stairsItem(ModBlocks.URANIUM_PLATING_STAIRS);
+        slabItem(ModBlocks.URANIUM_PLATING_SLAB);
+        pillarItem(ModBlocks.URANIUM_PILLAR);
+        pillarItem(ModBlocks.GLOWING_URANIUM_PILLAR);
+        buttonItem(ModBlocks.URANIUM_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.URANUS_STONE_STAIRS);
         slabItem(ModBlocks.URANUS_STONE_SLAB);
         stairsItem(ModBlocks.URANUS_COBBLESTONE_STAIRS);
@@ -89,6 +108,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.URANUS_PILLAR);
 
         // Neptune
+        simpleItem(ModItems.RAW_NEPTUNIUM);
+        simpleItem(ModItems.NEPTUNIUM_INGOT);
+        simpleItem(ModItems.NEPTUNIUM_NUGGET);
+        simpleItem(ModItems.NEPTUNIUM_PLATE);
+        stairsItem(ModBlocks.NEPTUNIUM_PLATING_STAIRS);
+        slabItem(ModBlocks.NEPTUNIUM_PLATING_SLAB);
+        pillarItem(ModBlocks.NEPTUNIUM_PILLAR);
+        pillarItem(ModBlocks.GLOWING_NEPTUNIUM_PILLAR);
+        buttonItem(ModBlocks.NEPTUNIUM_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.NEPTUNE_STONE_STAIRS);
         slabItem(ModBlocks.NEPTUNE_STONE_SLAB);
         stairsItem(ModBlocks.NEPTUNE_COBBLESTONE_STAIRS);
@@ -117,6 +146,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.ORCUS_PILLAR);
 
         // Pluto
+        simpleItem(ModItems.RAW_PLUTONIUM);
+        simpleItem(ModItems.PLUTONIUM_INGOT);
+        simpleItem(ModItems.PLUTONIUM_NUGGET);
+        simpleItem(ModItems.PLUTONIUM_PLATE);
+        stairsItem(ModBlocks.PLUTONIUM_PLATING_STAIRS);
+        slabItem(ModBlocks.PLUTONIUM_PLATING_SLAB);
+        pillarItem(ModBlocks.PLUTONIUM_PILLAR);
+        pillarItem(ModBlocks.GLOWING_PLUTONIUM_PILLAR);
+        buttonItem(ModBlocks.PLUTONIUM_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.PLUTO_STONE_STAIRS);
         slabItem(ModBlocks.PLUTO_STONE_SLAB);
         stairsItem(ModBlocks.PLUTO_COBBLESTONE_STAIRS);

@@ -101,6 +101,20 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_SATURN_STONE_SLAB.get());
                 output.accept(ModBlocks.SATURN_PILLAR.get());
+                output.accept(ModBlocks.SATURN_SATURLYTE_ORE.get());
+                output.accept(ModItems.RAW_SATURLYTE.get());
+                output.accept(ModBlocks.RAW_SATURLYTE_BLOCK.get());
+                output.accept(ModItems.SATURLYTE_INGOT.get());
+                output.accept(ModItems.SATURLYTE_PLATE.get());
+                output.accept(ModItems.SATURLYTE_NUGGET.get());
+                output.accept(ModBlocks.SATURLYTE_BLOCK.get());
+                output.accept(ModBlocks.SATURLYTE_PLATING.get());
+                output.accept(ModBlocks.SATURLYTE_PLATING_STAIRS.get());
+                output.accept(ModBlocks.SATURLYTE_PLATING_SLAB.get());
+                output.accept(ModBlocks.SATURLYTE_PLATING_BUTTON.get());
+                output.accept(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.SATURLYTE_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_SATURLYTE_PILLAR.get());
 
                 // Uranus
                 output.accept(ModBlocks.URANUS_STONE.get());
@@ -122,6 +136,20 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
                 output.accept(ModBlocks.URANUS_PILLAR.get());
                 output.accept(ModBlocks.URANUS_ICE_SHARD_ORE.get());
+                output.accept(ModBlocks.URANUS_URANIUM_ORE.get());
+                output.accept(ModItems.RAW_URANIUM.get());
+                output.accept(ModBlocks.RAW_URANIUM_BLOCK.get());
+                output.accept(ModItems.URANIUM_INGOT.get());
+                output.accept(ModItems.URANIUM_PLATE.get());
+                output.accept(ModItems.URANIUM_NUGGET.get());
+                output.accept(ModBlocks.URANIUM_BLOCK.get());
+                output.accept(ModBlocks.URANIUM_PLATING.get());
+                output.accept(ModBlocks.URANIUM_PLATING_STAIRS.get());
+                output.accept(ModBlocks.URANIUM_PLATING_SLAB.get());
+                output.accept(ModBlocks.URANIUM_PLATING_BUTTON.get());
+                output.accept(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.URANIUM_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_URANIUM_PILLAR.get());
 
                 // Neptune
                 output.accept(ModBlocks.NEPTUNE_STONE.get());
@@ -142,6 +170,20 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get());
                 output.accept(ModBlocks.NEPTUNE_PILLAR.get());
+                output.accept(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+                output.accept(ModItems.RAW_NEPTUNIUM.get());
+                output.accept(ModBlocks.RAW_NEPTUNIUM_BLOCK.get());
+                output.accept(ModItems.NEPTUNIUM_INGOT.get());
+                output.accept(ModItems.NEPTUNIUM_PLATE.get());
+                output.accept(ModItems.NEPTUNIUM_NUGGET.get());
+                output.accept(ModBlocks.NEPTUNIUM_BLOCK.get());
+                output.accept(ModBlocks.NEPTUNIUM_PLATING.get());
+                output.accept(ModBlocks.NEPTUNIUM_PLATING_STAIRS.get());
+                output.accept(ModBlocks.NEPTUNIUM_PLATING_SLAB.get());
+                output.accept(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get());
+                output.accept(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.NEPTUNIUM_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get());
 
                 // Orcus
                 output.accept(ModBlocks.ORCUS_STONE.get());
@@ -183,6 +225,20 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_PLUTO_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get());
                 output.accept(ModBlocks.PLUTO_PILLAR.get());
+                output.accept(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+                output.accept(ModItems.RAW_PLUTONIUM.get());
+                output.accept(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
+                output.accept(ModItems.PLUTONIUM_INGOT.get());
+                output.accept(ModItems.PLUTONIUM_PLATE.get());
+                output.accept(ModItems.PLUTONIUM_NUGGET.get());
+                output.accept(ModBlocks.PLUTONIUM_BLOCK.get());
+                output.accept(ModBlocks.PLUTONIUM_PLATING.get());
+                output.accept(ModBlocks.PLUTONIUM_PLATING_STAIRS.get());
+                output.accept(ModBlocks.PLUTONIUM_PLATING_SLAB.get());
+                output.accept(ModBlocks.PLUTONIUM_PLATING_BUTTON.get());
+                output.accept(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.PLUTONIUM_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get());
 
                 // Haumea
                 output.accept(ModBlocks.HAUMEA_STONE.get());

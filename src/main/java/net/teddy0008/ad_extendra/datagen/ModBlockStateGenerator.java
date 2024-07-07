@@ -78,6 +78,18 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/ceres_pillar_top"));
 
         // Saturn
+        blockWithItem(ModBlocks.SATURLYTE_BLOCK);
+        blockWithItem(ModBlocks.RAW_SATURLYTE_BLOCK);
+        blockWithItem(ModBlocks.SATURLYTE_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.SATURLYTE_PLATING_STAIRS.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.SATURLYTE_PLATING_SLAB.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.SATURLYTE_PILLAR.get()), blockTexture(ModBlocks.SATURLYTE_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/saturlyte_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_SATURLYTE_PILLAR.get()), blockTexture(ModBlocks.GLOWING_SATURLYTE_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_saturlyte_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.SATURLYTE_PLATING_BUTTON.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()));
+        blockWithItem(ModBlocks.SATURN_SATURLYTE_ORE);
         fallingBlockWithItem(ModBlocks.SATURN_SAND);
         iceBlockWithItem(ModBlocks.SATURN_ICE);
         blockWithItem(ModBlocks.SATURN_STONE);
@@ -101,6 +113,18 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/saturn_pillar_top"));
 
         // Uranus
+        blockWithItem(ModBlocks.URANIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_URANIUM_BLOCK);
+        blockWithItem(ModBlocks.URANIUM_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.URANIUM_PLATING_STAIRS.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.URANIUM_PLATING_SLAB.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.URANIUM_PILLAR.get()), blockTexture(ModBlocks.URANIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/uranium_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_URANIUM_PILLAR.get()), blockTexture(ModBlocks.GLOWING_URANIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_uranium_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.URANIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()));
+        blockWithItem(ModBlocks.URANUS_URANIUM_ORE);
         oreBlockWithItem(ModBlocks.URANUS_ICE_SHARD_ORE);
         blockWithItem(ModBlocks.URANUS_STONE);
         stairsBlock(((StairBlock) ModBlocks.URANUS_STONE_STAIRS.get()), blockTexture(ModBlocks.URANUS_STONE.get()));
@@ -123,6 +147,18 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/uranus_pillar_top"));
 
         // Neptune
+        blockWithItem(ModBlocks.NEPTUNIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_NEPTUNIUM_BLOCK);
+        blockWithItem(ModBlocks.NEPTUNIUM_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.NEPTUNIUM_PLATING_STAIRS.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.NEPTUNIUM_PLATING_SLAB.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.NEPTUNIUM_PILLAR.get()), blockTexture(ModBlocks.NEPTUNIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/neptunium_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get()), blockTexture(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_neptunium_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.NEPTUNIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()));
+        blockWithItem(ModBlocks.NEPTUNE_NEPTUNIUM_ORE);
         blockWithItem(ModBlocks.NEPTUNE_STONE);
         stairsBlock(((StairBlock) ModBlocks.NEPTUNE_STONE_STAIRS.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.NEPTUNE_STONE_SLAB.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()));
@@ -165,6 +201,18 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/orcus_pillar_top"));
 
         // Pluto
+        blockWithItem(ModBlocks.PLUTONIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_PLUTONIUM_BLOCK);
+        blockWithItem(ModBlocks.PLUTONIUM_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.PLUTONIUM_PLATING_STAIRS.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.PLUTONIUM_PLATING_SLAB.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PLUTONIUM_PILLAR.get()), blockTexture(ModBlocks.PLUTONIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/plutonium_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_PLUTONIUM_PILLAR.get()), blockTexture(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_plutonium_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.PLUTONIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()));
+        blockWithItem(ModBlocks.PLUTO_PLUTONIUM_ORE);
         fallingBlockWithItem(ModBlocks.PLUTO_SAND);
         blockWithItem(ModBlocks.PLUTO_STONE);
         stairsBlock(((StairBlock) ModBlocks.PLUTO_STONE_STAIRS.get()), blockTexture(ModBlocks.PLUTO_STONE.get()));

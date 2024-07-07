@@ -23,9 +23,65 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         // this.tag(ModTags.Blocks.TAG).add(ModBlocks.BLOCK.get()).addTags(Tags.Blocks.TAG);
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                // Jupiter
                 .add(ModBlocks.JUPERIUM_BLOCK.get())
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get())
-                .add(ModBlocks.RAW_JUPERIUM_BLOCK.get());
+                .add(ModBlocks.RAW_JUPERIUM_BLOCK.get())
+                .add(ModBlocks.JUPERIUM_PLATING.get())
+                .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.JUPERIUM_PLATING_SLAB.get())
+                .add(ModBlocks.JUPERIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_JUPERIUM_PILLAR.get())
+                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get())
+
+                // Saturn
+                .add(ModBlocks.SATURLYTE_BLOCK.get())
+                .add(ModBlocks.SATURN_SATURLYTE_ORE.get())
+                .add(ModBlocks.RAW_SATURLYTE_BLOCK.get())
+                .add(ModBlocks.SATURLYTE_PLATING.get())
+                .add(ModBlocks.SATURLYTE_PLATING_STAIRS.get())
+                .add(ModBlocks.SATURLYTE_PLATING_SLAB.get())
+                .add(ModBlocks.SATURLYTE_PILLAR.get())
+                .add(ModBlocks.GLOWING_SATURLYTE_PILLAR.get())
+                .add(ModBlocks.SATURLYTE_PLATING_BUTTON.get())
+                .add(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get());
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                // Uranus
+                .add(ModBlocks.URANIUM_BLOCK.get())
+                .add(ModBlocks.URANUS_URANIUM_ORE.get())
+                .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                .add(ModBlocks.URANIUM_PLATING.get())
+                .add(ModBlocks.URANIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.URANIUM_PLATING_SLAB.get())
+                .add(ModBlocks.URANIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_URANIUM_PILLAR.get())
+                .add(ModBlocks.URANIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get())
+
+                // Neptune
+                .add(ModBlocks.NEPTUNIUM_BLOCK.get())
+                .add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get())
+                .add(ModBlocks.RAW_NEPTUNIUM_BLOCK.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_SLAB.get())
+                .add(ModBlocks.NEPTUNIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get())
+
+                // Pluto
+                .add(ModBlocks.PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get())
+                .add(ModBlocks.RAW_PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.PLUTONIUM_PLATING.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_SLAB.get())
+                .add(ModBlocks.PLUTONIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.JUPITER_COAL_ORE.get())
                 .add(ModBlocks.CERES_IRON_ORE.get())
@@ -90,6 +146,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CERES_IRON_ORE.get())
 
                 // Saturn
+                .add(ModBlocks.SATURLYTE_BLOCK.get())
+                .add(ModBlocks.SATURN_SATURLYTE_ORE.get())
+                .add(ModBlocks.RAW_SATURLYTE_BLOCK.get())
+                .add(ModBlocks.SATURLYTE_PLATING.get())
+                .add(ModBlocks.SATURLYTE_PLATING_STAIRS.get())
+                .add(ModBlocks.SATURLYTE_PLATING_SLAB.get())
+                .add(ModBlocks.SATURLYTE_PILLAR.get())
+                .add(ModBlocks.GLOWING_SATURLYTE_PILLAR.get())
+                .add(ModBlocks.SATURLYTE_PLATING_BUTTON.get())
+                .add(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.SATURN_STONE.get())
                 .add(ModBlocks.SATURN_STONE_STAIRS.get())
                 .add(ModBlocks.SATURN_STONE_SLAB.get())
@@ -110,6 +176,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SATURN_PILLAR.get())
 
                 // Uranus
+                .add(ModBlocks.URANIUM_BLOCK.get())
+                .add(ModBlocks.URANUS_URANIUM_ORE.get())
+                .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                .add(ModBlocks.URANIUM_PLATING.get())
+                .add(ModBlocks.URANIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.URANIUM_PLATING_SLAB.get())
+                .add(ModBlocks.URANIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_URANIUM_PILLAR.get())
+                .add(ModBlocks.URANIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.URANUS_ICE_SHARD_ORE.get())
                 .add(ModBlocks.URANUS_STONE.get())
                 .add(ModBlocks.URANUS_STONE_STAIRS.get())
@@ -131,6 +207,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.URANUS_PILLAR.get())
 
                 // Neptune
+                .add(ModBlocks.NEPTUNIUM_BLOCK.get())
+                .add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get())
+                .add(ModBlocks.RAW_NEPTUNIUM_BLOCK.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_SLAB.get())
+                .add(ModBlocks.NEPTUNIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.NEPTUNE_STONE.get())
                 .add(ModBlocks.NEPTUNE_STONE_STAIRS.get())
                 .add(ModBlocks.NEPTUNE_STONE_SLAB.get())
@@ -171,6 +257,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ORCUS_PILLAR.get())
 
                 // Pluto
+                .add(ModBlocks.PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get())
+                .add(ModBlocks.RAW_PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.PLUTONIUM_PLATING.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_SLAB.get())
+                .add(ModBlocks.PLUTONIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.PLUTO_SAND.get())
                 .add(ModBlocks.PLUTO_STONE.get())
                 .add(ModBlocks.PLUTO_STONE_STAIRS.get())
@@ -372,6 +468,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_CERES_STONE_STAIRS.get())
 
                 // Saturn
+                .add(ModBlocks.SATURLYTE_PLATING_STAIRS.get())
                 .add(ModBlocks.SATURN_STONE_STAIRS.get())
                 .add(ModBlocks.SATURN_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.SATURN_STONE_BRICK_STAIRS.get())
@@ -379,6 +476,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get())
 
                 // Uranus
+                .add(ModBlocks.URANIUM_PLATING_STAIRS.get())
                 .add(ModBlocks.URANUS_STONE_STAIRS.get())
                 .add(ModBlocks.URANUS_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.URANUS_STONE_BRICK_STAIRS.get())
@@ -386,6 +484,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get())
 
                 // Neptune
+                .add(ModBlocks.NEPTUNIUM_PLATING_STAIRS.get())
                 .add(ModBlocks.NEPTUNE_STONE_STAIRS.get())
                 .add(ModBlocks.NEPTUNE_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.NEPTUNE_STONE_BRICK_STAIRS.get())
@@ -400,6 +499,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get())
 
                 // Pluto
+                .add(ModBlocks.PLUTONIUM_PLATING_STAIRS.get())
                 .add(ModBlocks.PLUTO_STONE_STAIRS.get())
                 .add(ModBlocks.PLUTO_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.PLUTO_STONE_BRICK_STAIRS.get())
@@ -471,6 +571,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_CERES_STONE_SLAB.get())
 
                 // Saturn
+                .add(ModBlocks.SATURLYTE_PLATING_SLAB.get())
                 .add(ModBlocks.SATURN_STONE_SLAB.get())
                 .add(ModBlocks.SATURN_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.SATURN_STONE_BRICK_SLAB.get())
@@ -478,6 +579,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SATURN_STONE_SLAB.get())
 
                 // Uranus
+                .add(ModBlocks.URANIUM_PLATING_SLAB.get())
                 .add(ModBlocks.URANUS_STONE_SLAB.get())
                 .add(ModBlocks.URANUS_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.URANUS_STONE_BRICK_SLAB.get())
@@ -485,6 +587,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_URANUS_STONE_SLAB.get())
 
                 // Neptune
+                .add(ModBlocks.NEPTUNIUM_PLATING_SLAB.get())
                 .add(ModBlocks.NEPTUNE_STONE_SLAB.get())
                 .add(ModBlocks.NEPTUNE_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.NEPTUNE_STONE_BRICK_SLAB.get())
@@ -499,6 +602,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get())
 
                 // Pluto
+                .add(ModBlocks.PLUTONIUM_PLATING_SLAB.get())
                 .add(ModBlocks.PLUTO_STONE_SLAB.get())
                 .add(ModBlocks.PLUTO_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.PLUTO_STONE_BRICK_SLAB.get())
@@ -569,14 +673,50 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SEDNA_STONE_BRICK_WALL.get())
                 .add(ModBlocks.B_STONE_BRICK_WALL.get());
         this.tag(BlockTags.BUTTONS)
-                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get());
+                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.SATURLYTE_PLATING_BUTTON.get())
+                .add(ModBlocks.URANIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get());
         this.tag(BlockTags.PRESSURE_PLATES)
-                .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
+                .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get())
+                .add(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get())
+                .add(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get())
+                .add(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
+        this.tag(Tags.Blocks.STORAGE_BLOCKS)
+                .addTag(ModBlockTags.JUPERIUM_BLOCKS)
+                .addTag(ModBlockTags.SATURLYTE_BLOCKS)
+                .addTag(ModBlockTags.URANIUM_BLOCKS)
+                .addTag(ModBlockTags.NEPTUNIUM_BLOCKS)
+                .addTag(ModBlockTags.PLUTONIUM_BLOCKS);
+        this.tag(Tags.Blocks.ORES)
+                .addTag(ModBlockTags.JUPERIUM_ORES)
+                .addTag(ModBlockTags.SATURLYTE_ORES)
+                .addTag(ModBlockTags.URANIUM_ORES)
+                .addTag(ModBlockTags.NEPTUNIUM_ORES)
+                .addTag(ModBlockTags.PLUTONIUM_ORES);
         this.tag(ModBlockTags.JUPERIUM_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get());
         this.tag(ModBlockTags.JUPERIUM_ORES)
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get());
         this.tag(ModBlockTags.ICE_SHARD_ORES)
                 .add(ModBlocks.URANUS_ICE_SHARD_ORE.get());
+        this.tag(ModBlockTags.SATURLYTE_BLOCKS)
+                .add(ModBlocks.SATURLYTE_BLOCK.get());
+        this.tag(ModBlockTags.SATURLYTE_ORES)
+                .add(ModBlocks.SATURN_SATURLYTE_ORE.get());
+        this.tag(ModBlockTags.URANIUM_BLOCKS)
+                .add(ModBlocks.URANIUM_BLOCK.get());
+        this.tag(ModBlockTags.URANIUM_ORES)
+                .add(ModBlocks.URANUS_URANIUM_ORE.get());
+        this.tag(ModBlockTags.NEPTUNIUM_BLOCKS)
+                .add(ModBlocks.NEPTUNIUM_BLOCK.get());
+        this.tag(ModBlockTags.NEPTUNIUM_ORES)
+                .add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+        this.tag(ModBlockTags.PLUTONIUM_BLOCKS)
+                .add(ModBlocks.PLUTONIUM_BLOCK.get());
+        this.tag(ModBlockTags.PLUTONIUM_ORES)
+                .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
     }
 }

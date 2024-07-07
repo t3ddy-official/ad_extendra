@@ -3,6 +3,7 @@ package net.teddy0008.ad_extendra.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -22,25 +23,115 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(Tags.Items.RAW_MATERIALS)
-                .addTag(ModItemTags.JUPERIUM_RAW_MATERIALS);
+                .addTag(ModItemTags.JUPERIUM_RAW_MATERIALS)
+                .addTag(ModItemTags.SATURLYTE_RAW_MATERIALS)
+                .addTag(ModItemTags.URANIUM_RAW_MATERIALS)
+                .addTag(ModItemTags.NEPTUNIUM_RAW_MATERIALS)
+                .addTag(ModItemTags.PLUTONIUM_RAW_MATERIALS);
         this.tag(ModItemTags.JUPERIUM_RAW_MATERIALS)
                 .add(ModItems.RAW_JUPERIUM.get());
+        this.tag(ModItemTags.SATURLYTE_RAW_MATERIALS)
+                .add(ModItems.RAW_SATURLYTE.get());
+        this.tag(ModItemTags.URANIUM_RAW_MATERIALS)
+                .add(ModItems.RAW_URANIUM.get());
+        this.tag(ModItemTags.NEPTUNIUM_RAW_MATERIALS)
+                .add(ModItems.RAW_NEPTUNIUM.get());
+        this.tag(ModItemTags.PLUTONIUM_RAW_MATERIALS)
+                .add(ModItems.RAW_PLUTONIUM.get());
         this.tag(Tags.Items.INGOTS)
-                .addTag(ModItemTags.FORGE_JUPERIUM_INGOTS);
+                .addTag(ModItemTags.FORGE_JUPERIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_SATURLYTE_INGOTS)
+                .addTag(ModItemTags.FORGE_URANIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_NEPTUNIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_PLUTONIUM_INGOTS);
         this.tag(ModItemTags.FORGE_JUPERIUM_INGOTS)
                 .add(ModItems.JUPERIUM_INGOT.get());
         this.tag(ModItemTags.JUPERIUM_INGOTS)
                 .addTag(ModItemTags.FORGE_JUPERIUM_INGOTS);
+        this.tag(ModItemTags.FORGE_SATURLYTE_INGOTS)
+                .add(ModItems.SATURLYTE_INGOT.get());
+        this.tag(ModItemTags.SATURLYTE_INGOTS)
+                .addTag(ModItemTags.FORGE_SATURLYTE_INGOTS);
+        this.tag(ModItemTags.FORGE_URANIUM_INGOTS)
+                .add(ModItems.URANIUM_INGOT.get());
+        this.tag(ModItemTags.URANIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_URANIUM_INGOTS);
+        this.tag(ModItemTags.FORGE_NEPTUNIUM_INGOTS)
+                .add(ModItems.NEPTUNIUM_INGOT.get());
+        this.tag(ModItemTags.NEPTUNIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_NEPTUNIUM_INGOTS);
+        this.tag(ModItemTags.FORGE_PLUTONIUM_INGOTS)
+                .add(ModItems.PLUTONIUM_INGOT.get());
+        this.tag(ModItemTags.PLUTONIUM_INGOTS)
+                .addTag(ModItemTags.FORGE_PLUTONIUM_INGOTS);
+        this.tag(Tags.Items.STORAGE_BLOCKS)
+                .addTag(ModItemTags.FORGE_JUPERIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_SATURLYTE_BLOCKS)
+                .addTag(ModItemTags.FORGE_URANIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_NEPTUNIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_PLUTONIUM_BLOCKS);
         this.tag(ModItemTags.FORGE_JUPERIUM_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.JUPERIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_JUPERIUM_BLOCKS);
+        this.tag(ModItemTags.FORGE_SATURLYTE_BLOCKS)
+                .add(ModBlocks.SATURLYTE_BLOCK.get().asItem());
+        this.tag(ModItemTags.SATURLYTE_BLOCKS)
+                .addTag(ModItemTags.FORGE_SATURLYTE_BLOCKS);
+        this.tag(ModItemTags.FORGE_URANIUM_BLOCKS)
+                .add(ModBlocks.URANIUM_BLOCK.get().asItem());
+        this.tag(ModItemTags.URANIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_URANIUM_BLOCKS);
+        this.tag(ModItemTags.FORGE_NEPTUNIUM_BLOCKS)
+                .add(ModBlocks.NEPTUNIUM_BLOCK.get().asItem());
+        this.tag(ModItemTags.NEPTUNIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_NEPTUNIUM_BLOCKS);
+        this.tag(ModItemTags.FORGE_PLUTONIUM_BLOCKS)
+                .add(ModBlocks.PLUTONIUM_BLOCK.get().asItem());
+        this.tag(ModItemTags.PLUTONIUM_BLOCKS)
+                .addTag(ModItemTags.FORGE_PLUTONIUM_BLOCKS);
+        this.tag(ModItemTags.PLATES)
+                .addTag(ModItemTags.FORGE_JUPERIUM_PLATES)
+                .addTag(ModItemTags.FORGE_SATURLYTE_PLATES)
+                .addTag(ModItemTags.FORGE_URANIUM_PLATES)
+                .addTag(ModItemTags.FORGE_NEPTUNIUM_PLATES)
+                .addTag(ModItemTags.FORGE_PLUTONIUM_PLATES);
         this.tag(ModItemTags.FORGE_JUPERIUM_PLATES)
                 .add(ModItems.JUPERIUM_PLATE.get());
         this.tag(ModItemTags.JUPERIUM_PLATES)
                 .addTag(ModItemTags.FORGE_JUPERIUM_PLATES);
+        this.tag(ModItemTags.FORGE_SATURLYTE_PLATES)
+                .add(ModItems.SATURLYTE_PLATE.get());
+        this.tag(ModItemTags.SATURLYTE_PLATES)
+                .addTag(ModItemTags.FORGE_SATURLYTE_PLATES);
+        this.tag(ModItemTags.FORGE_URANIUM_PLATES)
+                .add(ModItems.URANIUM_PLATE.get());
+        this.tag(ModItemTags.URANIUM_PLATES)
+                .addTag(ModItemTags.FORGE_URANIUM_PLATES);
+        this.tag(ModItemTags.FORGE_NEPTUNIUM_PLATES)
+                .add(ModItems.NEPTUNIUM_PLATE.get());
+        this.tag(ModItemTags.NEPTUNIUM_PLATES)
+                .addTag(ModItemTags.FORGE_NEPTUNIUM_PLATES);
+        this.tag(ModItemTags.FORGE_PLUTONIUM_PLATES)
+                .add(ModItems.PLUTONIUM_PLATE.get());
+        this.tag(ModItemTags.PLUTONIUM_PLATES)
+                .addTag(ModItemTags.FORGE_PLUTONIUM_PLATES);
+        this.tag(Tags.Items.NUGGETS)
+                .addTag(ModItemTags.JUPERIUM_NUGGETS)
+                .addTag(ModItemTags.SATURLYTE_NUGGETS)
+                .addTag(ModItemTags.URANIUM_NUGGETS)
+                .addTag(ModItemTags.NEPTUNIUM_NUGGETS)
+                .addTag(ModItemTags.PLUTONIUM_NUGGETS);
         this.tag(ModItemTags.JUPERIUM_NUGGETS)
                 .add(ModItems.JUPERIUM_NUGGET.get());
+        this.tag(ModItemTags.SATURLYTE_NUGGETS)
+                .add(ModItems.SATURLYTE_NUGGET.get());
+        this.tag(ModItemTags.URANIUM_NUGGETS)
+                .add(ModItems.URANIUM_NUGGET.get());
+        this.tag(ModItemTags.NEPTUNIUM_NUGGETS)
+                .add(ModItems.NEPTUNIUM_NUGGET.get());
+        this.tag(ModItemTags.PLUTONIUM_NUGGETS)
+                .add(ModItems.PLUTONIUM_NUGGET.get());
         this.tag(ItemTags.SAND)
                 .add(ModBlocks.JUPITER_SAND.get().asItem())
                 .add(ModBlocks.CERES_SAND.get().asItem())
@@ -64,6 +155,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_CERES_STONE_STAIRS.get().asItem())
 
                 // Saturn
+                .add(ModBlocks.SATURLYTE_PLATING_STAIRS.get().asItem())
                 .add(ModBlocks.SATURN_STONE_STAIRS.get().asItem())
                 .add(ModBlocks.SATURN_COBBLESTONE_STAIRS.get().asItem())
                 .add(ModBlocks.SATURN_STONE_BRICK_STAIRS.get().asItem())
@@ -71,6 +163,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get().asItem())
 
                 // Uranus
+                .add(ModBlocks.URANIUM_PLATING_STAIRS.get().asItem())
                 .add(ModBlocks.URANUS_STONE_STAIRS.get().asItem())
                 .add(ModBlocks.URANUS_COBBLESTONE_STAIRS.get().asItem())
                 .add(ModBlocks.URANUS_STONE_BRICK_STAIRS.get().asItem())
@@ -78,6 +171,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get().asItem())
 
                 // Neptune
+                .add(ModBlocks.NEPTUNIUM_PLATING_STAIRS.get().asItem())
                 .add(ModBlocks.NEPTUNE_STONE_STAIRS.get().asItem())
                 .add(ModBlocks.NEPTUNE_COBBLESTONE_STAIRS.get().asItem())
                 .add(ModBlocks.NEPTUNE_STONE_BRICK_STAIRS.get().asItem())
@@ -92,6 +186,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get().asItem())
 
                 // Pluto
+                .add(ModBlocks.PLUTONIUM_PLATING_STAIRS.get().asItem())
                 .add(ModBlocks.PLUTO_STONE_STAIRS.get().asItem())
                 .add(ModBlocks.PLUTO_COBBLESTONE_STAIRS.get().asItem())
                 .add(ModBlocks.PLUTO_STONE_BRICK_STAIRS.get().asItem())
@@ -163,6 +258,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_CERES_STONE_SLAB.get().asItem())
 
                 // Saturn
+                .add(ModBlocks.SATURLYTE_PLATING_SLAB.get().asItem())
                 .add(ModBlocks.SATURN_STONE_SLAB.get().asItem())
                 .add(ModBlocks.SATURN_COBBLESTONE_SLAB.get().asItem())
                 .add(ModBlocks.SATURN_STONE_BRICK_SLAB.get().asItem())
@@ -170,6 +266,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_SATURN_STONE_SLAB.get().asItem())
 
                 // Uranus
+                .add(ModBlocks.URANIUM_PLATING_SLAB.get().asItem())
                 .add(ModBlocks.URANUS_STONE_SLAB.get().asItem())
                 .add(ModBlocks.URANUS_COBBLESTONE_SLAB.get().asItem())
                 .add(ModBlocks.URANUS_STONE_BRICK_SLAB.get().asItem())
@@ -177,6 +274,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_URANUS_STONE_SLAB.get().asItem())
 
                 // Neptune
+                .add(ModBlocks.NEPTUNIUM_PLATING_SLAB.get().asItem())
                 .add(ModBlocks.NEPTUNE_STONE_SLAB.get().asItem())
                 .add(ModBlocks.NEPTUNE_COBBLESTONE_SLAB.get().asItem())
                 .add(ModBlocks.NEPTUNE_STONE_BRICK_SLAB.get().asItem())
@@ -191,6 +289,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get().asItem())
 
                 // Pluto
+                .add(ModBlocks.PLUTONIUM_PLATING_SLAB.get().asItem())
                 .add(ModBlocks.PLUTO_STONE_SLAB.get().asItem())
                 .add(ModBlocks.PLUTO_COBBLESTONE_SLAB.get().asItem())
                 .add(ModBlocks.PLUTO_STONE_BRICK_SLAB.get().asItem())
@@ -261,7 +360,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.SEDNA_STONE_BRICK_WALL.get().asItem())
                 .add(ModBlocks.B_STONE_BRICK_WALL.get().asItem());
         this.tag(ItemTags.BUTTONS)
-                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get().asItem());
+                .add(ModBlocks.JUPERIUM_PLATING_BUTTON.get().asItem())
+                .add(ModBlocks.SATURLYTE_PLATING_BUTTON.get().asItem())
+                .add(ModBlocks.URANIUM_PLATING_BUTTON.get().asItem())
+                .add(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get().asItem())
+                .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get().asItem());
         this.tag(ItemTags.STONE_TOOL_MATERIALS)
                 .add(ModBlocks.JUPITER_COBBLESTONE.get().asItem())
                 .add(ModBlocks.CERES_COBBLESTONE.get().asItem())
@@ -292,6 +395,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ERIS_COBBLESTONE.get().asItem())
                 .add(ModBlocks.SEDNA_COBBLESTONE.get().asItem())
                 .add(ModBlocks.B_COBBLESTONE.get().asItem());
+        this.tag(Tags.Items.ORES)
+                .addTag(ModItemTags.JUPERIUM_ORES)
+                .addTag(ModItemTags.SATURLYTE_ORES)
+                .addTag(ModItemTags.URANIUM_ORES)
+                .addTag(ModItemTags.NEPTUNIUM_ORES)
+                .addTag(ModItemTags.PLUTONIUM_ORES);
         this.tag(Tags.Items.ORES_COAL)
                 .add(ModBlocks.JUPITER_COAL_ORE.get().asItem());
         this.tag(Tags.Items.ORES_DIAMOND)
@@ -306,5 +415,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get().asItem());
         this.tag(ModItemTags.ICE_SHARD_ORES)
                 .add(ModBlocks.URANUS_ICE_SHARD_ORE.get().asItem());
+        this.tag(ModItemTags.SATURLYTE_ORES)
+                .add(ModBlocks.SATURN_SATURLYTE_ORE.get().asItem());
+        this.tag(ModItemTags.URANIUM_ORES)
+                .add(ModBlocks.URANUS_URANIUM_ORE.get().asItem());
+        this.tag(ModItemTags.NEPTUNIUM_ORES)
+                .add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get().asItem());
+        this.tag(ModItemTags.PLUTONIUM_ORES)
+                .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get().asItem());
     }
 }
