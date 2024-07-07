@@ -85,10 +85,38 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.JUPITER_COAL_ORE.get())
                 .add(ModBlocks.CERES_IRON_ORE.get())
-                .add(ModBlocks.CERES_COPPER_ORE.get());
+                .add(ModBlocks.CERES_COPPER_ORE.get())
+                .add(ModBlocks.SATURN_COAL_ORE.get())
+                .add(ModBlocks.URANUS_IRON_ORE.get())
+                .add(ModBlocks.NEPTUNE_COAL_ORE.get())
+                .add(ModBlocks.NEPTUNE_IRON_ORE.get())
+                .add(ModBlocks.NEPTUNE_COPPER_ORE.get())
+                .add(ModBlocks.ORCUS_IRON_ORE.get())
+                .add(ModBlocks.ORCUS_COPPER_ORE.get())
+                .add(ModBlocks.HAUMEA_IRON_ORE.get())
+                .add(ModBlocks.HAUMEA_COPPER_ORE.get())
+                .add(ModBlocks.QUAOAR_IRON_ORE.get())
+                .add(ModBlocks.QUAOAR_COPPER_ORE.get())
+                .add(ModBlocks.MAKEMAKE_IRON_ORE.get())
+                .add(ModBlocks.MAKEMAKE_COPPER_ORE.get())
+                .add(ModBlocks.GONGGONG_IRON_ORE.get())
+                .add(ModBlocks.GONGGONG_COPPER_ORE.get())
+                .add(ModBlocks.ERIS_IRON_ORE.get())
+                .add(ModBlocks.ERIS_COPPER_ORE.get())
+                .add(ModBlocks.SEDNA_IRON_ORE.get())
+                .add(ModBlocks.SEDNA_COPPER_ORE.get())
+                .add(ModBlocks.B_IRON_ORE.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
-                .add(ModBlocks.JUPITER_GOLD_ORE.get());
+                .add(ModBlocks.JUPITER_GOLD_ORE.get())
+                .add(ModBlocks.SATURN_DIAMOND_ORE.get())
+                .add(ModBlocks.SATURN_GOLD_ORE.get())
+                .add(ModBlocks.URANUS_DIAMOND_ORE.get())
+                .add(ModBlocks.PLUTO_DIAMOND_ORE.get())
+                .add(ModBlocks.PLUTO_GOLD_ORE.get())
+                .add(ModBlocks.B_DIAMOND_ORE.get())
+                .add(ModBlocks.B_EMERALD_ORE.get())
+                .add(ModBlocks.B_REDSTONE_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 // Jupiter
                 .add(ModBlocks.JUPERIUM_BLOCK.get())
@@ -174,6 +202,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_SATURN_STONE_SLAB.get())
                 .add(ModBlocks.SATURN_PILLAR.get())
+                .add(ModBlocks.SATURN_COAL_ORE.get())
+                .add(ModBlocks.SATURN_DIAMOND_ORE.get())
+                .add(ModBlocks.SATURN_GOLD_ORE.get())
 
                 // Uranus
                 .add(ModBlocks.URANIUM_BLOCK.get())
@@ -205,6 +236,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_URANUS_STONE_SLAB.get())
                 .add(ModBlocks.URANUS_PILLAR.get())
+                .add(ModBlocks.URANUS_DIAMOND_ORE.get())
+                .add(ModBlocks.URANUS_IRON_ORE.get())
+                .add(ModBlocks.URANUS_LAPIS_ORE.get())
 
                 // Neptune
                 .add(ModBlocks.NEPTUNIUM_BLOCK.get())
@@ -235,6 +269,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get())
                 .add(ModBlocks.NEPTUNE_PILLAR.get())
+                .add(ModBlocks.NEPTUNE_COAL_ORE.get())
+                .add(ModBlocks.NEPTUNE_COPPER_ORE.get())
+                .add(ModBlocks.NEPTUNE_IRON_ORE.get())
 
                 // Orcus
                 .add(ModBlocks.ORCUS_STONE.get())
@@ -255,6 +292,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get())
                 .add(ModBlocks.ORCUS_PILLAR.get())
+                .add(ModBlocks.ORCUS_COPPER_ORE.get())
+                .add(ModBlocks.ORCUS_IRON_ORE.get())
 
                 // Pluto
                 .add(ModBlocks.PLUTONIUM_BLOCK.get())
@@ -286,6 +325,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_PLUTO_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get())
                 .add(ModBlocks.PLUTO_PILLAR.get())
+                .add(ModBlocks.PLUTO_DIAMOND_ORE.get())
+                .add(ModBlocks.PLUTO_GOLD_ORE.get())
 
                 // Haumea
                 .add(ModBlocks.HAUMEA_STONE.get())
@@ -306,6 +347,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_HAUMEA_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_HAUMEA_STONE_SLAB.get())
                 .add(ModBlocks.HAUMEA_PILLAR.get())
+                .add(ModBlocks.HAUMEA_COPPER_ORE.get())
+                .add(ModBlocks.HAUMEA_IRON_ORE.get())
 
                 // Quaoar
                 .add(ModBlocks.QUAOAR_STONE.get())
@@ -326,6 +369,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_QUAOAR_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_QUAOAR_STONE_SLAB.get())
                 .add(ModBlocks.QUAOAR_PILLAR.get())
+                .add(ModBlocks.QUAOAR_COPPER_ORE.get())
+                .add(ModBlocks.QUAOAR_IRON_ORE.get())
 
                 // Makemake
                 .add(ModBlocks.MAKEMAKE_STONE.get())
@@ -346,6 +391,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB.get())
                 .add(ModBlocks.MAKEMAKE_PILLAR.get())
+                .add(ModBlocks.MAKEMAKE_COPPER_ORE.get())
+                .add(ModBlocks.MAKEMAKE_IRON_ORE.get())
 
                 // Gonggong
                 .add(ModBlocks.GONGGONG_STONE.get())
@@ -366,6 +413,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_GONGGONG_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_GONGGONG_STONE_SLAB.get())
                 .add(ModBlocks.GONGGONG_PILLAR.get())
+                .add(ModBlocks.GONGGONG_COPPER_ORE.get())
+                .add(ModBlocks.GONGGONG_IRON_ORE.get())
 
                 // Eris
                 .add(ModBlocks.ERIS_STONE.get())
@@ -386,6 +435,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ERIS_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_ERIS_STONE_SLAB.get())
                 .add(ModBlocks.ERIS_PILLAR.get())
+                .add(ModBlocks.ERIS_COPPER_ORE.get())
+                .add(ModBlocks.ERIS_IRON_ORE.get())
 
                 // Sedna
                 .add(ModBlocks.SEDNA_STONE.get())
@@ -406,6 +457,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get())
                 .add(ModBlocks.SEDNA_PILLAR.get())
+                .add(ModBlocks.SEDNA_COPPER_ORE.get())
+                .add(ModBlocks.SEDNA_IRON_ORE.get())
 
                 // Proxima Centauri b
                 .add(ModBlocks.B_SAND.get())
@@ -426,7 +479,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_B_STONE.get())
                 .add(ModBlocks.POLISHED_B_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_B_STONE_SLAB.get())
-                .add(ModBlocks.B_PILLAR.get());
+                .add(ModBlocks.B_PILLAR.get())
+                .add(ModBlocks.B_DIAMOND_ORE.get())
+                .add(ModBlocks.B_EMERALD_ORE.get())
+                .add(ModBlocks.B_IRON_ORE.get())
+                .add(ModBlocks.B_REDSTONE_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.JUPITER_SAND.get())
                 .add(ModBlocks.CERES_SAND.get())
@@ -434,15 +491,47 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PLUTO_SAND.get())
                 .add(ModBlocks.B_SAND.get());
         this.tag(BlockTags.DIAMOND_ORES)
-                .add(ModBlocks.JUPITER_DIAMOND_ORE.get());
+                .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
+                .add(ModBlocks.SATURN_DIAMOND_ORE.get())
+                .add(ModBlocks.URANUS_DIAMOND_ORE.get())
+                .add(ModBlocks.PLUTO_DIAMOND_ORE.get())
+                .add(ModBlocks.B_DIAMOND_ORE.get());
         this.tag(BlockTags.COAL_ORES)
-                .add(ModBlocks.JUPITER_COAL_ORE.get());
+                .add(ModBlocks.JUPITER_COAL_ORE.get())
+                .add(ModBlocks.SATURN_COAL_ORE.get())
+                .add(ModBlocks.NEPTUNE_COAL_ORE.get());
         this.tag(BlockTags.GOLD_ORES)
-                .add(ModBlocks.JUPITER_GOLD_ORE.get());
+                .add(ModBlocks.JUPITER_GOLD_ORE.get())
+                .add(ModBlocks.SATURN_GOLD_ORE.get())
+                .add(ModBlocks.PLUTO_GOLD_ORE.get());
         this.tag(BlockTags.COPPER_ORES)
-                .add(ModBlocks.CERES_COPPER_ORE.get());
+                .add(ModBlocks.CERES_COPPER_ORE.get())
+                .add(ModBlocks.NEPTUNE_COPPER_ORE.get())
+                .add(ModBlocks.ORCUS_COPPER_ORE.get())
+                .add(ModBlocks.HAUMEA_COPPER_ORE.get())
+                .add(ModBlocks.QUAOAR_COPPER_ORE.get())
+                .add(ModBlocks.MAKEMAKE_COPPER_ORE.get())
+                .add(ModBlocks.GONGGONG_COPPER_ORE.get())
+                .add(ModBlocks.ERIS_COPPER_ORE.get())
+                .add(ModBlocks.SEDNA_COPPER_ORE.get());
         this.tag(BlockTags.IRON_ORES)
-                .add(ModBlocks.CERES_IRON_ORE.get());
+                .add(ModBlocks.CERES_IRON_ORE.get())
+                .add(ModBlocks.URANUS_IRON_ORE.get())
+                .add(ModBlocks.NEPTUNE_IRON_ORE.get())
+                .add(ModBlocks.ORCUS_IRON_ORE.get())
+                .add(ModBlocks.HAUMEA_IRON_ORE.get())
+                .add(ModBlocks.QUAOAR_IRON_ORE.get())
+                .add(ModBlocks.MAKEMAKE_IRON_ORE.get())
+                .add(ModBlocks.GONGGONG_IRON_ORE.get())
+                .add(ModBlocks.ERIS_IRON_ORE.get())
+                .add(ModBlocks.SEDNA_IRON_ORE.get())
+                .add(ModBlocks.B_IRON_ORE.get());
+        this.tag(BlockTags.LAPIS_ORES)
+                .add(ModBlocks.URANUS_LAPIS_ORE.get());
+        this.tag(BlockTags.EMERALD_ORES)
+                .add(ModBlocks.B_EMERALD_ORE.get());
+        this.tag(BlockTags.REDSTONE_ORES)
+                .add(ModBlocks.B_REDSTONE_ORE.get());
         this.tag(BlockTags.SAND)
                 .add(ModBlocks.JUPITER_SAND.get())
                 .add(ModBlocks.CERES_SAND.get())

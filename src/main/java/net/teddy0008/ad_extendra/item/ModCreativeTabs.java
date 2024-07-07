@@ -102,6 +102,9 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_SATURN_STONE_SLAB.get());
                 output.accept(ModBlocks.SATURN_PILLAR.get());
                 output.accept(ModBlocks.SATURN_SATURLYTE_ORE.get());
+                output.accept(ModBlocks.SATURN_COAL_ORE.get());
+                output.accept(ModBlocks.SATURN_GOLD_ORE.get());
+                output.accept(ModBlocks.SATURN_DIAMOND_ORE.get());
                 output.accept(ModItems.RAW_SATURLYTE.get());
                 output.accept(ModBlocks.RAW_SATURLYTE_BLOCK.get());
                 output.accept(ModItems.SATURLYTE_INGOT.get());
@@ -135,8 +138,11 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
                 output.accept(ModBlocks.URANUS_PILLAR.get());
-                output.accept(ModBlocks.URANUS_ICE_SHARD_ORE.get());
                 output.accept(ModBlocks.URANUS_URANIUM_ORE.get());
+                output.accept(ModBlocks.URANUS_DIAMOND_ORE.get());
+                output.accept(ModBlocks.URANUS_ICE_SHARD_ORE.get());
+                output.accept(ModBlocks.URANUS_IRON_ORE.get());
+                output.accept(ModBlocks.URANUS_LAPIS_ORE.get());
                 output.accept(ModItems.RAW_URANIUM.get());
                 output.accept(ModBlocks.RAW_URANIUM_BLOCK.get());
                 output.accept(ModItems.URANIUM_INGOT.get());
@@ -171,6 +177,9 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get());
                 output.accept(ModBlocks.NEPTUNE_PILLAR.get());
                 output.accept(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+                output.accept(ModBlocks.NEPTUNE_COAL_ORE.get());
+                output.accept(ModBlocks.NEPTUNE_COPPER_ORE.get());
+                output.accept(ModBlocks.NEPTUNE_IRON_ORE.get());
                 output.accept(ModItems.RAW_NEPTUNIUM.get());
                 output.accept(ModBlocks.RAW_NEPTUNIUM_BLOCK.get());
                 output.accept(ModItems.NEPTUNIUM_INGOT.get());
@@ -204,6 +213,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get());
                 output.accept(ModBlocks.ORCUS_PILLAR.get());
+                output.accept(ModBlocks.ORCUS_COPPER_ORE.get());
+                output.accept(ModBlocks.ORCUS_IRON_ORE.get());
 
                 // Pluto
                 output.accept(ModBlocks.PLUTO_SAND.get());
@@ -226,6 +237,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get());
                 output.accept(ModBlocks.PLUTO_PILLAR.get());
                 output.accept(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+                output.accept(ModBlocks.PLUTO_DIAMOND_ORE.get());
+                output.accept(ModBlocks.PLUTO_GOLD_ORE.get());
                 output.accept(ModItems.RAW_PLUTONIUM.get());
                 output.accept(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
                 output.accept(ModItems.PLUTONIUM_INGOT.get());
@@ -259,6 +272,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_HAUMEA_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_HAUMEA_STONE_SLAB.get());
                 output.accept(ModBlocks.HAUMEA_PILLAR.get());
+                output.accept(ModBlocks.HAUMEA_COPPER_ORE.get());
+                output.accept(ModBlocks.HAUMEA_IRON_ORE.get());
 
                 // Quaoar
                 output.accept(ModBlocks.QUAOAR_STONE.get());
@@ -279,6 +294,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_QUAOAR_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_QUAOAR_STONE_SLAB.get());
                 output.accept(ModBlocks.QUAOAR_PILLAR.get());
+                output.accept(ModBlocks.QUAOAR_COPPER_ORE.get());
+                output.accept(ModBlocks.QUAOAR_IRON_ORE.get());
 
                 // Makemake
                 output.accept(ModBlocks.MAKEMAKE_STONE.get());
@@ -299,6 +316,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB.get());
                 output.accept(ModBlocks.MAKEMAKE_PILLAR.get());
+                output.accept(ModBlocks.MAKEMAKE_COPPER_ORE.get());
+                output.accept(ModBlocks.MAKEMAKE_IRON_ORE.get());
 
                 // Gonggong
                 output.accept(ModBlocks.GONGGONG_STONE.get());
@@ -319,6 +338,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_GONGGONG_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_GONGGONG_STONE_SLAB.get());
                 output.accept(ModBlocks.GONGGONG_PILLAR.get());
+                output.accept(ModBlocks.GONGGONG_COPPER_ORE.get());
+                output.accept(ModBlocks.GONGGONG_IRON_ORE.get());
 
                 // Eris
                 output.accept(ModBlocks.ERIS_STONE.get());
@@ -339,6 +360,30 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_ERIS_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_ERIS_STONE_SLAB.get());
                 output.accept(ModBlocks.ERIS_PILLAR.get());
+                output.accept(ModBlocks.ERIS_COPPER_ORE.get());
+                output.accept(ModBlocks.ERIS_IRON_ORE.get());
+
+                // Sedna
+                output.accept(ModBlocks.SEDNA_STONE.get());
+                output.accept(ModBlocks.SEDNA_STONE_STAIRS.get());
+                output.accept(ModBlocks.SEDNA_STONE_SLAB.get());
+                output.accept(ModBlocks.SEDNA_COBBLESTONE.get());
+                output.accept(ModBlocks.SEDNA_COBBLESTONE_STAIRS.get());
+                output.accept(ModBlocks.SEDNA_COBBLESTONE_SLAB.get());
+                output.accept(ModBlocks.SEDNA_STONE_BRICKS.get());
+                output.accept(ModBlocks.SEDNA_STONE_BRICK_STAIRS.get());
+                output.accept(ModBlocks.SEDNA_STONE_BRICK_SLAB.get());
+                output.accept(ModBlocks.SEDNA_STONE_BRICK_WALL.get());
+                output.accept(ModBlocks.CRACKED_SEDNA_STONE_BRICKS.get());
+                output.accept(ModBlocks.CHISELED_SEDNA_STONE_BRICKS.get());
+                output.accept(ModBlocks.CHISELED_SEDNA_STONE_STAIRS.get());
+                output.accept(ModBlocks.CHISELED_SEDNA_STONE_SLAB.get());
+                output.accept(ModBlocks.POLISHED_SEDNA_STONE.get());
+                output.accept(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get());
+                output.accept(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get());
+                output.accept(ModBlocks.SEDNA_PILLAR.get());
+                output.accept(ModBlocks.SEDNA_COPPER_ORE.get());
+                output.accept(ModBlocks.SEDNA_IRON_ORE.get());
 
                 // Proxima Centauri b
                 output.accept(ModBlocks.B_SAND.get());
@@ -360,6 +405,10 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_B_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_B_STONE_SLAB.get());
                 output.accept(ModBlocks.B_PILLAR.get());
+                output.accept(ModBlocks.B_DIAMOND_ORE.get());
+                output.accept(ModBlocks.B_EMERALD_ORE.get());
+                output.accept(ModBlocks.B_IRON_ORE.get());
+                output.accept(ModBlocks.B_REDSTONE_ORE.get());
                 // output.accept(ModItems.TIER_5_ROCKET.get());
             }).build());
 

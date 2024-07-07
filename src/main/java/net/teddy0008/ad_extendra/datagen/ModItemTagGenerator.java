@@ -3,7 +3,6 @@ package net.teddy0008.ad_extendra.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -401,16 +400,48 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModItemTags.URANIUM_ORES)
                 .addTag(ModItemTags.NEPTUNIUM_ORES)
                 .addTag(ModItemTags.PLUTONIUM_ORES);
-        this.tag(Tags.Items.ORES_COAL)
-                .add(ModBlocks.JUPITER_COAL_ORE.get().asItem());
-        this.tag(Tags.Items.ORES_DIAMOND)
-                .add(ModBlocks.JUPITER_DIAMOND_ORE.get().asItem());
-        this.tag(Tags.Items.ORES_GOLD)
-                .add(ModBlocks.JUPITER_GOLD_ORE.get().asItem());
-        this.tag(Tags.Items.ORES_COPPER)
-                .add(ModBlocks.CERES_COPPER_ORE.get().asItem());
-        this.tag(Tags.Items.ORES_IRON)
-                .add(ModBlocks.CERES_IRON_ORE.get().asItem());
+        this.tag(ItemTags.DIAMOND_ORES)
+                .add(ModBlocks.JUPITER_DIAMOND_ORE.get().asItem())
+                .add(ModBlocks.SATURN_DIAMOND_ORE.get().asItem())
+                .add(ModBlocks.URANUS_DIAMOND_ORE.get().asItem())
+                .add(ModBlocks.PLUTO_DIAMOND_ORE.get().asItem())
+                .add(ModBlocks.B_DIAMOND_ORE.get().asItem());
+        this.tag(ItemTags.COAL_ORES)
+                .add(ModBlocks.JUPITER_COAL_ORE.get().asItem())
+                .add(ModBlocks.SATURN_COAL_ORE.get().asItem())
+                .add(ModBlocks.NEPTUNE_COAL_ORE.get().asItem());
+        this.tag(ItemTags.GOLD_ORES)
+                .add(ModBlocks.JUPITER_GOLD_ORE.get().asItem())
+                .add(ModBlocks.SATURN_GOLD_ORE.get().asItem())
+                .add(ModBlocks.PLUTO_GOLD_ORE.get().asItem());
+        this.tag(ItemTags.COPPER_ORES)
+                .add(ModBlocks.CERES_COPPER_ORE.get().asItem())
+                .add(ModBlocks.NEPTUNE_COPPER_ORE.get().asItem())
+                .add(ModBlocks.ORCUS_COPPER_ORE.get().asItem())
+                .add(ModBlocks.HAUMEA_COPPER_ORE.get().asItem())
+                .add(ModBlocks.QUAOAR_COPPER_ORE.get().asItem())
+                .add(ModBlocks.MAKEMAKE_COPPER_ORE.get().asItem())
+                .add(ModBlocks.GONGGONG_COPPER_ORE.get().asItem())
+                .add(ModBlocks.ERIS_COPPER_ORE.get().asItem())
+                .add(ModBlocks.SEDNA_COPPER_ORE.get().asItem());
+        this.tag(ItemTags.IRON_ORES)
+                .add(ModBlocks.CERES_IRON_ORE.get().asItem())
+                .add(ModBlocks.URANUS_IRON_ORE.get().asItem())
+                .add(ModBlocks.NEPTUNE_IRON_ORE.get().asItem())
+                .add(ModBlocks.ORCUS_IRON_ORE.get().asItem())
+                .add(ModBlocks.HAUMEA_IRON_ORE.get().asItem())
+                .add(ModBlocks.QUAOAR_IRON_ORE.get().asItem())
+                .add(ModBlocks.MAKEMAKE_IRON_ORE.get().asItem())
+                .add(ModBlocks.GONGGONG_IRON_ORE.get().asItem())
+                .add(ModBlocks.ERIS_IRON_ORE.get().asItem())
+                .add(ModBlocks.SEDNA_IRON_ORE.get().asItem())
+                .add(ModBlocks.B_IRON_ORE.get().asItem());
+        this.tag(ItemTags.LAPIS_ORES)
+                .add(ModBlocks.URANUS_LAPIS_ORE.get().asItem());
+        this.tag(ItemTags.EMERALD_ORES)
+                .add(ModBlocks.B_EMERALD_ORE.get().asItem());
+        this.tag(ItemTags.REDSTONE_ORES)
+                .add(ModBlocks.B_REDSTONE_ORE.get().asItem());
         this.tag(ModItemTags.JUPERIUM_ORES)
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get().asItem());
         this.tag(ModItemTags.ICE_SHARD_ORES)

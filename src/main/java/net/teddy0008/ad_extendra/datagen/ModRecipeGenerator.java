@@ -53,29 +53,103 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 
         // Saturn
         oreSmelting(consumer, SATURLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_SATURLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.SATURLYTE_BLOCK.get(), 0.25f, 200, "item");
         oreBlasting(consumer, SATURLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SATURN_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SATURN_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SATURN_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_SATURLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.SATURLYTE_BLOCK.get(), 0.25f, 100, "item");
 
         // Uranus
         oreSmelting(consumer, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_LAPIS_ORE.get()), RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_URANIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
         oreBlasting(consumer, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_LAPIS_ORE.get()), RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_URANIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
 
         // Neptune
         oreSmelting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get(), 0.25f, 200, "item");
         oreBlasting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get(), 0.25f, 100, "item");
 
         // Pluto
         oreSmelting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 200, "item");
         oreBlasting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.PLUTO_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.PLUTO_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 100, "item");
+
+        // Orcus
+        oreSmelting(consumer, List.of(ModBlocks.ORCUS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ORCUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ORCUS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ORCUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Haumea
+        oreSmelting(consumer, List.of(ModBlocks.HAUMEA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.HAUMEA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.HAUMEA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.HAUMEA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Quaoar
+        oreSmelting(consumer, List.of(ModBlocks.QUAOAR_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.QUAOAR_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.QUAOAR_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.QUAOAR_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Makemake
+        oreSmelting(consumer, List.of(ModBlocks.MAKEMAKE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.MAKEMAKE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.MAKEMAKE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.MAKEMAKE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Gonggong
+        oreSmelting(consumer, List.of(ModBlocks.GONGGONG_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.GONGGONG_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.GONGGONG_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.GONGGONG_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Eris
+        oreSmelting(consumer, List.of(ModBlocks.ERIS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ERIS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ERIS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ERIS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Sedna
+        oreSmelting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+
+        // Proxima Centauri b
+        oreSmelting(consumer, List.of(ModBlocks.B_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "item");
 
         // More Cobblestone Smelting
         oreSmelting(consumer, List.of(ModBlocks.SATURN_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SATURN_STONE.get(), 0f, 200, "item");

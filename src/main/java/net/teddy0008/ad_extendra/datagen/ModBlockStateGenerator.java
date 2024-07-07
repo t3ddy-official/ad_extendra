@@ -90,6 +90,9 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         buttonBlock(((ButtonBlock) ModBlocks.SATURLYTE_PLATING_BUTTON.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.SATURLYTE_PLATING.get()));
         blockWithItem(ModBlocks.SATURN_SATURLYTE_ORE);
+        blockWithItem(ModBlocks.SATURN_COAL_ORE);
+        blockWithItem(ModBlocks.SATURN_DIAMOND_ORE);
+        blockWithItem(ModBlocks.SATURN_GOLD_ORE);
         fallingBlockWithItem(ModBlocks.SATURN_SAND);
         iceBlockWithItem(ModBlocks.SATURN_ICE);
         blockWithItem(ModBlocks.SATURN_STONE);
@@ -125,7 +128,10 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         buttonBlock(((ButtonBlock) ModBlocks.URANIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.URANIUM_PLATING.get()));
         blockWithItem(ModBlocks.URANUS_URANIUM_ORE);
+        blockWithItem(ModBlocks.URANUS_DIAMOND_ORE);
         oreBlockWithItem(ModBlocks.URANUS_ICE_SHARD_ORE);
+        blockWithItem(ModBlocks.URANUS_IRON_ORE);
+        blockWithItem(ModBlocks.URANUS_LAPIS_ORE);
         blockWithItem(ModBlocks.URANUS_STONE);
         stairsBlock(((StairBlock) ModBlocks.URANUS_STONE_STAIRS.get()), blockTexture(ModBlocks.URANUS_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.URANUS_STONE_SLAB.get()), blockTexture(ModBlocks.URANUS_STONE.get()), blockTexture(ModBlocks.URANUS_STONE.get()));
@@ -159,6 +165,9 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         buttonBlock(((ButtonBlock) ModBlocks.NEPTUNIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.NEPTUNIUM_PLATING.get()));
         blockWithItem(ModBlocks.NEPTUNE_NEPTUNIUM_ORE);
+        blockWithItem(ModBlocks.NEPTUNE_COAL_ORE);
+        blockWithItem(ModBlocks.NEPTUNE_COPPER_ORE);
+        blockWithItem(ModBlocks.NEPTUNE_IRON_ORE);
         blockWithItem(ModBlocks.NEPTUNE_STONE);
         stairsBlock(((StairBlock) ModBlocks.NEPTUNE_STONE_STAIRS.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.NEPTUNE_STONE_SLAB.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()));
@@ -180,6 +189,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/neptune_pillar_top"));
 
         // Orcus
+        blockWithItem(ModBlocks.ORCUS_COPPER_ORE);
+        blockWithItem(ModBlocks.ORCUS_IRON_ORE);
         blockWithItem(ModBlocks.ORCUS_STONE);
         stairsBlock(((StairBlock) ModBlocks.ORCUS_STONE_STAIRS.get()), blockTexture(ModBlocks.ORCUS_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.ORCUS_STONE_SLAB.get()), blockTexture(ModBlocks.ORCUS_STONE.get()), blockTexture(ModBlocks.ORCUS_STONE.get()));
@@ -213,6 +224,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         buttonBlock(((ButtonBlock) ModBlocks.PLUTONIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.PLUTONIUM_PLATING.get()));
         blockWithItem(ModBlocks.PLUTO_PLUTONIUM_ORE);
+        blockWithItem(ModBlocks.PLUTO_DIAMOND_ORE);
+        blockWithItem(ModBlocks.PLUTO_GOLD_ORE);
         fallingBlockWithItem(ModBlocks.PLUTO_SAND);
         blockWithItem(ModBlocks.PLUTO_STONE);
         stairsBlock(((StairBlock) ModBlocks.PLUTO_STONE_STAIRS.get()), blockTexture(ModBlocks.PLUTO_STONE.get()));
@@ -235,6 +248,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/pluto_pillar_top"));
 
         // Haumea
+        blockWithItem(ModBlocks.HAUMEA_COPPER_ORE);
+        blockWithItem(ModBlocks.HAUMEA_IRON_ORE);
         blockWithItem(ModBlocks.HAUMEA_STONE);
         stairsBlock(((StairBlock) ModBlocks.HAUMEA_STONE_STAIRS.get()), blockTexture(ModBlocks.HAUMEA_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.HAUMEA_STONE_SLAB.get()), blockTexture(ModBlocks.HAUMEA_STONE.get()), blockTexture(ModBlocks.HAUMEA_STONE.get()));
@@ -256,6 +271,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/haumea_pillar_top"));
 
         // Quaoar
+        blockWithItem(ModBlocks.QUAOAR_COPPER_ORE);
+        blockWithItem(ModBlocks.QUAOAR_IRON_ORE);
         blockWithItem(ModBlocks.QUAOAR_STONE);
         stairsBlock(((StairBlock) ModBlocks.QUAOAR_STONE_STAIRS.get()), blockTexture(ModBlocks.QUAOAR_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.QUAOAR_STONE_SLAB.get()), blockTexture(ModBlocks.QUAOAR_STONE.get()), blockTexture(ModBlocks.QUAOAR_STONE.get()));
@@ -277,6 +294,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/quaoar_pillar_top"));
 
         // Makemake
+        blockWithItem(ModBlocks.MAKEMAKE_COPPER_ORE);
+        blockWithItem(ModBlocks.MAKEMAKE_IRON_ORE);
         blockWithItem(ModBlocks.MAKEMAKE_STONE);
         stairsBlock(((StairBlock) ModBlocks.MAKEMAKE_STONE_STAIRS.get()), blockTexture(ModBlocks.MAKEMAKE_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.MAKEMAKE_STONE_SLAB.get()), blockTexture(ModBlocks.MAKEMAKE_STONE.get()), blockTexture(ModBlocks.MAKEMAKE_STONE.get()));
@@ -298,6 +317,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/makemake_pillar_top"));
 
         // Gonggong
+        blockWithItem(ModBlocks.GONGGONG_COPPER_ORE);
+        blockWithItem(ModBlocks.GONGGONG_IRON_ORE);
         blockWithItem(ModBlocks.GONGGONG_STONE);
         stairsBlock(((StairBlock) ModBlocks.GONGGONG_STONE_STAIRS.get()), blockTexture(ModBlocks.GONGGONG_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.GONGGONG_STONE_SLAB.get()), blockTexture(ModBlocks.GONGGONG_STONE.get()), blockTexture(ModBlocks.GONGGONG_STONE.get()));
@@ -319,6 +340,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/gonggong_pillar_top"));
 
         // Eris
+        blockWithItem(ModBlocks.ERIS_COPPER_ORE);
+        blockWithItem(ModBlocks.ERIS_IRON_ORE);
         blockWithItem(ModBlocks.ERIS_STONE);
         stairsBlock(((StairBlock) ModBlocks.ERIS_STONE_STAIRS.get()), blockTexture(ModBlocks.ERIS_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.ERIS_STONE_SLAB.get()), blockTexture(ModBlocks.ERIS_STONE.get()), blockTexture(ModBlocks.ERIS_STONE.get()));
@@ -340,6 +363,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/eris_pillar_top"));
 
         // Sedna
+        blockWithItem(ModBlocks.SEDNA_COPPER_ORE);
+        blockWithItem(ModBlocks.SEDNA_IRON_ORE);
         blockWithItem(ModBlocks.SEDNA_STONE);
         stairsBlock(((StairBlock) ModBlocks.SEDNA_STONE_STAIRS.get()), blockTexture(ModBlocks.SEDNA_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.SEDNA_STONE_SLAB.get()), blockTexture(ModBlocks.SEDNA_STONE.get()), blockTexture(ModBlocks.SEDNA_STONE.get()));
@@ -361,6 +386,10 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/sedna_pillar_top"));
 
         // Proxima Centauri b
+        blockWithItem(ModBlocks.B_DIAMOND_ORE);
+        blockWithItem(ModBlocks.B_EMERALD_ORE);
+        blockWithItem(ModBlocks.B_IRON_ORE);
+        redstoneOreBlockWithItem(ModBlocks.B_REDSTONE_ORE);
         fallingBlockWithItem(ModBlocks.B_SAND);
         blockWithItem(ModBlocks.B_STONE);
         stairsBlock(((StairBlock) ModBlocks.B_STONE_STAIRS.get()), blockTexture(ModBlocks.B_STONE.get()));
@@ -388,6 +417,10 @@ public class ModBlockStateGenerator extends BlockStateProvider {
     }
 
     private void oreBlockWithItem(RegistryObject<DropExperienceBlock> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void redstoneOreBlockWithItem(RegistryObject<RedStoneOreBlock> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 

@@ -114,6 +114,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_SATURN_STONE_SLAB.get());
         this.dropSelf(ModBlocks.SATURN_PILLAR.get());
         this.add(ModBlocks.SATURN_SATURLYTE_ORE.get(), createOreDrop(ModBlocks.SATURN_SATURLYTE_ORE.get(), ModItems.RAW_SATURLYTE.get()));
+        this.add(ModBlocks.SATURN_COAL_ORE.get(), createOreDrop(ModBlocks.SATURN_COAL_ORE.get(), Items.COAL));
+        this.add(ModBlocks.SATURN_DIAMOND_ORE.get(), createOreDrop(ModBlocks.SATURN_DIAMOND_ORE.get(), Items.DIAMOND));
+        this.add(ModBlocks.SATURN_GOLD_ORE.get(), createOreDrop(ModBlocks.SATURN_GOLD_ORE.get(), Items.RAW_GOLD));
         this.add(ModBlocks.SATURN_STONE.get(), createStoneLikeDrop(ModBlocks.SATURN_STONE.get(), ModBlocks.SATURN_COBBLESTONE.get()));
 
         // Uranus
@@ -145,7 +148,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.URANUS_PILLAR.get());
         this.add(ModBlocks.URANUS_URANIUM_ORE.get(), createOreDrop(ModBlocks.URANUS_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
+        this.add(ModBlocks.URANUS_DIAMOND_ORE.get(), createOreDrop(ModBlocks.URANUS_DIAMOND_ORE.get(), Items.DIAMOND));
         this.add(ModBlocks.URANUS_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.URANUS_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));
+        this.add(ModBlocks.URANUS_IRON_ORE.get(), createOreDrop(ModBlocks.URANUS_IRON_ORE.get(), Items.RAW_IRON));
+        this.add(ModBlocks.URANUS_LAPIS_ORE.get(), createOreDrop(ModBlocks.URANUS_LAPIS_ORE.get(), Items.LAPIS_LAZULI));
         this.add(ModBlocks.URANUS_STONE.get(), createStoneLikeDrop(ModBlocks.URANUS_STONE.get(), ModBlocks.URANUS_COBBLESTONE.get()));
 
         // Neptune
@@ -177,6 +183,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get());
         this.dropSelf(ModBlocks.NEPTUNE_PILLAR.get());
         this.add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get(), ModItems.RAW_NEPTUNIUM.get()));
+        this.add(ModBlocks.NEPTUNE_COAL_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_COAL_ORE.get(), Items.COAL));
+        this.add(ModBlocks.NEPTUNE_COPPER_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.NEPTUNE_IRON_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.NEPTUNE_STONE.get(), createStoneLikeDrop(ModBlocks.NEPTUNE_STONE.get(), ModBlocks.NEPTUNE_COBBLESTONE.get()));
 
         // Orcus
@@ -198,6 +207,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.ORCUS_PILLAR.get());
+        this.add(ModBlocks.ORCUS_COPPER_ORE.get(), createOreDrop(ModBlocks.ORCUS_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.ORCUS_IRON_ORE.get(), createOreDrop(ModBlocks.ORCUS_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.ORCUS_STONE.get(), createStoneLikeDrop(ModBlocks.ORCUS_STONE.get(), ModBlocks.ORCUS_COBBLESTONE.get()));
 
         // Pluto
@@ -230,6 +241,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get());
         this.dropSelf(ModBlocks.PLUTO_PILLAR.get());
         this.add(ModBlocks.PLUTO_PLUTONIUM_ORE.get(), createOreDrop(ModBlocks.PLUTO_PLUTONIUM_ORE.get(), ModItems.RAW_PLUTONIUM.get()));
+        this.add(ModBlocks.PLUTO_DIAMOND_ORE.get(), createOreDrop(ModBlocks.PLUTO_DIAMOND_ORE.get(), Items.DIAMOND));
+        this.add(ModBlocks.PLUTO_GOLD_ORE.get(), createOreDrop(ModBlocks.PLUTO_GOLD_ORE.get(), Items.RAW_GOLD));
         this.add(ModBlocks.PLUTO_STONE.get(), createStoneLikeDrop(ModBlocks.PLUTO_STONE.get(), ModBlocks.PLUTO_COBBLESTONE.get()));
 
         // Haumea
@@ -251,6 +264,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_HAUMEA_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_HAUMEA_STONE_SLAB.get());
         this.dropSelf(ModBlocks.HAUMEA_PILLAR.get());
+        this.add(ModBlocks.HAUMEA_COPPER_ORE.get(), createOreDrop(ModBlocks.HAUMEA_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.HAUMEA_IRON_ORE.get(), createOreDrop(ModBlocks.HAUMEA_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.HAUMEA_STONE.get(), createStoneLikeDrop(ModBlocks.HAUMEA_STONE.get(), ModBlocks.HAUMEA_COBBLESTONE.get()));
 
         // Quaoar
@@ -272,6 +287,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_QUAOAR_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_QUAOAR_STONE_SLAB.get());
         this.dropSelf(ModBlocks.QUAOAR_PILLAR.get());
+        this.add(ModBlocks.QUAOAR_COPPER_ORE.get(), createOreDrop(ModBlocks.QUAOAR_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.QUAOAR_IRON_ORE.get(), createOreDrop(ModBlocks.QUAOAR_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.QUAOAR_STONE.get(), createStoneLikeDrop(ModBlocks.QUAOAR_STONE.get(), ModBlocks.QUAOAR_COBBLESTONE.get()));
 
         // Makemake
@@ -293,6 +310,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB.get());
         this.dropSelf(ModBlocks.MAKEMAKE_PILLAR.get());
+        this.add(ModBlocks.MAKEMAKE_COPPER_ORE.get(), createOreDrop(ModBlocks.MAKEMAKE_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.MAKEMAKE_IRON_ORE.get(), createOreDrop(ModBlocks.MAKEMAKE_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.MAKEMAKE_STONE.get(), createStoneLikeDrop(ModBlocks.MAKEMAKE_STONE.get(), ModBlocks.MAKEMAKE_COBBLESTONE.get()));
 
         // Gonggong
@@ -314,6 +333,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_GONGGONG_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_GONGGONG_STONE_SLAB.get());
         this.dropSelf(ModBlocks.GONGGONG_PILLAR.get());
+        this.add(ModBlocks.GONGGONG_COPPER_ORE.get(), createOreDrop(ModBlocks.GONGGONG_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.GONGGONG_IRON_ORE.get(), createOreDrop(ModBlocks.GONGGONG_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.GONGGONG_STONE.get(), createStoneLikeDrop(ModBlocks.GONGGONG_STONE.get(), ModBlocks.GONGGONG_COBBLESTONE.get()));
 
         // Eris
@@ -335,6 +356,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_ERIS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_ERIS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.ERIS_PILLAR.get());
+        this.add(ModBlocks.ERIS_COPPER_ORE.get(), createOreDrop(ModBlocks.ERIS_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.ERIS_IRON_ORE.get(), createOreDrop(ModBlocks.ERIS_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.ERIS_STONE.get(), createStoneLikeDrop(ModBlocks.ERIS_STONE.get(), ModBlocks.ERIS_COBBLESTONE.get()));
 
         // Sedna
@@ -356,6 +379,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get());
         this.dropSelf(ModBlocks.SEDNA_PILLAR.get());
+        this.add(ModBlocks.SEDNA_COPPER_ORE.get(), createOreDrop(ModBlocks.SEDNA_COPPER_ORE.get(), Items.RAW_COPPER));
+        this.add(ModBlocks.SEDNA_IRON_ORE.get(), createOreDrop(ModBlocks.SEDNA_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.SEDNA_STONE.get(), createStoneLikeDrop(ModBlocks.SEDNA_STONE.get(), ModBlocks.SEDNA_COBBLESTONE.get()));
 
         // Proxima Centauri b
@@ -378,6 +403,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_B_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_B_STONE_SLAB.get());
         this.dropSelf(ModBlocks.B_PILLAR.get());
+        this.add(ModBlocks.B_DIAMOND_ORE.get(), createOreDrop(ModBlocks.B_DIAMOND_ORE.get(), Items.DIAMOND));
+        this.add(ModBlocks.B_EMERALD_ORE.get(), createOreDrop(ModBlocks.B_EMERALD_ORE.get(), Items.EMERALD));
+        this.add(ModBlocks.B_IRON_ORE.get(), createOreDrop(ModBlocks.B_IRON_ORE.get(), Items.RAW_IRON));
+        this.add(ModBlocks.B_REDSTONE_ORE.get(), createOreDrop(ModBlocks.B_REDSTONE_ORE.get(), Items.REDSTONE));
         this.add(ModBlocks.B_STONE.get(), createStoneLikeDrop(ModBlocks.B_STONE.get(), ModBlocks.B_COBBLESTONE.get()));
         // this.add(ModBlocks.BLOCK.get(), block -> createOreDrop(ModBlocks.BLOCK.get(), ModItems.ITEM.get()));
     }
