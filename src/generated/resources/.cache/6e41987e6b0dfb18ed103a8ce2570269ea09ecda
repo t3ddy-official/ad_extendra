@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-07T11:42:09.1019123	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-07-07T12:13:00.35067	Tags for minecraft:block mod id ad_extendra
 4e8381bd9a0f134e7c965a55d15ab756ffd2f396 data/forge/tags/blocks/needs_netherite_tool.json
 8daa2b52f1cfe6624bc52551c18441813e4a5382 data/forge/tags/blocks/ores.json
 db12318251a3bad06b759455f40c1dbdf26eb9a0 data/forge/tags/blocks/ores/ice_shard.json
@@ -13,6 +13,7 @@ b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/blocks/storage_blocks/j
 251c099b72b5a350a862f6db5adef5e01de93ed1 data/forge/tags/blocks/storage_blocks/plutonium.json
 b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/forge/tags/blocks/storage_blocks/saturlyte.json
 571f94cea259742345d038bf0ebb818a08aa111e data/forge/tags/blocks/storage_blocks/uranium.json
+7d49e2bf9ec6dac7eaf6e62abaa6f73d6236d055 data/minecraft/tags/blocks/beacon_base_blocks.json
 7ff00871a7469fe6d89aca1a1c99f7367df99e40 data/minecraft/tags/blocks/buttons.json
 cb9264917cfc750b831fe930ee4f9ec07713ba90 data/minecraft/tags/blocks/coal_ores.json
 7aefc58f95e203f648f45955b356180704ad489f data/minecraft/tags/blocks/copper_ores.json

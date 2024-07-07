@@ -718,5 +718,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PLUTONIUM_BLOCK.get());
         this.tag(ModBlockTags.PLUTONIUM_ORES)
                 .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+        this.tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.JUPERIUM_BLOCK.get())
+                .add(ModBlocks.SATURLYTE_BLOCK.get())
+                .add(ModBlocks.URANIUM_BLOCK.get())
+                .add(ModBlocks.NEPTUNIUM_BLOCK.get())
+                .add(ModBlocks.PLUTONIUM_BLOCK.get());
     }
 }
