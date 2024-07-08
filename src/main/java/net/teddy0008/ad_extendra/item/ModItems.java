@@ -1,21 +1,25 @@
 package net.teddy0008.ad_extendra.item;
 
-import earth.terrarium.ad_astra.common.item.vehicle.RocketItem;
+import earth.terrarium.ad_astra.AdAstra;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
+import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
+    public static final DeferredRegister<Item> ROCKETS = DeferredRegister.create(ForgeRegistries.ITEMS, AdAstra.MOD_ID);
 
     // Jupiter
     public static final RegistryObject<Item> RAW_JUPERIUM = ITEMS.register("raw_juperium", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> JUPERIUM_INGOT = ITEMS.register("juperium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> JUPERIUM_NUGGET = ITEMS.register("juperium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> JUPERIUM_PLATE = ITEMS.register("juperium_plate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> JUPERIUM_ENGINE = ITEMS.register("juperium_engine", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> JUPERIUM_TANK = ITEMS.register("juperium_tank", () -> new Item(new Item.Properties()));
 
     // Saturn
     public static final RegistryObject<Item> RAW_SATURLYTE = ITEMS.register("raw_saturlyte", () -> new Item(new Item.Properties()));
@@ -52,9 +56,12 @@ public class ModItems {
     public static final RegistryObject<Item> ELECTROLYTE_INGOT = ITEMS.register("electrolyte_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELECTROLYTE_NUGGET = ITEMS.register("electrolyte_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELECTROLYTE_PLATE = ITEMS.register("electrolyte_plate", () -> new Item(new Item.Properties()));
-    // public static final RegistryObject<RocketItem> TIER_5_ROCKET = ITEMS.register("tier_5_rocket", () -> new RocketItem(5, new Item.Properties()));
+
+    // Rockets
+    public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+        ROCKETS.register(eventBus);
     }
 }

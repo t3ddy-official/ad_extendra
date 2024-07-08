@@ -3,6 +3,8 @@
   "item.ad_extendra.juperium_ingot": "Juperium Ingot",
   "item.ad_extendra.juperium_nugget": "Juperium Nugget",
   "item.ad_extendra.juperium_plate": "Juperium Plate",
+  "item.ad_extendra.juperium_engine": "Juperium Engine",
+  "item.ad_extendra.juperium_tank": "Juperium Tank",
 
   "item.ad_extendra.raw_saturlyte": "Raw Saturlyte",
   "item.ad_extendra.saturlyte_ingot": "Saturlyte Ingot",
@@ -33,8 +35,6 @@
   "item.ad_extendra.electrolyte_ingot": "Electrolyte Ingot",
   "item.ad_extendra.electrolyte_nugget": "Electrolyte Nugget",
   "item.ad_extendra.electrolyte_plate": "Electrolyte Plate",
-
-  "item.ad_extendra.tier5_rocket": "Tier 5 Rocket",
 
   "block.ad_extendra.juperium_block": "Block of Juperium",
   "block.ad_extendra.raw_juperium_block": "Block of Raw Juperium",

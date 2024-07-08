@@ -1,6 +1,5 @@
 package net.teddy0008.ad_extendra.datagen;
 
-import earth.terrarium.ad_astra.common.item.vehicle.RocketItem;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -13,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
 
 public class ModItemModelGenerator extends ItemModelProvider {
     public ModItemModelGenerator(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -26,6 +26,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.JUPERIUM_INGOT);
         simpleItem(ModItems.JUPERIUM_NUGGET);
         simpleItem(ModItems.JUPERIUM_PLATE);
+        simpleItem(ModItems.JUPERIUM_ENGINE);
+        simpleItem(ModItems.JUPERIUM_TANK);
         stairsItem(ModBlocks.JUPERIUM_PLATING_STAIRS);
         slabItem(ModBlocks.JUPERIUM_PLATING_SLAB);
         pillarItem(ModBlocks.JUPERIUM_PILLAR);
@@ -286,7 +288,6 @@ public class ModItemModelGenerator extends ItemModelProvider {
         stairsItem(ModBlocks.POLISHED_B_STONE_STAIRS);
         slabItem(ModBlocks.POLISHED_B_STONE_SLAB);
         pillarItem(ModBlocks.B_PILLAR);
-        // rocketItem(ModItems.TIER_5_ROCKET);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -317,10 +318,5 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     public void pressurePlateItem(RegistryObject<PressurePlateBlock> block) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
-    }
-
-    private ItemModelBuilder rocketItem(RegistryObject<RocketItem> item) {
-        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
-                .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

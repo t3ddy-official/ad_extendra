@@ -1,5 +1,6 @@
 package net.teddy0008.ad_extendra.datagen;
 
+import earth.terrarium.ad_astra.common.registry.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -239,6 +240,28 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(ModItems.JUPERIUM_PLATE.get()), has(ModItemTags.JUPERIUM_PLATES))
                 .unlockedBy(getHasName(Items.YELLOW_DYE), has(Items.YELLOW_DYE))
                 .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JUPERIUM_ENGINE.get())
+                .pattern("###")
+                .pattern(" E ")
+                .pattern(" F ")
+                .define('#', ModItemTags.JUPERIUM_PLATES)
+                .define('E', earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get())
+                .define('F', earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get())
+                .unlockedBy(getHasName(ModItems.JUPERIUM_PLATE.get()), has(ModItemTags.JUPERIUM_PLATES))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get()))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JUPERIUM_TANK.get())
+                .pattern("## ")
+                .pattern("#U|")
+                .pattern("## ")
+                .define('#', ModItemTags.JUPERIUM_PLATES)
+                .define('U', Items.BUCKET)
+                .define('|', ModItemTags.IRON_RODS)
+                .unlockedBy(getHasName(ModItems.JUPERIUM_PLATE.get()), has(ModItemTags.JUPERIUM_PLATES))
+                .unlockedBy(getHasName(Items.BUCKET), has(Items.BUCKET))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.IRON_ROD.get()), has(ModItemTags.IRON_RODS))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 9)

@@ -79,6 +79,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.JUPERIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_JUPERIUM_PILLAR.get());
+                output.accept(ModItems.JUPERIUM_ENGINE.get());
+                output.accept(ModItems.JUPERIUM_TANK.get());
 
                 // Saturn
                 output.accept(ModBlocks.SATURN_SAND.get());
@@ -437,7 +439,9 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.B_EMERALD_ORE.get());
                 output.accept(ModBlocks.B_IRON_ORE.get());
                 output.accept(ModBlocks.B_REDSTONE_ORE.get());
-                // output.accept(ModItems.TIER_5_ROCKET.get());
+
+                // Rockets
+                output.accept(ModItems.TIER_5_ROCKET.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

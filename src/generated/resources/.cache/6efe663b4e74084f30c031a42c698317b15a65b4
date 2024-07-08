@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-07T17:22:53.8661994	Item Models: ad_extendra
+// 1.20.1	2024-07-07T21:01:43.1643888	Item Models: ad_extendra
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
 de3f1b7c6b3e101457feb6c0129e7cc272aeb1aa assets/ad_extendra/models/item/b_cobblestone_stairs.json
 2c5b14026c02e1b6d3001816490cf2fbd4ad3601 assets/ad_extendra/models/item/b_pillar.json
@@ -82,6 +82,7 @@ ea010505c9540277214601f7a1d558d277279ada assets/ad_extendra/models/item/haumea_s
 0052143fea7220045921b9f9eb37aead28008063 assets/ad_extendra/models/item/haumea_stone_brick_wall.json
 e2991ba1bb674b737b86161440e4722300140f77 assets/ad_extendra/models/item/haumea_stone_slab.json
 36859b4dd2f78bc64e297e1ed975ded44c9db74a assets/ad_extendra/models/item/haumea_stone_stairs.json
+2ebb681d0516a273cba92d695d144161b4e31afd assets/ad_extendra/models/item/juperium_engine.json
 84b5c2d2796434b7851067faf050d8f87b656f50 assets/ad_extendra/models/item/juperium_ingot.json
 e245f5e2d8215fdd66b30c75f8d06ade5d44da0e assets/ad_extendra/models/item/juperium_nugget.json
 2474b26bc9336a34c8fb6dac70d1d51bd95a1123 assets/ad_extendra/models/item/juperium_pillar.json
@@ -90,6 +91,7 @@ f8fa8694a562b1d36cc89893ffac7bb8dd2af2ee assets/ad_extendra/models/item/juperium
 3cbbc07a168374d8d286d86187ff8c3a27f50d18 assets/ad_extendra/models/item/juperium_plating_pressure_plate.json
 85490dfe84fbb1c4f9b52369fbd39b9df2f66952 assets/ad_extendra/models/item/juperium_plating_slab.json
 1ae337e24c6861baaeea50d4117db983212616e6 assets/ad_extendra/models/item/juperium_plating_stairs.json
+f4a84e8b27c9560151f0bc5b7738d372aa73b1dc assets/ad_extendra/models/item/juperium_tank.json
 5c34d7602daec93ab2f9943350e7aac2769d0774 assets/ad_extendra/models/item/jupiter_cobblestone_slab.json
 3e1525eb32fb45bc740f70a1c00128d114b4e500 assets/ad_extendra/models/item/jupiter_cobblestone_stairs.json
 ef61b8a43822f6c11a49f5144c469dd16298249f assets/ad_extendra/models/item/jupiter_pillar.json

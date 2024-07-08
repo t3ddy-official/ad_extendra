@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:cronian_gaslands",
+  "features": "ad_extendra:saturn/diamond_ore",
+  "step": "underground_ores"
+}
