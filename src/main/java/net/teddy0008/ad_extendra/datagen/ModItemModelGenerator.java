@@ -132,6 +132,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.NEPTUNE_PILLAR);
 
         // Orcus
+        simpleItem(ModItems.RAW_RADIUM);
+        simpleItem(ModItems.RADIUM_INGOT);
+        simpleItem(ModItems.RADIUM_NUGGET);
+        simpleItem(ModItems.RADIUM_PLATE);
+        stairsItem(ModBlocks.RADIUM_PLATING_STAIRS);
+        slabItem(ModBlocks.RADIUM_PLATING_SLAB);
+        pillarItem(ModBlocks.RADIUM_PILLAR);
+        pillarItem(ModBlocks.GLOWING_RADIUM_PILLAR);
+        buttonItem(ModBlocks.RADIUM_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.ORCUS_STONE_STAIRS);
         slabItem(ModBlocks.ORCUS_STONE_SLAB);
         stairsItem(ModBlocks.ORCUS_COBBLESTONE_STAIRS);
@@ -240,6 +250,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.ERIS_PILLAR);
 
         // Sedna
+        simpleItem(ModItems.RAW_ELECTROLYTE);
+        simpleItem(ModItems.ELECTROLYTE_INGOT);
+        simpleItem(ModItems.ELECTROLYTE_NUGGET);
+        simpleItem(ModItems.ELECTROLYTE_PLATE);
+        stairsItem(ModBlocks.ELECTROLYTE_PLATING_STAIRS);
+        slabItem(ModBlocks.ELECTROLYTE_PLATING_SLAB);
+        pillarItem(ModBlocks.ELECTROLYTE_PILLAR);
+        pillarItem(ModBlocks.GLOWING_ELECTROLYTE_PILLAR);
+        buttonItem(ModBlocks.ELECTROLYTE_PLATING_BUTTON);
+        pressurePlateItem(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE);
         stairsItem(ModBlocks.SEDNA_STONE_STAIRS);
         slabItem(ModBlocks.SEDNA_STONE_SLAB);
         stairsItem(ModBlocks.SEDNA_COBBLESTONE_STAIRS);

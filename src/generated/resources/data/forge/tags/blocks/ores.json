@@ -4,6 +4,8 @@
     "#forge:ores/saturlyte",
     "#forge:ores/uranium",
     "#forge:ores/neptunium",
-    "#forge:ores/plutonium"
+    "#forge:ores/radium",
+    "#forge:ores/plutonium",
+    "#forge:ores/electrolyte"
   ]
 }

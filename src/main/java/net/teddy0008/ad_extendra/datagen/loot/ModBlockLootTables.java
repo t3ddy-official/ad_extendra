@@ -189,6 +189,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NEPTUNE_STONE.get(), createStoneLikeDrop(ModBlocks.NEPTUNE_STONE.get(), ModBlocks.NEPTUNE_COBBLESTONE.get()));
 
         // Orcus
+        this.dropSelf(ModBlocks.RADIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_RADIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RADIUM_PLATING.get());
+        this.dropSelf(ModBlocks.RADIUM_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.RADIUM_PLATING_SLAB.get());
+        this.dropSelf(ModBlocks.RADIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_RADIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.RADIUM_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.ORCUS_STONE.get());
         this.dropSelf(ModBlocks.ORCUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.ORCUS_STONE_SLAB.get());
@@ -207,6 +216,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.ORCUS_PILLAR.get());
+        this.add(ModBlocks.ORCUS_RADIUM_ORE.get(), createOreDrop(ModBlocks.ORCUS_RADIUM_ORE.get(), ModItems.RAW_RADIUM.get()));
         this.add(ModBlocks.ORCUS_COPPER_ORE.get(), createOreDrop(ModBlocks.ORCUS_COPPER_ORE.get(), Items.RAW_COPPER));
         this.add(ModBlocks.ORCUS_IRON_ORE.get(), createOreDrop(ModBlocks.ORCUS_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.ORCUS_STONE.get(), createStoneLikeDrop(ModBlocks.ORCUS_STONE.get(), ModBlocks.ORCUS_COBBLESTONE.get()));
@@ -361,6 +371,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ERIS_STONE.get(), createStoneLikeDrop(ModBlocks.ERIS_STONE.get(), ModBlocks.ERIS_COBBLESTONE.get()));
 
         // Sedna
+        this.dropSelf(ModBlocks.ELECTROLYTE_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_ELECTROLYTE_BLOCK.get());
+        this.dropSelf(ModBlocks.ELECTROLYTE_PLATING.get());
+        this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_STAIRS.get());
+        this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_SLAB.get());
+        this.dropSelf(ModBlocks.ELECTROLYTE_PILLAR.get());
+        this.dropSelf(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get());
+        this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get());
+        this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.SEDNA_STONE.get());
         this.dropSelf(ModBlocks.SEDNA_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.SEDNA_STONE_SLAB.get());
@@ -379,6 +398,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get());
         this.dropSelf(ModBlocks.SEDNA_PILLAR.get());
+        this.add(ModBlocks.SEDNA_ELECTROLYTE_ORE.get(), createOreDrop(ModBlocks.SEDNA_ELECTROLYTE_ORE.get(), ModItems.RAW_ELECTROLYTE.get()));
         this.add(ModBlocks.SEDNA_COPPER_ORE.get(), createOreDrop(ModBlocks.SEDNA_COPPER_ORE.get(), Items.RAW_COPPER));
         this.add(ModBlocks.SEDNA_IRON_ORE.get(), createOreDrop(ModBlocks.SEDNA_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.SEDNA_STONE.get(), createStoneLikeDrop(ModBlocks.SEDNA_STONE.get(), ModBlocks.SEDNA_COBBLESTONE.get()));

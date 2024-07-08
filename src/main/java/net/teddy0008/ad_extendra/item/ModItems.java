@@ -35,12 +35,24 @@ public class ModItems {
     public static final RegistryObject<Item> NEPTUNIUM_NUGGET = ITEMS.register("neptunium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NEPTUNIUM_PLATE = ITEMS.register("neptunium_plate", () -> new Item(new Item.Properties()));
 
+    // Orcus
+    public static final RegistryObject<Item> RAW_RADIUM = ITEMS.register("raw_radium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RADIUM_INGOT = ITEMS.register("radium_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RADIUM_NUGGET = ITEMS.register("radium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RADIUM_PLATE = ITEMS.register("radium_plate", () -> new Item(new Item.Properties()));
+
     // Pluto
     public static final RegistryObject<Item> RAW_PLUTONIUM = ITEMS.register("raw_plutonium", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_INGOT = ITEMS.register("plutonium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_NUGGET = ITEMS.register("plutonium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_PLATE = ITEMS.register("plutonium_plate", () -> new Item(new Item.Properties()));
-    // public static final RegistryObject<RocketItem> TIER_5_ROCKET = ITEMS.register("tier5_rocket", () -> new RocketItem(5, new Item.Properties()));
+
+    // Sedna
+    public static final RegistryObject<Item> RAW_ELECTROLYTE = ITEMS.register("raw_electrolyte", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELECTROLYTE_INGOT = ITEMS.register("electrolyte_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELECTROLYTE_NUGGET = ITEMS.register("electrolyte_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELECTROLYTE_PLATE = ITEMS.register("electrolyte_plate", () -> new Item(new Item.Properties()));
+    // public static final RegistryObject<RocketItem> TIER_5_ROCKET = ITEMS.register("tier_5_rocket", () -> new RocketItem(5, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

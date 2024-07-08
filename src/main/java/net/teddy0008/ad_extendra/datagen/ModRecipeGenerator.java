@@ -21,7 +21,9 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
     private static final List<ItemLike> SATURLYTE_SMELTABLES = List.of(ModItems.RAW_SATURLYTE.get(), ModBlocks.SATURN_SATURLYTE_ORE.get());
     private static final List<ItemLike> URANIUM_SMELTABLES = List.of(ModItems.RAW_URANIUM.get(), ModBlocks.URANUS_URANIUM_ORE.get());
     private static final List<ItemLike> NEPTUNIUM_SMELTABLES = List.of(ModItems.RAW_NEPTUNIUM.get(), ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+    private static final List<ItemLike> RADIUM_SMELTABLES = List.of(ModItems.RAW_RADIUM.get(), ModBlocks.ORCUS_RADIUM_ORE.get());
     private static final List<ItemLike> PLUTONIUM_SMELTABLES = List.of(ModItems.RAW_PLUTONIUM.get(), ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+    private static final List<ItemLike> ELECTROLYTE_SMELTABLES = List.of(ModItems.RAW_ELECTROLYTE.get(), ModBlocks.SEDNA_ELECTROLYTE_ORE.get());
 
     public ModRecipeGenerator(PackOutput pOutput) {
         super(pOutput);
@@ -100,10 +102,14 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 100, "item");
 
         // Orcus
+        oreSmelting(consumer, RADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.ORCUS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.ORCUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.RAW_RADIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.RADIUM_BLOCK.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, RADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.ORCUS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.ORCUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_RADIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.RADIUM_BLOCK.get(), 0.25f, 100, "item");
 
         // Haumea
         oreSmelting(consumer, List.of(ModBlocks.HAUMEA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
@@ -136,10 +142,14 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.ERIS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
         // Sedna
+        oreSmelting(consumer, ELECTROLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.ELECTROLYTE_INGOT.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.RAW_ELECTROLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.ELECTROLYTE_BLOCK.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, ELECTROLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.RAW_ELECTROLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.ELECTROLYTE_BLOCK.get(), 0.25f, 100, "item");
 
         // Proxima Centauri b
         oreSmelting(consumer, List.of(ModBlocks.B_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
@@ -529,6 +539,152 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .requires(ModBlocks.RAW_PLUTONIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), has(ModBlocks.RAW_PLUTONIUM_BLOCK.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLUTONIUM_NUGGET.get(), 9)
                 .requires(ModItems.PLUTONIUM_INGOT.get()).unlockedBy(getHasName(ModItems.PLUTONIUM_INGOT.get()), has(ModItems.PLUTONIUM_INGOT.get())).save(consumer);
+
+        // Radium
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RADIUM_INGOT.get()).unlockedBy(getHasName(ModItems.RADIUM_INGOT.get()), has(ModItems.RADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_RADIUM_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RAW_RADIUM.get()).unlockedBy(getHasName(ModItems.RAW_RADIUM.get()), has(ModItems.RAW_RADIUM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RADIUM_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RADIUM_NUGGET.get()).unlockedBy(getHasName(ModItems.RADIUM_NUGGET.get()), has(ModItems.RADIUM_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.RADIUM_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIUM_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.RADIUM_PLATES)
+                .unlockedBy(getHasName(ModItems.RADIUM_PLATE.get()), has(ModItemTags.RADIUM_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIUM_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.RADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.RADIUM_PLATING.get()), has(ModBlocks.RADIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIUM_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.RADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.RADIUM_PLATING.get()), has(ModBlocks.RADIUM_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RADIUM_PLATING_BUTTON.get())
+                .requires(ModBlocks.RADIUM_PLATING.get()).unlockedBy(getHasName(ModBlocks.RADIUM_PLATING.get()), has(ModBlocks.RADIUM_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.RADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.RADIUM_PLATING.get()), has(ModBlocks.RADIUM_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIUM_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.RADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.RADIUM_PLATING.get()), has(ModBlocks.RADIUM_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.RADIUM_PLATING.get(), ModBlocks.RADIUM_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_RADIUM_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.RADIUM_PLATES)
+                .define('D', Items.BLACK_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.RADIUM_PLATE.get()), has(ModItemTags.RADIUM_PLATES))
+                .unlockedBy(getHasName(Items.BLACK_DYE), has(Items.BLACK_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 9)
+                .requires(ModBlocks.RADIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RADIUM_BLOCK.get()), has(ModBlocks.RADIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_RADIUM.get(), 9)
+                .requires(ModBlocks.RAW_RADIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_RADIUM_BLOCK.get()), has(ModBlocks.RAW_RADIUM_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RADIUM_NUGGET.get(), 9)
+                .requires(ModItems.RADIUM_INGOT.get()).unlockedBy(getHasName(ModItems.RADIUM_INGOT.get()), has(ModItems.RADIUM_INGOT.get())).save(consumer);
+
+        // Electrolyte
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.ELECTROLYTE_INGOT.get()).unlockedBy(getHasName(ModItems.ELECTROLYTE_INGOT.get()), has(ModItems.ELECTROLYTE_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_ELECTROLYTE_BLOCK.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.RAW_ELECTROLYTE.get()).unlockedBy(getHasName(ModItems.RAW_ELECTROLYTE.get()), has(ModItems.RAW_ELECTROLYTE.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELECTROLYTE_INGOT.get())
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .define('J', ModItems.ELECTROLYTE_NUGGET.get()).unlockedBy(getHasName(ModItems.ELECTROLYTE_NUGGET.get()), has(ModItems.ELECTROLYTE_NUGGET.get()))
+                .save(consumer, Main.MOD_ID + ":" + getItemName(ModItems.ELECTROLYTE_INGOT.get()) + "_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PLATING.get(), 8)
+                .pattern("###")
+                .pattern("#|#")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()), has(earth.terrarium.ad_astra.common.registry.ModBlocks.IRON_PLATING.get()))
+                .define('|', ModItemTags.ELECTROLYTE_PLATES)
+                .unlockedBy(getHasName(ModItems.ELECTROLYTE_PLATE.get()), has(ModItemTags.ELECTROLYTE_PLATES))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PLATING_STAIRS.get(), 4)
+                .pattern("J  ")
+                .pattern("JJ ")
+                .pattern("JJJ")
+                .define('J', ModBlocks.ELECTROLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.ELECTROLYTE_PLATING.get()), has(ModBlocks.ELECTROLYTE_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PLATING_SLAB.get(), 6)
+                .pattern("JJJ")
+                .define('J', ModBlocks.ELECTROLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.ELECTROLYTE_PLATING.get()), has(ModBlocks.ELECTROLYTE_PLATING.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PLATING_BUTTON.get())
+                .requires(ModBlocks.ELECTROLYTE_PLATING.get()).unlockedBy(getHasName(ModBlocks.ELECTROLYTE_PLATING.get()), has(ModBlocks.ELECTROLYTE_PLATING.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get())
+                .pattern("JJ")
+                .define('J', ModBlocks.ELECTROLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.ELECTROLYTE_PLATING.get()), has(ModBlocks.ELECTROLYTE_PLATING.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PILLAR.get(), 2)
+                .pattern("J")
+                .pattern("J")
+                .define('J', ModBlocks.ELECTROLYTE_PLATING.get())
+                .unlockedBy(getHasName(ModBlocks.ELECTROLYTE_PLATING.get()), has(ModBlocks.ELECTROLYTE_PLATING.get()))
+                .save(consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.ELECTROLYTE_PLATING.get(), ModBlocks.ELECTROLYTE_PILLAR.get(), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get(), 6)
+                .pattern("JDJ")
+                .pattern("JGJ")
+                .pattern("JDJ")
+                .define('J', ModItemTags.ELECTROLYTE_PLATES)
+                .define('D', Items.GREEN_DYE)
+                .define('G', Items.GLOWSTONE)
+                .unlockedBy(getHasName(ModItems.ELECTROLYTE_PLATE.get()), has(ModItemTags.ELECTROLYTE_PLATES))
+                .unlockedBy(getHasName(Items.GREEN_DYE), has(Items.GREEN_DYE))
+                .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELECTROLYTE_INGOT.get(), 9)
+                .requires(ModBlocks.ELECTROLYTE_BLOCK.get()).unlockedBy(getHasName(ModBlocks.ELECTROLYTE_BLOCK.get()), has(ModBlocks.ELECTROLYTE_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_ELECTROLYTE.get(), 9)
+                .requires(ModBlocks.RAW_ELECTROLYTE_BLOCK.get()).unlockedBy(getHasName(ModBlocks.RAW_ELECTROLYTE_BLOCK.get()), has(ModBlocks.RAW_ELECTROLYTE_BLOCK.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELECTROLYTE_NUGGET.get(), 9)
+                .requires(ModItems.ELECTROLYTE_INGOT.get()).unlockedBy(getHasName(ModItems.ELECTROLYTE_INGOT.get()), has(ModItems.ELECTROLYTE_INGOT.get())).save(consumer);
 
         // Jupiter Stone Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JUPITER_STONE_STAIRS.get(), 4)

@@ -188,6 +188,18 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> NEPTUNE_PILLAR = registerBlock("neptune_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Orcus
+    public static final RegistryObject<Block> RADIUM_BLOCK = registerBlock("radium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> RAW_RADIUM_BLOCK = registerBlock("raw_radium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> RADIUM_PLATING = registerBlock("radium_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<StairBlock> RADIUM_PLATING_STAIRS = registerBlock("radium_plating_stairs", () -> new StairBlock(((Block)RADIUM_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<SlabBlock> RADIUM_PLATING_SLAB = registerBlock("radium_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> RADIUM_PILLAR = registerBlock("radium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_RADIUM_PILLAR = registerBlock("glowing_radium_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<ButtonBlock> RADIUM_PLATING_BUTTON = registerBlock("radium_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.COLOR_LIGHT_GREEN), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> RADIUM_PLATING_PRESSURE_PLATE = registerBlock("radium_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.COLOR_LIGHT_GREEN), BlockSetType.IRON));
+    public static final RegistryObject<Block> ORCUS_RADIUM_ORE = registerBlock("orcus_radium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> ORCUS_COPPER_ORE = registerBlock("orcus_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
     public static final RegistryObject<Block> ORCUS_IRON_ORE = registerBlock("orcus_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> ORCUS_STONE = registerBlock("orcus_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -355,6 +367,18 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> ERIS_PILLAR = registerBlock("eris_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Sedna
+    public static final RegistryObject<Block> ELECTROLYTE_BLOCK = registerBlock("electrolyte_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_BLUE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> RAW_ELECTROLYTE_BLOCK = registerBlock("raw_electrolyte_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+    public static final RegistryObject<Block> ELECTROLYTE_PLATING = registerBlock("electrolyte_plating", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_BLUE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<StairBlock> ELECTROLYTE_PLATING_STAIRS = registerBlock("electrolyte_plating_stairs", () -> new StairBlock(((Block)ELECTROLYTE_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_STAIRS).mapColor(MapColor.COLOR_BLUE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<SlabBlock> ELECTROLYTE_PLATING_SLAB = registerBlock("electrolyte_plating_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER_SLAB).mapColor(MapColor.COLOR_BLUE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> ELECTROLYTE_PILLAR = registerBlock("electrolyte_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).mapColor(MapColor.COLOR_BLUE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<RotatedPillarBlock> GLOWING_ELECTROLYTE_PILLAR = registerBlock("glowing_electrolyte_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CUT_COPPER).lightLevel((state) -> {
+        return 15;
+    }).mapColor(MapColor.COLOR_BLUE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<ButtonBlock> ELECTROLYTE_PLATING_BUTTON = registerBlock("electrolyte_plating_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).mapColor(MapColor.COLOR_BLUE), BlockSetType.IRON, 20, false));
+    public static final RegistryObject<PressurePlateBlock> ELECTROLYTE_PLATING_PRESSURE_PLATE = registerBlock("electrolyte_plating_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.COLOR_BLUE), BlockSetType.IRON));
+    public static final RegistryObject<Block> SEDNA_ELECTROLYTE_ORE = registerBlock("sedna_electrolyte_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> SEDNA_COPPER_ORE = registerBlock("sedna_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
     public static final RegistryObject<Block> SEDNA_IRON_ORE = registerBlock("sedna_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> SEDNA_STONE = registerBlock("sedna_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));

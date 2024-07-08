@@ -71,6 +71,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get())
                 .add(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get())
 
+                // Orcus
+                .add(ModBlocks.RADIUM_BLOCK.get())
+                .add(ModBlocks.ORCUS_RADIUM_ORE.get())
+                .add(ModBlocks.RAW_RADIUM_BLOCK.get())
+                .add(ModBlocks.RADIUM_PLATING.get())
+                .add(ModBlocks.RADIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.RADIUM_PLATING_SLAB.get())
+                .add(ModBlocks.RADIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_RADIUM_PILLAR.get())
+                .add(ModBlocks.RADIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get())
+
                 // Pluto
                 .add(ModBlocks.PLUTONIUM_BLOCK.get())
                 .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get())
@@ -81,7 +93,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PLUTONIUM_PILLAR.get())
                 .add(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get())
                 .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get())
-                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
+                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get())
+
+                // Sedna
+                .add(ModBlocks.ELECTROLYTE_BLOCK.get())
+                .add(ModBlocks.SEDNA_ELECTROLYTE_ORE.get())
+                .add(ModBlocks.RAW_ELECTROLYTE_BLOCK.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_STAIRS.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_SLAB.get())
+                .add(ModBlocks.ELECTROLYTE_PILLAR.get())
+                .add(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.JUPITER_COAL_ORE.get())
                 .add(ModBlocks.CERES_IRON_ORE.get())
@@ -274,6 +298,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NEPTUNE_IRON_ORE.get())
 
                 // Orcus
+                .add(ModBlocks.RADIUM_BLOCK.get())
+                .add(ModBlocks.RAW_RADIUM_BLOCK.get())
+                .add(ModBlocks.RADIUM_PLATING.get())
+                .add(ModBlocks.RADIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.RADIUM_PLATING_SLAB.get())
+                .add(ModBlocks.RADIUM_PILLAR.get())
+                .add(ModBlocks.GLOWING_RADIUM_PILLAR.get())
+                .add(ModBlocks.RADIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.ORCUS_STONE.get())
                 .add(ModBlocks.ORCUS_STONE_STAIRS.get())
                 .add(ModBlocks.ORCUS_STONE_SLAB.get())
@@ -292,6 +325,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get())
                 .add(ModBlocks.ORCUS_PILLAR.get())
+                .add(ModBlocks.ORCUS_RADIUM_ORE.get())
                 .add(ModBlocks.ORCUS_COPPER_ORE.get())
                 .add(ModBlocks.ORCUS_IRON_ORE.get())
 
@@ -439,6 +473,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ERIS_IRON_ORE.get())
 
                 // Sedna
+                .add(ModBlocks.ELECTROLYTE_BLOCK.get())
+                .add(ModBlocks.RAW_ELECTROLYTE_BLOCK.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_STAIRS.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_SLAB.get())
+                .add(ModBlocks.ELECTROLYTE_PILLAR.get())
+                .add(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.SEDNA_STONE.get())
                 .add(ModBlocks.SEDNA_STONE_STAIRS.get())
                 .add(ModBlocks.SEDNA_STONE_SLAB.get())
@@ -457,6 +500,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get())
                 .add(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get())
                 .add(ModBlocks.SEDNA_PILLAR.get())
+                .add(ModBlocks.SEDNA_ELECTROLYTE_ORE.get())
                 .add(ModBlocks.SEDNA_COPPER_ORE.get())
                 .add(ModBlocks.SEDNA_IRON_ORE.get())
 
@@ -581,6 +625,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get())
 
                 // Orcus
+                .add(ModBlocks.RADIUM_PLATING_STAIRS.get())
                 .add(ModBlocks.ORCUS_STONE_STAIRS.get())
                 .add(ModBlocks.ORCUS_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.ORCUS_STONE_BRICK_STAIRS.get())
@@ -631,6 +676,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ERIS_STONE_STAIRS.get())
 
                 // Sedna
+                .add(ModBlocks.ELECTROLYTE_PLATING_STAIRS.get())
                 .add(ModBlocks.SEDNA_STONE_STAIRS.get())
                 .add(ModBlocks.SEDNA_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.SEDNA_STONE_BRICK_STAIRS.get())
@@ -684,6 +730,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get())
 
                 // Orcus
+                .add(ModBlocks.RADIUM_PLATING_SLAB.get())
                 .add(ModBlocks.ORCUS_STONE_SLAB.get())
                 .add(ModBlocks.ORCUS_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.ORCUS_STONE_BRICK_SLAB.get())
@@ -734,6 +781,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_ERIS_STONE_SLAB.get())
 
                 // Sedna
+                .add(ModBlocks.ELECTROLYTE_PLATING_SLAB.get())
                 .add(ModBlocks.SEDNA_STONE_SLAB.get())
                 .add(ModBlocks.SEDNA_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.SEDNA_STONE_BRICK_SLAB.get())
@@ -766,25 +814,33 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SATURLYTE_PLATING_BUTTON.get())
                 .add(ModBlocks.URANIUM_PLATING_BUTTON.get())
                 .add(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get())
-                .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get());
+                .add(ModBlocks.RADIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get());
         this.tag(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get())
-                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
+                .add(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get())
+                .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get())
+                .add(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
         this.tag(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(ModBlockTags.JUPERIUM_BLOCKS)
                 .addTag(ModBlockTags.SATURLYTE_BLOCKS)
                 .addTag(ModBlockTags.URANIUM_BLOCKS)
                 .addTag(ModBlockTags.NEPTUNIUM_BLOCKS)
-                .addTag(ModBlockTags.PLUTONIUM_BLOCKS);
+                .addTag(ModBlockTags.RADIUM_BLOCKS)
+                .addTag(ModBlockTags.PLUTONIUM_BLOCKS)
+                .addTag(ModBlockTags.ELECTROLYTE_BLOCKS);
         this.tag(Tags.Blocks.ORES)
                 .addTag(ModBlockTags.JUPERIUM_ORES)
                 .addTag(ModBlockTags.SATURLYTE_ORES)
                 .addTag(ModBlockTags.URANIUM_ORES)
                 .addTag(ModBlockTags.NEPTUNIUM_ORES)
-                .addTag(ModBlockTags.PLUTONIUM_ORES);
+                .addTag(ModBlockTags.RADIUM_ORES)
+                .addTag(ModBlockTags.PLUTONIUM_ORES)
+                .addTag(ModBlockTags.ELECTROLYTE_ORES);
         this.tag(ModBlockTags.JUPERIUM_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get());
         this.tag(ModBlockTags.JUPERIUM_ORES)
@@ -803,15 +859,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NEPTUNIUM_BLOCK.get());
         this.tag(ModBlockTags.NEPTUNIUM_ORES)
                 .add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+        this.tag(ModBlockTags.RADIUM_BLOCKS)
+                .add(ModBlocks.RADIUM_BLOCK.get());
+        this.tag(ModBlockTags.RADIUM_ORES)
+                .add(ModBlocks.ORCUS_RADIUM_ORE.get());
         this.tag(ModBlockTags.PLUTONIUM_BLOCKS)
                 .add(ModBlocks.PLUTONIUM_BLOCK.get());
         this.tag(ModBlockTags.PLUTONIUM_ORES)
                 .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+        this.tag(ModBlockTags.ELECTROLYTE_BLOCKS)
+                .add(ModBlocks.ELECTROLYTE_BLOCK.get());
+        this.tag(ModBlockTags.ELECTROLYTE_ORES)
+                .add(ModBlocks.SEDNA_ELECTROLYTE_ORE.get());
         this.tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get())
                 .add(ModBlocks.SATURLYTE_BLOCK.get())
                 .add(ModBlocks.URANIUM_BLOCK.get())
                 .add(ModBlocks.NEPTUNIUM_BLOCK.get())
-                .add(ModBlocks.PLUTONIUM_BLOCK.get());
+                .add(ModBlocks.RADIUM_BLOCK.get())
+                .add(ModBlocks.PLUTONIUM_BLOCK.get())
+                .add(ModBlocks.ELECTROLYTE_BLOCK.get());
     }
 }

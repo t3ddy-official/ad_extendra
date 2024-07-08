@@ -213,8 +213,22 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get());
                 output.accept(ModBlocks.ORCUS_PILLAR.get());
+                output.accept(ModBlocks.ORCUS_RADIUM_ORE.get());
                 output.accept(ModBlocks.ORCUS_COPPER_ORE.get());
                 output.accept(ModBlocks.ORCUS_IRON_ORE.get());
+                output.accept(ModItems.RAW_RADIUM.get());
+                output.accept(ModBlocks.RAW_RADIUM_BLOCK.get());
+                output.accept(ModItems.RADIUM_INGOT.get());
+                output.accept(ModItems.RADIUM_PLATE.get());
+                output.accept(ModItems.RADIUM_NUGGET.get());
+                output.accept(ModBlocks.RADIUM_BLOCK.get());
+                output.accept(ModBlocks.RADIUM_PLATING.get());
+                output.accept(ModBlocks.RADIUM_PLATING_STAIRS.get());
+                output.accept(ModBlocks.RADIUM_PLATING_SLAB.get());
+                output.accept(ModBlocks.RADIUM_PLATING_BUTTON.get());
+                output.accept(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.RADIUM_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_RADIUM_PILLAR.get());
 
                 // Pluto
                 output.accept(ModBlocks.PLUTO_SAND.get());
@@ -382,8 +396,22 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get());
                 output.accept(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get());
                 output.accept(ModBlocks.SEDNA_PILLAR.get());
+                output.accept(ModBlocks.SEDNA_ELECTROLYTE_ORE.get());
                 output.accept(ModBlocks.SEDNA_COPPER_ORE.get());
                 output.accept(ModBlocks.SEDNA_IRON_ORE.get());
+                output.accept(ModItems.RAW_ELECTROLYTE.get());
+                output.accept(ModBlocks.RAW_ELECTROLYTE_BLOCK.get());
+                output.accept(ModItems.ELECTROLYTE_INGOT.get());
+                output.accept(ModItems.ELECTROLYTE_PLATE.get());
+                output.accept(ModItems.ELECTROLYTE_NUGGET.get());
+                output.accept(ModBlocks.ELECTROLYTE_BLOCK.get());
+                output.accept(ModBlocks.ELECTROLYTE_PLATING.get());
+                output.accept(ModBlocks.ELECTROLYTE_PLATING_STAIRS.get());
+                output.accept(ModBlocks.ELECTROLYTE_PLATING_SLAB.get());
+                output.accept(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get());
+                output.accept(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.ELECTROLYTE_PILLAR.get());
+                output.accept(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get());
 
                 // Proxima Centauri b
                 output.accept(ModBlocks.B_SAND.get());

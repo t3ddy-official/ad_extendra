@@ -189,6 +189,18 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/neptune_pillar_top"));
 
         // Orcus
+        blockWithItem(ModBlocks.RADIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_RADIUM_BLOCK);
+        blockWithItem(ModBlocks.RADIUM_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.RADIUM_PLATING_STAIRS.get()), blockTexture(ModBlocks.RADIUM_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.RADIUM_PLATING_SLAB.get()), blockTexture(ModBlocks.RADIUM_PLATING.get()), blockTexture(ModBlocks.RADIUM_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.RADIUM_PILLAR.get()), blockTexture(ModBlocks.RADIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/radium_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_RADIUM_PILLAR.get()), blockTexture(ModBlocks.GLOWING_RADIUM_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_radium_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.RADIUM_PLATING_BUTTON.get()), blockTexture(ModBlocks.RADIUM_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.RADIUM_PLATING.get()));
+        blockWithItem(ModBlocks.ORCUS_RADIUM_ORE);
         blockWithItem(ModBlocks.ORCUS_COPPER_ORE);
         blockWithItem(ModBlocks.ORCUS_IRON_ORE);
         blockWithItem(ModBlocks.ORCUS_STONE);
@@ -363,6 +375,18 @@ public class ModBlockStateGenerator extends BlockStateProvider {
                 new ResourceLocation(Main.MOD_ID, "block/eris_pillar_top"));
 
         // Sedna
+        blockWithItem(ModBlocks.ELECTROLYTE_BLOCK);
+        blockWithItem(ModBlocks.RAW_ELECTROLYTE_BLOCK);
+        blockWithItem(ModBlocks.ELECTROLYTE_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.ELECTROLYTE_PLATING_STAIRS.get()), blockTexture(ModBlocks.ELECTROLYTE_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.ELECTROLYTE_PLATING_SLAB.get()), blockTexture(ModBlocks.ELECTROLYTE_PLATING.get()), blockTexture(ModBlocks.ELECTROLYTE_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.ELECTROLYTE_PILLAR.get()), blockTexture(ModBlocks.ELECTROLYTE_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/electrolyte_pillar_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get()), blockTexture(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get()),
+                new ResourceLocation(Main.MOD_ID, "block/glowing_electrolyte_pillar_top"));
+        buttonBlock(((ButtonBlock) ModBlocks.ELECTROLYTE_PLATING_BUTTON.get()), blockTexture(ModBlocks.ELECTROLYTE_PLATING.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get()), blockTexture(ModBlocks.ELECTROLYTE_PLATING.get()));
+        blockWithItem(ModBlocks.SEDNA_ELECTROLYTE_ORE);
         blockWithItem(ModBlocks.SEDNA_COPPER_ORE);
         blockWithItem(ModBlocks.SEDNA_IRON_ORE);
         blockWithItem(ModBlocks.SEDNA_STONE);

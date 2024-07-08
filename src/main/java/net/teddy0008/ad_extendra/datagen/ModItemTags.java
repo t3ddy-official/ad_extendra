@@ -43,6 +43,15 @@ public class ModItemTags {
     public static final TagKey<Item> NEPTUNIUM_NUGGETS = tag("forge", "nuggets/neptunium");
     public static final TagKey<Item> NEPTUNIUM_ORES = tag("forge", "ores/neptunium");
     public static final TagKey<Item> NEPTUNIUM_RAW_MATERIALS = tag("forge", "raw_materials/neptunium");
+    public static final TagKey<Item> FORGE_RADIUM_INGOTS = tag("forge", "ingots/radium");
+    public static final TagKey<Item> RADIUM_INGOTS = tag("ad_astra_platform", "radium_ingots");
+    public static final TagKey<Item> FORGE_RADIUM_BLOCKS = tag("forge", "storage_blocks/radium");
+    public static final TagKey<Item> RADIUM_BLOCKS = tag("ad_astra_platform", "radium_blocks");
+    public static final TagKey<Item> FORGE_RADIUM_PLATES = tag("forge", "plates/radium");
+    public static final TagKey<Item> RADIUM_PLATES = tag("ad_astra_platform", "radium_plates");
+    public static final TagKey<Item> RADIUM_NUGGETS = tag("forge", "nuggets/radium");
+    public static final TagKey<Item> RADIUM_ORES = tag("forge", "ores/radium");
+    public static final TagKey<Item> RADIUM_RAW_MATERIALS = tag("forge", "raw_materials/radium");
     public static final TagKey<Item> FORGE_PLUTONIUM_INGOTS = tag("forge", "ingots/plutonium");
     public static final TagKey<Item> PLUTONIUM_INGOTS = tag("ad_astra_platform", "plutonium_ingots");
     public static final TagKey<Item> FORGE_PLUTONIUM_BLOCKS = tag("forge", "storage_blocks/plutonium");
@@ -52,6 +61,15 @@ public class ModItemTags {
     public static final TagKey<Item> PLUTONIUM_NUGGETS = tag("forge", "nuggets/plutonium");
     public static final TagKey<Item> PLUTONIUM_ORES = tag("forge", "ores/plutonium");
     public static final TagKey<Item> PLUTONIUM_RAW_MATERIALS = tag("forge", "raw_materials/plutonium");
+    public static final TagKey<Item> FORGE_ELECTROLYTE_INGOTS = tag("forge", "ingots/electrolyte");
+    public static final TagKey<Item> ELECTROLYTE_INGOTS = tag("ad_astra_platform", "electrolyte_ingots");
+    public static final TagKey<Item> FORGE_ELECTROLYTE_BLOCKS = tag("forge", "storage_blocks/electrolyte");
+    public static final TagKey<Item> ELECTROLYTE_BLOCKS = tag("ad_astra_platform", "electrolyte_blocks");
+    public static final TagKey<Item> FORGE_ELECTROLYTE_PLATES = tag("forge", "plates/electrolyte");
+    public static final TagKey<Item> ELECTROLYTE_PLATES = tag("ad_astra_platform", "electrolyte_plates");
+    public static final TagKey<Item> ELECTROLYTE_NUGGETS = tag("forge", "nuggets/electrolyte");
+    public static final TagKey<Item> ELECTROLYTE_ORES = tag("forge", "ores/electrolyte");
+    public static final TagKey<Item> ELECTROLYTE_RAW_MATERIALS = tag("forge", "raw_materials/electrolyte");
     public static final TagKey<Item> PLATES = tag("forge", "plates");
 
     private static TagKey<Item> tag(String modid, String name) {
