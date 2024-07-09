@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:makemakean_barrens",
+  "features": "ad_extendra:makemake/iron_ore",
+  "step": "underground_ores"
+}

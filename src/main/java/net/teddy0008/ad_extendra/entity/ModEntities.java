@@ -11,6 +11,7 @@ import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.entity.vehicle.RocketTier5;
 import net.teddy0008.ad_extendra.entity.vehicle.RocketTier6;
 import net.teddy0008.ad_extendra.entity.vehicle.RocketTier7;
+import net.teddy0008.ad_extendra.entity.vehicle.RocketTier8;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Main.MOD_ID);
@@ -36,6 +37,13 @@ public class ModEntities {
                     .clientTrackingRange(10)
                     .sized(1.1f, 7.0f)
                     .build("tier_7_rocket"));
+
+    public static final RegistryObject<EntityType<RocketTier8>> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () ->
+            EntityType.Builder.<RocketTier8>of(RocketTier8::new, MobCategory.MISC)
+                    .fireImmune()
+                    .clientTrackingRange(10)
+                    .sized(1.1f, 7.0f)
+                    .build("tier_8_rocket"));
 
     public static void register(IEventBus eventBus) {
         ROCKETS.register(eventBus);

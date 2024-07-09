@@ -199,6 +199,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.NEPTUNIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get());
+                output.accept(ModItems.NEPTUNIUM_ENGINE.get());
+                output.accept(ModItems.NEPTUNIUM_TANK.get());
 
                 // Orcus
                 output.accept(ModBlocks.ORCUS_STONE.get());
@@ -448,6 +450,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.TIER_5_ROCKET.get());
                 output.accept(ModItems.TIER_6_ROCKET.get());
                 output.accept(ModItems.TIER_7_ROCKET.get());
+                output.accept(ModItems.TIER_8_ROCKET.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

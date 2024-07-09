@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:quaoarian_barrens",
+  "features": "ad_extendra:quaoar/iron_ore",
+  "step": "underground_ores"
+}

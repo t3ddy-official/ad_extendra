@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:haumean_wastelands",
+  "features": "ad_extendra:haumea/copper_ore",
+  "step": "underground_ores"
+}

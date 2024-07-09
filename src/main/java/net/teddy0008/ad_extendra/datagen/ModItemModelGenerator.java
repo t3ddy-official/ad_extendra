@@ -118,6 +118,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.NEPTUNIUM_INGOT);
         simpleItem(ModItems.NEPTUNIUM_NUGGET);
         simpleItem(ModItems.NEPTUNIUM_PLATE);
+        simpleItem(ModItems.NEPTUNIUM_ENGINE);
+        simpleItem(ModItems.NEPTUNIUM_TANK);
         stairsItem(ModBlocks.NEPTUNIUM_PLATING_STAIRS);
         slabItem(ModBlocks.NEPTUNIUM_PLATING_SLAB);
         pillarItem(ModBlocks.NEPTUNIUM_PILLAR);

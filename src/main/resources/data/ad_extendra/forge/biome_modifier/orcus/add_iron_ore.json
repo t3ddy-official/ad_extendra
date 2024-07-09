@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:orcean_wastelands",
+  "features": "ad_extendra:orcus/iron_ore",
+  "step": "underground_ores"
+}
