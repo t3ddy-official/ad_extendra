@@ -21,6 +21,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketRendererTier5;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_6.RocketRendererTier6;
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
@@ -35,8 +36,6 @@ import java.util.function.BiConsumer;
 public class Main {
     public static final String MOD_ID = "ad_extendra";
     private static final Logger LOGGER = LogUtils.getLogger();
-
-    private static final Map<Item, BlockEntityWithoutLevelRenderer> ITEM_RENDERERS = new HashMap();
 
     public Main() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -76,6 +75,7 @@ public class Main {
 
     public static void registerEntityRenderers() {
         ClientHooks.registerEntityRenderer(ModEntities.TIER_5_ROCKET, RocketRendererTier5::new);
+        ClientHooks.registerEntityRenderer(ModEntities.TIER_6_ROCKET, RocketRendererTier6::new);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

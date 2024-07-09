@@ -1,0 +1,33 @@
+{
+    "_comment": "The parent will be changed to builtin/entity once I figure out why the rocket item model is invisible.",
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "ad_extendra:item/vehicle/tier_6_rocket"
+    },
+    "display": {
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 2, 0],
+            "scale":[ 0.5, 0.5, 0.5 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 13, 7],
+            "scale":[ 1, 1, 1]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 1 ],
+            "scale": [ 3.885, 3.885, 3.885 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 25 ],
+            "translation": [ 1.13, 3.2, 1.13],
+            "scale": [ 4.8025, 4.8025, 4.8025 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "scale": [ 1, 1, 1 ]
+        }
+    }
+}

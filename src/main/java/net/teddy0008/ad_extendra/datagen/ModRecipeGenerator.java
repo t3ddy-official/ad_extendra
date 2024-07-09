@@ -147,7 +147,7 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreSmelting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_ELECTROLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.ELECTROLYTE_BLOCK.get(), 0.25f, 200, "item");
-        oreBlasting(consumer, ELECTROLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, ELECTROLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.ELECTROLYTE_INGOT.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_ELECTROLYTE_BLOCK.get()), RecipeCategory.MISC, ModBlocks.ELECTROLYTE_BLOCK.get(), 0.25f, 100, "item");
@@ -335,6 +335,28 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(ModItems.SATURLYTE_PLATE.get()), has(ModItemTags.SATURLYTE_PLATES))
                 .unlockedBy(getHasName(Items.MAGENTA_DYE), has(Items.MAGENTA_DYE))
                 .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SATURLYTE_ENGINE.get())
+                .pattern("###")
+                .pattern(" E ")
+                .pattern(" F ")
+                .define('#', ModItemTags.SATURLYTE_PLATES)
+                .define('E', earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get())
+                .define('F', earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get())
+                .unlockedBy(getHasName(ModItems.SATURLYTE_PLATE.get()), has(ModItemTags.SATURLYTE_PLATES))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get()))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SATURLYTE_TANK.get())
+                .pattern("## ")
+                .pattern("#U|")
+                .pattern("## ")
+                .define('#', ModItemTags.SATURLYTE_PLATES)
+                .define('U', Items.BUCKET)
+                .define('|', ModItemTags.IRON_RODS)
+                .unlockedBy(getHasName(ModItems.SATURLYTE_PLATE.get()), has(ModItemTags.SATURLYTE_PLATES))
+                .unlockedBy(getHasName(Items.BUCKET), has(Items.BUCKET))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.IRON_ROD.get()), has(ModItemTags.IRON_RODS))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 9)

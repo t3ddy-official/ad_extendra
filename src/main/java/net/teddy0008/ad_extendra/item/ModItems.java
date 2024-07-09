@@ -26,6 +26,8 @@ public class ModItems {
     public static final RegistryObject<Item> SATURLYTE_INGOT = ITEMS.register("saturlyte_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SATURLYTE_NUGGET = ITEMS.register("saturlyte_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SATURLYTE_PLATE = ITEMS.register("saturlyte_plate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SATURLYTE_ENGINE = ITEMS.register("saturlyte_engine", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SATURLYTE_TANK = ITEMS.register("saturlyte_tank", () -> new Item(new Item.Properties()));
 
     // Uranus
     public static final RegistryObject<Item> RAW_URANIUM = ITEMS.register("raw_uranium", () -> new Item(new Item.Properties()));
@@ -59,6 +61,7 @@ public class ModItems {
 
     // Rockets
     public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new AdvancedRocketItem(6, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

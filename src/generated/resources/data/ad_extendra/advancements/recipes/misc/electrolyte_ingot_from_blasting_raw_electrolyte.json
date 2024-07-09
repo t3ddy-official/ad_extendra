@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ad_extendra:radium_ingot_from_blasting_raw_electrolyte"
+        "recipe": "ad_extendra:electrolyte_ingot_from_blasting_raw_electrolyte"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "ad_extendra:radium_ingot_from_blasting_raw_electrolyte"
+      "ad_extendra:electrolyte_ingot_from_blasting_raw_electrolyte"
     ]
   },
   "sends_telemetry_event": false

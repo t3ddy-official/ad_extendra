@@ -66,6 +66,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.SATURLYTE_INGOT);
         simpleItem(ModItems.SATURLYTE_NUGGET);
         simpleItem(ModItems.SATURLYTE_PLATE);
+        simpleItem(ModItems.SATURLYTE_ENGINE);
+        simpleItem(ModItems.SATURLYTE_TANK);
         stairsItem(ModBlocks.SATURLYTE_PLATING_STAIRS);
         slabItem(ModBlocks.SATURLYTE_PLATING_SLAB);
         pillarItem(ModBlocks.SATURLYTE_PILLAR);

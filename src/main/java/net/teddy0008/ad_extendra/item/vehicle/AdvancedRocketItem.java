@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.teddy0008.ad_extendra.entity.vehicle.RocketTier5;
+import net.teddy0008.ad_extendra.entity.vehicle.RocketTier6;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -63,6 +64,7 @@ public class AdvancedRocketItem extends RocketItem {
                     int tier = rocket.getTier();
                     switch (tier) {
                         case 5 -> rocketEntity = new RocketTier5(level);
+                        case 6 -> rocketEntity = new RocketTier6(level);
                     }
 
                     if (rocketEntity != null) {
