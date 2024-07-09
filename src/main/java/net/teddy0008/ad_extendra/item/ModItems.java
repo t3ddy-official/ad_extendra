@@ -66,6 +66,8 @@ public class ModItems {
     public static final RegistryObject<Item> ELECTROLYTE_INGOT = ITEMS.register("electrolyte_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELECTROLYTE_NUGGET = ITEMS.register("electrolyte_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELECTROLYTE_PLATE = ITEMS.register("electrolyte_plate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELECTROLYTE_ENGINE = ITEMS.register("electrolyte_engine", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELECTROLYTE_TANK = ITEMS.register("electrolyte_tank", () -> new Item(new Item.Properties()));
 
     // Rockets
     public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));
@@ -74,6 +76,7 @@ public class ModItems {
     public static final RegistryObject<AdvancedRocketItem> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () -> new AdvancedRocketItem(8, new Item.Properties()));
     public static final RegistryObject<AdvancedRocketItem> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new AdvancedRocketItem(9, new Item.Properties()));
     public static final RegistryObject<AdvancedRocketItem> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () -> new AdvancedRocketItem(10, new Item.Properties()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () -> new AdvancedRocketItem(11, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

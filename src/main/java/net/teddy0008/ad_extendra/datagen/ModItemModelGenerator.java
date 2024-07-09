@@ -266,6 +266,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.ELECTROLYTE_INGOT);
         simpleItem(ModItems.ELECTROLYTE_NUGGET);
         simpleItem(ModItems.ELECTROLYTE_PLATE);
+        simpleItem(ModItems.ELECTROLYTE_ENGINE);
+        simpleItem(ModItems.ELECTROLYTE_TANK);
         stairsItem(ModBlocks.ELECTROLYTE_PLATING_STAIRS);
         slabItem(ModBlocks.ELECTROLYTE_PLATING_SLAB);
         pillarItem(ModBlocks.ELECTROLYTE_PILLAR);

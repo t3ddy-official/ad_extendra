@@ -68,6 +68,7 @@ public class AdvancedRocketItem extends RocketItem {
                         case 8 -> rocketEntity = new RocketTier8(level);
                         case 9 -> rocketEntity = new RocketTier9(level);
                         case 10 -> rocketEntity = new RocketTier10(level);
+                        case 11 -> rocketEntity = new RocketTier11(level);
                     }
 
                     if (rocketEntity != null) {

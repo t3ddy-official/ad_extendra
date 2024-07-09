@@ -424,6 +424,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.ELECTROLYTE_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get());
+                output.accept(ModItems.ELECTROLYTE_ENGINE.get());
+                output.accept(ModItems.ELECTROLYTE_TANK.get());
 
                 // Proxima Centauri b
                 output.accept(ModBlocks.B_SAND.get());
@@ -457,6 +459,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.TIER_8_ROCKET.get());
                 output.accept(ModItems.TIER_9_ROCKET.get());
                 output.accept(ModItems.TIER_10_ROCKET.get());
+                output.accept(ModItems.TIER_11_ROCKET.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

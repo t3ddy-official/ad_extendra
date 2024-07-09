@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#ad_extendra:b",
+  "features": "ad_extendra:b/emerald_ore",
+  "step": "underground_ores"
+}
