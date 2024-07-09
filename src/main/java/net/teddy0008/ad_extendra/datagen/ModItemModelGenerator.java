@@ -144,6 +144,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.RADIUM_INGOT);
         simpleItem(ModItems.RADIUM_NUGGET);
         simpleItem(ModItems.RADIUM_PLATE);
+        simpleItem(ModItems.RADIUM_ENGINE);
+        simpleItem(ModItems.RADIUM_TANK);
         stairsItem(ModBlocks.RADIUM_PLATING_STAIRS);
         slabItem(ModBlocks.RADIUM_PLATING_SLAB);
         pillarItem(ModBlocks.RADIUM_PILLAR);

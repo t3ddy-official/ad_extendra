@@ -50,6 +50,8 @@ public class ModItems {
     public static final RegistryObject<Item> RADIUM_INGOT = ITEMS.register("radium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RADIUM_NUGGET = ITEMS.register("radium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RADIUM_PLATE = ITEMS.register("radium_plate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RADIUM_ENGINE = ITEMS.register("radium_engine", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RADIUM_TANK = ITEMS.register("radium_tank", () -> new Item(new Item.Properties()));
 
     // Pluto
     public static final RegistryObject<Item> RAW_PLUTONIUM = ITEMS.register("raw_plutonium", () -> new Item(new Item.Properties()));
@@ -68,6 +70,7 @@ public class ModItems {
     public static final RegistryObject<AdvancedRocketItem> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new AdvancedRocketItem(6, new Item.Properties()));
     public static final RegistryObject<AdvancedRocketItem> TIER_7_ROCKET = ROCKETS.register("tier_7_rocket", () -> new AdvancedRocketItem(7, new Item.Properties()));
     public static final RegistryObject<AdvancedRocketItem> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () -> new AdvancedRocketItem(8, new Item.Properties()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new AdvancedRocketItem(9, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

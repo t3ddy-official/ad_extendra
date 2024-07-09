@@ -21,6 +21,7 @@ import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.Ro
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_6.RocketRendererTier6;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_7.RocketRendererTier7;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_8.RocketRendererTier8;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_9.RocketRendererTier9;
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
@@ -73,6 +74,7 @@ public class Main {
         ClientHooks.registerEntityRenderer(ModEntities.TIER_6_ROCKET, RocketRendererTier6::new);
         ClientHooks.registerEntityRenderer(ModEntities.TIER_7_ROCKET, RocketRendererTier7::new);
         ClientHooks.registerEntityRenderer(ModEntities.TIER_8_ROCKET, RocketRendererTier8::new);
+        ClientHooks.registerEntityRenderer(ModEntities.TIER_9_ROCKET, RocketRendererTier9::new);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

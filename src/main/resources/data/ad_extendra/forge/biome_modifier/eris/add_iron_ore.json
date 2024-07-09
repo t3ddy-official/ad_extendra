@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:eridian_deltas",
+  "features": "ad_extendra:eris/iron_ore",
+  "step": "underground_ores"
+}

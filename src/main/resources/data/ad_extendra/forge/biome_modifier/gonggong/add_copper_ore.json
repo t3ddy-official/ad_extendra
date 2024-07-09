@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:cryovolcanic_wastelands",
+  "features": "ad_extendra:gonggong/copper_ore",
+  "step": "underground_ores"
+}
