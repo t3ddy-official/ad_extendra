@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-07T17:22:53.8661994	Loot Tables
+// 1.20.1	2024-07-09T14:54:15.3495554	Loot Tables
 39cedf66136a8d051c4e23bae7bd709cbee3d7ad data/ad_extendra/loot_tables/blocks/b_cobblestone.json
 f30a046ab5d24a05813bae1b7a92ab80a8849286 data/ad_extendra/loot_tables/blocks/b_cobblestone_slab.json
 95dfae180a23588c5a6a3292cd56c19255cb9af3 data/ad_extendra/loot_tables/blocks/b_cobblestone_stairs.json
@@ -105,6 +105,7 @@ cfadf5dbb27f58b76a65e271736feaf9036b924e data/ad_extendra/loot_tables/blocks/eri
 05982d240d47b9cf3084092e45f226ce93e800f0 data/ad_extendra/loot_tables/blocks/eris_stone_brick_wall.json
 36bb78ca4e585126af65d2a7bd672a492baa81a4 data/ad_extendra/loot_tables/blocks/eris_stone_slab.json
 06291ab1463ec4bfdc6141a5ca382f617e4f430c data/ad_extendra/loot_tables/blocks/eris_stone_stairs.json
+bab0cb4b5a15dda074b8d829832d408c250f2470 data/ad_extendra/loot_tables/blocks/glacian_sapling.json
 0a3c28b237e2ed4587c0203da086ca8e4e4998e0 data/ad_extendra/loot_tables/blocks/glowing_electrolyte_pillar.json
 a1a83dffaab6fb9c1375b6b54d1b2cc09fe0937f data/ad_extendra/loot_tables/blocks/glowing_juperium_pillar.json
 ca38613e02ee3145f80cd8afc55a999affc6cef3 data/ad_extendra/loot_tables/blocks/glowing_neptunium_pillar.json

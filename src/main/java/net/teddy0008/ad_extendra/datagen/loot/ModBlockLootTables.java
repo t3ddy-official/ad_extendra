@@ -428,6 +428,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.B_IRON_ORE.get(), createOreDrop(ModBlocks.B_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.B_REDSTONE_ORE.get(), createOreDrop(ModBlocks.B_REDSTONE_ORE.get(), Items.REDSTONE));
         this.add(ModBlocks.B_STONE.get(), createStoneLikeDrop(ModBlocks.B_STONE.get(), ModBlocks.B_COBBLESTONE.get()));
+
+        // Glacio
+        this.dropSelf(ModBlocks.GLACIAN_SAPLING.get());
         // this.add(ModBlocks.BLOCK.get(), block -> createOreDrop(ModBlocks.BLOCK.get(), ModItems.ITEM.get()));
     }
 

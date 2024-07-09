@@ -27,6 +27,7 @@ import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_9.Ro
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.loot.ModLootModifiers;
 import net.teddy0008.ad_extendra.painting.ModPaintings;
 import org.slf4j.Logger;
 
@@ -42,6 +43,7 @@ public class Main {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         ModPaintings.PAINTING_VARIANTS.init();
 
@@ -87,6 +89,7 @@ public class Main {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
             registerEntityRenderers();
         }
     }

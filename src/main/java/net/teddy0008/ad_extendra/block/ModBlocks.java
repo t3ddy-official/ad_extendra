@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.world.gen.tree.GlacianTreeGrower;
 
 import java.util.function.Supplier;
 
@@ -424,6 +425,10 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_B_STONE_STAIRS = registerBlock("polished_b_stone_stairs", () -> new StairBlock(((Block)POLISHED_B_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_B_STONE_SLAB = registerBlock("polished_b_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> B_PILLAR = registerBlock("b_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+    // Glacio
+    public static final RegistryObject<SaplingBlock> GLACIAN_SAPLING = registerBlock("glacian_sapling",
+            () -> new SaplingBlock(new GlacianTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

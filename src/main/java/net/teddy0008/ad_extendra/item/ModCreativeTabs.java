@@ -452,6 +452,9 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.B_IRON_ORE.get());
                 output.accept(ModBlocks.B_REDSTONE_ORE.get());
 
+                // Glacio
+                output.accept(ModBlocks.GLACIAN_SAPLING.get());
+
                 // Rockets
                 output.accept(ModItems.TIER_5_ROCKET.get());
                 output.accept(ModItems.TIER_6_ROCKET.get());

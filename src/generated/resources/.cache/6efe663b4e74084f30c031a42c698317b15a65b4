@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-09T11:17:53.5417647	Item Models: ad_extendra
+// 1.20.1	2024-07-09T14:54:15.3495554	Item Models: ad_extendra
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
 de3f1b7c6b3e101457feb6c0129e7cc272aeb1aa assets/ad_extendra/models/item/b_cobblestone_stairs.json
 2c5b14026c02e1b6d3001816490cf2fbd4ad3601 assets/ad_extendra/models/item/b_pillar.json
@@ -61,6 +61,7 @@ b73225881dc45dcf1482b997bb6a0effaf4441fe assets/ad_extendra/models/item/eris_pil
 6e027832fc1213d236ff43d631d540c0f7ca9c14 assets/ad_extendra/models/item/eris_stone_brick_wall.json
 85d17970d7c0bfc64274866ae1127f5b486d1896 assets/ad_extendra/models/item/eris_stone_slab.json
 026e3ed16954f05d1d9464d65b63819fae84a3e3 assets/ad_extendra/models/item/eris_stone_stairs.json
+56fd27682fb77804f46ccb3583de6df3fe4a86f5 assets/ad_extendra/models/item/glacian_sapling.json
 958d893b2875b859c3de676bb54b5bb1200a7990 assets/ad_extendra/models/item/glowing_electrolyte_pillar.json
 995d3a4a5e882f96a0596ea942767b40ae54ced3 assets/ad_extendra/models/item/glowing_juperium_pillar.json
 2bc4aab4c03682e742ae0fb9ede1698eb3419c89 assets/ad_extendra/models/item/glowing_neptunium_pillar.json

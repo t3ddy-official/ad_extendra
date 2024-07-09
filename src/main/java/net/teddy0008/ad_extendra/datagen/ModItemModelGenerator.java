@@ -300,6 +300,9 @@ public class ModItemModelGenerator extends ItemModelProvider {
         stairsItem(ModBlocks.POLISHED_B_STONE_STAIRS);
         slabItem(ModBlocks.POLISHED_B_STONE_SLAB);
         pillarItem(ModBlocks.B_PILLAR);
+
+        // Glacio
+        saplingItem(ModBlocks.GLACIAN_SAPLING);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -330,5 +333,10 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     public void pressurePlateItem(RegistryObject<PressurePlateBlock> block) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<SaplingBlock> item) {
+        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
+                .texture("layer0", new ResourceLocation(Main.MOD_ID, "block/" + item.getId().getPath()));
     }
 }
