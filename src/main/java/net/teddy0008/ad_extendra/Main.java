@@ -2,11 +2,8 @@ package net.teddy0008.ad_extendra;
 
 import com.mojang.logging.LogUtils;
 import earth.terrarium.botarium.client.ClientHooks;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -22,15 +19,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketRendererTier5;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_6.RocketRendererTier6;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_7.RocketRendererTier7;
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.painting.ModPaintings;
 import org.slf4j.Logger;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.function.BiConsumer;
 
 @Mod(Main.MOD_ID)
 public class Main {
@@ -76,6 +70,7 @@ public class Main {
     public static void registerEntityRenderers() {
         ClientHooks.registerEntityRenderer(ModEntities.TIER_5_ROCKET, RocketRendererTier5::new);
         ClientHooks.registerEntityRenderer(ModEntities.TIER_6_ROCKET, RocketRendererTier6::new);
+        ClientHooks.registerEntityRenderer(ModEntities.TIER_7_ROCKET, RocketRendererTier7::new);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

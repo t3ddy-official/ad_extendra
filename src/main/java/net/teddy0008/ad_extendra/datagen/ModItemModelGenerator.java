@@ -92,6 +92,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.URANIUM_INGOT);
         simpleItem(ModItems.URANIUM_NUGGET);
         simpleItem(ModItems.URANIUM_PLATE);
+        simpleItem(ModItems.URANIUM_ENGINE);
+        simpleItem(ModItems.URANIUM_TANK);
         stairsItem(ModBlocks.URANIUM_PLATING_STAIRS);
         slabItem(ModBlocks.URANIUM_PLATING_SLAB);
         pillarItem(ModBlocks.URANIUM_PILLAR);

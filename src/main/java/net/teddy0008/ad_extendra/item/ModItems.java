@@ -34,6 +34,8 @@ public class ModItems {
     public static final RegistryObject<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_PLATE = ITEMS.register("uranium_plate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_ENGINE = ITEMS.register("uranium_engine", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_TANK = ITEMS.register("uranium_tank", () -> new Item(new Item.Properties()));
 
     // Neptune
     public static final RegistryObject<Item> RAW_NEPTUNIUM = ITEMS.register("raw_neptunium", () -> new Item(new Item.Properties()));
@@ -62,6 +64,7 @@ public class ModItems {
     // Rockets
     public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));
     public static final RegistryObject<AdvancedRocketItem> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new AdvancedRocketItem(6, new Item.Properties()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_7_ROCKET = ROCKETS.register("tier_7_rocket", () -> new AdvancedRocketItem(7, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

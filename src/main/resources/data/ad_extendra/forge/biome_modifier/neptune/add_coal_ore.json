@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:windy_wastelands",
+  "features": "ad_extendra:neptune/coal_ore",
+  "step": "underground_ores"
+}

@@ -160,6 +160,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.URANIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_URANIUM_PILLAR.get());
+                output.accept(ModItems.URANIUM_ENGINE.get());
+                output.accept(ModItems.URANIUM_TANK.get());
 
                 // Neptune
                 output.accept(ModBlocks.NEPTUNE_STONE.get());
@@ -445,6 +447,7 @@ public class ModCreativeTabs {
                 // Rockets
                 output.accept(ModItems.TIER_5_ROCKET.get());
                 output.accept(ModItems.TIER_6_ROCKET.get());
+                output.accept(ModItems.TIER_7_ROCKET.get());
             }).build());
 
     public static void register(IEventBus eventBus) {
