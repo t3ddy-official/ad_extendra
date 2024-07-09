@@ -1,0 +1,30 @@
+{
+  "_comment": "The icon will be changed from the Stone to the Globe when I've finished the globes",
+  "display": {
+    "icon": {
+      "item": "ad_extendra:uranus_stone"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.uranus.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.uranus.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "uranus": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:uranus"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 250
+  },
+  "parent": "ad_extendra:tier_6_rocket"
+}
