@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:sednian_barrens",
+  "features": "ad_extendra:sedna/electrolyte_ore",
+  "step": "underground_ores"
+}

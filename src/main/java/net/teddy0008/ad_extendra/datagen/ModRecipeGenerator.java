@@ -621,6 +621,28 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(Items.WHITE_DYE), has(Items.WHITE_DYE))
                 .unlockedBy(getHasName(Items.GLOWSTONE), has(Items.GLOWSTONE))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUTONIUM_ENGINE.get())
+                .pattern("###")
+                .pattern(" E ")
+                .pattern(" F ")
+                .define('#', ModItemTags.PLUTONIUM_PLATES)
+                .define('E', earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get())
+                .define('F', earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get())
+                .unlockedBy(getHasName(ModItems.PLUTONIUM_PLATE.get()), has(ModItemTags.PLUTONIUM_PLATES))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FRAME.get()))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ENGINE_FAN.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUTONIUM_TANK.get())
+                .pattern("## ")
+                .pattern("#U|")
+                .pattern("## ")
+                .define('#', ModItemTags.PLUTONIUM_PLATES)
+                .define('U', Items.BUCKET)
+                .define('|', ModItemTags.IRON_RODS)
+                .unlockedBy(getHasName(ModItems.PLUTONIUM_PLATE.get()), has(ModItemTags.PLUTONIUM_PLATES))
+                .unlockedBy(getHasName(Items.BUCKET), has(Items.BUCKET))
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.IRON_ROD.get()), has(ModItemTags.IRON_RODS))
+                .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 9)
                 .requires(ModBlocks.PLUTONIUM_BLOCK.get()).unlockedBy(getHasName(ModBlocks.PLUTONIUM_BLOCK.get()), has(ModBlocks.PLUTONIUM_BLOCK.get())).save(consumer);

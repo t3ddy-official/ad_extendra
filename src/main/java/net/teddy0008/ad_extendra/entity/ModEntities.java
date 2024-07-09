@@ -49,6 +49,13 @@ public class ModEntities {
                     .sized(1.1f, 7.0f)
                     .build("tier_9_rocket"));
 
+    public static final RegistryObject<EntityType<RocketTier10>> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () ->
+            EntityType.Builder.<RocketTier10>of(RocketTier10::new, MobCategory.MISC)
+                    .fireImmune()
+                    .clientTrackingRange(10)
+                    .sized(1.1f, 7.0f)
+                    .build("tier_10_rocket"));
+
     public static void register(IEventBus eventBus) {
         ROCKETS.register(eventBus);
     }

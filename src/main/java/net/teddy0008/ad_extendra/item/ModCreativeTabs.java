@@ -276,6 +276,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.PLUTONIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get());
+                output.accept(ModItems.PLUTONIUM_ENGINE.get());
+                output.accept(ModItems.PLUTONIUM_TANK.get());
 
                 // Haumea
                 output.accept(ModBlocks.HAUMEA_STONE.get());
@@ -454,6 +456,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.TIER_7_ROCKET.get());
                 output.accept(ModItems.TIER_8_ROCKET.get());
                 output.accept(ModItems.TIER_9_ROCKET.get());
+                output.accept(ModItems.TIER_10_ROCKET.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:sednian_barrens",
+  "features": "ad_extendra:sedna/copper_ore",
+  "step": "underground_ores"
+}

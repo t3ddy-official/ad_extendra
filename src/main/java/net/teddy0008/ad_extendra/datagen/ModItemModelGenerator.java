@@ -170,6 +170,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.PLUTONIUM_INGOT);
         simpleItem(ModItems.PLUTONIUM_NUGGET);
         simpleItem(ModItems.PLUTONIUM_PLATE);
+        simpleItem(ModItems.PLUTONIUM_ENGINE);
+        simpleItem(ModItems.PLUTONIUM_TANK);
         stairsItem(ModBlocks.PLUTONIUM_PLATING_STAIRS);
         slabItem(ModBlocks.PLUTONIUM_PLATING_SLAB);
         pillarItem(ModBlocks.PLUTONIUM_PILLAR);

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-08T21:26:41.5938625	Item Models: ad_extendra
+// 1.20.1	2024-07-08T22:01:53.1298837	Item Models: ad_extendra
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
 de3f1b7c6b3e101457feb6c0129e7cc272aeb1aa assets/ad_extendra/models/item/b_cobblestone_stairs.json
 2c5b14026c02e1b6d3001816490cf2fbd4ad3601 assets/ad_extendra/models/item/b_pillar.json
@@ -134,6 +134,7 @@ c0b3f40e0aacd60f340715c69df2a50cd9d6ceef assets/ad_extendra/models/item/neptuniu
 c424bc1248313d22f08a207232d4c67a7f5b33c8 assets/ad_extendra/models/item/orcus_stone_brick_wall.json
 18ef730a7b949300237ca5b19afca2ac0a161f63 assets/ad_extendra/models/item/orcus_stone_slab.json
 5eae90b1992e0570dbaebbaa0fbbc272d7db271c assets/ad_extendra/models/item/orcus_stone_stairs.json
+6a8d51ae8d27282fb44948f0a8af79c64f755237 assets/ad_extendra/models/item/plutonium_engine.json
 a17233fd8be681caf4217f8b6c631e39b2666d29 assets/ad_extendra/models/item/plutonium_ingot.json
 d4c844b44330268c6d5ecc16467845c8581ea211 assets/ad_extendra/models/item/plutonium_nugget.json
 e52e386e3cc5bfa24c1058829bd5416646f3038d assets/ad_extendra/models/item/plutonium_pillar.json
@@ -142,6 +143,7 @@ d31e067955adcab258011c04eeaa52db035ac50c assets/ad_extendra/models/item/plutoniu
 33a666b8d649ec2e8f0106458ecadb4cc25a322f assets/ad_extendra/models/item/plutonium_plating_pressure_plate.json
 7b1c76562b81ca3a8965b7861e1451fff916b00a assets/ad_extendra/models/item/plutonium_plating_slab.json
 c2d2edf9f7ad03f2acbad7c5331cdb35a7115dcc assets/ad_extendra/models/item/plutonium_plating_stairs.json
+b8c326e3b9d7289b6e893135f29219421556011b assets/ad_extendra/models/item/plutonium_tank.json
 ee7a6a59354f787a2932a75f6ec1f69bc4054cf4 assets/ad_extendra/models/item/pluto_cobblestone_slab.json
 8b44a7b25460ed7c5ceafe55bfb7f7948c372b90 assets/ad_extendra/models/item/pluto_cobblestone_stairs.json
 2e8597685f0b377e3f72c93cf5a70d761d4151be assets/ad_extendra/models/item/pluto_pillar.json
