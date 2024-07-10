@@ -427,8 +427,8 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> B_PILLAR = registerBlock("b_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Glacio
-    public static final RegistryObject<SaplingBlock> GLACIAN_SAPLING = registerBlock("glacian_sapling",
-            () -> new SaplingBlock(new GlacianTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<GlacianSaplingBlock> GLACIAN_SAPLING = registerBlock("glacian_sapling",
+            () -> new GlacianSaplingBlock(new GlacianTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

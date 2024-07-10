@@ -10,6 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
+import net.teddy0008.ad_extendra.block.GlacianSaplingBlock;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
@@ -302,7 +303,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.B_PILLAR);
 
         // Glacio
-        saplingItem(ModBlocks.GLACIAN_SAPLING);
+        glacianSaplingItem(ModBlocks.GLACIAN_SAPLING);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -335,7 +336,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
-    private ItemModelBuilder saplingItem(RegistryObject<SaplingBlock> item) {
+    private ItemModelBuilder glacianSaplingItem(RegistryObject<GlacianSaplingBlock> item) {
         return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation(Main.MOD_ID, "block/" + item.getId().getPath()));
     }
