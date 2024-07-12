@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-07T17:22:53.8818252	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-07-12T16:32:13.2139004	Tags for minecraft:block mod id ad_extendra
 501e03862da89b1b02cf7f925c3c4d48b75d69f1 data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/blocks/ores/electrolyte.json
@@ -19,6 +19,7 @@ b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/forge/tags/blocks/storage_blocks/s
 571f94cea259742345d038bf0ebb818a08aa111e data/forge/tags/blocks/storage_blocks/uranium.json
 36a9531f931b2789e111f3519b647c1cead58b0b data/minecraft/tags/blocks/beacon_base_blocks.json
 811b3ba3c6f741e9d5263aa2db3c791d9d224ce3 data/minecraft/tags/blocks/buttons.json
+ca312511ba956e25d7b23b2ad16f1744912800ad data/minecraft/tags/blocks/ceiling_hanging_signs.json
 b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/blocks/coal_ores.json
 2131638da6eab9e47a51e5c58512bccb1f733dd4 data/minecraft/tags/blocks/copper_ores.json
 5b5604d133066508f4abce44b080c8feab7e9868 data/minecraft/tags/blocks/diamond_ores.json
@@ -37,4 +38,7 @@ bb291689af04cce2a91224dd98c2dd91722a57a0 data/minecraft/tags/blocks/redstone_ore
 3732bd35105288a6ed9b5edde6f63b3f7b9e578c data/minecraft/tags/blocks/sand.json
 9580f008c05bc3c6e6a7b7d02545cf291bf04255 data/minecraft/tags/blocks/slabs.json
 ec8b5f5b720a7c580ec6351a2977d5500db83da4 data/minecraft/tags/blocks/stairs.json
+d9a17678c6e071150acd1d39c4a2ebdcf901f9ed data/minecraft/tags/blocks/standing_signs.json
 62cb56d490c8aae462cf2e2700b6dbc185109958 data/minecraft/tags/blocks/walls.json
+cc1c13e4944c0d6141955af9a636d47dbfbc2362 data/minecraft/tags/blocks/wall_hanging_signs.json
+87d7623bd5f624098c53bab4cd62db1b3210bbf3 data/minecraft/tags/blocks/wall_signs.json

@@ -24,6 +24,24 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // Moon
+        this.add(ModBlocks.AERONOS_SIGN.get(), block ->
+                createSingleItemTable(ModItems.AERONOS_SIGN.get()));
+        this.add(ModBlocks.AERONOS_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.AERONOS_SIGN.get()));
+        this.add(ModBlocks.AERONOS_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.AERONOS_HANGING_SIGN.get()));
+        this.add(ModBlocks.AERONOS_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.AERONOS_HANGING_SIGN.get()));
+        this.add(ModBlocks.STROPHAR_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STROPHAR_SIGN.get()));
+        this.add(ModBlocks.STROPHAR_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STROPHAR_SIGN.get()));
+        this.add(ModBlocks.STROPHAR_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STROPHAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.STROPHAR_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.STROPHAR_HANGING_SIGN.get()));
+
         // Jupiter
         this.dropSelf(ModBlocks.JUPERIUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_JUPERIUM_BLOCK.get());
@@ -431,6 +449,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         // Glacio
         this.dropSelf(ModBlocks.GLACIAN_SAPLING.get());
+        this.add(ModBlocks.GLACIAN_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
+        this.add(ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
         // this.add(ModBlocks.BLOCK.get(), block -> createOreDrop(ModBlocks.BLOCK.get(), ModItems.ITEM.get()));
     }
 

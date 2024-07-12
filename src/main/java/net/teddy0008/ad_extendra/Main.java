@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import earth.terrarium.botarium.client.ClientHooks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -17,6 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_11.RocketRendererTier11;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketRendererTier5;
@@ -29,6 +31,7 @@ import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.loot.ModLootModifiers;
 import net.teddy0008.ad_extendra.painting.ModPaintings;
+import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import org.slf4j.Logger;
 
 @Mod(Main.MOD_ID)
@@ -42,6 +45,7 @@ public class Main {
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
         ModLootModifiers.register(modEventBus);
 
@@ -91,6 +95,10 @@ public class Main {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
             registerEntityRenderers();
+
+            Sheets.addWoodType(ModWoodTypes.GLACIAN);
+            Sheets.addWoodType(ModWoodTypes.AERONOS);
+            Sheets.addWoodType(ModWoodTypes.STROPHAR);
         }
     }
 }

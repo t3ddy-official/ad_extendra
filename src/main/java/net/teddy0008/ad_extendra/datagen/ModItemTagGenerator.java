@@ -412,6 +412,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RADIUM_PLATING_BUTTON.get().asItem())
                 .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get().asItem())
                 .add(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get().asItem());
+        this.tag(ItemTags.SIGNS)
+                .add(ModItems.AERONOS_SIGN.get())
+                .add(ModItems.STROPHAR_SIGN.get());
+        this.tag(ItemTags.HANGING_SIGNS)
+                .add(ModItems.GLACIAN_HANGING_SIGN.get())
+                .add(ModItems.AERONOS_HANGING_SIGN.get())
+                .add(ModItems.STROPHAR_HANGING_SIGN.get());
         this.tag(ItemTags.STONE_TOOL_MATERIALS)
                 .add(ModBlocks.JUPITER_COBBLESTONE.get().asItem())
                 .add(ModBlocks.CERES_COBBLESTONE.get().asItem())

@@ -8,6 +8,7 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
@@ -32,6 +33,44 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+        // Moon
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.AERONOS_SIGN.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern(" X ")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get())
+                .define('X', Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Tags.Items.RODS_WOODEN))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.AERONOS_HANGING_SIGN.get())
+                .pattern("X X")
+                .pattern("###")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_STEM.get())
+                .define('X', Items.CHAIN)
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_STEM.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_STEM.get()))
+                .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.STROPHAR_SIGN.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern(" X ")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get())
+                .define('X', Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Tags.Items.RODS_WOODEN))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.STROPHAR_HANGING_SIGN.get())
+                .pattern("X X")
+                .pattern("###")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_STEM.get())
+                .define('X', Items.CHAIN)
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_STEM.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_STEM.get()))
+                .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
+                .save(consumer);
+
         // Jupiter
         oreSmelting(consumer, JUPERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.JUPITER_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
@@ -161,6 +200,17 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "item");
+
+        // Glacio
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.GLACIAN_HANGING_SIGN.get())
+                .pattern("X X")
+                .pattern("###")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get())
+                .define('X', Items.CHAIN)
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get()))
+                .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
+                .save(consumer);
 
         // More Cobblestone Smelting
         oreSmelting(consumer, List.of(ModBlocks.SATURN_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SATURN_STONE.get(), 0f, 200, "item");

@@ -2,7 +2,9 @@ package net.teddy0008.ad_extendra.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -22,6 +24,12 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // Moon
+        simpleSignItem(ModItems.AERONOS_SIGN);
+        simpleHangingSignItem(ModItems.AERONOS_HANGING_SIGN);
+        simpleSignItem(ModItems.STROPHAR_SIGN);
+        simpleHangingSignItem(ModItems.STROPHAR_HANGING_SIGN);
+
         // Jupiter
         simpleItem(ModItems.RAW_JUPERIUM);
         simpleItem(ModItems.JUPERIUM_INGOT);
@@ -304,6 +312,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
         // Glacio
         glacianSaplingItem(ModBlocks.GLACIAN_SAPLING);
+        simpleHangingSignItem(ModItems.GLACIAN_HANGING_SIGN);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -339,5 +348,15 @@ public class ModItemModelGenerator extends ItemModelProvider {
     private ItemModelBuilder glacianSaplingItem(RegistryObject<GlacianSaplingBlock> item) {
         return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation(Main.MOD_ID, "block/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleSignItem(RegistryObject<SignItem> item) {
+        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
+                .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleHangingSignItem(RegistryObject<HangingSignItem> item) {
+        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
+                .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

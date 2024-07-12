@@ -48,6 +48,11 @@
   "item.ad_extendra.electrolyte_engine": "Electrolyte Engine",
   "item.ad_extendra.electrolyte_tank": "Electrolyte Tank",
 
+  "block.ad_extendra.aeronos_sign": "Aeronos Sign",
+  "block.ad_extendra.aeronos_hanging_sign": "Aeronos Hanging Sign",
+  "block.ad_extendra.strophar_sign": "Strophar Sign",
+  "block.ad_extendra.strophar_hanging_sign": "Strophar Hanging Sign",
+
   "block.ad_extendra.juperium_block": "Block of Juperium",
   "block.ad_extendra.raw_juperium_block": "Block of Raw Juperium",
   "block.ad_extendra.juperium_plating": "Juperium Plating",
@@ -426,6 +431,7 @@
   "block.ad_extendra.b_pillar": "Proxima Centauri b Pillar",
 
   "block.ad_extendra.glacian_sapling": "Glacian Sapling",
+  "block.ad_extendra.glacian_hanging_sign": "Glacian Hanging Sign",
 
   "creativetab.ad_extendra": "Ad Extendra",
 

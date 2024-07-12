@@ -1,17 +1,30 @@
 package net.teddy0008.ad_extendra.item;
 
 import earth.terrarium.ad_astra.AdAstra;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
+import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
     public static final DeferredRegister<Item> ROCKETS = DeferredRegister.create(ForgeRegistries.ITEMS, AdAstra.MOD_ID);
+
+    // Moon
+    public static final RegistryObject<SignItem> AERONOS_SIGN = ITEMS.register("aeronos_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.AERONOS_SIGN.get(), ModBlocks.AERONOS_WALL_SIGN.get()));
+    public static final RegistryObject<HangingSignItem> AERONOS_HANGING_SIGN = ITEMS.register("aeronos_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.AERONOS_HANGING_SIGN.get(), ModBlocks.AERONOS_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<SignItem> STROPHAR_SIGN = ITEMS.register("strophar_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.STROPHAR_SIGN.get(), ModBlocks.STROPHAR_WALL_SIGN.get()));
+    public static final RegistryObject<HangingSignItem> STROPHAR_HANGING_SIGN = ITEMS.register("strophar_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.STROPHAR_HANGING_SIGN.get(), ModBlocks.STROPHAR_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     // Jupiter
     public static final RegistryObject<Item> RAW_JUPERIUM = ITEMS.register("raw_juperium", () -> new Item(new Item.Properties()));
@@ -68,6 +81,10 @@ public class ModItems {
     public static final RegistryObject<Item> ELECTROLYTE_PLATE = ITEMS.register("electrolyte_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELECTROLYTE_ENGINE = ITEMS.register("electrolyte_engine", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELECTROLYTE_TANK = ITEMS.register("electrolyte_tank", () -> new Item(new Item.Properties()));
+
+    // Glacio
+    public static final RegistryObject<HangingSignItem> GLACIAN_HANGING_SIGN = ITEMS.register("glacian_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.GLACIAN_HANGING_SIGN.get(), ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     // Rockets
     public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));

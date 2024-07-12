@@ -833,6 +833,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModBlockTags.RADIUM_BLOCKS)
                 .addTag(ModBlockTags.PLUTONIUM_BLOCKS)
                 .addTag(ModBlockTags.ELECTROLYTE_BLOCKS);
+        this.tag(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.AERONOS_SIGN.get())
+                .add(ModBlocks.STROPHAR_SIGN.get());
+        this.tag(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.AERONOS_WALL_SIGN.get())
+                .add(ModBlocks.STROPHAR_WALL_SIGN.get());
+        this.tag(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.GLACIAN_HANGING_SIGN.get())
+                .add(ModBlocks.AERONOS_HANGING_SIGN.get())
+                .add(ModBlocks.STROPHAR_HANGING_SIGN.get());
+        this.tag(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.GLACIAN_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.AERONOS_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.STROPHAR_WALL_HANGING_SIGN.get());
         this.tag(Tags.Blocks.ORES)
                 .addTag(ModBlockTags.JUPERIUM_ORES)
                 .addTag(ModBlockTags.SATURLYTE_ORES)

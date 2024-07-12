@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import net.teddy0008.ad_extendra.world.gen.tree.GlacianTreeGrower;
 
 import java.util.function.Supplier;
@@ -20,6 +21,24 @@ import java.util.function.Supplier;
 public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MOD_ID);
+
+    // Moon
+    public static final RegistryObject<CustomStandingSignBlock> AERONOS_SIGN = BLOCKS.register("aeronos_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN), ModWoodTypes.AERONOS));
+    public static final RegistryObject<CustomWallSignBlock> AERONOS_WALL_SIGN = BLOCKS.register("aeronos_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_SIGN), ModWoodTypes.AERONOS));
+    public static final RegistryObject<CustomCeilingHangingSignBlock> AERONOS_HANGING_SIGN = BLOCKS.register("aeronos_hanging_sign",
+            () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HANGING_SIGN), ModWoodTypes.AERONOS));
+    public static final RegistryObject<CustomWallHangingSignBlock> AERONOS_WALL_HANGING_SIGN = BLOCKS.register("aeronos_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_HANGING_SIGN), ModWoodTypes.AERONOS));
+    public static final RegistryObject<CustomStandingSignBlock> STROPHAR_SIGN = BLOCKS.register("strophar_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN), ModWoodTypes.STROPHAR));
+    public static final RegistryObject<CustomWallSignBlock> STROPHAR_WALL_SIGN = BLOCKS.register("strophar_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_SIGN), ModWoodTypes.STROPHAR));
+    public static final RegistryObject<CustomCeilingHangingSignBlock> STROPHAR_HANGING_SIGN = BLOCKS.register("strophar_hanging_sign",
+            () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HANGING_SIGN), ModWoodTypes.STROPHAR));
+    public static final RegistryObject<CustomWallHangingSignBlock> STROPHAR_WALL_HANGING_SIGN = BLOCKS.register("strophar_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_HANGING_SIGN), ModWoodTypes.STROPHAR));
 
     // Jupiter
     public static final RegistryObject<Block> JUPERIUM_BLOCK = registerBlock("juperium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
@@ -429,6 +448,10 @@ public class ModBlocks {
     // Glacio
     public static final RegistryObject<GlacianSaplingBlock> GLACIAN_SAPLING = registerBlock("glacian_sapling",
             () -> new GlacianSaplingBlock(new GlacianTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<CustomCeilingHangingSignBlock> GLACIAN_HANGING_SIGN = BLOCKS.register("glacian_hanging_sign",
+            () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.GLACIAN));
+    public static final RegistryObject<CustomWallHangingSignBlock> GLACIAN_WALL_HANGING_SIGN = BLOCKS.register("glacian_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.GLACIAN));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

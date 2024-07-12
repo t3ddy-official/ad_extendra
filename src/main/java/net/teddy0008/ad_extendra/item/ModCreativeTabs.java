@@ -19,6 +19,12 @@ public class ModCreativeTabs {
             .icon(() -> new ItemStack(ModItems.JUPERIUM_INGOT.get()))
             .title(Component.translatable("creativetab.ad_extendra"))
             .displayItems((itemDisplayParameters, output) -> {
+                // Moon
+                output.accept(ModItems.AERONOS_SIGN.get());
+                output.accept(ModItems.AERONOS_HANGING_SIGN.get());
+                output.accept(ModItems.STROPHAR_SIGN.get());
+                output.accept(ModItems.STROPHAR_HANGING_SIGN.get());
+
                 // Ceres
                 output.accept(ModBlocks.CERES_SAND.get());
                 output.accept(ModBlocks.CERES_STONE.get());
@@ -454,6 +460,7 @@ public class ModCreativeTabs {
 
                 // Glacio
                 output.accept(ModBlocks.GLACIAN_SAPLING.get());
+                output.accept(ModItems.GLACIAN_HANGING_SIGN.get());
 
                 // Rockets
                 output.accept(ModItems.TIER_5_ROCKET.get());
