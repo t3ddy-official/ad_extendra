@@ -1,9 +1,9 @@
 {
-  "world": "ad_extendra:b",
+  "world": "ad_extendra:haumea",
   "stars": {
-    "fancy_count": 2000,
-    "fast_count": 2000,
-    "colored_stars": false,
+    "fancy_count": 13000,
+    "fast_count": 6000,
+    "colored_stars": true,
     "daylight_visible": true
   },
   "sunset_color": "vanilla",
@@ -18,18 +18,7 @@
       "texture": "ad_astra:textures/sky/blue_sun.png",
       "blending": true,
       "render_type": "dynamic",
-      "scale": 40.0,
-      "rotation": [
-        60.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "texture": "ad_astra:textures/sky/glacio.png",
-      "blending": true,
-      "render_type": "static",
-      "scale": 30.0,
+      "scale": 0.81,
       "rotation": [
         0.0,
         -90.0,
@@ -37,17 +26,23 @@
       ]
     },
     {
-      "texture": "ad_astra:textures/sky/light.png",
-      "blending": true,
-      "render_type": "static",
-      "scale": 120.0,
-      "color": {
-        "r": 204,
-        "g": 153,
-        "b": 255
-      },
+      "texture": "ad_extendra:textures/sky/hiiaka.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 1.55,
       "rotation": [
-        0.0,
+        -10.0,
+        -90.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/namaka.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 0.85,
+      "rotation": [
+        10.0,
         -90.0,
         0.0
       ]
