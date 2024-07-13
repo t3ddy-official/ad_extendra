@@ -893,5 +893,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RADIUM_BLOCK.get())
                 .add(ModBlocks.PLUTONIUM_BLOCK.get())
                 .add(ModBlocks.ELECTROLYTE_BLOCK.get());
+        this.tag(Tags.Blocks.STONE)
+                .add(ModBlocks.CERES_STONE.get())
+                .add(ModBlocks.JUPITER_STONE.get())
+                .add(ModBlocks.SATURN_STONE.get())
+                .add(ModBlocks.URANUS_STONE.get())
+                .add(ModBlocks.NEPTUNE_STONE.get())
+                .add(ModBlocks.ORCUS_STONE.get())
+                .add(ModBlocks.PLUTO_STONE.get())
+                .add(ModBlocks.HAUMEA_STONE.get())
+                .add(ModBlocks.QUAOAR_STONE.get())
+                .add(ModBlocks.MAKEMAKE_STONE.get())
+                .add(ModBlocks.GONGGONG_STONE.get())
+                .add(ModBlocks.ERIS_STONE.get())
+                .add(ModBlocks.SEDNA_STONE.get())
+                .add(ModBlocks.B_STONE.get());
     }
 }

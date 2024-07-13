@@ -515,5 +515,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get().asItem());
         this.tag(ModItemTags.ELECTROLYTE_ORES)
                 .add(ModBlocks.SEDNA_ELECTROLYTE_ORE.get().asItem());
+        this.tag(Tags.Items.STONE)
+                .add(ModBlocks.CERES_STONE.get().asItem())
+                .add(ModBlocks.JUPITER_STONE.get().asItem())
+                .add(ModBlocks.SATURN_STONE.get().asItem())
+                .add(ModBlocks.URANUS_STONE.get().asItem())
+                .add(ModBlocks.NEPTUNE_STONE.get().asItem())
+                .add(ModBlocks.ORCUS_STONE.get().asItem())
+                .add(ModBlocks.PLUTO_STONE.get().asItem())
+                .add(ModBlocks.HAUMEA_STONE.get().asItem())
+                .add(ModBlocks.QUAOAR_STONE.get().asItem())
+                .add(ModBlocks.MAKEMAKE_STONE.get().asItem())
+                .add(ModBlocks.GONGGONG_STONE.get().asItem())
+                .add(ModBlocks.ERIS_STONE.get().asItem())
+                .add(ModBlocks.SEDNA_STONE.get().asItem())
+                .add(ModBlocks.B_STONE.get().asItem());
     }
 }

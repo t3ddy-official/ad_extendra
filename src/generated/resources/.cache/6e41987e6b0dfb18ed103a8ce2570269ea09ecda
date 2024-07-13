@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-12T16:32:13.2139004	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-07-13T11:42:37.4398127	Tags for minecraft:block mod id ad_extendra
 501e03862da89b1b02cf7f925c3c4d48b75d69f1 data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/blocks/ores/electrolyte.json
@@ -9,6 +9,7 @@ b9deb1ef0b899cf75ad8db84a07d75604acde093 data/forge/tags/blocks/ores/plutonium.j
 08763f24cdd918a5297f4bc85b90577fba0f1a4d data/forge/tags/blocks/ores/radium.json
 3d6b0a5be6cd7bb864e41d6691f6072884e96926 data/forge/tags/blocks/ores/saturlyte.json
 d5829db6e763d6da357fa405557ad58f28ade945 data/forge/tags/blocks/ores/uranium.json
+153f3bfb4649399bc36fc4384109c6f27a602aaa data/forge/tags/blocks/stone.json
 0a96351790c855b17eb1de2f3741a9c047b9d0ed data/forge/tags/blocks/storage_blocks.json
 5eb7266cee46a904ae693a53ab503d5331de918d data/forge/tags/blocks/storage_blocks/electrolyte.json
 b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/blocks/storage_blocks/juperium.json

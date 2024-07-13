@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-12T16:32:13.1978969	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-07-13T11:42:37.4398127	Tags for minecraft:item mod id ad_extendra
 06988cb4b138538ae3f1198aadff8d0060021fea data/ad_astra_platform/tags/items/electrolyte_blocks.json
 1678d0f61584aa3fd22fa5d2e6eb07002e675d46 data/ad_astra_platform/tags/items/electrolyte_ingots.json
 d4090807fce7c6d9ea39582345a195f85edb8131 data/ad_astra_platform/tags/items/electrolyte_plates.json
@@ -61,6 +61,7 @@ e126eefe99c9bba33857855af7e5259c4a0d6046 data/forge/tags/items/raw_materials/plu
 6f943bf858f29c951b94689008d4b8ed67d67434 data/forge/tags/items/raw_materials/radium.json
 a99753a2f907da6f1b823886f66006c25380e773 data/forge/tags/items/raw_materials/saturlyte.json
 327d1b8e6e0dafd35d36c375f8d434c4ea39903b data/forge/tags/items/raw_materials/uranium.json
+153f3bfb4649399bc36fc4384109c6f27a602aaa data/forge/tags/items/stone.json
 0a96351790c855b17eb1de2f3741a9c047b9d0ed data/forge/tags/items/storage_blocks.json
 5eb7266cee46a904ae693a53ab503d5331de918d data/forge/tags/items/storage_blocks/electrolyte.json
 b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/items/storage_blocks/juperium.json
