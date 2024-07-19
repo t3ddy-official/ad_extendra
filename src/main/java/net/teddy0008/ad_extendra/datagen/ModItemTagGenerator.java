@@ -530,5 +530,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ERIS_STONE.get().asItem())
                 .add(ModBlocks.SEDNA_STONE.get().asItem())
                 .add(ModBlocks.B_STONE.get().asItem());
+        this.tag(ItemTags.SAPLINGS)
+                .add(ModBlocks.GLACIAN_SAPLING.get().asItem());
     }
 }

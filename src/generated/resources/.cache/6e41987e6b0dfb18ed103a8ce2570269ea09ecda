@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-13T11:42:37.4398127	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-07-19T14:35:53.7803976	Tags for minecraft:block mod id ad_extendra
 501e03862da89b1b02cf7f925c3c4d48b75d69f1 data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/blocks/ores/electrolyte.json
@@ -37,6 +37,7 @@ a513358a04748c3c3afaa75cf0569704b8ffc4df data/minecraft/tags/blocks/needs_stone_
 21ea71f0de331ae551f2c4b3ad621aab02852269 data/minecraft/tags/blocks/pressure_plates.json
 bb291689af04cce2a91224dd98c2dd91722a57a0 data/minecraft/tags/blocks/redstone_ores.json
 3732bd35105288a6ed9b5edde6f63b3f7b9e578c data/minecraft/tags/blocks/sand.json
+93c749cc1d256a06fa8759208638e42412b1b28c data/minecraft/tags/blocks/saplings.json
 9580f008c05bc3c6e6a7b7d02545cf291bf04255 data/minecraft/tags/blocks/slabs.json
 ec8b5f5b720a7c580ec6351a2977d5500db83da4 data/minecraft/tags/blocks/stairs.json
 d9a17678c6e071150acd1d39c4a2ebdcf901f9ed data/minecraft/tags/blocks/standing_signs.json

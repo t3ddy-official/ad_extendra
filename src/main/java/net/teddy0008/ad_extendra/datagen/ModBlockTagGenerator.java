@@ -908,5 +908,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ERIS_STONE.get())
                 .add(ModBlocks.SEDNA_STONE.get())
                 .add(ModBlocks.B_STONE.get());
+        this.tag(BlockTags.SAPLINGS)
+                .add(ModBlocks.GLACIAN_SAPLING.get());
     }
 }
