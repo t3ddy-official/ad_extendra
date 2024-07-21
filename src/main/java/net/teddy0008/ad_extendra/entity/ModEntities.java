@@ -14,6 +14,13 @@ public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Main.MOD_ID);
     public static final DeferredRegister<EntityType<?>> ROCKETS = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, AdAstra.MOD_ID);
 
+    public static final RegistryObject<EntityType<CustomBoat>> BOAT =
+            ENTITY_TYPES.register("boat", () -> EntityType.Builder.<CustomBoat>of(CustomBoat::new, MobCategory.MISC)
+                    .sized(1.375f, 0.5625f).build("boat"));
+    public static final RegistryObject<EntityType<CustomChestBoat>> CHEST_BOAT =
+            ENTITY_TYPES.register("chest_boat", () -> EntityType.Builder.<CustomChestBoat>of(CustomChestBoat::new, MobCategory.MISC)
+                    .sized(1.375f, 0.5625f).build("chest_boat"));
+
     public static final RegistryObject<EntityType<RocketTier5>> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () ->
             EntityType.Builder.<RocketTier5>of(RocketTier5::new, MobCategory.MISC)
                     .fireImmune()
@@ -64,6 +71,7 @@ public class ModEntities {
                     .build("tier_11_rocket"));
 
     public static void register(IEventBus eventBus) {
+        ENTITY_TYPES.register(eventBus);
         ROCKETS.register(eventBus);
     }
 }

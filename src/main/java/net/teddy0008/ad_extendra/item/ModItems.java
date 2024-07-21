@@ -10,7 +10,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.entity.vehicle.CustomBoat;
 import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
+import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
@@ -85,6 +87,10 @@ public class ModItems {
     // Glacio
     public static final RegistryObject<HangingSignItem> GLACIAN_HANGING_SIGN = ITEMS.register("glacian_hanging_sign",
             () -> new HangingSignItem(ModBlocks.GLACIAN_HANGING_SIGN.get(), ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<CustomBoatItem> GLACIAN_BOAT = ITEMS.register("glacian_boat",
+            () -> new CustomBoatItem(false, CustomBoat.Type.GLACIAN, new Item.Properties()));
+    public static final RegistryObject<CustomBoatItem> GLACIAN_CHEST_BOAT = ITEMS.register("glacian_chest_boat",
+            () -> new CustomBoatItem(true, CustomBoat.Type.GLACIAN, new Item.Properties()));
 
     // Rockets
     public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));

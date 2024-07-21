@@ -48,6 +48,9 @@
   "item.ad_extendra.electrolyte_engine": "Electrolyte Engine",
   "item.ad_extendra.electrolyte_tank": "Electrolyte Tank",
 
+  "item.ad_extendra.glacian_boat": "Glacian Boat",
+  "item.ad_extendra.glacian_chest_boat": "Glacian Boat with Chest",
+
   "block.ad_extendra.aeronos_sign": "Aeronos Sign",
   "block.ad_extendra.aeronos_hanging_sign": "Aeronos Hanging Sign",
   "block.ad_extendra.strophar_sign": "Strophar Sign",
@@ -432,6 +435,9 @@
 
   "block.ad_extendra.glacian_sapling": "Glacian Sapling",
   "block.ad_extendra.glacian_hanging_sign": "Glacian Hanging Sign",
+
+  "entity.ad_extendra.boat": "Boat",
+  "entity.ad_extendra.chest_boat": "Boat with Chest",
 
   "creativetab.ad_extendra": "Ad Extendra",
 

@@ -532,5 +532,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.B_STONE.get().asItem());
         this.tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.GLACIAN_SAPLING.get().asItem());
+        this.tag(ItemTags.BOATS)
+                .add(ModItems.GLACIAN_BOAT.get());
+        this.tag(ItemTags.CHEST_BOATS)
+                .add(ModItems.GLACIAN_CHEST_BOAT.get());
     }
 }

@@ -461,6 +461,8 @@ public class ModCreativeTabs {
                 // Glacio
                 output.accept(ModBlocks.GLACIAN_SAPLING.get());
                 output.accept(ModItems.GLACIAN_HANGING_SIGN.get());
+                output.accept(ModItems.GLACIAN_BOAT.get());
+                output.accept(ModItems.GLACIAN_CHEST_BOAT.get());
 
                 // Rockets
                 output.accept(ModItems.TIER_5_ROCKET.get());

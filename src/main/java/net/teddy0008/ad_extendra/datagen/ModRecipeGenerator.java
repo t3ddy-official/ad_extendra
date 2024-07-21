@@ -211,6 +211,18 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get()))
                 .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.GLACIAN_BOAT.get())
+                .pattern("# #")
+                .pattern("###")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.GLACIAN_PLANKS.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.GLACIAN_PLANKS.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.GLACIAN_PLANKS.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GLACIAN_CHEST_BOAT.get())
+                .requires(ModItems.GLACIAN_BOAT.get())
+                .requires(Tags.Items.CHESTS_WOODEN)
+                .unlockedBy(getHasName(ModItems.GLACIAN_BOAT.get()), has(ModItems.GLACIAN_BOAT.get()))
+                .unlockedBy(getHasName(Items.CHEST), has(Tags.Items.CHESTS_WOODEN))
+                .save(consumer);
 
         // More Cobblestone Smelting
         oreSmelting(consumer, List.of(ModBlocks.SATURN_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.SATURN_STONE.get(), 0f, 200, "item");

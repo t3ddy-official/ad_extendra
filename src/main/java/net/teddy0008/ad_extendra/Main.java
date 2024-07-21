@@ -5,6 +5,7 @@ import earth.terrarium.botarium.client.ClientHooks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -19,6 +20,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.ModBoatRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_11.RocketRendererTier11;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketRendererTier5;
@@ -78,6 +80,9 @@ public class Main {
     }
 
     public static void registerEntityRenderers() {
+        EntityRenderers.register(ModEntities.BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+        EntityRenderers.register(ModEntities.CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+
         ClientHooks.registerEntityRenderer(ModEntities.TIER_5_ROCKET, RocketRendererTier5::new);
         ClientHooks.registerEntityRenderer(ModEntities.TIER_6_ROCKET, RocketRendererTier6::new);
         ClientHooks.registerEntityRenderer(ModEntities.TIER_7_ROCKET, RocketRendererTier7::new);

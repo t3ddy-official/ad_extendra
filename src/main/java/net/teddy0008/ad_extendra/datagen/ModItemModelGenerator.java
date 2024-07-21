@@ -16,6 +16,7 @@ import net.teddy0008.ad_extendra.block.GlacianSaplingBlock;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
+import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
 
 public class ModItemModelGenerator extends ItemModelProvider {
     public ModItemModelGenerator(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -313,6 +314,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         // Glacio
         glacianSaplingItem(ModBlocks.GLACIAN_SAPLING);
         simpleHangingSignItem(ModItems.GLACIAN_HANGING_SIGN);
+        simpleBoatItem(ModItems.GLACIAN_BOAT);
+        simpleBoatItem(ModItems.GLACIAN_CHEST_BOAT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -356,6 +359,11 @@ public class ModItemModelGenerator extends ItemModelProvider {
     }
 
     private ItemModelBuilder simpleHangingSignItem(RegistryObject<HangingSignItem> item) {
+        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
+                .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBoatItem(RegistryObject<CustomBoatItem> item) {
         return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
     }

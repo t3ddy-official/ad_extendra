@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-19T14:35:53.7647725	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-07-21T11:39:38.5823085	Tags for minecraft:item mod id ad_extendra
 06988cb4b138538ae3f1198aadff8d0060021fea data/ad_astra_platform/tags/items/electrolyte_blocks.json
 1678d0f61584aa3fd22fa5d2e6eb07002e675d46 data/ad_astra_platform/tags/items/electrolyte_ingots.json
 d4090807fce7c6d9ea39582345a195f85edb8131 data/ad_astra_platform/tags/items/electrolyte_plates.json
@@ -70,7 +70,9 @@ b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/items/storage_blocks/ju
 3c863c70b4000170128206fb7f2388eb4640292c data/forge/tags/items/storage_blocks/radium.json
 b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/forge/tags/items/storage_blocks/saturlyte.json
 571f94cea259742345d038bf0ebb818a08aa111e data/forge/tags/items/storage_blocks/uranium.json
+10fe9d92afc183cb542f1e90c4e76a17009ebfd7 data/minecraft/tags/items/boats.json
 811b3ba3c6f741e9d5263aa2db3c791d9d224ce3 data/minecraft/tags/items/buttons.json
+47f5cbdefb49124985f5f0e6c05d79a07ca1cf18 data/minecraft/tags/items/chest_boats.json
 b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/items/coal_ores.json
 2131638da6eab9e47a51e5c58512bccb1f733dd4 data/minecraft/tags/items/copper_ores.json
 5b5604d133066508f4abce44b080c8feab7e9868 data/minecraft/tags/items/diamond_ores.json

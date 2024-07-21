@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-12T16:32:13.1948962	Item Models: ad_extendra
+// 1.20.1	2024-07-21T11:35:23.3284494	Item Models: ad_extendra
 2d057b69f12ac3f4fdecf485879ca972a1b0cee1 assets/ad_extendra/models/item/aeronos_hanging_sign.json
 c6609915398fcb30200e6e467f190967c6eb1551 assets/ad_extendra/models/item/aeronos_sign.json
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
@@ -63,6 +63,8 @@ b73225881dc45dcf1482b997bb6a0effaf4441fe assets/ad_extendra/models/item/eris_pil
 6e027832fc1213d236ff43d631d540c0f7ca9c14 assets/ad_extendra/models/item/eris_stone_brick_wall.json
 85d17970d7c0bfc64274866ae1127f5b486d1896 assets/ad_extendra/models/item/eris_stone_slab.json
 026e3ed16954f05d1d9464d65b63819fae84a3e3 assets/ad_extendra/models/item/eris_stone_stairs.json
+1ff75be9904b03f4b1a27a12d757fd45e4993be8 assets/ad_extendra/models/item/glacian_boat.json
+086ebe687ab9ea3693026d4e4045c0199bef075a assets/ad_extendra/models/item/glacian_chest_boat.json
 8a987102416968baedd91536a0656807cc5d7c9a assets/ad_extendra/models/item/glacian_hanging_sign.json
 56fd27682fb77804f46ccb3583de6df3fe4a86f5 assets/ad_extendra/models/item/glacian_sapling.json
 958d893b2875b859c3de676bb54b5bb1200a7990 assets/ad_extendra/models/item/glowing_electrolyte_pillar.json
