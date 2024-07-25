@@ -449,6 +449,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         // Glacio
         this.dropSelf(ModBlocks.GLACIAN_SAPLING.get());
+        this.add(ModBlocks.POTTED_GLACIAN_SAPLING.get(), createPotFlowerItemTable(ModBlocks.GLACIAN_SAPLING.get()));
         this.add(ModBlocks.GLACIAN_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
         this.add(ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), block ->

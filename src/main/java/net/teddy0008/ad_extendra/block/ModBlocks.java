@@ -1,12 +1,14 @@
 package net.teddy0008.ad_extendra.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -448,6 +450,8 @@ public class ModBlocks {
     // Glacio
     public static final RegistryObject<GlacianSaplingBlock> GLACIAN_SAPLING = registerBlock("glacian_sapling",
             () -> new GlacianSaplingBlock(new GlacianTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<FlowerPotBlock> POTTED_GLACIAN_SAPLING = BLOCKS.register("potted_glacian_sapling",
+            () -> new FlowerPotBlock(GLACIAN_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<CustomCeilingHangingSignBlock> GLACIAN_HANGING_SIGN = BLOCKS.register("glacian_hanging_sign",
             () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.GLACIAN));
     public static final RegistryObject<CustomWallHangingSignBlock> GLACIAN_WALL_HANGING_SIGN = BLOCKS.register("glacian_wall_hanging_sign",

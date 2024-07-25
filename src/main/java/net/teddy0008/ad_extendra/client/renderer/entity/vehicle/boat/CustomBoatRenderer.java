@@ -18,10 +18,10 @@ import net.teddy0008.ad_extendra.entity.vehicle.CustomChestBoat;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public class ModBoatRenderer extends BoatRenderer {
+public class CustomBoatRenderer extends BoatRenderer {
     private final Map<CustomBoat.Type, Pair<ResourceLocation, ListModel<Boat>>> boatResources;
 
-    public ModBoatRenderer(EntityRendererProvider.Context pContext, boolean pChestBoat) {
+    public CustomBoatRenderer(EntityRendererProvider.Context pContext, boolean pChestBoat) {
         super(pContext, pChestBoat);
         this.boatResources = Stream.of(CustomBoat.Type.values()).collect(ImmutableMap.toImmutableMap(type -> type,
                 type -> Pair.of(new ResourceLocation(Main.MOD_ID, getTextureLocation(type, pChestBoat)), this.createBoatModel(pContext, type, pChestBoat))));
@@ -32,7 +32,7 @@ public class ModBoatRenderer extends BoatRenderer {
     }
 
     private ListModel<Boat> createBoatModel(EntityRendererProvider.Context pContext, CustomBoat.Type pType, boolean pChestBoat) {
-        ModelLayerLocation modellayerlocation = pChestBoat ? ModBoatRenderer.createChestBoatModelName(pType) : ModBoatRenderer.createBoatModelName(pType);
+        ModelLayerLocation modellayerlocation = pChestBoat ? CustomBoatRenderer.createChestBoatModelName(pType) : CustomBoatRenderer.createBoatModelName(pType);
         ModelPart modelpart = pContext.bakeLayer(modellayerlocation);
         return pChestBoat ? new ChestBoatModel(modelpart) : new BoatModel(modelpart);
     }

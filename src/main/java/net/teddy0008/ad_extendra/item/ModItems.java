@@ -88,18 +88,18 @@ public class ModItems {
     public static final RegistryObject<HangingSignItem> GLACIAN_HANGING_SIGN = ITEMS.register("glacian_hanging_sign",
             () -> new HangingSignItem(ModBlocks.GLACIAN_HANGING_SIGN.get(), ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final RegistryObject<CustomBoatItem> GLACIAN_BOAT = ITEMS.register("glacian_boat",
-            () -> new CustomBoatItem(false, CustomBoat.Type.GLACIAN, new Item.Properties()));
+            () -> new CustomBoatItem(false, CustomBoat.Type.GLACIAN, (new Item.Properties()).stacksTo(1)));
     public static final RegistryObject<CustomBoatItem> GLACIAN_CHEST_BOAT = ITEMS.register("glacian_chest_boat",
-            () -> new CustomBoatItem(true, CustomBoat.Type.GLACIAN, new Item.Properties()));
+            () -> new CustomBoatItem(true, CustomBoat.Type.GLACIAN, (new Item.Properties()).stacksTo(1)));
 
     // Rockets
-    public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, new Item.Properties()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new AdvancedRocketItem(6, new Item.Properties()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_7_ROCKET = ROCKETS.register("tier_7_rocket", () -> new AdvancedRocketItem(7, new Item.Properties()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () -> new AdvancedRocketItem(8, new Item.Properties()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new AdvancedRocketItem(9, new Item.Properties()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () -> new AdvancedRocketItem(10, new Item.Properties()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () -> new AdvancedRocketItem(11, new Item.Properties()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new AdvancedRocketItem(6, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_7_ROCKET = ROCKETS.register("tier_7_rocket", () -> new AdvancedRocketItem(7, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () -> new AdvancedRocketItem(8, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new AdvancedRocketItem(9, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () -> new AdvancedRocketItem(10, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<AdvancedRocketItem> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () -> new AdvancedRocketItem(11, (new Item.Properties()).stacksTo(1).fireResistant()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

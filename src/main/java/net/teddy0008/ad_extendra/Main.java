@@ -6,6 +6,8 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -20,7 +22,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
-import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.ModBoatRenderer;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.CustomBoatRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_11.RocketRendererTier11;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketRendererTier5;
@@ -63,7 +65,9 @@ public class Main {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLACIAN_SAPLING.getId(), ModBlocks.POTTED_GLACIAN_SAPLING);
+        });
     }
 
     // Add the example block item to the building blocks tab
@@ -80,8 +84,8 @@ public class Main {
     }
 
     public static void registerEntityRenderers() {
-        EntityRenderers.register(ModEntities.BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
-        EntityRenderers.register(ModEntities.CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+        EntityRenderers.register(ModEntities.BOAT.get(), pContext -> new CustomBoatRenderer(pContext, false));
+        EntityRenderers.register(ModEntities.CHEST_BOAT.get(), pContext -> new CustomBoatRenderer(pContext, true));
 
         ClientHooks.registerEntityRenderer(ModEntities.TIER_5_ROCKET, RocketRendererTier5::new);
         ClientHooks.registerEntityRenderer(ModEntities.TIER_6_ROCKET, RocketRendererTier6::new);
@@ -99,6 +103,7 @@ public class Main {
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
             registerEntityRenderers();
 
             Sheets.addWoodType(ModWoodTypes.GLACIAN);
