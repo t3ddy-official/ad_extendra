@@ -51,8 +51,13 @@
   "item.ad_extendra.glacian_boat": "Glacian Boat",
   "item.ad_extendra.glacian_chest_boat": "Glacian Boat with Chest",
 
+  "block.ad_extendra.moon_mycelium": "Moon Mycelium",
+  "block.ad_extendra.aeronos_mushroom": "Aeronos Mushroom",
+  "block.ad_extendra.potted_aeronos_mushroom": "Potted Aeronos Mushroom",
   "block.ad_extendra.aeronos_sign": "Aeronos Sign",
   "block.ad_extendra.aeronos_hanging_sign": "Aeronos Hanging Sign",
+  "block.ad_extendra.strophar_mushroom": "Strophar Mushroom",
+  "block.ad_extendra.potted_strophar_mushroom": "Potted Strophar Mushroom",
   "block.ad_extendra.strophar_sign": "Strophar Sign",
   "block.ad_extendra.strophar_hanging_sign": "Strophar Hanging Sign",
 

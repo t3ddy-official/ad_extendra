@@ -20,8 +20,11 @@ public class ModCreativeTabs {
             .title(Component.translatable("creativetab.ad_extendra"))
             .displayItems((itemDisplayParameters, output) -> {
                 // Moon
+                output.accept(ModBlocks.MOON_MYCELIUM.get());
+                output.accept(ModBlocks.AERONOS_MUSHROOM.get());
                 output.accept(ModItems.AERONOS_SIGN.get());
                 output.accept(ModItems.AERONOS_HANGING_SIGN.get());
+                output.accept(ModBlocks.STROPHAR_MUSHROOM.get());
                 output.accept(ModItems.STROPHAR_SIGN.get());
                 output.accept(ModItems.STROPHAR_HANGING_SIGN.get());
 

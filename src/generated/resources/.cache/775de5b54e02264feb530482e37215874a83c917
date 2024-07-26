@@ -1,3 +1,5 @@
-// 1.20.1	2024-07-09T15:05:40.7942646	Global Loot Modifiers : ad_extendra
+// 1.20.1	2024-07-25T17:30:59.3349144	Global Loot Modifiers : ad_extendra
+86d0469421b781adbae0254430c56ee5bb58a549 data/ad_extendra/loot_modifiers/aeronos_mushroom_from_cap.json
 962cd4058ff00272318d45b22c14565ec7025804 data/ad_extendra/loot_modifiers/glacian_sapling_from_leaves.json
-669fd4c6ce63ecc18dab535f0bce2d68c8ca6e27 data/forge/loot_modifiers/global_loot_modifiers.json
+22b50414d6fb1fcdafebded5a2fe842d4f9f9e74 data/ad_extendra/loot_modifiers/strophar_mushroom_from_cap.json
+836578c78d5ddc2b848f309b1cf4bbcec060840f data/forge/loot_modifiers/global_loot_modifiers.json

@@ -1,6 +1,8 @@
 {
   "entries": [
-    "ad_extendra:glacian_sapling_from_leaves"
+    "ad_extendra:glacian_sapling_from_leaves",
+    "ad_extendra:aeronos_mushroom_from_cap",
+    "ad_extendra:strophar_mushroom_from_cap"
   ],
   "replace": false
 }

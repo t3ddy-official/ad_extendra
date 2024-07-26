@@ -3,7 +3,6 @@ package net.teddy0008.ad_extendra.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -533,7 +532,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CERES_SAND.get())
                 .add(ModBlocks.SATURN_SAND.get())
                 .add(ModBlocks.PLUTO_SAND.get())
-                .add(ModBlocks.B_SAND.get());
+                .add(ModBlocks.B_SAND.get())
+                .add(ModBlocks.MOON_MYCELIUM.get());
         this.tag(BlockTags.DIAMOND_ORES)
                 .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
                 .add(ModBlocks.SATURN_DIAMOND_ORE.get())
@@ -910,5 +910,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.B_STONE.get());
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.GLACIAN_SAPLING.get());
+        this.tag(BlockTags.MUSHROOM_GROW_BLOCK)
+                .add(ModBlocks.MOON_MYCELIUM.get());
     }
 }

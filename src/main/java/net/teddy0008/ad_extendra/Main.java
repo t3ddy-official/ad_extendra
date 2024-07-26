@@ -6,11 +6,12 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -38,6 +39,8 @@ import net.teddy0008.ad_extendra.painting.ModPaintings;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import org.slf4j.Logger;
 
+import java.util.function.Function;
+
 @Mod(Main.MOD_ID)
 public class Main {
     public static final String MOD_ID = "ad_extendra";
@@ -59,28 +62,20 @@ public class Main {
 
         MinecraftForge.EVENT_BUS.register(this);
 
-        modEventBus.addListener(this::addCreative);
-
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLACIAN_SAPLING.getId(), ModBlocks.POTTED_GLACIAN_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.AERONOS_MUSHROOM.getId(), ModBlocks.POTTED_AERONOS_MUSHROOM);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.STROPHAR_MUSHROOM.getId(), ModBlocks.POTTED_STROPHAR_MUSHROOM);
         });
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        /* if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
-        } */
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
     }
 
     public static void registerEntityRenderers() {
@@ -99,6 +94,8 @@ public class Main {
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
+        private static final Function<ItemLike, ItemStack> FUNCTION = ItemStack::new;
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());

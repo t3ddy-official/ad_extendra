@@ -15,7 +15,6 @@ import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.GlacianSaplingBlock;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
-import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
 import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
 
 public class ModItemModelGenerator extends ItemModelProvider {

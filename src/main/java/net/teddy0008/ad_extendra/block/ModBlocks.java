@@ -1,7 +1,6 @@
 package net.teddy0008.ad_extendra.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -16,15 +15,25 @@ import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
+import net.teddy0008.ad_extendra.world.gen.ModTreeConfiguredFeatures;
 import net.teddy0008.ad_extendra.world.gen.tree.GlacianTreeGrower;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
-
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MOD_ID);
 
     // Moon
+    public static final RegistryObject<MoonMyceliumBlock> MOON_MYCELIUM = registerBlock("moon_mycelium",
+            () -> new MoonMyceliumBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_NYLIUM).lightLevel((state) -> {
+                return 6;
+            })));
+    public static final RegistryObject<MushroomBlock> AERONOS_MUSHROOM = registerBlock("aeronos_mushroom",
+            () -> new MushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM).sound(SoundType.STEM).lightLevel((state) -> {
+                return 6;
+            }), ModTreeConfiguredFeatures.AERONOS_KEY));
+    public static final RegistryObject<FlowerPotBlock> POTTED_AERONOS_MUSHROOM = BLOCKS.register("potted_aeronos_mushroom",
+            () -> new FlowerPotBlock(AERONOS_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<CustomStandingSignBlock> AERONOS_SIGN = BLOCKS.register("aeronos_sign",
             () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN), ModWoodTypes.AERONOS));
     public static final RegistryObject<CustomWallSignBlock> AERONOS_WALL_SIGN = BLOCKS.register("aeronos_wall_sign",
@@ -33,6 +42,12 @@ public class ModBlocks {
             () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HANGING_SIGN), ModWoodTypes.AERONOS));
     public static final RegistryObject<CustomWallHangingSignBlock> AERONOS_WALL_HANGING_SIGN = BLOCKS.register("aeronos_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_WALL_HANGING_SIGN), ModWoodTypes.AERONOS));
+    public static final RegistryObject<MushroomBlock> STROPHAR_MUSHROOM = registerBlock("strophar_mushroom",
+            () -> new MushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).sound(SoundType.STEM).lightLevel((state) -> {
+                return 6;
+            }), ModTreeConfiguredFeatures.STROPHAR_KEY));
+    public static final RegistryObject<FlowerPotBlock> POTTED_STROPHAR_MUSHROOM = BLOCKS.register("potted_strophar_mushroom",
+            () -> new FlowerPotBlock(STROPHAR_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<CustomStandingSignBlock> STROPHAR_SIGN = BLOCKS.register("strophar_sign",
             () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN), ModWoodTypes.STROPHAR));
     public static final RegistryObject<CustomWallSignBlock> STROPHAR_WALL_SIGN = BLOCKS.register("strophar_wall_sign",

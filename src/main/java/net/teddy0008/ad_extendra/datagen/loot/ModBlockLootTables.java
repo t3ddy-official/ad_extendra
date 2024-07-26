@@ -25,6 +25,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         // Moon
+        this.dropSelf(ModBlocks.AERONOS_MUSHROOM.get());
+        this.dropSelf(ModBlocks.STROPHAR_MUSHROOM.get());
+        this.add(ModBlocks.MOON_MYCELIUM.get(), createGrassDrops(earth.terrarium.ad_astra.common.registry.ModBlocks.MOON_STONE.get()));
+        this.add(ModBlocks.POTTED_AERONOS_MUSHROOM.get(), createPotFlowerItemTable(ModBlocks.AERONOS_MUSHROOM.get()));
+        this.add(ModBlocks.POTTED_STROPHAR_MUSHROOM.get(), createPotFlowerItemTable(ModBlocks.STROPHAR_MUSHROOM.get()));
         this.add(ModBlocks.AERONOS_SIGN.get(), block ->
                 createSingleItemTable(ModItems.AERONOS_SIGN.get()));
         this.add(ModBlocks.AERONOS_WALL_SIGN.get(), block ->

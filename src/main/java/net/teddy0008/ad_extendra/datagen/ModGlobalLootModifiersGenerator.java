@@ -19,5 +19,13 @@ public class ModGlobalLootModifiersGenerator extends GlobalLootModifierProvider 
         add("glacian_sapling_from_leaves", new AddItemModifier(new LootItemCondition[] {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(earth.terrarium.ad_astra.common.registry.ModBlocks.GLACIAN_LEAVES.get()).build(),
                 LootItemRandomChanceCondition.randomChance(0.35f).build()}, ModBlocks.GLACIAN_SAPLING.get().asItem()));
+
+        add("aeronos_mushroom_from_cap", new AddItemModifier(new LootItemCondition[] {
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(earth.terrarium.ad_astra.common.registry.ModBlocks.AERONOS_CAP.get()).build(),
+                LootItemRandomChanceCondition.randomChance(0.35f).build()}, ModBlocks.AERONOS_MUSHROOM.get().asItem()));
+
+        add("strophar_mushroom_from_cap", new AddItemModifier(new LootItemCondition[] {
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(earth.terrarium.ad_astra.common.registry.ModBlocks.STROPHAR_CAP.get()).build(),
+                LootItemRandomChanceCondition.randomChance(0.35f).build()}, ModBlocks.STROPHAR_MUSHROOM.get().asItem()));
     }
 }

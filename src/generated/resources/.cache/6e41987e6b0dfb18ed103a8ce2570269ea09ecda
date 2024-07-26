@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-19T14:35:53.7803976	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-07-25T17:00:19.0428432	Tags for minecraft:block mod id ad_extendra
 501e03862da89b1b02cf7f925c3c4d48b75d69f1 data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/blocks/ores/electrolyte.json
@@ -30,7 +30,8 @@ d2eee572f0e8a631f0c85111c09e4ec65d873d5d data/minecraft/tags/blocks/ice.json
 86f48a2e67eef3a62d0777658033cc0c46bfd386 data/minecraft/tags/blocks/iron_ores.json
 7dca2f4a87f510a0dd102ad606551e04a16ffd70 data/minecraft/tags/blocks/lapis_ores.json
 efaf98bbe562487c6c0266af7761960c4d99e327 data/minecraft/tags/blocks/mineable/pickaxe.json
-3732bd35105288a6ed9b5edde6f63b3f7b9e578c data/minecraft/tags/blocks/mineable/shovel.json
+dbf543348d3124075adca3d8c09c39307aa8ccbc data/minecraft/tags/blocks/mineable/shovel.json
+1c9e45ec364bc55134942cb07871f8309e3e5927 data/minecraft/tags/blocks/mushroom_grow_block.json
 7b696cb37a4af994ffaa73273ae258e2c0176926 data/minecraft/tags/blocks/needs_diamond_tool.json
 96364d64fb228e0677d3e204db8845cba16337d3 data/minecraft/tags/blocks/needs_iron_tool.json
 a513358a04748c3c3afaa75cf0569704b8ffc4df data/minecraft/tags/blocks/needs_stone_tool.json
