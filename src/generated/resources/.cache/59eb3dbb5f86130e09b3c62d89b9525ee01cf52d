@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-25T17:35:34.9735276	Loot Tables
+// 1.20.1	2024-07-30T12:43:19.9635562	Loot Tables
 827a8e20f0a391dbc067c686adf72b50c87915c1 data/ad_extendra/loot_tables/blocks/aeronos_hanging_sign.json
 8ee28f6da574b16d4d6b009c863541876c6f8ed2 data/ad_extendra/loot_tables/blocks/aeronos_mushroom.json
 6af4a5abd5e5d126e4f1aecabf1ec2d6c68c8668 data/ad_extendra/loot_tables/blocks/aeronos_sign.json
@@ -13,6 +13,10 @@ dfa0aced031d2d08ee6cab90889f5a4a88d9e0db data/ad_extendra/loot_tables/blocks/b_i
 d3d8db389e223dfe7e2992b5965c833f199887e4 data/ad_extendra/loot_tables/blocks/b_pillar.json
 81382125d4222cf0abcce2b421c215bc34e14a36 data/ad_extendra/loot_tables/blocks/b_redstone_ore.json
 eb6791779561dc24fae76fb483e0b014e1e1c562 data/ad_extendra/loot_tables/blocks/b_sand.json
+cd3a9e28dd649dc1128bc85de18d6ea4f179ead6 data/ad_extendra/loot_tables/blocks/b_sandstone.json
+87e3ffe118c43e1220ed7c153e85507498438bb0 data/ad_extendra/loot_tables/blocks/b_sandstone_bricks.json
+fdc1f086b7e779dc717fa3a3130636bf109e740a data/ad_extendra/loot_tables/blocks/b_sandstone_brick_slab.json
+b2819fae5b864a0f7b5f54a7ac08863243e06c84 data/ad_extendra/loot_tables/blocks/b_sandstone_brick_stairs.json
 d1a4b661e8c5694f14342a1056ec5b1f20914834 data/ad_extendra/loot_tables/blocks/b_stone.json
 7065d7d535d1d4088a7c22f1a37b22406d303b1e data/ad_extendra/loot_tables/blocks/b_stone_bricks.json
 2965c946ecbb76ec6213612e200a5d61da226d21 data/ad_extendra/loot_tables/blocks/b_stone_brick_slab.json
@@ -76,6 +80,7 @@ eb0626bbcb6d13f5d34b69eedec26040548a53d1 data/ad_extendra/loot_tables/blocks/chi
 a5210f47edb08e35ac3c136213c39f10fc7f9ab9 data/ad_extendra/loot_tables/blocks/chiseled_uranus_stone_bricks.json
 75433fac9a82c326febad8777321270a9713400b data/ad_extendra/loot_tables/blocks/chiseled_uranus_stone_slab.json
 dd582cdefa95019448977c5a550eb0336da3ac88 data/ad_extendra/loot_tables/blocks/chiseled_uranus_stone_stairs.json
+0924523a568486b2ba39ab63be40b7694c4c3874 data/ad_extendra/loot_tables/blocks/cracked_b_sandstone_bricks.json
 c37e73844f6177a121db348c65b80b630454b782 data/ad_extendra/loot_tables/blocks/cracked_b_stone_bricks.json
 b31dbef24ed2b52f8a2b6fac42a77bae47ed5a8a data/ad_extendra/loot_tables/blocks/cracked_ceres_stone_bricks.json
 16b431c5ee986504bf9d2f63a1856b5b4897016a data/ad_extendra/loot_tables/blocks/cracked_eris_stone_bricks.json

@@ -504,7 +504,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SEDNA_IRON_ORE.get())
 
                 // Proxima Centauri b
-                .add(ModBlocks.B_SAND.get())
+                .add(ModBlocks.B_SANDSTONE.get())
+                .add(ModBlocks.B_SANDSTONE_BRICKS.get())
+                .add(ModBlocks.B_SANDSTONE_BRICK_STAIRS.get())
+                .add(ModBlocks.B_SANDSTONE_BRICK_SLAB.get())
+                .add(ModBlocks.CRACKED_B_SANDSTONE_BRICKS.get())
                 .add(ModBlocks.B_STONE.get())
                 .add(ModBlocks.B_STONE_STAIRS.get())
                 .add(ModBlocks.B_STONE_SLAB.get())
@@ -684,6 +688,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get())
 
                 // Proxima Centauri b
+                .add(ModBlocks.B_SANDSTONE_BRICK_STAIRS.get())
                 .add(ModBlocks.B_STONE_STAIRS.get())
                 .add(ModBlocks.B_COBBLESTONE_STAIRS.get())
                 .add(ModBlocks.B_STONE_BRICK_STAIRS.get())
@@ -789,6 +794,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get())
 
                 // Proxima Centauri b
+                .add(ModBlocks.B_SANDSTONE_BRICK_SLAB.get())
                 .add(ModBlocks.B_STONE_SLAB.get())
                 .add(ModBlocks.B_COBBLESTONE_SLAB.get())
                 .add(ModBlocks.B_STONE_BRICK_SLAB.get())
@@ -908,6 +914,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ERIS_STONE.get())
                 .add(ModBlocks.SEDNA_STONE.get())
                 .add(ModBlocks.B_STONE.get());
+        this.tag(Tags.Blocks.SANDSTONE)
+                .add(ModBlocks.B_SANDSTONE.get());
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.GLACIAN_SAPLING.get());
         this.tag(BlockTags.MUSHROOM_GROW_BLOCK)

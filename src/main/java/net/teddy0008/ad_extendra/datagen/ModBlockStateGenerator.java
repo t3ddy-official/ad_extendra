@@ -415,6 +415,11 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.B_IRON_ORE);
         redstoneOreBlockWithItem(ModBlocks.B_REDSTONE_ORE);
         fallingBlockWithItem(ModBlocks.B_SAND);
+        blockWithItem(ModBlocks.B_SANDSTONE);
+        blockWithItem(ModBlocks.B_SANDSTONE_BRICKS);
+        stairsBlock(((StairBlock) ModBlocks.B_SANDSTONE_BRICK_STAIRS.get()), blockTexture(ModBlocks.B_SANDSTONE_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.B_SANDSTONE_BRICK_SLAB.get()), blockTexture(ModBlocks.B_SANDSTONE_BRICKS.get()), blockTexture(ModBlocks.B_SANDSTONE_BRICKS.get()));
+        blockWithItem(ModBlocks.CRACKED_B_SANDSTONE_BRICKS);
         blockWithItem(ModBlocks.B_STONE);
         stairsBlock(((StairBlock) ModBlocks.B_STONE_STAIRS.get()), blockTexture(ModBlocks.B_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.B_STONE_SLAB.get()), blockTexture(ModBlocks.B_STONE.get()), blockTexture(ModBlocks.B_STONE.get()));

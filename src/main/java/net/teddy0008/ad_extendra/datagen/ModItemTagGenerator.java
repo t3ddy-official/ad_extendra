@@ -279,6 +279,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get().asItem())
 
                 // Proxima Centauri b
+                .add(ModBlocks.B_SANDSTONE_BRICK_STAIRS.get().asItem())
                 .add(ModBlocks.B_STONE_STAIRS.get().asItem())
                 .add(ModBlocks.B_COBBLESTONE_STAIRS.get().asItem())
                 .add(ModBlocks.B_STONE_BRICK_STAIRS.get().asItem())
@@ -384,6 +385,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get().asItem())
 
                 // Proxima Centauri b
+                .add(ModBlocks.B_SANDSTONE_BRICK_SLAB.get().asItem())
                 .add(ModBlocks.B_STONE_SLAB.get().asItem())
                 .add(ModBlocks.B_COBBLESTONE_SLAB.get().asItem())
                 .add(ModBlocks.B_STONE_BRICK_SLAB.get().asItem())
@@ -530,6 +532,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ERIS_STONE.get().asItem())
                 .add(ModBlocks.SEDNA_STONE.get().asItem())
                 .add(ModBlocks.B_STONE.get().asItem());
+        this.tag(Tags.Items.SANDSTONE)
+                .add(ModBlocks.B_SANDSTONE.get().asItem());
         this.tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.GLACIAN_SAPLING.get().asItem());
         this.tag(ItemTags.BOATS)

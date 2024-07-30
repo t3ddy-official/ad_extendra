@@ -1,9 +1,11 @@
-// 1.20.1	2024-07-21T11:35:23.3284494	Item Models: ad_extendra
+// 1.20.1	2024-07-30T12:43:19.9635562	Item Models: ad_extendra
 2d057b69f12ac3f4fdecf485879ca972a1b0cee1 assets/ad_extendra/models/item/aeronos_hanging_sign.json
 c6609915398fcb30200e6e467f190967c6eb1551 assets/ad_extendra/models/item/aeronos_sign.json
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
 de3f1b7c6b3e101457feb6c0129e7cc272aeb1aa assets/ad_extendra/models/item/b_cobblestone_stairs.json
 2c5b14026c02e1b6d3001816490cf2fbd4ad3601 assets/ad_extendra/models/item/b_pillar.json
+6be1755d90f9acbe11c08054e1ddfbf8130f1916 assets/ad_extendra/models/item/b_sandstone_brick_slab.json
+7a11bd3375f112074cc58fb1e44f7cb372c02c88 assets/ad_extendra/models/item/b_sandstone_brick_stairs.json
 962627dbf1802f5f8cbdd9bb25fc06f1a47c5986 assets/ad_extendra/models/item/b_stone_brick_slab.json
 64df45960ff0b0d39025e5b898cd6ab62e2b5aa1 assets/ad_extendra/models/item/b_stone_brick_stairs.json
 881a5ed15d103b61824fcda0a6f23207508fdead assets/ad_extendra/models/item/b_stone_brick_wall.json

@@ -428,6 +428,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         // Proxima Centauri b
         this.dropSelf(ModBlocks.B_SAND.get());
+        this.dropSelf(ModBlocks.B_SANDSTONE.get());
+        this.dropSelf(ModBlocks.B_SANDSTONE_BRICKS.get());
+        this.dropSelf(ModBlocks.B_SANDSTONE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.B_SANDSTONE_BRICK_SLAB.get());
+        this.dropSelf(ModBlocks.CRACKED_B_SANDSTONE_BRICKS.get());
         this.dropSelf(ModBlocks.B_STONE.get());
         this.dropSelf(ModBlocks.B_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.B_STONE_SLAB.get());

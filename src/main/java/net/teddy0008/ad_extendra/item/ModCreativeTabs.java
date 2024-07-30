@@ -438,6 +438,11 @@ public class ModCreativeTabs {
 
                 // Proxima Centauri b
                 output.accept(ModBlocks.B_SAND.get());
+                output.accept(ModBlocks.B_SANDSTONE.get());
+                output.accept(ModBlocks.B_SANDSTONE_BRICKS.get());
+                output.accept(ModBlocks.B_SANDSTONE_BRICK_STAIRS.get());
+                output.accept(ModBlocks.B_SANDSTONE_BRICK_SLAB.get());
+                output.accept(ModBlocks.CRACKED_B_SANDSTONE_BRICKS.get());
                 output.accept(ModBlocks.B_STONE.get());
                 output.accept(ModBlocks.B_STONE_STAIRS.get());
                 output.accept(ModBlocks.B_STONE_SLAB.get());

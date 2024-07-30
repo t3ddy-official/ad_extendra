@@ -2308,6 +2308,32 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_SEDNA_STONE.get(), ModBlocks.POLISHED_SEDNA_STONE_SLAB.get(), 2);
 
         // Proxima Centauri B Stone Recipes
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.B_SANDSTONE.get(), 4)
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModBlocks.B_SAND.get()).unlockedBy(getHasName(ModBlocks.B_SAND.get()), has(ModBlocks.B_SAND.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.B_SANDSTONE_BRICKS.get(), 4)
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModBlocks.B_SANDSTONE.get()).unlockedBy(getHasName(ModBlocks.B_SANDSTONE.get()), has(ModBlocks.B_SANDSTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.B_SANDSTONE_BRICK_STAIRS.get(), 4)
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.B_SANDSTONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.B_SANDSTONE_BRICKS.get()), has(ModBlocks.B_SANDSTONE_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.B_SANDSTONE_BRICK_SLAB.get(), 6)
+                .pattern("SSS")
+                .define('S', ModBlocks.B_SANDSTONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.B_SANDSTONE_BRICKS.get()), has(ModBlocks.B_SANDSTONE_BRICKS.get()))
+                .save(consumer);
+
+        oreSmelting(consumer, List.of(ModBlocks.B_SANDSTONE_BRICKS.get()), RecipeCategory.MISC, ModBlocks.CRACKED_B_SANDSTONE_BRICKS.get(), 0.2f, 200, "item");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.B_STONE_STAIRS.get(), 4)
                 .pattern("J  ")
                 .pattern("JJ ")
@@ -2394,6 +2420,11 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .define('J', ModBlocks.B_STONE_BRICKS.get()).unlockedBy(getHasName(ModBlocks.B_STONE_BRICKS.get()), has(ModBlocks.B_STONE_BRICKS.get()))
                 .save(consumer);
 
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_SANDSTONE.get(), ModBlocks.B_SANDSTONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_SANDSTONE_BRICKS.get(), ModBlocks.B_SANDSTONE_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_SANDSTONE_BRICKS.get(), ModBlocks.B_SANDSTONE_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_SANDSTONE.get(), ModBlocks.B_SANDSTONE_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_SANDSTONE.get(), ModBlocks.B_SANDSTONE_BRICK_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_STONE.get(), ModBlocks.B_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_STONE.get(), ModBlocks.B_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.B_STONE.get(), ModBlocks.B_STONE_BRICKS.get(), 1);

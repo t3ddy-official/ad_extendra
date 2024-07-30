@@ -443,6 +443,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> B_IRON_ORE = registerBlock("b_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<RedStoneOreBlock> B_REDSTONE_ORE = registerBlock("b_redstone_ore", () -> new RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE)));
     public static final RegistryObject<FallingBlock> B_SAND = registerBlock("b_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> B_SANDSTONE = registerBlock("b_sandstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> B_SANDSTONE_BRICKS = registerBlock("b_sandstone_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<StairBlock> B_SANDSTONE_BRICK_STAIRS = registerBlock("b_sandstone_brick_stairs", () -> new StairBlock(((Block)B_SANDSTONE_BRICKS.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<SlabBlock> B_SANDSTONE_BRICK_SLAB = registerBlock("b_sandstone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> CRACKED_B_SANDSTONE_BRICKS = registerBlock("cracked_b_sandstone_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
     public static final RegistryObject<Block> B_STONE = registerBlock("b_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> B_STONE_STAIRS = registerBlock("b_stone_stairs", () -> new StairBlock(((Block)B_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> B_STONE_SLAB = registerBlock("b_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));

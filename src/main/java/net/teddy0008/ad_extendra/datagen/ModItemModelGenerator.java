@@ -297,6 +297,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         pillarItem(ModBlocks.SEDNA_PILLAR);
 
         // Proxima Centauri b
+        stairsItem(ModBlocks.B_SANDSTONE_BRICK_STAIRS);
+        slabItem(ModBlocks.B_SANDSTONE_BRICK_SLAB);
         stairsItem(ModBlocks.B_STONE_STAIRS);
         slabItem(ModBlocks.B_STONE_SLAB);
         stairsItem(ModBlocks.B_COBBLESTONE_STAIRS);
