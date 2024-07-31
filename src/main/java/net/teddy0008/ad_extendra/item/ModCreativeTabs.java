@@ -171,6 +171,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.GLOWING_URANIUM_PILLAR.get());
                 output.accept(ModItems.URANIUM_ENGINE.get());
                 output.accept(ModItems.URANIUM_TANK.get());
+                output.accept(ModItems.FREEZE_SHARD.get());
 
                 // Neptune
                 output.accept(ModBlocks.NEPTUNE_STONE.get());
@@ -480,6 +481,9 @@ public class ModCreativeTabs {
                 output.accept(ModItems.TIER_9_ROCKET.get());
                 output.accept(ModItems.TIER_10_ROCKET.get());
                 output.accept(ModItems.TIER_11_ROCKET.get());
+
+                // Spawn Eggs
+                output.accept(ModItems.FREEZE_SPAWN_EGG.get());
             }).build());
 
     public static void register(IEventBus eventBus) {

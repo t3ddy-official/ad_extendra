@@ -19,6 +19,7 @@
   "item.ad_extendra.uranium_plate": "Uranium Plate",
   "item.ad_extendra.uranium_engine": "Uranium Engine",
   "item.ad_extendra.uranium_tank": "Uranium Tank",
+  "item.ad_extendra.freeze_shard": "Freeze Shard",
 
   "item.ad_extendra.raw_neptunium": "Raw Neptunium",
   "item.ad_extendra.neptunium_ingot": "Neptunium Ingot",
@@ -50,6 +51,8 @@
 
   "item.ad_extendra.glacian_boat": "Glacian Boat",
   "item.ad_extendra.glacian_chest_boat": "Glacian Boat with Chest",
+
+  "item.ad_extendra.freeze_spawn_egg": "Freeze Spawn Egg",
 
   "block.ad_extendra.moon_mycelium": "Moon Mycelium",
   "block.ad_extendra.aeronos_mushroom": "Aeronos Mushroom",
@@ -447,6 +450,7 @@
   "block.ad_extendra.potted_glacian_sapling": "Potted Glacian Sapling",
   "block.ad_extendra.glacian_hanging_sign": "Glacian Hanging Sign",
 
+  "entity.ad_extendra.freeze": "Freeze",
   "entity.ad_extendra.boat": "Boat",
   "entity.ad_extendra.chest_boat": "Boat with Chest",
 

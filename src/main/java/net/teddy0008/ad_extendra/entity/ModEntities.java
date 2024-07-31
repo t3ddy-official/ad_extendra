@@ -8,11 +8,16 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
+import net.teddy0008.ad_extendra.entity.mob.Freeze;
 import net.teddy0008.ad_extendra.entity.vehicle.*;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Main.MOD_ID);
     public static final DeferredRegister<EntityType<?>> ROCKETS = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, AdAstra.MOD_ID);
+
+    public static final RegistryObject<EntityType<Freeze>> FREEZE =
+            ENTITY_TYPES.register("freeze", () -> EntityType.Builder.of(Freeze::new, MobCategory.MONSTER)
+                    .sized(1.125f, 1.8125f).build("freeze"));
 
     public static final RegistryObject<EntityType<CustomBoat>> BOAT =
             ENTITY_TYPES.register("boat", () -> EntityType.Builder.<CustomBoat>of(CustomBoat::new, MobCategory.MISC)

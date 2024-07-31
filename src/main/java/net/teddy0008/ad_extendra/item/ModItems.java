@@ -4,12 +4,14 @@ import earth.terrarium.ad_astra.AdAstra;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SignItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.entity.vehicle.CustomBoat;
 import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
 import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
@@ -51,6 +53,7 @@ public class ModItems {
     public static final RegistryObject<Item> URANIUM_PLATE = ITEMS.register("uranium_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_ENGINE = ITEMS.register("uranium_engine", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_TANK = ITEMS.register("uranium_tank", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FREEZE_SHARD = ITEMS.register("freeze_shard", () -> new Item(new Item.Properties()));
 
     // Neptune
     public static final RegistryObject<Item> RAW_NEPTUNIUM = ITEMS.register("raw_neptunium", () -> new Item(new Item.Properties()));
@@ -100,6 +103,10 @@ public class ModItems {
     public static final RegistryObject<AdvancedRocketItem> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new AdvancedRocketItem(9, (new Item.Properties()).stacksTo(1).fireResistant()));
     public static final RegistryObject<AdvancedRocketItem> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () -> new AdvancedRocketItem(10, (new Item.Properties()).stacksTo(1).fireResistant()));
     public static final RegistryObject<AdvancedRocketItem> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () -> new AdvancedRocketItem(11, (new Item.Properties()).stacksTo(1).fireResistant()));
+
+    // Spawn Eggs
+    public static final RegistryObject<ForgeSpawnEggItem> FREEZE_SPAWN_EGG = ITEMS.register("freeze_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.FREEZE, 13303807, 7979472, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

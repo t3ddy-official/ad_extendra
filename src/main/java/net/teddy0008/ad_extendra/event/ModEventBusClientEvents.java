@@ -11,11 +11,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
 import net.teddy0008.ad_extendra.client.renderer.entity.ModEntityModelLayers;
+import net.teddy0008.ad_extendra.client.renderer.entity.mob.freeze.FreezeModel;
 
 @Mod.EventBusSubscriber(modid = Main.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ModEntityModelLayers.FREEZE_LAYER, FreezeModel::createBodyLayer);
         event.registerLayerDefinition(ModEntityModelLayers.GLACIAN_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModEntityModelLayers.GLACIAN_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
     }

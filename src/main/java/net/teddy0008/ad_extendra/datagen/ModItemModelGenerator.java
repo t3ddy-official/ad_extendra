@@ -8,6 +8,7 @@ import net.minecraft.world.item.SignItem;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -103,6 +104,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.URANIUM_PLATE);
         simpleItem(ModItems.URANIUM_ENGINE);
         simpleItem(ModItems.URANIUM_TANK);
+        simpleItem(ModItems.FREEZE_SHARD);
         stairsItem(ModBlocks.URANIUM_PLATING_STAIRS);
         slabItem(ModBlocks.URANIUM_PLATING_SLAB);
         pillarItem(ModBlocks.URANIUM_PILLAR);
@@ -317,6 +319,9 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleHangingSignItem(ModItems.GLACIAN_HANGING_SIGN);
         simpleBoatItem(ModItems.GLACIAN_BOAT);
         simpleBoatItem(ModItems.GLACIAN_CHEST_BOAT);
+
+        // Spawn Eggs
+        simpleSpawnEggItem(ModItems.FREEZE_SPAWN_EGG);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -367,5 +372,9 @@ public class ModItemModelGenerator extends ItemModelProvider {
     private ItemModelBuilder simpleBoatItem(RegistryObject<CustomBoatItem> item) {
         return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
                 .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleSpawnEggItem(RegistryObject<ForgeSpawnEggItem> item) {
+        return withExistingParent(item.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 }
