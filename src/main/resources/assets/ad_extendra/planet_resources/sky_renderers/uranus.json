@@ -6,7 +6,7 @@
     "colored_stars": true,
     "daylight_visible": true
   },
-  "sunset_color": "vanilla",
+  "sunset_color": "mars",
   "dimension_effects": {
     "type": "simple"
   },

@@ -17,31 +17,22 @@
     }
   },
   "spawners": {
-    "creature": [
+    "monster": [
       {
         "type": "ad_extendra:freeze",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 5
       },
       {
         "type": "ad_astra:sulfur_creeper",
         "weight": 100,
-        "maxCount": 3,
-        "minCount": 1
+        "minCount": 1,
+        "maxCount": 3
       }
     ]
   },
-  "spawn_costs": {
-    "ad_extendra:freeze": {
-      "energy_budget": 0.05,
-      "charge": 0.2
-    },
-    "ad_astra:sulfur_creeper": {
-      "energy_budget": 0.02,
-      "charge": 0.2
-    }
-  },
+  "spawn_costs": {},
   "carvers": {
     "air": [
       "minecraft:cave",
