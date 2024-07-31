@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.entity.mob.Freeze;
+import net.teddy0008.ad_extendra.entity.projectile.IceCharge;
 import net.teddy0008.ad_extendra.entity.vehicle.*;
 
 public class ModEntities {
@@ -18,6 +19,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<Freeze>> FREEZE =
             ENTITY_TYPES.register("freeze", () -> EntityType.Builder.of(Freeze::new, MobCategory.MONSTER)
                     .sized(1.125f, 1.8125f).build("freeze"));
+
+    public static final RegistryObject<EntityType<IceCharge>> ICE_CHARGE =
+            ENTITY_TYPES.register("ice_charge", () -> EntityType.Builder.<IceCharge>of(IceCharge::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("ice_charge"));
 
     public static final RegistryObject<EntityType<CustomBoat>> BOAT =
             ENTITY_TYPES.register("boat", () -> EntityType.Builder.<CustomBoat>of(CustomBoat::new, MobCategory.MISC)

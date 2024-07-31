@@ -2,7 +2,6 @@ package net.teddy0008.ad_extendra.entity.mob;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.Mth;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
@@ -15,8 +14,8 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.Snowball;
 import net.minecraft.world.level.Level;
+import net.teddy0008.ad_extendra.entity.projectile.IceCharge;
 
 public class Freeze extends Monster implements RangedAttackMob {
     public Freeze(EntityType<? extends Monster> pEntityType, Level pLevel) {
@@ -73,54 +72,16 @@ public class Freeze extends Monster implements RangedAttackMob {
         return SoundEvents.BLAZE_DEATH;
     }
 
-    private void performRangedAttack(int pHead, LivingEntity pTarget) {
-        this.performRangedAttack(pHead, pTarget.getX(), pTarget.getY() + (double)pTarget.getEyeHeight() * 0.5, pTarget.getZ(), pHead == 0 && this.random.nextFloat() < 0.001F);
-    }
-
-    private void performRangedAttack(int pHead, double pX, double pY, double pZ, boolean pIsDangerous) {
-        if (!this.isSilent()) {
-            this.level().levelEvent((Player)null, 1024, this.blockPosition(), 0);
-        }
-
-        double d0 = this.getHeadX(pHead);
-        double d1 = this.getHeadY(pHead);
-        double d2 = this.getHeadZ(pHead);
-        double d3 = pX - d0;
-        double d4 = pY - d1;
-        double d5 = pZ - d2;
-        Snowball projectile = new Snowball(this.level(), this);
-        projectile.setOwner(this);
-
-        projectile.setPosRaw(d0, d1, d2-1);
-        this.level().addFreshEntity(projectile);
-    }
-
     @Override
     public void performRangedAttack(LivingEntity pTarget, float pDistanceFactor) {
-        this.performRangedAttack(0, pTarget);
-    }
-
-    private double getHeadX(int pHead) {
-        if (pHead <= 0) {
-            return this.getX();
-        } else {
-            float f = (this.yBodyRot + (float)(180 * (pHead - 1))) * 0.017453292F;
-            float f1 = Mth.cos(f);
-            return this.getX() + (double)f1 * 1.3;
-        }
-    }
-
-    private double getHeadY(int pHead) {
-        return pHead <= 0 ? this.getY() + 3.0 : this.getY() + 2.2;
-    }
-
-    private double getHeadZ(int pHead) {
-        if (pHead <= 0) {
-            return this.getZ();
-        } else {
-            float f = (this.yBodyRot + (float)(180 * (pHead - 1))) * 0.017453292F;
-            float f1 = Mth.sin(f);
-            return this.getZ() + (double)f1 * 1.3;
-        }
+        IceCharge iceCharge = new IceCharge(this.level(), this);
+        double d0 = pTarget.getEyeY() - 1.100000023841858;
+        double d1 = pTarget.getX() - this.getX();
+        double d2 = d0 - iceCharge.getY();
+        double d3 = pTarget.getZ() - this.getZ();
+        double d4 = Math.sqrt(d1 * d1 + d3 * d3) * 0.20000000298023224;
+        iceCharge.shoot(d1, d2 + d4, d3, 1.6F, 12.0F);
+        this.playSound(SoundEvents.SNOWBALL_THROW, 1.0F, 0.4F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
+        this.level().addFreshEntity(iceCharge);
     }
 }

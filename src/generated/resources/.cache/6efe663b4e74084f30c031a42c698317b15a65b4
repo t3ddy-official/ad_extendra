@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-30T17:07:20.1369066	Item Models: ad_extendra
+// 1.20.1	2024-07-31T10:48:06.5446464	Item Models: ad_extendra
 2d057b69f12ac3f4fdecf485879ca972a1b0cee1 assets/ad_extendra/models/item/aeronos_hanging_sign.json
 c6609915398fcb30200e6e467f190967c6eb1551 assets/ad_extendra/models/item/aeronos_sign.json
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
@@ -94,6 +94,7 @@ ea010505c9540277214601f7a1d558d277279ada assets/ad_extendra/models/item/haumea_s
 0052143fea7220045921b9f9eb37aead28008063 assets/ad_extendra/models/item/haumea_stone_brick_wall.json
 e2991ba1bb674b737b86161440e4722300140f77 assets/ad_extendra/models/item/haumea_stone_slab.json
 36859b4dd2f78bc64e297e1ed975ded44c9db74a assets/ad_extendra/models/item/haumea_stone_stairs.json
+6319a6c58754e6e582f2f68d11d839fcd8e87fad assets/ad_extendra/models/item/ice_charge.json
 2ebb681d0516a273cba92d695d144161b4e31afd assets/ad_extendra/models/item/juperium_engine.json
 84b5c2d2796434b7851067faf050d8f87b656f50 assets/ad_extendra/models/item/juperium_ingot.json
 e245f5e2d8215fdd66b30c75f8d06ade5d44da0e assets/ad_extendra/models/item/juperium_nugget.json

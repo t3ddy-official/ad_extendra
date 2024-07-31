@@ -118,6 +118,8 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.URANUS_LAPIS_ORE.get()), RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_URANIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.URANIUM_BLOCK.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ICE_CHARGE.get(), 4)
+                .requires(ModItems.FREEZE_SHARD.get()).unlockedBy(getHasName(ModItems.FREEZE_SHARD.get()), has(ModItems.FREEZE_SHARD.get())).save(consumer);
 
         // Neptune
         oreSmelting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 200, "item");

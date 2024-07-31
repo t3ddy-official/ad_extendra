@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
@@ -81,6 +82,7 @@ public class Main {
 
     public static void registerEntityRenderers() {
         EntityRenderers.register(ModEntities.FREEZE.get(), FreezeRenderer::new);
+        EntityRenderers.register(ModEntities.ICE_CHARGE.get(), ThrownItemRenderer::new);
         EntityRenderers.register(ModEntities.BOAT.get(), pContext -> new CustomBoatRenderer(pContext, false));
         EntityRenderers.register(ModEntities.CHEST_BOAT.get(), pContext -> new CustomBoatRenderer(pContext, true));
 

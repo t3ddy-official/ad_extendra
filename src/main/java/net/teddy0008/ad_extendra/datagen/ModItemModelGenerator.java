@@ -16,6 +16,7 @@ import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.GlacianSaplingBlock;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.item.projectile.IceChargeItem;
 import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
 
 public class ModItemModelGenerator extends ItemModelProvider {
@@ -105,6 +106,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.URANIUM_ENGINE);
         simpleItem(ModItems.URANIUM_TANK);
         simpleItem(ModItems.FREEZE_SHARD);
+        iceChargeItem(ModItems.ICE_CHARGE);
         stairsItem(ModBlocks.URANIUM_PLATING_STAIRS);
         slabItem(ModBlocks.URANIUM_PLATING_SLAB);
         pillarItem(ModBlocks.URANIUM_PILLAR);
@@ -376,5 +378,10 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     private ItemModelBuilder simpleSpawnEggItem(RegistryObject<ForgeSpawnEggItem> item) {
         return withExistingParent(item.getId().getPath(), mcLoc("item/template_spawn_egg"));
+    }
+
+    private ItemModelBuilder iceChargeItem(RegistryObject<IceChargeItem> item) {
+        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
+                .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

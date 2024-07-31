@@ -172,6 +172,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.URANIUM_ENGINE.get());
                 output.accept(ModItems.URANIUM_TANK.get());
                 output.accept(ModItems.FREEZE_SHARD.get());
+                output.accept(ModItems.ICE_CHARGE.get());
 
                 // Neptune
                 output.accept(ModBlocks.NEPTUNE_STONE.get());

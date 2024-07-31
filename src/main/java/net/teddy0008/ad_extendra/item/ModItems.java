@@ -13,6 +13,7 @@ import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.entity.vehicle.CustomBoat;
+import net.teddy0008.ad_extendra.item.projectile.IceChargeItem;
 import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
 import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
 
@@ -54,6 +55,7 @@ public class ModItems {
     public static final RegistryObject<Item> URANIUM_ENGINE = ITEMS.register("uranium_engine", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_TANK = ITEMS.register("uranium_tank", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FREEZE_SHARD = ITEMS.register("freeze_shard", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<IceChargeItem> ICE_CHARGE = ITEMS.register("ice_charge", () -> new IceChargeItem(new Item.Properties()));
 
     // Neptune
     public static final RegistryObject<Item> RAW_NEPTUNIUM = ITEMS.register("raw_neptunium", () -> new Item(new Item.Properties()));
