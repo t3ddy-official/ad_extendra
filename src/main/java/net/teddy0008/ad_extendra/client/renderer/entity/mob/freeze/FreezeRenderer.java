@@ -12,6 +12,7 @@ import net.teddy0008.ad_extendra.entity.mob.Freeze;
 public class FreezeRenderer extends MobRenderer<Freeze, FreezeModel<Freeze>> {
     public FreezeRenderer(EntityRendererProvider.Context pContext) {
         super(pContext, new FreezeModel<>(pContext.bakeLayer(ModEntityModelLayers.FREEZE_LAYER)), 1f);
+        this.addLayer(new FreezeEyesLayer(this));
     }
 
     @Override
