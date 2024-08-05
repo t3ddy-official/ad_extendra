@@ -104,12 +104,18 @@ public class ModItems {
             () -> new ModRenderedBlockItem((Block) ModBlocks.CERES_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> JUPITER_GLOBE = ITEMS.register("jupiter_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.JUPITER_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<ModRenderedBlockItem> SATURN_GLOBE = ITEMS.register("saturn_globe",
+            () -> new ModRenderedBlockItem((Block) ModBlocks.SATURN_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<ModRenderedBlockItem> URANUS_GLOBE = ITEMS.register("uranus_globe",
+            () -> new ModRenderedBlockItem((Block) ModBlocks.URANUS_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> NEPTUNE_GLOBE = ITEMS.register("neptune_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.NEPTUNE_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> ORCUS_GLOBE = ITEMS.register("orcus_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.ORCUS_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> PLUTO_GLOBE = ITEMS.register("pluto_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.PLUTO_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<ModRenderedBlockItem> HAUMEA_GLOBE = ITEMS.register("haumea_globe",
+            () -> new ModRenderedBlockItem((Block) ModBlocks.HAUMEA_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> QUAOAR_GLOBE = ITEMS.register("quaoar_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.QUAOAR_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> MAKEMAKE_GLOBE = ITEMS.register("makemake_globe",
@@ -118,6 +124,8 @@ public class ModItems {
             () -> new ModRenderedBlockItem((Block) ModBlocks.GONGGONG_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> ERIS_GLOBE = ITEMS.register("eris_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.ERIS_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<ModRenderedBlockItem> SEDNA_GLOBE = ITEMS.register("sedna_globe",
+            () -> new ModRenderedBlockItem((Block) ModBlocks.SEDNA_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
     public static final RegistryObject<ModRenderedBlockItem> B_GLOBE = ITEMS.register("b_globe",
             () -> new ModRenderedBlockItem((Block) ModBlocks.B_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
 

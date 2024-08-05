@@ -7,7 +7,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
-import net.teddy0008.ad_extendra.client.renderer.block.globe.StandardGlobeRenderer;
+import net.teddy0008.ad_extendra.client.renderer.block.globe.*;
 import net.teddy0008.ad_extendra.item.ModItems;
 
 import java.util.List;
@@ -22,6 +22,12 @@ public class RendererRegistry {
         ModBlocks.JUPITER_GLOBE.stream().forEach((block) -> {
             register.accept(RenderType.cutout(), List.of((Block)ModBlocks.JUPITER_GLOBE.get()));
         });
+        ModBlocks.SATURN_GLOBE.stream().forEach((block) -> {
+            register.accept(RenderType.cutout(), List.of((Block)ModBlocks.SATURN_GLOBE.get()));
+        });
+        ModBlocks.URANUS_GLOBE.stream().forEach((block) -> {
+            register.accept(RenderType.cutout(), List.of((Block)ModBlocks.URANUS_GLOBE.get()));
+        });
         ModBlocks.NEPTUNE_GLOBE.stream().forEach((block) -> {
             register.accept(RenderType.cutout(), List.of((Block)ModBlocks.NEPTUNE_GLOBE.get()));
         });
@@ -30,6 +36,9 @@ public class RendererRegistry {
         });
         ModBlocks.PLUTO_GLOBE.stream().forEach((block) -> {
             register.accept(RenderType.cutout(), List.of((Block)ModBlocks.PLUTO_GLOBE.get()));
+        });
+        ModBlocks.HAUMEA_GLOBE.stream().forEach((block) -> {
+            register.accept(RenderType.cutout(), List.of((Block)ModBlocks.HAUMEA_GLOBE.get()));
         });
         ModBlocks.QUAOAR_GLOBE.stream().forEach((block) -> {
             register.accept(RenderType.cutout(), List.of((Block)ModBlocks.QUAOAR_GLOBE.get()));
@@ -43,6 +52,9 @@ public class RendererRegistry {
         ModBlocks.ERIS_GLOBE.stream().forEach((block) -> {
             register.accept(RenderType.cutout(), List.of((Block)ModBlocks.ERIS_GLOBE.get()));
         });
+        ModBlocks.SEDNA_GLOBE.stream().forEach((block) -> {
+            register.accept(RenderType.cutout(), List.of((Block)ModBlocks.SEDNA_GLOBE.get()));
+        });
         ModBlocks.B_GLOBE.stream().forEach((block) -> {
             register.accept(RenderType.cutout(), List.of((Block)ModBlocks.B_GLOBE.get()));
         });
@@ -55,6 +67,12 @@ public class RendererRegistry {
         ModItems.JUPITER_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.JUPITER_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
         });
+        ModItems.SATURN_GLOBE.stream().forEach((item) -> {
+            register.accept((ItemLike)ModItems.SATURN_GLOBE.get(), new RingedGlobeRenderer.ItemRenderer());
+        });
+        ModItems.URANUS_GLOBE.stream().forEach((item) -> {
+            register.accept((ItemLike)ModItems.URANUS_GLOBE.get(), new SidewaysRingedGlobeRenderer.ItemRenderer());
+        });
         ModItems.NEPTUNE_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.NEPTUNE_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
         });
@@ -63,6 +81,9 @@ public class RendererRegistry {
         });
         ModItems.PLUTO_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.PLUTO_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+        });
+        ModItems.HAUMEA_GLOBE.stream().forEach((item) -> {
+            register.accept((ItemLike)ModItems.HAUMEA_GLOBE.get(), new OvalGlobeRenderer.ItemRenderer());
         });
         ModItems.QUAOAR_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.QUAOAR_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
@@ -76,6 +97,9 @@ public class RendererRegistry {
         ModItems.ERIS_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.ERIS_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
         });
+        ModItems.SEDNA_GLOBE.stream().forEach((item) -> {
+            register.accept((ItemLike)ModItems.SEDNA_GLOBE.get(), new EllipseGlobeRenderer.ItemRenderer());
+        });
         ModItems.B_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.B_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
         });
@@ -88,6 +112,12 @@ public class RendererRegistry {
         ModBlocks.JUPITER_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.JUPITER_GLOBE.getId().getPath() + "_cube"));
         });
+        ModBlocks.SATURN_GLOBE.stream().forEach((b) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.SATURN_GLOBE.getId().getPath() + "_cube"));
+        });
+        ModBlocks.URANUS_GLOBE.stream().forEach((b) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.URANUS_GLOBE.getId().getPath() + "_cube"));
+        });
         ModBlocks.NEPTUNE_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.NEPTUNE_GLOBE.getId().getPath() + "_cube"));
         });
@@ -96,6 +126,9 @@ public class RendererRegistry {
         });
         ModBlocks.PLUTO_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.PLUTO_GLOBE.getId().getPath() + "_cube"));
+        });
+        ModBlocks.HAUMEA_GLOBE.stream().forEach((b) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.HAUMEA_GLOBE.getId().getPath() + "_cube"));
         });
         ModBlocks.QUAOAR_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.QUAOAR_GLOBE.getId().getPath() + "_cube"));
@@ -108,6 +141,9 @@ public class RendererRegistry {
         });
         ModBlocks.ERIS_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.ERIS_GLOBE.getId().getPath() + "_cube"));
+        });
+        ModBlocks.SEDNA_GLOBE.stream().forEach((b) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.SEDNA_GLOBE.getId().getPath() + "_cube"));
         });
         ModBlocks.B_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.B_GLOBE.getId().getPath() + "_cube"));

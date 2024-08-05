@@ -13,7 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
-import net.teddy0008.ad_extendra.block.globe.StandardGlobeBlock;
+import net.teddy0008.ad_extendra.block.globe.*;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import net.teddy0008.ad_extendra.world.gen.ModTreeConfiguredFeatures;
@@ -483,12 +483,18 @@ public class ModBlocks {
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> JUPITER_GLOBE = BLOCKS.register("jupiter_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<RingedGlobeBlock> SATURN_GLOBE = BLOCKS.register("saturn_globe",
+            () -> new RingedGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<SidewaysRingedGlobeBlock> URANUS_GLOBE = BLOCKS.register("uranus_globe",
+            () -> new SidewaysRingedGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> NEPTUNE_GLOBE = BLOCKS.register("neptune_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> ORCUS_GLOBE = BLOCKS.register("orcus_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> PLUTO_GLOBE = BLOCKS.register("pluto_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<OvalGlobeBlock> HAUMEA_GLOBE = BLOCKS.register("haumea_globe",
+            () -> new OvalGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> QUAOAR_GLOBE = BLOCKS.register("quaoar_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> MAKEMAKE_GLOBE = BLOCKS.register("makemake_globe",
@@ -497,6 +503,8 @@ public class ModBlocks {
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> ERIS_GLOBE = BLOCKS.register("eris_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<EllipseGlobeBlock> SEDNA_GLOBE = BLOCKS.register("sedna_globe",
+            () -> new EllipseGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
     public static final RegistryObject<StandardGlobeBlock> B_GLOBE = BLOCKS.register("b_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
 

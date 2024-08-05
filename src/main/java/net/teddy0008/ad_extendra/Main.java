@@ -26,7 +26,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
 import net.teddy0008.ad_extendra.client.renderer.RenderLoading;
-import net.teddy0008.ad_extendra.client.renderer.block.globe.StandardGlobeRenderer;
+import net.teddy0008.ad_extendra.client.renderer.block.globe.*;
 import net.teddy0008.ad_extendra.client.renderer.entity.mob.freeze.FreezeRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.CustomBoatRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
@@ -100,6 +100,10 @@ public class Main {
 
     public static void registerBlockEntityRenderers() {
         ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.STANDARD_GLOBE.get(), StandardGlobeRenderer::new);
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.RINGED_GLOBE.get(), RingedGlobeRenderer::new);
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.SIDEWAYS_RINGED_GLOBE.get(), SidewaysRingedGlobeRenderer::new);
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.OVAL_GLOBE.get(), OvalGlobeRenderer::new);
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.ELLIPSE_GLOBE.get(), EllipseGlobeRenderer::new);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
