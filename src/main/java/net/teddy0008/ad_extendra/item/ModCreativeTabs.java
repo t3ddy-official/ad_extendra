@@ -474,6 +474,9 @@ public class ModCreativeTabs {
                 output.accept(ModItems.GLACIAN_BOAT.get());
                 output.accept(ModItems.GLACIAN_CHEST_BOAT.get());
 
+                // Globes
+                output.accept(ModItems.CERES_GLOBE.get());
+
                 // Rockets
                 output.accept(ModItems.TIER_5_ROCKET.get());
                 output.accept(ModItems.TIER_6_ROCKET.get());

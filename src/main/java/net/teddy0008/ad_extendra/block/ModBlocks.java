@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
+import net.teddy0008.ad_extendra.block.globe.StandardGlobeBlock;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import net.teddy0008.ad_extendra.world.gen.ModTreeConfiguredFeatures;
@@ -476,6 +477,10 @@ public class ModBlocks {
             () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.GLACIAN));
     public static final RegistryObject<CustomWallHangingSignBlock> GLACIAN_WALL_HANGING_SIGN = BLOCKS.register("glacian_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.GLACIAN));
+
+    // Globes
+    public static final RegistryObject<StandardGlobeBlock> CERES_GLOBE = BLOCKS.register("ceres_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

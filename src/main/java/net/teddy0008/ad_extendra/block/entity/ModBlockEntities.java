@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.block.globe.StandardGlobeBlockEntity;
 
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
@@ -21,6 +22,11 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("hanging_sign", () ->
                     BlockEntityType.Builder.of(CustomHangingSignBlockEntity::new,
                             ModBlocks.GLACIAN_HANGING_SIGN.get(), ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), ModBlocks.AERONOS_HANGING_SIGN.get(), ModBlocks.AERONOS_WALL_HANGING_SIGN.get(), ModBlocks.STROPHAR_HANGING_SIGN.get(), ModBlocks.STROPHAR_WALL_HANGING_SIGN.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<StandardGlobeBlockEntity>> STANDARD_GLOBE =
+            BLOCK_ENTITIES.register("standard_globe", () ->
+                    BlockEntityType.Builder.of(StandardGlobeBlockEntity::new,
+                            ModBlocks.CERES_GLOBE.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

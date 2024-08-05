@@ -3,7 +3,9 @@ package net.teddy0008.ad_extendra.item;
 import earth.terrarium.ad_astra.AdAstra;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SignItem;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -96,6 +98,10 @@ public class ModItems {
             () -> new CustomBoatItem(false, CustomBoat.Type.GLACIAN, (new Item.Properties()).stacksTo(1)));
     public static final RegistryObject<CustomBoatItem> GLACIAN_CHEST_BOAT = ITEMS.register("glacian_chest_boat",
             () -> new CustomBoatItem(true, CustomBoat.Type.GLACIAN, (new Item.Properties()).stacksTo(1)));
+
+    // Globes
+    public static final RegistryObject<ModRenderedBlockItem> CERES_GLOBE = ITEMS.register("ceres_globe",
+            () -> new ModRenderedBlockItem((Block) ModBlocks.CERES_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
 
     // Rockets
     public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, (new Item.Properties()).stacksTo(1).fireResistant()));

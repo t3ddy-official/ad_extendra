@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -24,6 +25,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
+import net.teddy0008.ad_extendra.client.renderer.RenderLoading;
+import net.teddy0008.ad_extendra.client.renderer.block.globe.StandardGlobeRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.mob.freeze.FreezeRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.CustomBoatRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
@@ -95,6 +98,10 @@ public class Main {
         ClientHooks.registerEntityRenderer(ModEntities.TIER_11_ROCKET, RocketRendererTier11::new);
     }
 
+    public static void registerBlockEntityRenderers() {
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.STANDARD_GLOBE.get(), StandardGlobeRenderer::new);
+    }
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
@@ -102,10 +109,15 @@ public class Main {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+            bus.addListener(RenderLoading::modelLoading);
+
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
             registerEntityRenderers();
+            registerBlockEntityRenderers();
+            RenderLoading.initRenderers();
 
             Sheets.addWoodType(ModWoodTypes.GLACIAN);
             Sheets.addWoodType(ModWoodTypes.AERONOS);
