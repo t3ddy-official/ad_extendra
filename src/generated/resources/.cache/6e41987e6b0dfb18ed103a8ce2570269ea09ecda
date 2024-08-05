@@ -1,5 +1,5 @@
-// 1.20.1	2024-07-30T12:43:19.9910283	Tags for minecraft:block mod id ad_extendra
-501e03862da89b1b02cf7f925c3c4d48b75d69f1 data/forge/tags/blocks/needs_netherite_tool.json
+// 1.20.1	2024-08-05T16:56:19.7404006	Tags for minecraft:block mod id ad_extendra
+a4f329db7cef4fd4e0a119507a4d3f5d4aa53fed data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/blocks/ores/electrolyte.json
 db12318251a3bad06b759455f40c1dbdf26eb9a0 data/forge/tags/blocks/ores/ice_shard.json
@@ -25,15 +25,16 @@ ca312511ba956e25d7b23b2ad16f1744912800ad data/minecraft/tags/blocks/ceiling_hang
 b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/blocks/coal_ores.json
 2131638da6eab9e47a51e5c58512bccb1f733dd4 data/minecraft/tags/blocks/copper_ores.json
 5b5604d133066508f4abce44b080c8feab7e9868 data/minecraft/tags/blocks/diamond_ores.json
+67db2d57cfabfddec3d4631a1e72617f772acff0 data/minecraft/tags/blocks/doors.json
 55952c81e86c6faebe00ae0aad81f4f5ed3e7910 data/minecraft/tags/blocks/emerald_ores.json
 d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/blocks/gold_ores.json
 d2eee572f0e8a631f0c85111c09e4ec65d873d5d data/minecraft/tags/blocks/ice.json
 86f48a2e67eef3a62d0777658033cc0c46bfd386 data/minecraft/tags/blocks/iron_ores.json
 7dca2f4a87f510a0dd102ad606551e04a16ffd70 data/minecraft/tags/blocks/lapis_ores.json
-479d72db1450e966a10abab13f77374eafdb8c62 data/minecraft/tags/blocks/mineable/pickaxe.json
+313759c392a7fd37788a905307c4e4bcb37b7d1b data/minecraft/tags/blocks/mineable/pickaxe.json
 dbf543348d3124075adca3d8c09c39307aa8ccbc data/minecraft/tags/blocks/mineable/shovel.json
 1c9e45ec364bc55134942cb07871f8309e3e5927 data/minecraft/tags/blocks/mushroom_grow_block.json
-7b696cb37a4af994ffaa73273ae258e2c0176926 data/minecraft/tags/blocks/needs_diamond_tool.json
+6e08bd1f71d73c03c30ade25b01a70995b293712 data/minecraft/tags/blocks/needs_diamond_tool.json
 96364d64fb228e0677d3e204db8845cba16337d3 data/minecraft/tags/blocks/needs_iron_tool.json
 a513358a04748c3c3afaa75cf0569704b8ffc4df data/minecraft/tags/blocks/needs_stone_tool.json
 21ea71f0de331ae551f2c4b3ad621aab02852269 data/minecraft/tags/blocks/pressure_plates.json

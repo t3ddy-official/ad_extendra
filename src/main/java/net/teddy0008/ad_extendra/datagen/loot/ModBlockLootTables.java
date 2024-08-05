@@ -6,12 +6,16 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.block.door.CustomSlidingDoorBlock;
+import net.teddy0008.ad_extendra.block.door.LocationState;
 import net.teddy0008.ad_extendra.datagen.ModItemModelGenerator;
 import net.teddy0008.ad_extendra.item.ModItems;
 
@@ -55,6 +59,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.JUPERIUM_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.JUPERIUM_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_JUPERIUM_PILLAR.get());
+        this.add(ModBlocks.JUPERIUM_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.JUPERIUM_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.JUPERIUM_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.JUPITER_SAND.get());
@@ -114,6 +120,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SATURLYTE_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.SATURLYTE_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_SATURLYTE_PILLAR.get());
+        this.add(ModBlocks.SATURLYTE_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.SATURLYTE_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.SATURLYTE_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.SATURN_SAND.get());
@@ -150,6 +158,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.URANIUM_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.URANIUM_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_URANIUM_PILLAR.get());
+        this.add(ModBlocks.URANIUM_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.URANIUM_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.URANIUM_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.URANUS_STONE.get());
@@ -185,6 +195,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.NEPTUNIUM_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get());
+        this.add(ModBlocks.NEPTUNIUM_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.NEPTUNIUM_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.NEPTUNE_STONE.get());
@@ -219,6 +231,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RADIUM_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.RADIUM_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_RADIUM_PILLAR.get());
+        this.add(ModBlocks.RADIUM_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.RADIUM_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.RADIUM_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.ORCUS_STONE.get());
@@ -252,6 +266,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PLUTONIUM_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.PLUTONIUM_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get());
+        this.add(ModBlocks.PLUTONIUM_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.PLUTONIUM_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.PLUTONIUM_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.PLUTO_SAND.get());
@@ -401,6 +417,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_SLAB.get());
         this.dropSelf(ModBlocks.ELECTROLYTE_PILLAR.get());
         this.dropSelf(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get());
+        this.add(ModBlocks.ELECTROLYTE_SLIDING_DOOR.get(), block ->
+                createSlidingDoorTable(ModBlocks.ELECTROLYTE_SLIDING_DOOR.get()));
         this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get());
         this.dropSelf(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.SEDNA_STONE.get());
@@ -464,6 +482,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
         this.add(ModBlocks.GLACIAN_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
+
+        // Globes
+        this.dropSelf(ModBlocks.CERES_GLOBE.get());
+        this.dropSelf(ModBlocks.JUPITER_GLOBE.get());
+        this.dropSelf(ModBlocks.SATURN_GLOBE.get());
+        this.dropSelf(ModBlocks.URANUS_GLOBE.get());
+        this.dropSelf(ModBlocks.NEPTUNE_GLOBE.get());
+        this.dropSelf(ModBlocks.ORCUS_GLOBE.get());
+        this.dropSelf(ModBlocks.PLUTO_GLOBE.get());
+        this.dropSelf(ModBlocks.HAUMEA_GLOBE.get());
+        this.dropSelf(ModBlocks.QUAOAR_GLOBE.get());
+        this.dropSelf(ModBlocks.MAKEMAKE_GLOBE.get());
+        this.dropSelf(ModBlocks.GONGGONG_GLOBE.get());
+        this.dropSelf(ModBlocks.ERIS_GLOBE.get());
+        this.dropSelf(ModBlocks.SEDNA_GLOBE.get());
+        this.dropSelf(ModBlocks.B_GLOBE.get());
         // this.add(ModBlocks.BLOCK.get(), block -> createOreDrop(ModBlocks.BLOCK.get(), ModItems.ITEM.get()));
     }
 
@@ -474,5 +508,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     protected LootTable.Builder createStoneLikeDrop(Block pSilkBlock, Block pNonSilkBlock) {
         return createSilkTouchDispatchTable(pSilkBlock, (LootPoolEntryContainer.Builder)this.applyExplosionDecay(pSilkBlock, LootItem.lootTableItem(pNonSilkBlock)));
+    }
+
+    protected LootTable.Builder createSlidingDoorTable(Block pSlidingDoorBlock) {
+        return this.createSinglePropConditionTable(pSlidingDoorBlock, CustomSlidingDoorBlock.LOCATION, LocationState.BOTTOM);
     }
 }

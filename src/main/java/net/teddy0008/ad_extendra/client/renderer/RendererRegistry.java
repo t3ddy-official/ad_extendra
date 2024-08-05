@@ -1,15 +1,27 @@
 package net.teddy0008.ad_extendra.client.renderer;
 
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.block.model.BakedQuad;
+import net.minecraft.client.resources.model.BakedModel;
+import net.minecraft.client.resources.model.ModelManager;
+import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.client.ClientPlatformUtils;
 import net.teddy0008.ad_extendra.client.renderer.block.globe.*;
 import net.teddy0008.ad_extendra.item.ModItems;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -106,6 +118,51 @@ public class RendererRegistry {
     }
 
     public static void onRegisterModels(Consumer<ResourceLocation> register) {
+        // Sliding Doors
+        ModBlocks.JUPERIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.JUPERIUM_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.JUPERIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.JUPERIUM_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+        ModBlocks.SATURLYTE_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.SATURLYTE_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.SATURLYTE_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.SATURLYTE_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+        ModBlocks.URANIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.URANIUM_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.URANIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.URANIUM_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+        ModBlocks.NEPTUNIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.NEPTUNIUM_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.NEPTUNIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.NEPTUNIUM_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+        ModBlocks.RADIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.RADIUM_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.RADIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.RADIUM_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+        ModBlocks.PLUTONIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.PLUTONIUM_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.PLUTONIUM_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.PLUTONIUM_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+        ModBlocks.ELECTROLYTE_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.ELECTROLYTE_SLIDING_DOOR.getId().getPath()));
+        });
+        ModBlocks.ELECTROLYTE_SLIDING_DOOR.stream().forEach((block) -> {
+            register.accept(new ResourceLocation(Main.MOD_ID, "block/door/" + ModBlocks.ELECTROLYTE_SLIDING_DOOR.getId().getPath() + "_flipped"));
+        });
+
+        // Globes
         ModBlocks.CERES_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.CERES_GLOBE.getId().getPath() + "_cube"));
         });
@@ -148,5 +205,20 @@ public class RendererRegistry {
         ModBlocks.B_GLOBE.stream().forEach((b) -> {
             register.accept(new ResourceLocation(Main.MOD_ID, "block/" + ModBlocks.B_GLOBE.getId().getPath() + "_cube"));
         });
+    }
+
+    public static void renderBlock(ResourceLocation model, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+        Minecraft minecraft = Minecraft.getInstance();
+        ModelManager manager = minecraft.getModelManager();
+        BakedModel baked = ClientPlatformUtils.getModel(manager, model);
+        VertexConsumer vertexConsumer1 = buffer.getBuffer(RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS));
+        List<BakedQuad> quads1 = baked.getQuads((BlockState)null, (Direction)null, minecraft.level.random);
+        PoseStack.Pose entry1 = poseStack.last();
+        Iterator var11 = quads1.iterator();
+
+        while(var11.hasNext()) {
+            BakedQuad quad = (BakedQuad)var11.next();
+            vertexConsumer1.putBulkData(entry1, quad, 1.0F, 1.0F, 1.0F, packedLight, packedOverlay);
+        }
     }
 }

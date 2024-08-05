@@ -10,6 +10,7 @@
     "ad_extendra:glowing_uranium_pillar",
     "ad_extendra:uranium_plating_button",
     "ad_extendra:uranium_plating_pressure_plate",
+    "ad_extendra:uranium_sliding_door",
     "ad_extendra:neptunium_block",
     "ad_extendra:neptune_neptunium_ore",
     "ad_extendra:raw_neptunium_block",
@@ -20,6 +21,7 @@
     "ad_extendra:glowing_neptunium_pillar",
     "ad_extendra:neptunium_plating_button",
     "ad_extendra:neptunium_plating_pressure_plate",
+    "ad_extendra:neptunium_sliding_door",
     "ad_extendra:radium_block",
     "ad_extendra:orcus_radium_ore",
     "ad_extendra:raw_radium_block",
@@ -30,6 +32,7 @@
     "ad_extendra:glowing_radium_pillar",
     "ad_extendra:radium_plating_button",
     "ad_extendra:radium_plating_pressure_plate",
+    "ad_extendra:radium_sliding_door",
     "ad_extendra:plutonium_block",
     "ad_extendra:pluto_plutonium_ore",
     "ad_extendra:raw_plutonium_block",
@@ -40,6 +43,7 @@
     "ad_extendra:glowing_plutonium_pillar",
     "ad_extendra:plutonium_plating_button",
     "ad_extendra:plutonium_plating_pressure_plate",
+    "ad_extendra:plutonium_sliding_door",
     "ad_extendra:electrolyte_block",
     "ad_extendra:sedna_electrolyte_ore",
     "ad_extendra:raw_electrolyte_block",
@@ -49,6 +53,7 @@
     "ad_extendra:electrolyte_pillar",
     "ad_extendra:glowing_electrolyte_pillar",
     "ad_extendra:electrolyte_plating_button",
-    "ad_extendra:electrolyte_plating_pressure_plate"
+    "ad_extendra:electrolyte_plating_pressure_plate",
+    "ad_extendra:electrolyte_sliding_door"
   ]
 }

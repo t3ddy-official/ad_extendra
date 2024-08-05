@@ -26,6 +26,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
 import net.teddy0008.ad_extendra.client.renderer.RenderLoading;
+import net.teddy0008.ad_extendra.client.renderer.block.door.CustomSlidingDoorRenderer;
 import net.teddy0008.ad_extendra.client.renderer.block.globe.*;
 import net.teddy0008.ad_extendra.client.renderer.entity.mob.freeze.FreezeRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.CustomBoatRenderer;
@@ -99,6 +100,7 @@ public class Main {
     }
 
     public static void registerBlockEntityRenderers() {
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.SLIDING_DOOR.get(), CustomSlidingDoorRenderer::new);
         ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.STANDARD_GLOBE.get(), StandardGlobeRenderer::new);
         ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.RINGED_GLOBE.get(), RingedGlobeRenderer::new);
         ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.SIDEWAYS_RINGED_GLOBE.get(), SidewaysRingedGlobeRenderer::new);

@@ -3,6 +3,7 @@ package net.teddy0008.ad_extendra.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -536,6 +537,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.B_SANDSTONE.get().asItem());
         this.tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.GLACIAN_SAPLING.get().asItem());
+        this.tag(ItemTags.DOORS)
+                .add(ModBlocks.JUPERIUM_SLIDING_DOOR.get().asItem())
+                .add(ModBlocks.SATURLYTE_SLIDING_DOOR.get().asItem())
+                .add(ModBlocks.URANIUM_SLIDING_DOOR.get().asItem())
+                .add(ModBlocks.NEPTUNIUM_SLIDING_DOOR.get().asItem())
+                .add(ModBlocks.RADIUM_SLIDING_DOOR.get().asItem())
+                .add(ModBlocks.PLUTONIUM_SLIDING_DOOR.get().asItem())
+                .add(ModBlocks.ELECTROLYTE_SLIDING_DOOR.get().asItem());
         this.tag(ItemTags.BOATS)
                 .add(ModItems.GLACIAN_BOAT.get());
         this.tag(ItemTags.CHEST_BOATS)

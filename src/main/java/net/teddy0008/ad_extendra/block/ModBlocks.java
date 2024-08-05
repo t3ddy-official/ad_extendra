@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.teddy0008.ad_extendra.Main;
+import net.teddy0008.ad_extendra.block.door.CustomSlidingDoorBlock;
 import net.teddy0008.ad_extendra.block.globe.*;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
@@ -93,6 +94,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_JUPITER_STONE_STAIRS = registerBlock("polished_jupiter_stone_stairs", () -> new StairBlock(((Block)POLISHED_JUPITER_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_JUPITER_STONE_SLAB = registerBlock("polished_jupiter_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> JUPITER_PILLAR = registerBlock("jupiter_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> JUPERIUM_SLIDING_DOOR = registerBlock("juperium_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.DIAMOND)));
 
     // Ceres
     public static final RegistryObject<Block> CERES_COPPER_ORE = registerBlock("ceres_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
@@ -153,6 +156,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_SATURN_STONE_STAIRS = registerBlock("polished_saturn_stone_stairs", () -> new StairBlock(((Block)POLISHED_SATURN_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_SATURN_STONE_SLAB = registerBlock("polished_saturn_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> SATURN_PILLAR = registerBlock("saturn_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> SATURLYTE_SLIDING_DOOR = registerBlock("saturlyte_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_PURPLE)));
 
     // Uranus
     public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_GREEN).sound(SoundType.AMETHYST)));
@@ -189,6 +194,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_URANUS_STONE_STAIRS = registerBlock("polished_uranus_stone_stairs", () -> new StairBlock(((Block)POLISHED_URANUS_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_URANUS_STONE_SLAB = registerBlock("polished_uranus_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> URANUS_PILLAR = registerBlock("uranus_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> URANIUM_SLIDING_DOOR = registerBlock("uranium_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_GREEN)));
 
     // Neptune
     public static final RegistryObject<Block> NEPTUNIUM_BLOCK = registerBlock("neptunium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
@@ -224,6 +231,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_NEPTUNE_STONE_STAIRS = registerBlock("polished_neptune_stone_stairs", () -> new StairBlock(((Block)POLISHED_NEPTUNE_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_NEPTUNE_STONE_SLAB = registerBlock("polished_neptune_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> NEPTUNE_PILLAR = registerBlock("neptune_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> NEPTUNIUM_SLIDING_DOOR = registerBlock("neptunium_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_LIGHT_GREEN)));
 
     // Orcus
     public static final RegistryObject<Block> RADIUM_BLOCK = registerBlock("radium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));
@@ -258,6 +267,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_ORCUS_STONE_STAIRS = registerBlock("polished_orcus_stone_stairs", () -> new StairBlock(((Block)POLISHED_ORCUS_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_ORCUS_STONE_SLAB = registerBlock("polished_orcus_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> ORCUS_PILLAR = registerBlock("orcus_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> RADIUM_SLIDING_DOOR = registerBlock("radium_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_LIGHT_GREEN)));
 
     // Pluto
     public static final RegistryObject<Block> PLUTONIUM_BLOCK = registerBlock("plutonium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.AMETHYST)));
@@ -293,6 +304,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_PLUTO_STONE_STAIRS = registerBlock("polished_pluto_stone_stairs", () -> new StairBlock(((Block)POLISHED_PLUTO_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_PLUTO_STONE_SLAB = registerBlock("polished_pluto_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> PLUTO_PILLAR = registerBlock("pluto_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> PLUTONIUM_SLIDING_DOOR = registerBlock("plutonium_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_YELLOW)));
 
     // Haumea
     public static final RegistryObject<Block> HAUMEA_COPPER_ORE = registerBlock("haumea_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
@@ -437,6 +450,8 @@ public class ModBlocks {
     public static final RegistryObject<StairBlock> POLISHED_SEDNA_STONE_STAIRS = registerBlock("polished_sedna_stone_stairs", () -> new StairBlock(((Block)POLISHED_SEDNA_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> POLISHED_SEDNA_STONE_SLAB = registerBlock("polished_sedna_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<RotatedPillarBlock> SEDNA_PILLAR = registerBlock("sedna_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<CustomSlidingDoorBlock> ELECTROLYTE_SLIDING_DOOR = registerBlock("electrolyte_sliding_door",
+            () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_BLUE)));
 
     // Proxima Centauri b
     public static final RegistryObject<Block> B_DIAMOND_ORE = registerBlock("b_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));

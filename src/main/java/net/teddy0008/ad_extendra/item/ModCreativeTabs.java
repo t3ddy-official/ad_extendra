@@ -88,6 +88,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.JUPERIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_JUPERIUM_PILLAR.get());
+                output.accept(ModBlocks.JUPERIUM_SLIDING_DOOR.get());
                 output.accept(ModItems.JUPERIUM_ENGINE.get());
                 output.accept(ModItems.JUPERIUM_TANK.get());
 
@@ -129,6 +130,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.SATURLYTE_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_SATURLYTE_PILLAR.get());
+                output.accept(ModBlocks.SATURLYTE_SLIDING_DOOR.get());
                 output.accept(ModItems.SATURLYTE_ENGINE.get());
                 output.accept(ModItems.SATURLYTE_TANK.get());
 
@@ -169,6 +171,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.URANIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.URANIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_URANIUM_PILLAR.get());
+                output.accept(ModBlocks.URANIUM_SLIDING_DOOR.get());
                 output.accept(ModItems.URANIUM_ENGINE.get());
                 output.accept(ModItems.URANIUM_TANK.get());
                 output.accept(ModItems.FREEZE_SHARD.get());
@@ -210,6 +213,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.NEPTUNIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.NEPTUNIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_NEPTUNIUM_PILLAR.get());
+                output.accept(ModBlocks.NEPTUNIUM_SLIDING_DOOR.get());
                 output.accept(ModItems.NEPTUNIUM_ENGINE.get());
                 output.accept(ModItems.NEPTUNIUM_TANK.get());
 
@@ -248,6 +252,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.RADIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_RADIUM_PILLAR.get());
+                output.accept(ModBlocks.RADIUM_SLIDING_DOOR.get());
                 output.accept(ModItems.RADIUM_ENGINE.get());
                 output.accept(ModItems.RADIUM_TANK.get());
 
@@ -287,6 +292,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.PLUTONIUM_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_PLUTONIUM_PILLAR.get());
+                output.accept(ModBlocks.PLUTONIUM_SLIDING_DOOR.get());
                 output.accept(ModItems.PLUTONIUM_ENGINE.get());
                 output.accept(ModItems.PLUTONIUM_TANK.get());
 
@@ -435,6 +441,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
                 output.accept(ModBlocks.ELECTROLYTE_PILLAR.get());
                 output.accept(ModBlocks.GLOWING_ELECTROLYTE_PILLAR.get());
+                output.accept(ModBlocks.ELECTROLYTE_SLIDING_DOOR.get());
                 output.accept(ModItems.ELECTROLYTE_ENGINE.get());
                 output.accept(ModItems.ELECTROLYTE_TANK.get());
 
