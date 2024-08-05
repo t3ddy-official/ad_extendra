@@ -1,8 +1,7 @@
 {
-  "_comment": "The icon will be changed from the Stone to the Globe when I've finished the globes",
   "display": {
     "icon": {
-      "item": "ad_extendra:eris_stone"
+      "item": "ad_extendra:eris_globe"
     },
     "title": {
       "translate": "advancements.ad_extendra.eris.title"

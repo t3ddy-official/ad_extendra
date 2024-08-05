@@ -1,0 +1,7 @@
+{
+  "_comment": "This will be changed to animated once I figure out how to make the built-in item models not transparent.",
+  "parent": "ad_extendra:item/templates/static_globe",
+  "textures": {
+    "globe": "ad_extendra:block/globe/eris_globe"
+  }
+}

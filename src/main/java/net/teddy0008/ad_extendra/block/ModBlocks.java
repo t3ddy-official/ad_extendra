@@ -481,6 +481,24 @@ public class ModBlocks {
     // Globes
     public static final RegistryObject<StandardGlobeBlock> CERES_GLOBE = BLOCKS.register("ceres_globe",
             () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> JUPITER_GLOBE = BLOCKS.register("jupiter_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> NEPTUNE_GLOBE = BLOCKS.register("neptune_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> ORCUS_GLOBE = BLOCKS.register("orcus_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> PLUTO_GLOBE = BLOCKS.register("pluto_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> QUAOAR_GLOBE = BLOCKS.register("quaoar_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> MAKEMAKE_GLOBE = BLOCKS.register("makemake_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> GONGGONG_GLOBE = BLOCKS.register("gonggong_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> ERIS_GLOBE = BLOCKS.register("eris_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final RegistryObject<StandardGlobeBlock> B_GLOBE = BLOCKS.register("b_globe",
+            () -> new StandardGlobeBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

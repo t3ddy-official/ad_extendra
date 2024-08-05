@@ -26,7 +26,7 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<StandardGlobeBlockEntity>> STANDARD_GLOBE =
             BLOCK_ENTITIES.register("standard_globe", () ->
                     BlockEntityType.Builder.of(StandardGlobeBlockEntity::new,
-                            ModBlocks.CERES_GLOBE.get()).build(null));
+                            ModBlocks.CERES_GLOBE.get(), ModBlocks.JUPITER_GLOBE.get(), ModBlocks.NEPTUNE_GLOBE.get(), ModBlocks.ORCUS_GLOBE.get(), ModBlocks.PLUTO_GLOBE.get(), ModBlocks.QUAOAR_GLOBE.get(), ModBlocks.MAKEMAKE_GLOBE.get(), ModBlocks.GONGGONG_GLOBE.get(), ModBlocks.ERIS_GLOBE.get(), ModBlocks.B_GLOBE.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

@@ -476,6 +476,15 @@ public class ModCreativeTabs {
 
                 // Globes
                 output.accept(ModItems.CERES_GLOBE.get());
+                output.accept(ModItems.JUPITER_GLOBE.get());
+                output.accept(ModItems.NEPTUNE_GLOBE.get());
+                output.accept(ModItems.ORCUS_GLOBE.get());
+                output.accept(ModItems.PLUTO_GLOBE.get());
+                output.accept(ModItems.QUAOAR_GLOBE.get());
+                output.accept(ModItems.MAKEMAKE_GLOBE.get());
+                output.accept(ModItems.GONGGONG_GLOBE.get());
+                output.accept(ModItems.ERIS_GLOBE.get());
+                output.accept(ModItems.B_GLOBE.get());
 
                 // Rockets
                 output.accept(ModItems.TIER_5_ROCKET.get());
