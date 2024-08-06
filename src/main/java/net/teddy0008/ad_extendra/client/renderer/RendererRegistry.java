@@ -19,6 +19,13 @@ import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.client.ClientPlatformUtils;
 import net.teddy0008.ad_extendra.client.renderer.block.globe.*;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketItemRendererTier10;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_11.RocketItemRendererTier11;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketItemRendererTier5;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_6.RocketItemRendererTier6;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_7.RocketItemRendererTier7;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_8.RocketItemRendererTier8;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_9.RocketItemRendererTier9;
 import net.teddy0008.ad_extendra.item.ModItems;
 
 import java.util.Iterator;
@@ -115,6 +122,13 @@ public class RendererRegistry {
         ModItems.B_GLOBE.stream().forEach((item) -> {
             register.accept((ItemLike)ModItems.B_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
         });
+        register.accept((ItemLike)ModItems.TIER_5_ROCKET.get(), new RocketItemRendererTier5());
+        register.accept((ItemLike)ModItems.TIER_6_ROCKET.get(), new RocketItemRendererTier6());
+        register.accept((ItemLike)ModItems.TIER_7_ROCKET.get(), new RocketItemRendererTier7());
+        register.accept((ItemLike)ModItems.TIER_8_ROCKET.get(), new RocketItemRendererTier8());
+        register.accept((ItemLike)ModItems.TIER_9_ROCKET.get(), new RocketItemRendererTier9());
+        register.accept((ItemLike)ModItems.TIER_10_ROCKET.get(), new RocketItemRendererTier10());
+        register.accept((ItemLike)ModItems.TIER_11_ROCKET.get(), new RocketItemRendererTier11());
     }
 
     public static void onRegisterModels(Consumer<ResourceLocation> register) {

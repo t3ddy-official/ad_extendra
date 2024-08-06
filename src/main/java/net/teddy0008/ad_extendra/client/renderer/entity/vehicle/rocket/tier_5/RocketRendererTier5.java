@@ -1,7 +1,6 @@
 package net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5;
 
 import earth.terrarium.ad_astra.client.renderer.entity.vehicle.VehicleRenderer;
-import earth.terrarium.ad_astra.client.renderer.entity.vehicle.rocket.tier_4.RocketModelTier4;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.teddy0008.ad_extendra.Main;
@@ -12,7 +11,7 @@ public class RocketRendererTier5 extends VehicleRenderer<RocketTier5, RocketMode
     public static final ResourceLocation TEXTURE = new ResourceLocation(Main.MOD_ID, "textures/vehicles/tier_5_rocket.png");
 
     public RocketRendererTier5(EntityRendererProvider.Context context) {
-        super(context, new RocketModelTier5(context.bakeLayer(RocketModelTier4.LAYER_LOCATION)), 0.5F);
+        super(context, new RocketModelTier5(context.bakeLayer(RocketModelTier5.LAYER_LOCATION)), 0.5F);
     }
 
     public @NotNull ResourceLocation getTextureLocation(RocketTier5 entity) {
