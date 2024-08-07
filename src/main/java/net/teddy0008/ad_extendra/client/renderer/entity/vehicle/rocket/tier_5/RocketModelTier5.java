@@ -17,12 +17,12 @@ public class RocketModelTier5 extends VehicleModel<RocketTier5> {
     }
 
     public static LayerDefinition createBodyLayer() {
-        MeshDefinition modelData = new MeshDefinition();
-        PartDefinition modelPartData = modelData.getRoot();
+        MeshDefinition meshdefinition = new MeshDefinition();
+        PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition rocket = modelPartData.addOrReplaceChild("rocket", CubeListBuilder.create(), PartPose.offset(-8.0F, 9.0F, -8.0F));
+        PartDefinition rocket = partdefinition.addOrReplaceChild("rocket", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
-        PartDefinition body = rocket.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+        PartDefinition body = rocket.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(-8.0F, -15.0F, -8.0F));
 
         PartDefinition base = body.addOrReplaceChild("base", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -59.0F, -1.0F, 18.0F, 59.0F, 0.0F, new CubeDeformation(0.0F))
                 .texOffs(-18, 59).addBox(-1.0F, 0.0F, -1.0F, 18.0F, 0.0F, 18.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
@@ -143,7 +143,7 @@ public class RocketModelTier5 extends VehicleModel<RocketTier5> {
         PartDefinition left_thruster = body.addOrReplaceChild("left_thruster", CubeListBuilder.create().texOffs(96, 28).addBox(-22.0F, -47.0F, 4.0F, 8.0F, 35.0F, 8.0F, new CubeDeformation(0.0F))
                 .texOffs(104, 16).addBox(-21.0F, -53.0F, 5.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
                 .texOffs(72, 30).addBox(-21.0F, -12.0F, 5.0F, 6.0F, 2.0F, 6.0F, new CubeDeformation(0.0F))
-                .texOffs(16, 115).addBox(-22.0F, -10.0F, 4.0F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+                .texOffs(16, 115).addBox(-22.0F, -10.0F, 4.0F, 8.0F, 5.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition cube_r38 = left_thruster.addOrReplaceChild("cube_r38", CubeListBuilder.create().texOffs(72, 0).addBox(-1.0F, -8.5F, -1.0F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-7.7824F, -31.25F, 8.0F, 0.0F, 0.0F, 1.0472F));
 
@@ -158,7 +158,7 @@ public class RocketModelTier5 extends VehicleModel<RocketTier5> {
         PartDefinition right_thruster = body.addOrReplaceChild("right_thruster", CubeListBuilder.create().texOffs(96, 28).addBox(-22.0F, -47.0F, 4.0F, 8.0F, 35.0F, 8.0F, new CubeDeformation(0.0F))
                 .texOffs(104, 16).addBox(-21.0F, -53.0F, 5.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
                 .texOffs(72, 30).addBox(-21.0F, -12.0F, 5.0F, 6.0F, 2.0F, 6.0F, new CubeDeformation(0.0F))
-                .texOffs(16, 115).addBox(-22.0F, -10.0F, 4.0F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(16.0F, 0.0F, 16.0F, 0.0F, 3.1416F, 0.0F));
+                .texOffs(16, 115).addBox(-22.0F, -10.0F, 4.0F, 8.0F, 5.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(16.0F, 0.0F, 16.0F, 0.0F, 3.1416F, 0.0F));
 
         PartDefinition cube_r43 = right_thruster.addOrReplaceChild("cube_r43", CubeListBuilder.create().texOffs(72, 0).addBox(-1.0F, -8.5F, -1.0F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-7.7824F, -31.25F, 8.0F, 0.0F, 0.0F, 1.0472F));
 
@@ -192,7 +192,7 @@ public class RocketModelTier5 extends VehicleModel<RocketTier5> {
 
         PartDefinition cube_r51 = west.addOrReplaceChild("cube_r51", CubeListBuilder.create().texOffs(105, 71).addBox(-5.0F, -16.0F, 0.0F, 10.0F, 11.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(20.5F, 0.0F, -8.25F, -2.1538F, -0.6956F, 1.9706F));
 
-        PartDefinition engine = rocket.addOrReplaceChild("engine", CubeListBuilder.create(), PartPose.offset(8.0F, 15.0F, 8.0F));
+        PartDefinition engine = rocket.addOrReplaceChild("engine", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition bottom = engine.addOrReplaceChild("bottom", CubeListBuilder.create().texOffs(0, 105).addBox(-7.0F, -9.0F, -7.0F, 14.0F, 9.0F, 0.0F, new CubeDeformation(0.0F))
                 .texOffs(-14, 77).addBox(-7.0F, -9.0F, -7.0F, 14.0F, 0.0F, 14.0F, new CubeDeformation(0.0F))
@@ -212,6 +212,6 @@ public class RocketModelTier5 extends VehicleModel<RocketTier5> {
 
         PartDefinition cube_r57 = top.addOrReplaceChild("cube_r57", CubeListBuilder.create().texOffs(0, 114).addBox(-1.0F, -6.0F, -1.0F, 12.0F, 6.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.0F, -9.0F, 5.0F, 0.0F, 1.5708F, 0.0F));
 
-        return LayerDefinition.create(modelData, 128, 128);
+        return LayerDefinition.create(meshdefinition, 128, 128);
     }
 }
