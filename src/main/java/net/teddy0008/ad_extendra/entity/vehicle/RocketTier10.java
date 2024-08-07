@@ -18,7 +18,7 @@ public class RocketTier10 extends Rocket {
     }
 
     public double getPassengersRidingOffset() {
-        return super.getPassengersRidingOffset() + 1.7000000476837158;
+        return super.getPassengersRidingOffset() + 2.2000000476837158;
     }
 
     public boolean shouldSit() {

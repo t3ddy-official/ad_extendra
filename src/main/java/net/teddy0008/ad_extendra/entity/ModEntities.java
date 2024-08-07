@@ -70,14 +70,14 @@ public class ModEntities {
             EntityType.Builder.<RocketTier10>of(RocketTier10::new, MobCategory.MISC)
                     .fireImmune()
                     .clientTrackingRange(10)
-                    .sized(1.1f, 8.5f)
+                    .sized(1.1f, 9.0f)
                     .build("tier_10_rocket"));
 
     public static final RegistryObject<EntityType<RocketTier11>> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () ->
             EntityType.Builder.<RocketTier11>of(RocketTier11::new, MobCategory.MISC)
                     .fireImmune()
                     .clientTrackingRange(10)
-                    .sized(1.1f, 8.5f)
+                    .sized(1.1f, 9.0f)
                     .build("tier_11_rocket"));
 
     public static void register(IEventBus eventBus) {
