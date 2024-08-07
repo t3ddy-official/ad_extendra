@@ -56,28 +56,28 @@ public class ModEntities {
             EntityType.Builder.<RocketTier8>of(RocketTier8::new, MobCategory.MISC)
                     .fireImmune()
                     .clientTrackingRange(10)
-                    .sized(1.1f, 7.5f)
+                    .sized(1.1f, 8.5f)
                     .build("tier_8_rocket"));
 
     public static final RegistryObject<EntityType<RocketTier9>> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () ->
             EntityType.Builder.<RocketTier9>of(RocketTier9::new, MobCategory.MISC)
                     .fireImmune()
                     .clientTrackingRange(10)
-                    .sized(1.1f, 7.5f)
+                    .sized(1.1f, 8.5f)
                     .build("tier_9_rocket"));
 
     public static final RegistryObject<EntityType<RocketTier10>> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () ->
             EntityType.Builder.<RocketTier10>of(RocketTier10::new, MobCategory.MISC)
                     .fireImmune()
                     .clientTrackingRange(10)
-                    .sized(1.1f, 7.5f)
+                    .sized(1.1f, 8.5f)
                     .build("tier_10_rocket"));
 
     public static final RegistryObject<EntityType<RocketTier11>> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () ->
             EntityType.Builder.<RocketTier11>of(RocketTier11::new, MobCategory.MISC)
                     .fireImmune()
                     .clientTrackingRange(10)
-                    .sized(1.1f, 7.5f)
+                    .sized(1.1f, 8.5f)
                     .build("tier_11_rocket"));
 
     public static void register(IEventBus eventBus) {
