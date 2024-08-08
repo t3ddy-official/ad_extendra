@@ -16,19 +16,14 @@
       "replace_current_music": true
     }
   },
+  "creature_spawn_probability": 0.1,
   "spawners": {
     "monster": [
       {
         "type": "ad_extendra:freeze",
         "weight": 100,
-        "minCount": 2,
-        "maxCount": 5
-      },
-      {
-        "type": "ad_astra:sulfur_creeper",
-        "weight": 100,
-        "minCount": 1,
-        "maxCount": 3
+        "minCount": 4,
+        "maxCount": 4
       }
     ]
   },
