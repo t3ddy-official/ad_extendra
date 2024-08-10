@@ -2510,6 +2510,24 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_B_STONE_BRICKS.get(), ModBlocks.CHISELED_B_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_B_STONE.get(), ModBlocks.POLISHED_B_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_B_STONE.get(), ModBlocks.POLISHED_B_STONE_SLAB.get(), 2);
+
+        // Other
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SLUSHY_ICE.get(), 4)
+                .pattern(" # ")
+                .pattern("#W#")
+                .pattern(" # ")
+                .define('#', Items.ICE)
+                .define('W', Items.WATER_BUCKET)
+                .unlockedBy(getHasName(Items.ICE), has(Items.ICE))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PACKED_SLUSHY_ICE.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.SLUSHY_ICE.get())
+                .unlockedBy(getHasName(ModBlocks.SLUSHY_ICE.get()), has(ModBlocks.SLUSHY_ICE.get()))
+                .save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

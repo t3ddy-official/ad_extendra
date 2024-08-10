@@ -1,6 +1,6 @@
 {
   "sea_level": 63,
-  "disable_mob_generation": true,
+  "disable_mob_generation": false,
   "aquifers_enabled": false,
   "ore_veins_enabled": false,
   "legacy_random_source": false,
@@ -313,7 +313,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:packed_ice",
+            "Name": "ad_extendra:packed_slushy_ice",
             "Properties": {
               "axis": "y"
             }

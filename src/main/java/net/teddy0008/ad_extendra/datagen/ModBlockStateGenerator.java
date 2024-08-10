@@ -151,6 +151,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.POLISHED_URANUS_STONE_SLAB.get()), blockTexture(ModBlocks.POLISHED_URANUS_STONE.get()), blockTexture(ModBlocks.POLISHED_URANUS_STONE.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.URANUS_PILLAR.get()), blockTexture(ModBlocks.URANUS_PILLAR.get()),
                 new ResourceLocation(Main.MOD_ID, "block/uranus_pillar_top"));
+        iceBlockWithItem(ModBlocks.SLUSHY_ICE);
+        blockWithItem(ModBlocks.PACKED_SLUSHY_ICE);
 
         // Neptune
         blockWithItem(ModBlocks.NEPTUNIUM_BLOCK);

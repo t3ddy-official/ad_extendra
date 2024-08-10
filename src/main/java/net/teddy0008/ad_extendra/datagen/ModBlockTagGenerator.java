@@ -237,6 +237,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SATURN_COAL_ORE.get())
                 .add(ModBlocks.SATURN_DIAMOND_ORE.get())
                 .add(ModBlocks.SATURN_GOLD_ORE.get())
+                .add(ModBlocks.SATURN_ICE.get())
 
                 // Uranus
                 .add(ModBlocks.URANIUM_BLOCK.get())
@@ -272,6 +273,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.URANUS_DIAMOND_ORE.get())
                 .add(ModBlocks.URANUS_IRON_ORE.get())
                 .add(ModBlocks.URANUS_LAPIS_ORE.get())
+                .add(ModBlocks.SLUSHY_ICE.get())
+                .add(ModBlocks.PACKED_SLUSHY_ICE.get())
 
                 // Neptune
                 .add(ModBlocks.NEPTUNIUM_BLOCK.get())
@@ -601,7 +604,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PLUTO_SAND.get())
                 .add(ModBlocks.B_SAND.get());
         this.tag(BlockTags.ICE)
-                .add(ModBlocks.SATURN_ICE.get());
+                .add(ModBlocks.SATURN_ICE.get())
+                .add(ModBlocks.SLUSHY_ICE.get());
         this.tag(BlockTags.STAIRS)
                 // Jupiter
                 .add(ModBlocks.JUPERIUM_PLATING_STAIRS.get())

@@ -4,8 +4,8 @@ The original project was discontinued by Teddy0008.
 <h1>Ad Extendra</h1>
 Ad Extendra is an add-on mod, that adds more content to <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra">Ad Astra</a> like it didn't already have enough content.
 
-<h2>(Planned) Features</h3>
-<h3>4 new planets</h1>
+<h2><span style="color:#00ffff">Existing Features</span></h2>
+<h3>4 new planets</h3>
 <ul>
   <li>Jupiter</li>
   <li>Saturn</li>
@@ -28,6 +28,22 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
 <h6>Proxima Centauri</h6>
 <ul>
   <li>b</li>
+</ul>
+
+<h2><span style="color:#00ff00">WIP Features</span></h2>
+<h3>Mobs</h3>
+<ul>
+<li>Freeze (Like the Blaze, but opposite. It's planned to spawn in Uranus, but I'll add the generation when I figure out why the mob spawning doesn't work)</li>
+</ul>
+
+<h2><span style="color:#ffff00">Planned Features</span></h2>
+<h3>Structures</h3>
+<ul>
+<li>Dungeons for each planet (Similar to the Moon Dungeon where you can find a Moon Globe)</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Built-in Entity Item Models (Will be added once I figure out why the item models are invisible for the Rockets and Globes)</li>
 </ul>
 
 <h2>Mod Support</h3>

@@ -180,12 +180,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.URANUS_PILLAR.get());
+        this.dropSelf(ModBlocks.PACKED_SLUSHY_ICE.get());
         this.add(ModBlocks.URANUS_URANIUM_ORE.get(), createOreDrop(ModBlocks.URANUS_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
         this.add(ModBlocks.URANUS_DIAMOND_ORE.get(), createOreDrop(ModBlocks.URANUS_DIAMOND_ORE.get(), Items.DIAMOND));
         this.add(ModBlocks.URANUS_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.URANUS_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));
         this.add(ModBlocks.URANUS_IRON_ORE.get(), createOreDrop(ModBlocks.URANUS_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.URANUS_LAPIS_ORE.get(), createOreDrop(ModBlocks.URANUS_LAPIS_ORE.get(), Items.LAPIS_LAZULI));
         this.add(ModBlocks.URANUS_STONE.get(), createStoneLikeDrop(ModBlocks.URANUS_STONE.get(), ModBlocks.URANUS_COBBLESTONE.get()));
+        this.add(ModBlocks.SLUSHY_ICE.get(), createSilkTouchOnlyTable(ModBlocks.SLUSHY_ICE.get()));
 
         // Neptune
         this.dropSelf(ModBlocks.NEPTUNIUM_BLOCK.get());

@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-05T16:09:04.1992411	Loot Tables
+// 1.20.1	2024-08-09T19:33:46.7265518	Loot Tables
 827a8e20f0a391dbc067c686adf72b50c87915c1 data/ad_extendra/loot_tables/blocks/aeronos_hanging_sign.json
 8ee28f6da574b16d4d6b009c863541876c6f8ed2 data/ad_extendra/loot_tables/blocks/aeronos_mushroom.json
 6af4a5abd5e5d126e4f1aecabf1ec2d6c68c8668 data/ad_extendra/loot_tables/blocks/aeronos_sign.json
@@ -236,6 +236,7 @@ dce89088092fae621bc91a558e36600b0216e00f data/ad_extendra/loot_tables/blocks/orc
 91ca9eacff57d3586c302cad5cb4810f7bf4a1fb data/ad_extendra/loot_tables/blocks/orcus_stone_brick_wall.json
 44ace4c3ec73ea080213321200d24850e0c2fd0c data/ad_extendra/loot_tables/blocks/orcus_stone_slab.json
 c49bc87f7e0888dbe9a9e98ebd9643d614d7dcd9 data/ad_extendra/loot_tables/blocks/orcus_stone_stairs.json
+50f04496370bedcb33a89faae2abcd582ff6cedc data/ad_extendra/loot_tables/blocks/packed_slushy_ice.json
 7268f69ac05790645a37b75c4e78f4c7f831d621 data/ad_extendra/loot_tables/blocks/plutonium_block.json
 c288974a5751887f2baace32952170c5cbaab6d4 data/ad_extendra/loot_tables/blocks/plutonium_pillar.json
 1289abf03901d2a7e4b988bc80ba29e5011056ad data/ad_extendra/loot_tables/blocks/plutonium_plating.json
@@ -375,6 +376,7 @@ b63e25a71c95e29c5c47796e7c17ea382acb718f data/ad_extendra/loot_tables/blocks/sed
 80fc282e38e0eaf9400b5fdad6dadacb5f937771 data/ad_extendra/loot_tables/blocks/sedna_stone_brick_wall.json
 8088cee644bea89d7d84952b3283ce43725b6523 data/ad_extendra/loot_tables/blocks/sedna_stone_slab.json
 4fb645440d2e2a119f557a9e753eb87d81309b6c data/ad_extendra/loot_tables/blocks/sedna_stone_stairs.json
+dac8d44f5385e36c82387de6a49ec8200f5b802a data/ad_extendra/loot_tables/blocks/slushy_ice.json
 9c6bf9fbb1138a868f3233e28a92975f94be35a9 data/ad_extendra/loot_tables/blocks/strophar_hanging_sign.json
 3eb0d2e98cb491ed0ab670470fc3a5a3fe994402 data/ad_extendra/loot_tables/blocks/strophar_mushroom.json
 f960c12be531a4796cc8c1e761cad15dd5c20231 data/ad_extendra/loot_tables/blocks/strophar_sign.json
