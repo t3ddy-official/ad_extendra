@@ -1,7 +1,7 @@
 {
-  "_comment": "This will be changed to animated once I figure out how to make the built-in item models not transparent.",
-  "parent": "ad_extendra:item/templates/static_ringed_globe",
+  "parent": "ad_extendra:item/ringed_globe",
   "textures": {
-    "globe": "ad_extendra:block/globe/saturn_globe"
+    "particle": "ad_astra:block/globe/saturn_globe",
+    "texture": "ad_astra:block/globe/saturn_globe"
   }
 }
