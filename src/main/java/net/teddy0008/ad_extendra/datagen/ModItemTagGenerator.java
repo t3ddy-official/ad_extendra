@@ -549,5 +549,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.GLACIAN_BOAT.get());
         this.tag(ItemTags.CHEST_BOATS)
                 .add(ModItems.GLACIAN_CHEST_BOAT.get());
+        this.tag(ItemTags.BEACON_PAYMENT_ITEMS)
+                .addTag(ModItemTags.JUPERIUM_INGOTS)
+                .addTag(ModItemTags.SATURLYTE_INGOTS)
+                .addTag(ModItemTags.URANIUM_INGOTS)
+                .addTag(ModItemTags.NEPTUNIUM_INGOTS)
+                .addTag(ModItemTags.RADIUM_INGOTS)
+                .addTag(ModItemTags.PLUTONIUM_INGOTS)
+                .addTag(ModItemTags.ELECTROLYTE_INGOTS);
+        this.tag(ItemTags.PIGLIN_LOVED)
+                .add(ModBlocks.JUPITER_GOLD_ORE.get().asItem())
+                .add(ModBlocks.SATURN_GOLD_ORE.get().asItem())
+                .add(ModBlocks.PLUTO_GOLD_ORE.get().asItem());
     }
 }
