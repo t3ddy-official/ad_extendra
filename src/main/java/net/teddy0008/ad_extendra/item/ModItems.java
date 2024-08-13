@@ -16,8 +16,7 @@ import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.entity.vehicle.CustomBoat;
 import net.teddy0008.ad_extendra.item.projectile.IceChargeItem;
-import net.teddy0008.ad_extendra.item.vehicle.AdvancedRocketItem;
-import net.teddy0008.ad_extendra.item.vehicle.CustomBoatItem;
+import net.teddy0008.ad_extendra.item.vehicle.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
@@ -130,13 +129,13 @@ public class ModItems {
             () -> new ModRenderedBlockItem((Block) ModBlocks.B_GLOBE.get(), (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE)));
 
     // Rockets
-    public static final RegistryObject<AdvancedRocketItem> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new AdvancedRocketItem(5, (new Item.Properties()).stacksTo(1).fireResistant()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new AdvancedRocketItem(6, (new Item.Properties()).stacksTo(1).fireResistant()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_7_ROCKET = ROCKETS.register("tier_7_rocket", () -> new AdvancedRocketItem(7, (new Item.Properties()).stacksTo(1).fireResistant()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () -> new AdvancedRocketItem(8, (new Item.Properties()).stacksTo(1).fireResistant()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new AdvancedRocketItem(9, (new Item.Properties()).stacksTo(1).fireResistant()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () -> new AdvancedRocketItem(10, (new Item.Properties()).stacksTo(1).fireResistant()));
-    public static final RegistryObject<AdvancedRocketItem> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () -> new AdvancedRocketItem(11, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier5> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () -> new RocketItemTier5(5, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier6> TIER_6_ROCKET = ROCKETS.register("tier_6_rocket", () -> new RocketItemTier6(6, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier7> TIER_7_ROCKET = ROCKETS.register("tier_7_rocket", () -> new RocketItemTier7(7, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier8> TIER_8_ROCKET = ROCKETS.register("tier_8_rocket", () -> new RocketItemTier8(8, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier9> TIER_9_ROCKET = ROCKETS.register("tier_9_rocket", () -> new RocketItemTier9(9, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier10> TIER_10_ROCKET = ROCKETS.register("tier_10_rocket", () -> new RocketItemTier10(10, (new Item.Properties()).stacksTo(1).fireResistant()));
+    public static final RegistryObject<RocketItemTier11> TIER_11_ROCKET = ROCKETS.register("tier_11_rocket", () -> new RocketItemTier11(11, (new Item.Properties()).stacksTo(1).fireResistant()));
 
     // Spawn Eggs
     public static final RegistryObject<ForgeSpawnEggItem> FREEZE_SPAWN_EGG = ITEMS.register("freeze_spawn_egg",

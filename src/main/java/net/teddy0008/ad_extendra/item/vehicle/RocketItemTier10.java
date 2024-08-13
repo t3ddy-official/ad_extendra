@@ -2,9 +2,10 @@ package net.teddy0008.ad_extendra.item.vehicle;
 
 import earth.terrarium.ad_astra.common.block.door.LocationState;
 import earth.terrarium.ad_astra.common.block.launchpad.LaunchPad;
-import earth.terrarium.ad_astra.common.entity.vehicle.*;
+import earth.terrarium.ad_astra.common.entity.vehicle.Rocket;
 import earth.terrarium.ad_astra.common.item.vehicle.RocketItem;
 import earth.terrarium.botarium.common.item.ItemStackHolder;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
@@ -18,15 +19,18 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import net.teddy0008.ad_extendra.entity.vehicle.*;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketItemRendererTier10;
+import net.teddy0008.ad_extendra.entity.vehicle.RocketTier10;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.function.Consumer;
 
-public class AdvancedRocketItem extends RocketItem {
+public class RocketItemTier10 extends RocketItem {
     private final int tier;
 
-    public AdvancedRocketItem(int tier, Item.Properties properties) {
+    public RocketItemTier10(int tier, Properties properties) {
         super(tier, properties);
         this.tier = tier;
     }
@@ -62,13 +66,7 @@ public class AdvancedRocketItem extends RocketItem {
                     Rocket rocketEntity = null;
                     int tier = rocket.getTier();
                     switch (tier) {
-                        case 5 -> rocketEntity = new RocketTier5(level);
-                        case 6 -> rocketEntity = new RocketTier6(level);
-                        case 7 -> rocketEntity = new RocketTier7(level);
-                        case 8 -> rocketEntity = new RocketTier8(level);
-                        case 9 -> rocketEntity = new RocketTier9(level);
                         case 10 -> rocketEntity = new RocketTier10(level);
-                        case 11 -> rocketEntity = new RocketTier11(level);
                     }
 
                     if (rocketEntity != null) {
@@ -86,7 +84,7 @@ public class AdvancedRocketItem extends RocketItem {
                         }
 
                         ((Rocket)rocketEntity).assignLaunchPad(true);
-                        level.playSound((Player)null, pos, SoundEvents.NETHERITE_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                        level.playSound((Player)null, pos, SoundEvents.AMETHYST_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
                         ((Rocket)rocketEntity).setPos((double)pos.getX() + 0.5, (double)pos.getY() + 0.1, (double)pos.getZ() + 0.5);
                         ((Rocket)rocketEntity).setYRot((float)(Math.round((player.getYRot() + 180.0F) / 90.0F) * 90));
                         level.addFreshEntity((Entity)rocketEntity);
@@ -106,5 +104,20 @@ public class AdvancedRocketItem extends RocketItem {
 
     public int getTier() {
         return this.tier;
+    }
+
+    @Override
+    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+        consumer.accept(new IClientItemExtensions() {
+            private RocketItemRendererTier10 renderer;
+
+            @Override
+            public BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                if(this.renderer == null) {
+                    renderer = new RocketItemRendererTier10();
+                }
+                return this.renderer;
+            }
+        });
     }
 }
