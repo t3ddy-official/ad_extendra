@@ -33,13 +33,13 @@ import net.teddy0008.ad_extendra.client.renderer.block.door.CustomSlidingDoorRen
 import net.teddy0008.ad_extendra.client.renderer.block.globe.*;
 import net.teddy0008.ad_extendra.client.renderer.entity.mob.freeze.FreezeRenderer;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.boat.CustomBoatRenderer;
-import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
-import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_11.RocketRendererTier11;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_5.RocketRendererTier5;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_6.RocketRendererTier6;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_7.RocketRendererTier7;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_8.RocketRendererTier8;
 import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_9.RocketRendererTier9;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_10.RocketRendererTier10;
+import net.teddy0008.ad_extendra.client.renderer.entity.vehicle.rocket.tier_11.RocketRendererTier11;
 import net.teddy0008.ad_extendra.entity.ModEntities;
 import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;

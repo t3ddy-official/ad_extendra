@@ -1,17 +1,16 @@
 package net.teddy0008.ad_extendra.block;
 
+import earth.terrarium.ad_astra.common.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.features.NetherFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -33,9 +32,8 @@ public class MoonMyceliumBlock extends Block implements BonemealableBlock {
 
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
         if (!canBeNylium(pState, pLevel, pPos)) {
-            pLevel.setBlockAndUpdate(pPos, ModBlocks.MOON_MYCELIUM.get().defaultBlockState());
+            pLevel.setBlockAndUpdate(pPos, ModBlocks.MOON_STONE.get().defaultBlockState());
         }
-
     }
 
     public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {

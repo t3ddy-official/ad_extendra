@@ -16,8 +16,22 @@
       "replace_current_music": true
     }
   },
-  "spawners": {},
-  "spawn_costs": {},
+  "spawners": {
+    "monster": [
+      {
+        "type": "ad_extendra:freeze",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ]
+  },
+  "spawn_costs": {
+    "ad_extendra:freeze": {
+      "energy_budget": 0.12,
+      "charge": 1
+    }
+  },
   "carvers": {
     "air": [
       "minecraft:cave",
@@ -26,8 +40,6 @@
     ]
   },
   "features": [
-    "minecraft:ice_spike",
-    "minecraft:ice_patch",
     "ad_extendra:uranus/uranium_ore",
     "ad_extendra:uranus/ice_shard_ore",
     "ad_extendra:uranus/iron_ore",
